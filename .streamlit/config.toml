@@ -1,0 +1,10 @@
+[server]
+enableStaticServing = true
+
+[theme]
+primaryColor = "#40393a"
+backgroundColor = "#1cce04"
+font = "'Georgia', 'Times New Roman', serif"
+
+[client]
+toolbarMode = "minimal"
