@@ -1,11 +1,11 @@
 import streamlit as st
-import sys
-from pathlib import Path
+# import sys
+# from pathlib import Path
 
 # Quando Streamlit avvia una pagina da `pages/`, la cartella del progetto
 # potrebbe non essere nel percorso di ricerca degli import.
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from static.contenuti import *
+# sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from contenuti import *
 
 def main():
     col1, col2 = st.columns([1, 3])
