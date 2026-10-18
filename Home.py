@@ -78,4 +78,4 @@ if 'user_logged_in' in st.session_state and st.session_state.user_logged_in:
 else:
     st.error(r"$\textsf{\Large Il contenuto è privato fai il login per accedere.}$")
     if st.button(label="**Fai il login**", icon="🔑",type='primary'):
-        st.switch_page("app.py")
+        st.switch_page("login.py")
