@@ -38,10 +38,10 @@ def body():
     st.header("DigiProject",anchor="digiproject")
     with st.container(border=True,vertical_alignment="center",autoscroll=True):
         st.markdown(paragrafo1)
-        column1, column2 = st.columns(2)
-        with open('./static/DIGIproject.Server.zip', 'rb') as f:
-            column1.download_button(r'$\textsf{\large Download DIGIproject Server}$', f, file_name='DIGIproject.Server.zip',icon="⬇️",type="secondary")
-        if column2.button(r'$\textsf{\large Pulire il DB}$',icon="📒",type="secondary"):
+        #column1, column2 = st.columns(2)
+        #with open('./static/DIGIproject.Server.zip', 'rb') as f:
+            #column1.download_button(r'$\textsf{\large Download DIGIproject Server}$', f, file_name='DIGIproject.Server.zip',icon="⬇️",type="secondary")
+        if st.button(r'$\textsf{\large Pulire il DB}$',icon="📒",type="secondary"):
             mostra_mio_dialog()
     Attivazione()
     footer()
