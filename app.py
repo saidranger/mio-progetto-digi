@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="...Appunti...",initial_sidebar_state="collapsed")
+
 pages = {
     "Pagine": [
         st.Page("login.py", title="Fai il Login"),
@@ -7,5 +9,5 @@ pages = {
     ]
 }
 
-pg = st.navigation(pages)
+pg = st.navigation(pages,position='top')
 pg.run()

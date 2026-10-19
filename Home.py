@@ -6,24 +6,11 @@ from pathlib import Path
 # potrebbe non essere nel percorso di ricerca degli import.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from static.contenuti import *
-
+st.logo("./static/Logo.jpeg")
 def main():
-    col1, col2 = st.columns([1, 3])
-    col1.image("./static/Logo.jpeg", width=150)
-    col2.markdown(
-        """
-        <h1 style="
-            margin: 0;
-            color: #1f4e79;
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 4.6rem;
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            text-shadow: 1px 2px 3px rgba(31, 78, 121, 0.18);
-        ">...Appunti...</h1>
-        """,
-        unsafe_allow_html=True,
-    )
+    col1, col2 = st.columns([1, 2])
+    col1.image("./static/Logo.png", width=200)
+    col2.header(r"$\textsf{\huge ...Appunti...}$")
     footer()
     body()
 
