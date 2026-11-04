@@ -2,9 +2,19 @@
 enableStaticServing = true
 
 [theme]
-primaryColor = "#40393a"
-backgroundColor = "#1cce04"
+
+primaryColor = "#ff4b5b"
+backgroundColor = "#9b8c8c"
+secondaryBackgroundColor = "#f0f3f6"
+textColor = "#282a33"
+linkColor = "#065fa7"
+baseFontSize = 20
+baseRadius = "1.0rem"
+buttonRadius = "1.0rem"
+# primaryColor = "#40393a"
+# backgroundColor = "#1cce04"
 font = "'Georgia', 'Times New Roman', serif"
+
 
 [client]
 toolbarMode = "minimal"
