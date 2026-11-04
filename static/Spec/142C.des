@@ -1,0 +1,171 @@
+[MAIN]
+SpecCount=12
+StartIndex=001
+SubType=C
+
+[142C001]
+Description=142C001 PRICE BASE FOR WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=4
+Mask=0x08
+ItemCount=2
+Item0=100g Base
+Item1=1kg Base
+
+[142C002]
+Description=142C002 DECIMAL POINT POSITION FOR TOTAL PRICE
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=7
+Mask=0xc0
+ItemCount=4
+Item0=None
+Item1=0.0
+Item2=0.00
+Item3=0.000
+
+[142C003]
+Description=142C003 DECIMAL POINT POSITION FOR UNIT PRICE
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=7
+Mask=0x06
+ItemCount=4
+Item0=None
+Item1=0.0
+Item2=0.00
+Item3=0.000
+
+[142C004]
+Description=142C004 TOTAL PRICE ROUNDING METHODS FOR WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=16
+Mask=0x03
+ItemCount=3
+Item0=Rounding
+Item1=Truncate
+Item2=Cut Up
+
+[142C005]
+Description=142C005 ADDITIONAL ITEM TOTAL PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=7
+Index=8
+Mask=0x70
+ItemCount=8
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+Item6=Reserved
+Item7=1/2 Rounding
+
+[142C006]
+Description=142C006 SELECTION OF SWITCHING OF PRICE BASE
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=4
+Mask=0xc0
+ItemCount=3
+Item0=Disable
+Item1=100g / 1kg
+Item2=500g / 1Kg
+
+[142C007]
+Description=142C007 ADDITIONAL TOTAL PRICE ROUNDING METHOD
+Enable=0
+Type=Index
+Min=0
+Max=5
+Index=5
+Mask=0x07
+ItemCount=6
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+
+[142C008]
+Description=142C008 SELECTION OF UNIT PRICE RE-CALCULATION
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=5
+Mask=0x08
+ItemCount=2
+Item0=No Unit Re-calculation
+Item1=Unit Re-calculation
+
+[142C009]
+Description=142C009 RE-CALCULATED UNIT PRICE ROUNDING METHOD
+Enable=0
+Type=Index
+Min=0
+Max=2
+Index=5
+Mask=0x30
+ItemCount=3
+Item0=Rounding
+Item1=Truncate
+Item2=Cut Up
+
+[142C010]
+Description=142C010 ADDITIONAL EURO SECOND PRICE ROUNDING METHOD
+Enable=0
+Type=Index
+Min=0
+Max=5
+Index=0
+Mask=0x00
+ItemCount=6
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+
+[142C011]
+Description=142C011 SHOW ITEM UNIT PRICE AND TOTAL PRICE AFTER REGISTERED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=13
+Mask=0x04
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[142C012]
+Description=142C012 RIGHT SIDE BARCODE DATA RIGHT SHIFTING
+Enable=0
+Type=Index
+Min=0
+Max=2
+Index=6
+Mask=0x60
+ItemCount=3
+Item0=No Right Shift
+Item1=Right Shift
+Item2=Right Shift Twice
+

@@ -1,0 +1,636 @@
+[MAIN]
+SpecCount=63
+StartIndex=001
+SubType=C
+
+[141C001]
+Description=141C001 SCALE NUMBER
+Enable=1
+Type=Integer
+Min=1
+Max=0xff
+
+[141C002]
+Description=141C002 BS-02 CONNECTION
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=COM 1
+Item2=COM 2
+Item3=Reserved
+
+
+[141C003]
+Description=141C003 PICK 'N PAY OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C004]
+Description=141C004 EXTERNAL BARCODE SCANNER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=COM 1
+Item2=COM 2
+
+[141C005]
+Description=141C005 QUEUE DEPARTMENT
+Enable=1
+Type=Integer
+Min=0
+Max=4
+
+[141C006]
+Description=141C006 SYNC TRANSACTION DATA TO CLIENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C007]
+Description=141C007 SCALE DEPARTMENT
+Enable=1
+Type=Integer
+Min=1
+Max=9999
+
+[141C008]
+Description=141C008 CCTV OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable
+Item1=Com1
+Item2=Com2
+Item3=Ethernet
+
+[141C009]
+Description=141C009 DEFAULT PREFIX VALUE
+Enable=1
+Type=Integer
+Min=1
+Max=99
+
+[141C010]
+Description=141C010 DELETE READ EMAIL AFTER NUMBER OF DAY
+Enable=1
+Type=Integer
+Min=1
+Max=9999
+
+[141C011]
+Description=141C011 DAY OF WEEK IN PLU FILE IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Always Send
+Item1=Not Send
+
+[141C012]
+Description=141C012 IGNORE TRANSFAT STATUS BIT IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C013]
+Description=141C013 NUMBER OF DIGITS FOR % FIELD IN NUTRITION FACT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=2
+Item1=3(Max Value 255)
+Item2=3(Max Value 999)
+Item3=3(Max Value 999) Protect
+
+[141C014]
+Description=141C014 DATABASE MODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Server/Client
+Item1=Standalone
+Item2=Floating Server
+Item3=Backup Server
+
+[141C015]
+Description=141C015 FOREIGN KEY SIZE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Default Size
+Item1=4 Bytes
+
+[141C016]
+Description=141C016 e.LABEL JR. PARTIAL UPDATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141C017]
+Description=141C017 WAIT FOR ACK IN TWSWTCP COMMUNICATION FOR MULTI PACKETS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141C018]
+Description=141C018 EXTERNAL RECEIPT PRINTER (PP2000)
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=COM 1
+Item2=COM 2
+
+[141C019]
+Description=141C019 TARE DECIMAL POINT LEFT SHIFT IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C020]
+Description=141C020 SHOP CODE
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141C021]
+Description=141C021 RECORD NUMBER FOR PRINT FORMAT FILES (34H & D7H)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=BCD
+Item1=Hex
+
+[141C022]
+Description=141C022 EXPAND IMAGE NUMBER IN PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141C023]
+Description=141C023 ETHERNET SPEED
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Auto
+Item1=10Mb Half Duplex
+Item2=10Mb Full Duplex
+Item3=100Mb Half Duplex
+Item4=100Mb Full Duplex
+
+[141C024]
+Description=141C024 TWSWTCP COMMUNICATION DATA LOGGING
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No
+Item1=Log As Configure
+Item2=Log Read For All Tables
+Item3=Log Write For All Tables
+Item4=Log Read/Write For All Tables
+
+[141C025]
+Description=141C025 WIPS DISPLAY FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Com 1
+Item2=Com 2
+
+[141C026]
+Description=141C026 DATA SIZE EXPANSION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C027]
+Description=141C027 USE QUANTITY AS PROPORTIONAL TARE VALUE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C028]
+Description=141C028 BARCODE SCANNER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Auto Detect
+Item1=Disable
+
+[141C029]
+Description=141C029 EXPAND PLU PRESET IMAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+
+[141C030]
+Description=141C030 SYNC DATABASE ON START UP
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Scheduler Reboot
+Item2=Every Start Up
+
+[141C031]
+Description=141C031 PREFIX MG/DEPT CODE IN PLU CODE IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=MG
+Item2=Dept
+
+[141C032]
+Description=141C032 PLU'S LABEL FORMAT 2 DATA FORMAT IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow SM880
+Item1=Follow SM500
+
+[141C033]
+Description=141C033 INVENTORY STATUS FLAG IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow SM880
+Item1=Follow SM500
+
+[141C034]
+Description=141C034 TWSWTCP COMMUNICATION PORT NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=99999
+
+[141C035]
+Description=141C035 UPDATE PLU STATUS IN TWSWTCP COMMUNICATION APPEND MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C036]
+Description=141C036 READ FLAG FOR INVENTORY FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C037]
+Description=141C037 SERVER OFFLINE DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C038]
+Description=141C038 OFFSET PLU IMAGE 1 IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141C039]
+Description=141C039 HOST OFFLINE DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C040]
+Description=141C040 OVERWRITE PLU TEXT IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141C041]
+Description=141C041 UPLOAD TRANSACTION DATA BY WEB SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Yes, Receipt Only
+Item2=Yes, Receipt And Order
+Item3=Yes, Order Only
+
+[141C042]
+Description=141C042 CHAIN STORE ID
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141C043]
+Description=141C043 BS-03/04 CONNECTION
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No
+Item1=Reserved
+Item2=Reserved
+Item3=One USB Device
+Item4=Two USB Devices
+
+[141C044]
+Description=141C044 TRACEABILITY KIND AND CATEGORY DATA LENGTH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=16 Bytes
+Item1=100 Bytes
+
+[141C045]
+Description=141C045 AUTO PLU DOWNLOAD FROM SERVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C046]
+Description=141C046 SUPPORT PLU TARE 2 IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C047]
+Description=141C047 REAL TIME BUFFER TRANSACTION TIME FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=HH:MM
+Item1=HH:MM:SS
+
+[141C048]
+Description=141C048 TRACEABILITY COUNTRY NAME
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=17 Characters
+Item1=100 Characters
+
+[141C049]
+Description=141C049 SUPPORT CUSTOMER DATA BY WEB SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes
+Item2=Yes, With Customer Search
+
+[141C050]
+Description=141C050 CSV FILES IMPORT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=4600 CSV File Format
+Item2=User Defined File Format
+
+[141C051]
+Description=141C051 TWSWTCP COMMUNICATION NETWORK INTERFACE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Ethernet
+Item1=Wlan
+Item2=VPN
+
+[141C052]
+Description=141C052 INCLUDE COMMODITY NAME AND COST IN INVENTORY FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C053]
+Description=141C053 UPLOAD FISCAL DATA BY WEB SERVICE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C054]
+Description=141C054 TWSWTCP REPLICATE DELETE FILE COMMAND TO BACKUP SERVER (TRANSACTION) 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C055]
+Description=141C055 TWSWTCP DATABASE REPLICATION METHOD 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Table
+Item1=By Files
+
+[141C056]
+Description=141C056 READ FROM FIRST RECORD FOR READ ALL COMMAND ON NEW CONNECTION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141C057]
+Description=141C057 COOP-NICOLIS QUEUE MANAGEMENT AGENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141C058]
+Description=141C058 UPLOAD CUSTOMER TRANSFER DATA BY WEB SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C059]
+Description=141C059 PLU BARCODE DATA CONVERSION IN TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141C060]
+Description=141C060 DATA FORMAT OF PLACE FIELD IN PLU FILE FOR TWSWTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Bcd
+Item1=Hex
+
+[141C061]
+Description=141C061 SYNC MULTIMEDIA FILES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C062]
+Description=141C062 KEEP PLU FAVOURITE FLAG IN TWSTCP COMMUNICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141C063]
+Description=141C063 ORDER REQUEST VIA WEB SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes

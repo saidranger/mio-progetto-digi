@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assegnazione Tasti Funzione SM-120</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 { font-size: 1.8em; text-align: center; }
+        h2 { font-size: 1.4em; }
+        p { margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .page-break {
+            border-top: 2px dashed #ccc;
+            margin: 40px 0;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Assegnazione Tasti Funzione SM-120</h1>
+
+    <h2>1. FUNZIONI</h2>
+    <p>Assegnando i seguenti tasti funzione ai tasti Preset, le funzioni possono essere utilizzate toccando i tasti assegnati.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Display</th>
+                <th>Funzione</th>
+                <th>Note / Condizioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>CLEAr</td>
+                <td>Clear Function</td>
+                <td>Cancella il tasto PLU, tasto Commesso o tasto funzione assegnato.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>AdvErt</td>
+                <td>Advertisement Function</td>
+                <td>Stampa il Messaggio Pubblicitario insieme al nome merce sull'etichetta in modalità MAN & PPK. (SPEC67 impostata su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>- PriCE</td>
+                <td>Total Price constant discount function</td>
+                <td>Imposta il valore di sconto dal prezzo totale in modalità MAN & PPK (SPEC 68 su ENABLE e SPEC 653 su ALLOW).<br><em>*Prezzo Totale - Valore Sconto</em></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>-P Perc</td>
+                <td>Total Price % discount function</td>
+                <td>Imposta la percentuale di sconto dal prezzo totale in modalità MAN & PPK. (SPEC 69 su ENABLE e SPEC 653 su ALLOW).<br><em>*Prezzo Totale - Prezzo Totale x Sconto %</em></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>-UpriCE</td>
+                <td>Fixed Unit Price discount function</td>
+                <td>Imposta il valore di sconto dal prezzo unitario in modalità MAN & PPK. (SPEC 70 su ENABLE).<br><em>*Prezzo Unitario - Valore Sconto</em></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>-U Perc</td>
+                <td>Unit Price % discount function</td>
+                <td>Imposta la percentuale di sconto dal prezzo unitario in modalità MAN & PPK. (SPEC 71 su ENABLE).<br><em>*Prezzo Unitario - Prezzo Unitario x Sconto %</em></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>PACk dt</td>
+                <td>Packed date function</td>
+                <td>Cambia la data di confezionamento sull'etichetta in modalità MAN & PPK. (SPEC 72 su ENABLE & per Modalità MANUALE, SPEC 654 deve essere su ALLOW).<br><em>* Data confezionamento = Data effettiva + Giorni inseriti.</em></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>-PACK</td>
+                <td>Packed date function</td>
+                <td>Cambia la data di confezionamento sull'etichetta in modalità MAN & PPK. (SPEC 73 su ENABLE & per Modalità MANUALE, SPEC 654 deve essere su ALLOW).<br><em>* Data confezionamento = Data effettiva - Giorni inseriti.</em></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>SELL dt</td>
+                <td>Sell by date function</td>
+                <td>Cambia la data di vendita entro sull'etichetta in modalità PPK. (SPEC 74 su ENABLE).<br><em>* Data vendita entro = Data effettiva + Giorni inseriti.</em></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Symbol</td>
+                <td>Symbol Set Function</td>
+                <td>Cambia il simbolo dell'unità per articolo non a peso in modalità PPK. SPEC 75 su ENABLE & cambia simbolo unità per articolo non a peso in modalità MANUALE, SPEC 169 su PRN IN MAL MODE).</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>qty</td>
+                <td>Set Quantity Function</td>
+                <td>Cambia la quantità per articolo non a peso in modalità PPK (SPEC 76 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>UP CHG</td>
+                <td>Unit Price Change Function</td>
+                <td>Cambia il prezzo unitario in modalità MAN & PPK. (SPEC 77 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>REFUnd</td>
+                <td>Refund Function</td>
+                <td>Rimborsa l'articolo in modalità MAN (SPEC 78 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>SHoP nm</td>
+                <td>Shop name Function</td>
+                <td>Cambia il nome del negozio da stampare in modalità MAN & PPK. (SPEC 79 su ENABLE & SPEC 26 su PRINT).</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>LoGo</td>
+                <td>Logo Set Function</td>
+                <td>Imposta il Logo per l'etichetta in modalità MAN & PPK. (SPEC 80 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Prn SEL</td>
+                <td>Print Item Selection</td>
+                <td>Seleziona i dati PLU da stampare sull'etichetta in modalità MAN & PPK. (SPEC 81 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>SUB tTL</td>
+                <td>Sub-total Function</td>
+                <td>Stampa l'etichetta di sub-totale dell'articolo confezionato in modalità PPK. (SPEC 84 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Grd tTL</td>
+                <td>Grand total Function</td>
+                <td>Stampa l'etichetta di Totale Generale dell'articolo confezionato in modalità PPK. (SPEC 85 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>PAC qty</td>
+                <td>Pack q'ty function</td>
+                <td>Imposta il numero di quantità di confezionamento in modalità PPK. (SPEC 66 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Pr mArk</td>
+                <td>Markdown Price (Total Price)</td>
+                <td>Imposta il prezzo di ribasso in modalità MAN & PPK. (SPEC 105 su ENABLE e SPEC 653 su ALLOW).<br><em>*Prezzo Totale = Valore di Ribasso</em></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>PPEr mk</td>
+                <td>Markdown Price % (Total Price)</td>
+                <td>Imposta il prezzo totale inserendo la percentuale di ribasso in modalità MAN & PPK. (SPEC 106 su ENABLE e SPEC 653 su ALLOW).<br><em>*Prezzo Totale = Prezzo Totale x % Ribasso</em></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>UP mArk</td>
+                <td>Mark Down Price (Unit Price)</td>
+                <td>Imposta il prezzo unitario di ribasso in modalità MAN & PPK. (SPEC 107 su ENABLE).<br><em>*Prezzo Unitario = Valore di Ribasso</em></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>UPER mk</td>
+                <td>Mark Down Price % (Unit Price)</td>
+                <td>Imposta il prezzo unitario inserendo la percentuale di ribasso in modalità MAN & PPK. (SPEC 108 su ENABLE).<br><em>*Prezzo Unitario = Prezzo Unitario x % Ribasso</em></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Stor UP</td>
+                <td>Store unit price to PLU</td>
+                <td>Memorizza il prezzo unitario inserito in modalità registrazione nel PLU. (SPEC 103 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>PLACE</td>
+                <td>Place of production</td>
+                <td>Stampa il luogo di produzione della merce sull'etichetta. (SPEC 82 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>FORMAT1</td>
+                <td>LABEL FORMAT1</td>
+                <td>Cambia il formato etichetta 1 in modalità MAN & PPK.</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>FORMAT2</td>
+                <td>LABEL FORMAT2</td>
+                <td>Cambia il formato etichetta 2 (solo Formato Libero) in modalità MAN & PPK. (SPEC 146 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>P.NOADD</td>
+                <td>PERPACK NON ADD</td>
+                <td>Stampa articolo confezionato Non-Add nel Totale Generale in modalità PPK (SPEC147 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>MAIN GP</td>
+                <td>MAIN GROUP NUMBER</td>
+                <td>Inserisci il Numero Gruppo Principale per l'inserimento manuale del prezzo in modalità MAN & PPK. (SPEC149 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>APC SW</td>
+                <td>Auto Plu Call</td>
+                <td>Imposta / Resetta la funzione Auto Plu Call. (SPEC441 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>SC SQ</td>
+                <td>Program scroll sequence</td>
+                <td>Programma la sequenza di scorrimento.</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>MANU WT SET</td>
+                <td>MANUAL WEIGHT</td>
+                <td>Imposta il Peso Manuale per articolo a peso in modalità PPK. (SPEC677 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>ITEM CD</td>
+                <td>ITEM CODE</td>
+                <td>Cambia il Codice Articolo sull'etichetta in modalità MAN & PPK. (SPEC162 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>NET CON</td>
+                <td>Net content</td>
+                <td>Per cambiare la quantità nell'operazione speciale 'FOR'. (SPEC456 su Allow) (Solo per U1).</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>EURO SW</td>
+                <td>EURO CURRENCY SW</td>
+                <td>Per visualizzare il Secondo Prezzo in Euro in Modalità Reg. (SPEC171 su EURO).</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>SW KEY</td>
+                <td>SWITCH KEY</td>
+                <td>Commuta il Prezzo Unitario da articolo a peso ad articolo non a peso e viceversa. (SPEC185 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>PR KEY</td>
+                <td>Price key</td>
+                <td>Per cambiare il prezzo totale nell'operazione speciale 'FOR'. (SPEC456 su Allow) (Solo per U1).</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>REF PLU</td>
+                <td>REFERENCE PLU</td>
+                <td>Per richiamare il PLU di Riferimento quando il PLU è programmato con Numero PLU di Riferimento in modalità MAN & PPK. (SPEC204 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>PRT KEY</td>
+                <td>PRINT KEY</td>
+                <td>Stampa Etichetta in MAN & PPK o Scontrino in Modalità Acc. (SPEC 205 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>PLU REP</td>
+                <td>PLU REPEAT</td>
+                <td>Ripete il PLU dopo la stampa in Modalità MAN. (SPEC 210 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>FLAG CD</td>
+                <td>FLAG CODE</td>
+                <td>Cambia il Codice Flag sull'Etichetta in modalità MAN & PPK. (SPEC 213 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>CASH</td>
+                <td>DRAWER OPEN</td>
+                <td>Per aprire il cassetto contanti in modalità R, o eseguire l'operazione di pagamento in modalità X.</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>TAX INF</td>
+                <td>TAX INFORMATION</td>
+                <td>Stampa le Informazioni Fiscali sulla carta scontrino. (SPEC 221 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>PASSWDUP</td>
+                <td>OVERRIDE PASSWD</td>
+                <td>Cambia il Prezzo Unitario in modalità MAN & PPk. (SPEC 227 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>APC MG</td>
+                <td>APC MAIN GROUP #</td>
+                <td>Cambia il codice gruppo principale per auto plu call (solo GC). (SPEC442 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>HALF KEY</td>
+                <td>1/2 PRICE KEY</td>
+                <td>Metà Prezzo per Articolo Non a Peso in modalità MAN & PPK. (SPEC 237 su ALLOW).</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>CHEQ FT</td>
+                <td>CHEQUE TENDER KEY</td>
+                <td>Pagamento in Modalità Amount Tender. (SPEC 239 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>VOUC FT</td>
+                <td>VOUCHER TENDER KEY</td>
+                <td>Pagamento in Modalità Amount Tender. (SPEC 240 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>DISC FT</td>
+                <td>DIRECT DISCOUNT</td>
+                <td>PLU di Sconto su Prezzo Unitario o Prezzo Unitario % in modalità MAN & PPK. (SPEC 242 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>ING FUN</td>
+                <td>INGREDIENT</td>
+                <td>Cambia i Dati Ingredienti sull'Etichetta in modalità MAN & PPK.</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>CUS DISC</td>
+                <td>Customer discount</td>
+                <td>Sconto cliente.</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>RES DISC</td>
+                <td>Restaurant discount</td>
+                <td>Sconto ristorante.</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>STA DISC</td>
+                <td>Staff discount</td>
+                <td>Sconto personale.</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>MUL SUB</td>
+                <td>Multi. Subtotal</td>
+                <td>Multi. Subtotal.</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>BK TRAD</td>
+                <td>Black trading</td>
+                <td>Black trading.</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>FLT CUST</td>
+                <td>Floating customer</td>
+                <td>Cliente flottante.</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>PEAPOD</td>
+                <td>PREPACK PRICE OVERRIDE</td>
+                <td>Override prezzo pre-pack.</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>CREDIT</td>
+                <td>CREDIT KEY</td>
+                <td>Pagamento in Modalità Amount Tender. (SPEC 239 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>BATCH F</td>
+                <td>BATCH FILE PRT</td>
+                <td>Per stampare uno/alcuni PLU particolari in una volta sola.</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>BORN</td>
+                <td>BORN COUNTRY</td>
+                <td>Cambia i Dati di Nascita sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>FATTEN</td>
+                <td>FATTEN COUNTRY</td>
+                <td>Cambia i Dati di Ingrassamento sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>SLAUGHT</td>
+                <td>SLAUGHTER HOUSE</td>
+                <td>Cambia ID Macello e Dati Paese sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>CUT</td>
+                <td>CUTTING HALL</td>
+                <td>Cambia ID Sala di Taglio e Dati Paese sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>REF NO</td>
+                <td>REFERENCE NO</td>
+                <td>Cambia Numero di Riferimento (Data o Codice Libero) sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>ORIGIN</td>
+                <td>ORIGIN COUNTRY</td>
+                <td>Cambia Paese di Origine sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>TRACE S</td>
+                <td>TRACEABILITY SET</td>
+                <td>Cambia Tutti i Dati di Tracciabilità sull'Etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>TRACE N</td>
+                <td>TRACEABILITY LINK</td>
+                <td>Cambia i Dati di Tracciabilità sull'etichetta in modalità MAN & PPK. (SPEC 258 su YES).</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>WT CHK</td>
+                <td>Weight checking</td>
+                <td>Controllo peso.</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>PSET SH</td>
+                <td>PRESET SHIFT KEY</td>
+                <td>Tasto shift preset.</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>LBL RCT</td>
+                <td>Label / Receipt switch</td>
+                <td>Commutazione Etichetta / Scontrino.</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>CLK ASSN</td>
+                <td>Clerk Assignment(LBL)</td>
+                <td>Per formato codice a barre #21 (Solo SF).</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>TR UPDT</td>
+                <td>TRACE UPDATE FUNC</td>
+                <td>Per aggiornare il numero di Tracciabilità al File PLU. (SPEC 298 su YES).</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>DEL PLU</td>
+                <td>IR_DEL_PLU_FUNC</td>
+                <td>Funzione cancella PLU.</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>CUSTOME</td>
+                <td>TAIWAN_CUSTOME_NO_FUNC</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>TAX FUNC</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>LOGGING</td>
+                <td>Operator Logging FUNC</td>
+                <td>Registrazione operatore.</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>INV FUN</td>
+                <td>INVENTORY FUNCTION</td>
+                <td>Per selezionare la Modalità Inventario in Modalità Registrazione.</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>TRA CLR</td>
+                <td>TRACEABILITY CLEAR</td>
+                <td>Per cancellare la stampa delle Informazioni di Tracciabilità in modalità Registrazione.</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>SP MSG</td>
+                <td>SP MAG FUNCTION</td>
+                <td>Cambia i Dati del Messaggio Speciale sull'Etichetta in modalità MAN & PPK.</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>DT PRN</td>
+                <td>DATE PRINT FUNC</td>
+                <td>Per disabilitare o abilitare la Data di Vendita e la Data di Confezionamento sull'Etichetta in modalità MAN & PPK.</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>IMAGE</td>
+                <td>IMAGE Function</td>
+                <td>Funzione immagine.</td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>#/RA</td>
+                <td>NON-ADD NUMBER/RECEIVED-ON-ACCOUNT PAYMENT KEY</td>
+                <td>Per stampare un numero non-add sullo scontrino in modalità R, o eseguire l'operazione di pagamento ricevuto in acconto in modalità X.</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>PRN SEL</td>
+                <td>PRINT SELL BY DATE</td>
+                <td>Per disabilitare o abilitare la Data di Vendita sull'Etichetta in modalità MAN & PPK.</td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>REG FUN</td>
+                <td>CLK AUTO REGISTER</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>PLU RPT</td>
+                <td>PRINT PLU TTL REPORT</td>
+                <td>Stampa il Report PLU in Modalità Registrazione.</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>RCT PRT</td>
+                <td>PRINT RECEIPT</td>
+                <td>Per disabilitare o abilitare la stampa dello scontrino.</td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <td>LBL PRT</td>
+                <td>LABEL PRT W/O REPORT</td>
+                <td>Stampa l'etichetta articolo senza aggiornare i dati della transazione al Report.</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>SERIAL</td>
+                <td>Serial Number</td>
+                <td>Per impostare il numero di serie.</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>AUTO-0</td>
+                <td>AUTO ZERO</td>
+                <td>Per abilitare o disabilitare la funzione auto zero. (SPEC 601 su Enable).</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>BARCODE</td>
+                <td>MANUAL BARCODE ENTER</td>
+                <td>Per inserire manualmente i dati del codice a barre tramite tasto.</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>PWD R</td>
+                <td>R MODE PASSWORD</td>
+                <td>Imposta la modalità di inserimento password per la modalità R. (SPEC64 su ALLOW, SPEC440 su 1 o 2).</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>UP/T FN</td>
+                <td>Unit Price and Tare Change for Security function</td>
+                <td>Cambia Prezzo Unitario e Tara in modalità MAN & PPK per funzione di sicurezza. (SPEC 312 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>TEXT 16</td>
+                <td>EDIT TEXT 16 FILE</td>
+                <td>Modifica la 1a linea nel file testo 16, 4 caratteri. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>TEXT 15</td>
+                <td>EDIT TEXT 15 FILE</td>
+                <td>Modifica la 1a linea nel file testo 15, 10 caratteri. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>TEXT 14</td>
+                <td>EDIT TEXT 14 FILE</td>
+                <td>Modifica la 1a linea nel file testo 14, 10 caratteri. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>TEXT 13</td>
+                <td>EDIT TEXT 13 FILE</td>
+                <td>Modifica la 1a linea nel file testo 13, 10 caratteri. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>98</td>
+                <td>TEXT 12</td>
+                <td>EDIT TEXT 12 FILE</td>
+                <td>Modifica la 1a linea nel file testo 12, 10 caratteri. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>QUOTA W</td>
+                <td>Weight Quota Function</td>
+                <td>Imposta i dati della quota di peso. (SPEC 457 su Allow).</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>STOCKOP</td>
+                <td>Stock Operation Function</td>
+                <td>Operazione Stock in modalità R (SPEC475 su ALLOW).</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>DI162WT</td>
+                <td>Get weight from DI-162 Operation Function</td>
+                <td>Ottieni peso da DI-162 in modalità R (SPEC63 su ALLOW).</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>CRTCARD</td>
+                <td>Credit Card Key</td>
+                <td>Pagamento in Modalità Amount Tender. (SPEC 478 su ENABLE).</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>CASH IN</td>
+                <td>Cash In Key</td>
+                <td>Operazione Cash In/Out in modalità R.</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>CASHOUT</td>
+                <td>Cash Out Key</td>
+                <td>Operazione Cash In/Out in modalità R.</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>PLULIST</td>
+                <td>Print PLU list Key</td>
+                <td>Stampa la lista PLU in modalità R.</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>M CARD</td>
+                <td>Membership Card</td>
+                <td>Per inserire il numero della carta fedeltà.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>Come impostare il tasto funzione</h2>
+    <p>Assegnando i seguenti tasti funzione ai tasti Preset, le funzioni possono essere utilizzate toccando i tasti assegnati.</p>
+
+    <table>
+        <tr>
+            <th>OPERAZIONE</th>
+            <th>DISPLAY (PT, kg, $/kg, $)</th>
+            <th>NOTE</th>
+        </tr>
+        <tr>
+            <td>[MODE][MODE] [MODE]</td>
+            <td>S1 &rarr; PLU FILE</td>
+            <td>Entra in modalità S. Spia S accesa.</td>
+        </tr>
+        <tr>
+            <td>[4] o [≥] tre volte</td>
+            <td>S4 &rarr; KEY ASSIGNMENT</td>
+            <td>La modalità Assegnazione Tasti è il MENU 4 in modalità S.</td>
+        </tr>
+        <tr>
+            <td>[*]</td>
+            <td>S4.0 PS AS 0 NO SET</td>
+            <td>Entra in modalità assegnazione PLU.</td>
+        </tr>
+        <tr>
+            <td>[*]</td>
+            <td>S4.1 VR AS 0 NO SET</td>
+            <td>Entra in stato assegnazione Tasto Venditore.</td>
+        </tr>
+        <tr>
+            <td>[*]</td>
+            <td>S4.2 FN AS 0 CLEAR</td>
+            <td>Entra in stato assegnazione Tasto Funzione.</td>
+        </tr>
+        <tr>
+            <td>[X][X]</td>
+            <td>S4.0 FN AS 2-PRICE</td>
+            <td>Seleziona la funzione SCONTO PREZZO.</td>
+        </tr>
+        <tr>
+            <td>[PRESET 25]</td>
+            <td>S4.2 FN AS 0 CLEAR</td>
+            <td>La funzione SCONTO PREZZO è stata assegnata al Tasto Preset numero 25.</td>
+        </tr>
+        <tr>
+            <td>[×][C]</td>
+            <td>S4 &rarr; KEY ASSIGNMENT</td>
+            <td>Torna in modalità S.</td>
+        </tr>
+    </table>
+
+    <div class="note">
+        <strong>Nota1:</strong> Un tasto Preset non assegnato può essere impostato come tasto funzione.
+    </div>
+
+</body>
+</html>

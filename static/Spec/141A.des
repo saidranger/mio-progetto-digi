@@ -1,0 +1,854 @@
+[MAIN]
+SpecCount=74
+StartIndex=000
+SubType=A
+
+[141A000]
+Description=141A000 SELECTION OF ITEM BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=53
+ItemCount=54
+Item0=F1F2 CCCCC XCD XXXX CD
+Item1=F2 CCCCCC XCD XXXX CD
+Item2=F1F2 CCCCC 0 XXXX CD
+Item3=F1F2 CCCCCC XXXX CD
+Item4=F1F2 CCCCC XXXXX CD
+Item5=F2 CCCCCC XXXXX CD
+Item6=F2 CCCCC XXXXXX CD
+Item7=F1F2 CCCCCCCCCC CD
+Item8=F1F2 CCCC XXXXXX CD
+Item9=F1F2 CCCCC CD
+Item10=F2 CC XXXX CD
+Item11=Non Barcode
+Item12=F1X2 CCCCC XCD XXXX CD
+Item13=F1X2 CCCCCC XXXX CD
+Item14=F1F2 CCCC XCD XXXXX CD
+Item15=F2 CCCCC XCD XXXXX CD
+Item16=F1F2 CCC XXXXXXX CD
+Item17=F1F2 CC XXXXXXXX CD
+Item18=CCC WWWW PPPPP CD
+Item19=Non Barcode
+Item20=F1F2 CCCCC PCD XXXX CD
+Item21=F1F2 NNNNN XXXXX CD 0
+Item22=0F2 CCCCC XXXXXX CD 0
+Item23=F1F2F3 CCCC PPPPP CD
+Item24=F1F2 CCCCC WWWWW CD 
+Item25=F2 CCCCC WWWWW 0 CD 
+Item26=ITF Barcode
+Item27=Non Barcode
+Item28=F1F2 CCC XXXXXXX CD 
+Item29=F2 CCCCCCC WWWW CD  
+Item30=F1F2 CC NNN PPPPP CD
+Item31=F1F2 C NNNN PPPPP CD
+Item32=Reserved  
+Item33=Reserved  
+Item34=Reserved  
+Item35=Reserved  
+Item36=Reserved  
+Item37=Reserved  
+Item38=Reserved  
+Item39=Reserved  
+Item40=Reserved  
+Item41=Non Barcode
+Item42=F1F2 CC NNNN TTTT CD
+Item43=F1F2 NNNN 0000000   
+Item44=0F1F2 NNN PCD PPPPP CD      
+Item45=F1F2 RR CCC XXXXX CD      
+Item46=Reserved
+Item47=Reserved
+Item48=F1F2 S NNN PCD PPPPP CD
+Item49=F1F2 CCCC WWWWW LLLLLL (Code 128)
+Item50=F1F2 CCCC 0 PPPPP CD
+Item51=Reserved
+Item52=Reserved
+Item53=F1F2 DD HH MM TTTT CD
+
+[141A001]
+Description=141A001 RIGHT SIDE DATA OF ITEM BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=Quantity
+Item1=Price
+Item2=Weight
+Item3=User Programmable
+Item4=Original Price
+Item5=Weight/Quantity
+
+[141A002]
+Description=141A002 ATX ITEM BARCODE PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Before Tax
+Item1=After Tax
+
+[141A003]
+Description=141A003 DATA OF F1 & F2 (13 DIGIT NON PLU BARCODE)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A004]
+Description=141A004 DATA OF F1 & F2 (13 DIGIT PLU BARCODE)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A005]
+Description=141A005 DATA OF F2 (8 DIGIT NON PLU BARCODE)
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141A006]
+Description=141A006 DATA OF F1 & F2 (8 DIGIT PLU BARCODE)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A007]
+Description=141A007 SELECTION OF TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=52
+ItemCount=53
+Item0=F1F2 CCCCC XCD XXXX CD
+Item1=F2 CCCCCC XCD XXXX CD
+Item2=F1F2 CCCCC 0 XXXX CD
+Item3=F1F2 CCCCCC XXXX CD
+Item4=F1F2 CCCCC XXXXX CD
+Item5=F2 CCCCCC XXXXX CD
+Item6=F2 CCCCC XXXXXX CD
+Item7=F1F2 CCCCCCCCCC CD
+Item8=F1F2 CCCC XXXXXX CD
+Item9=F1F2 CCCCC CD
+Item10=F2 CC XXXX CD
+Item11=Non Barcode
+Item12=F1X2 CCCCC XCD XXXX CD
+Item13=F1X2 CCCCCC XXXX CD
+Item14=F1F2 CCCC XCD XXXXX CD
+Item15=F2 CCCCC XCD XXXXX CD
+Item16=F1F2 CCC XXXXXXX CD
+Item17=F1F2 CC XXXXXXXX CD
+Item18=CCC WWWW PPPPP CD
+Item19=Non Barcode
+Item20=F1F2 CCCCC PCD XXXX CD
+Item21=F1F2 NNNNN XXXXX CD 0
+Item22=0F2 CCCCC XXXXXX CD 0
+Item23=F1F2F3 CCCC PPPPP CD
+Item24=F1F2 CCCCC WWWWW CD 
+Item25=F2 CCCCC WWWWW 0 CD 
+Item26=ITF Barcode
+Item27=Non Barcode
+Item28=F1F2 CCC XXXXXXX CD 
+Item29=F2 CCCCCCC WWWW CD  
+Item30=F1F2 CC NNN PPPPP CD
+Item31=F1F2 C NNNN PPPPP CD
+Item32=F1F2 CCC NNNNN GGGG (ITF 14)
+Item33=Reserved
+Item34=Reserved
+Item35=Reserved
+Item36=Reserved
+Item37=Reserved
+Item38=Reserved
+Item39=Reserved
+Item40=Reserved
+Item41=Non Barcode
+Item42=F1F2 CC NNNN TTTT CD
+Item43=F1F2 NNNN 0000000   
+Item44=0F1F2 NNN PCD PPPPP CD      
+Item45=Reserved
+Item46=Reserved
+Item47=Reserved
+Item48=F1F2 S NNN PCD PPPPP CD
+Item49=Reserved
+Item50=Reserved
+Item51=F1F2 D CCCC PPPPP CD
+Item52=F1F2F3 SSSS NNNNN CD
+
+
+[141A008]
+Description=141A008 LEFT SIDE DATA OF TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Scale Number
+Item1=Last Accumulated Item Code
+Item2=Receipt Number
+Item3=Clerk Number
+Item4=Fixed Number
+
+[141A009]
+Description=141A009 FIXED DATA FOR LEFT SIDE DATA OF TOTAL BARCODE
+Enable=1
+Type=String
+Min=10
+Max=10
+
+[141A010]
+Description=141A010 DATA OF F1 & F2 FOR TOTAL BARCODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A011]
+Description=141A011 RIGHT SIDE DATA OF TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Quantity
+Item1=Price
+Item2=Weight
+
+[141A012]
+Description=141A012 SELECTION OF DEFAULT BARCODE TYPE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=EAN
+Item1=ITF
+Item2=UPC
+Item3=EAN+
+
+[141A013]
+Description=141A013 SELECTION OF CD CALCULATION METHOD IN ITF BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Reverse Calculation
+Item1=Normal Calculation
+
+[141A014]
+Description=141A014 SELECTION OF NORDIC BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A015]
+Description=141A015 USER PROGRAMMABLE RIGHT SIDE DATA FOR ITEM BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=With Identification Digit
+Item1=Without Identification Digit
+
+[141A016]
+Description=141A016 SLAUGHTER HOUSE AND CUTTING HALL ON ITEM LABEL
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Code
+Item1=Name
+Item2=Code(Concatenated)
+Item3=Name(Concatenated)
+
+[141A017]
+Description=141A017 PRICE TO PRINT ON BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Local Currency
+Item1=Second Currency
+
+[141A018]
+Description=141A018 DEPARTMENT CODE FOR BARCODE
+Enable=1
+Type=Integer
+Min=0
+Max=97
+
+[141A019]
+Description=141A019 SELECTION OF BARCODE FOR MARK & SPENCER
+Enable=1
+Type=Index
+Min=0
+Max=20
+ItemCount=21
+Item0=F1F2 CCCCC XCD XXXX
+Item1=F2 CCCCCC XCD XXXX
+Item2=F1F2 CCCCC O XXXX
+Item3=F1F2 CCCCCC XXXX
+Item4=F1F2 CCCCC XXXXX
+Item5=F2 CCCCCC XXXXX CD
+Item6=F2 CCCCC XXXXXX CD
+Item7=F1F2 CCCCCCCCCC CD
+Item8=F1F2 CCCC XXXXXX CD
+Item9=F1F2 CCCCC CD
+Item10=F2 CC XXXX CD
+Item11=NON BARCODE (Non Barcode)
+Item12=F1X2 CCCCC XCD XXXX
+Item13=F1X2 CCCCCC XXXX CD
+Item14=F1F2 CCCC XCD XXXXX
+Item15=F2 CCCCC XCD XXXXX
+Item16=F1F2 CCC XXXXXXX CD
+Item17=F1F2 CC XXXXXXXX CD
+Item18=CCC WWWW PPPPP CD
+Item19=NON BARCODE
+Item20=F1F2 CCCCC PCD XXXX
+
+[141A020]
+Description=141A020 SUB-TOTAL AND GRAND TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Based on Item Barcode
+Item1=Based on Total Barcode
+Item2=Based On Generic Barcode
+
+[141A021]
+Description=141A021 GENERIC BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A022]
+Description=141A022 MULTI-BARCODE TYPE
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=EAN128
+Item1=RSS
+Item2=By Format
+Item3=Data Matrix
+Item4=QR Code
+
+[141A023]
+Description=141A023 SELECTION OF BARCODE CHECKING LINE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Printed
+Item1=Not Printed
+
+[141A024]
+Description=141A024 DEFAULT ITEM CODE FOLLOW PLU NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, For Plu With All 0 Item Code
+Item2=Yes, For All Plu
+
+[141A025]
+Description=141A025 MULTI-BARCODE HUMAN READABLE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=All
+Item1=GTIN Only
+Item2=None
+Item3=By Configuration
+
+[141A026]
+Description=141A026 SELECTION OF RIGHT SIDE BARCODE DATA RIGHT SHIFTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=6
+ItemCount=3
+Item0=No Right Shift
+Item1=Right Shift
+Item2=Right Shift Twice
+
+[141A027]
+Description=141A027 PRINT 2D BARCODE FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141A028]
+Description=141A028 PRINT READABLE CHARACTER F1 FOR ITEM AND TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141A029]
+Description=141A029 MULTI-BARCODE SOURCE PRIORITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Free Format Follow By PLU
+Item1=PLU Follow By Free Format
+
+[141A030]
+Description=141A030 SPECIAL ITEM BARCODE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=9
+ItemCount=10
+Item0=Normal
+Item1=Prefix + QQ + EAN13 (Non Weighed)
+Item2=F1F2 CCCCCCCC XXXXX AA (Non Weighed)
+Item3=CCCCCCCC MMMMM CD (ITF Non Weighed)
+Item4=EAN13 + QQ (Non Weighed)
+Item5=FF CCCCC WWWWW PPPPP (Code 128)
+Item6=FF CCCCC WWWWWW PPPPPP (Code 128)
+Item7=FF CCCCCC PPPPPP XXXXX CD (EAN128C)
+Item8=FF D000000000CCCC PPPPP WWWWW/QQ (Code 128)
+Item9=FF CCCCC PPPPP WWWWW/QQQQQ CD (Code 128)
+
+[141A031]
+Description=141A031 DATA OF F1 & F2 FOR SPECIAL ITEM BARCODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A032]
+Description=141A032 QUANTITY DATA LEFT SHIFT FOR ITF/EAN BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Left Shift
+Item1=Left Shift Once
+Item2=Left Shift Twice
+Item3=Left Shift 3 Times
+
+[141A033]
+Description=141A033 PRINT AI CODE ON EAN128 BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141A034]
+Description=141A034 DATA OF F3 FOR TOTAL BARCODE
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141A035]
+Description=141A035 MANUAL INPUT AI91 DATA
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A036]
+Description=141A036 PRINT 2D BARCODE ON LABEL FORMAT TEXT FIELD
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A037]
+Description=141A037 TEXT NUMBER FOR 2D BARCODE ON RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141A038]
+Description=141A038 MULTI-BARCODE LENGTH CHECKING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141A039]
+Description=141A039 RECEIPT NUMBER (N) ON TOTAL BARCODE WHEN OFFLINE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print 0
+Item1=Offline Receipt Number
+
+[141A040]
+Description=141A040 LEFT SIDE DATA OF ORDER BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Order Number
+Item1=Shop Code
+
+[141A041]
+Description=141A041 RIGHT SIDE DATA OF ORDER BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Price
+Item1=Order Number
+Item2=Shop Code
+Item3=Quantity
+
+[141A042]
+Description=141A042 EAN128 BARCODE TYPE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Auto
+Item1=EAN128C
+
+[141A043]
+Description=141A043 2D BARCODE TYPE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=QR Code
+Item1=Data Matrix
+
+[141A044]
+Description=141A044 WEIGHT DATA LEFT SHIFT FOR ITF/EAN BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Left Shift
+Item1=Left Shift Once
+Item2=Left Shift Twice
+Item3=Left Shift 3 Times
+
+[141A045]
+Description=141A045 AI DATA SEPARATOR 
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=On Variable AI Data
+Item1=None
+Item2=All AI
+Item3=On FNC1 required AI data
+
+[141A046]
+Description=141A046 SEPARATOR CHARACTER FOR AI DATA (EAN128) 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Hash
+Item1=FNC1
+
+[141A047]
+Description=141A047 2D BARCODE DATA FORMAT FOR RECEIPT  
+Enable=1
+Type=Index
+Min=0
+Max=7
+ItemCount=8
+Item0=Default
+Item1=AI Code (9711)+(241)(310x)(30)(390x)
+Item2=AAA RRRRRR YYMMDDHHmmSS 15x(Items) PPPPPP CD
+Item3=AI Code (9711)(931)(3922)+(241)(310x)(30)(390x)
+Item4=Item Barcode Without Flag
+Item5=FFF SS RRRRRR NNN TTTTTTTT YYMMDDHHmm 15x(Items)CD
+Item6=DDD RRRRRR NNN YYMMDDHHmmSS QQQ PPPPP WWWWW 13x(Items)
+Item7=AI Code (9711)+(241)(310x)(30)(390x)(8110)
+
+[141A048]
+Description=141A048 PRINT BARCODE STRING IF PRICE OVERFLOW 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A049]
+Description=141A049 USE GS1 DATABAR STACKED OMNIDIRECTIONAL FOR GTIN ONLY BARCODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A050]
+Description=141A050 DEFAULT FLEXIBLE BARCODE FORMAT FOR PLU 
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A051]
+Description=141A051 PRINT lb WEIGHT ON BARCODE TO 3 DECIMAL POINT POSITION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141A052]
+Description=141A052 ITEM BARCODE TYPE FOLLOW SPEC ONLY 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A053]
+Description=141A053 SPECIAL ITEM BARCODE FORMAT FOR WEIGHED ITEM 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=FF CCCCCCCC UUU XXXXX CD (EAN128A)
+
+[141A054]
+Description=141A054 DATA OF F1 & F2 FOR SPECIAL ITEM BARCODE (WEIGHED ITEM)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A055]
+Description=141A055 DATA OF F1 & F2 FOR EAN128 BARCODE ON RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A056]
+Description=141A056 ITEM BARCODE FORMAT FOLLOW SPEC ONLY 
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Weighed Item Only
+Item2=Non Weighed Item Only
+Item3=All
+
+[141A057]
+Description=141A057 CHECK DIGIT CALCULATION METHOD FOR FLEXIBLE BARCODE  
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=Reverse Calculation
+
+[141A058]
+Description=141A058 FLEXIBLE BARCODE FORMAT FOR TOTAL BARCODE  
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A059]
+Description=141A059 UNIT PRICE FOR AI8005  
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Original Unit Price
+Item1=Actual Unit Price
+
+[141A060]
+Description=141A060 USE AI310X FOR MANUAL WEIGHT  
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A061]
+Description=141A061 ALLOW X KEY FOR NON WEIGHED ITEM WITH ALL C BARCODE  
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141A062]
+Description=141A062 PRICE DIGIT THRESHOLD TO PRINT MULTI-BARCODE1 IF EXCEEDED OR ITEM BARCODE OTHERWISE
+Enable=1
+Type=Integer
+Min=0
+Max=6
+
+[141A063]
+Description=141A063 VAT ITEM BARCODE PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=After Tax
+Item1=Before Tax
+
+[141A064]
+Description=141A064 ITEM MULTI-BARCODE 1 FORMAT FOR MARKDOWN WEIGHT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A065]
+Description=141A065 ITEM MULTI-BARCODE 1 FORMAT FOR MARKDOWN NON-WEIGHT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A066]
+Description=141A066 ITEM MULTI-BARCODE 2 FORMAT FOR MARKDOWN WEIGHT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A067]
+Description=141A067 ITEM MULTI-BARCODE 2 FORMAT FOR MARKDOWN NON-WEIGHT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A068]
+Description=141A068 GTIN SOURCE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=GTIN From Plu Only
+Item1=GTIN From Plu And Traceability, Plu With Higher Priority
+Item2=GTIN From Plu And Traceability, Traceability With Higher Priority
+
+[141A069]
+Description=141A069 ALLOW INPUT 13 DIGITS FOR PLU MANUAL GTIN
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141A070]
+Description=141A070 PRODUCT URL PRIORITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Plu With Higher Priority
+Item1=Traceability With Higher Priority
+
+[141A071]
+Description=141A071 PRINT MULTI-BARCODE ON RECEIPT TOTAL BARCODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141A072]
+Description=141A072 RECEIPT MULTI-BARCODE TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Data Matrix
+Item1=QR Code
+
+[141A073]
+Description=141A073 PRINT AI91 ON MULTI-BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Always
+Item1=Discount Item Only
+

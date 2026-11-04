@@ -1,0 +1,128 @@
+[MAIN]
+SpecCount=13
+StartIndex=001
+SubType=B
+
+
+[140B001]
+Description=140B001 FORCED TARE
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=11
+Mask=0x40
+ItemCount=3
+Item0=Inhibit
+Item1=Allow, Auto Prompt For Tare Input
+Item2=Allow, Not Auto Prompt
+
+[140B002]
+Description=140B002 PLU TARE PROGRAMMING
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=9
+Mask=0x40
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140B004]
+Description=140B004 ONE TOUCH TARE OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140B005]
+Description=140B005 DEFAULT FORCED TARE STATUS FOR PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Force Tare On
+Item1=Force Tare Off
+
+[140B006]
+Description=140B006 PRESET TARE OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[140B007]
+Description=140B007 DIGITAL TARE OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[140B008]
+Description=140B008 AUTOMATIC TARE CLEAR IN MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=After Plu Printed / Registered
+
+[140B009]
+Description=140B009 PLU TARE 2
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[140B010]
+Description=140B010 IGNORE PLU TARE IF PRESET TARE EXISTS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140B011]
+Description=140B011 TARE LIMIT FOR DIGITAL AND ONE TOUCH TARE 
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[140B012]
+Description=140B012 APPLY SCALE TARE ON PLU CALL UP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140B013]
+Description=140B013 CLEAR TARE ON EXIT MANUAL AND PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+

@@ -1,0 +1,1501 @@
+[MAIN]
+SpecCount=145
+StartIndex=001
+SubType=A
+
+[146A001]
+Description=146A001 MULTI LEVEL SPECIAL SALES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A002]
+Description=146A002 COLLI
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A003]
+Description=146A003 CCD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A004]
+Description=146A004 PASSWORD SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A005]
+Description=146A005 FLEX KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A006]
+Description=146A006 CUSTOMER SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A007]
+Description=146A007 CUSTOMER ORDER SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A008]
+Description=146A008 TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A009]
+Description=146A009 BARCODE SCANNING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A010]
+Description=146A010 AUTO REGISTRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A011]
+Description=146A011 INVENTORY / GARBAGE / ORDERING / RECEPTION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Inventory / Garbage / Ordering / Reception
+Item2=Stock Checking
+
+[146A012]
+Description=146A012 EMAIL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A013]
+Description=146A013 TABLE LISTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A014]
+Description=146A014 e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Server
+Item2=Client
+Item3=Client Without Roaming
+
+[146A015]
+Description=146A015 CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=9
+ItemCount=10
+Item0=LCD
+Item1=EL
+Item2=600 X 240 TFT
+Item3=800 X 256 TFT
+Item4=Infomat Display
+Item5=No Customer Display
+Item6=800 X 480 TFT
+Item7=800 X 600 TFT
+Item8=1024 X 768 TFT
+Item9=1024 X 600 TFT
+
+[146A016]
+Description=146A016 QUEUE SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+Item2=Turn Chime Queue System
+Item3=Turn Chime Ordering System
+
+[146A017]
+Description=146A017 SELF SERVICE MODULE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Theme / Keypad
+Item2=Keypad Only
+
+[146A018]
+Description=146A018 CAMERA RECOGNITION MODULE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Conventional (32 bits)
+Item2=Sushi & Deli
+Item3=Conventional (64 bits)
+
+[146A019]
+Description=146A019 MULTIMEDIA MODULE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A020]
+Description=146A020 LCD MODULE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Standard
+Item1=Without Tare
+
+[146A021]
+Description=146A021 SCREENSAVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A022]
+Description=146A022 ENABLE DATE-ACTIVATE RECORDS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A023]
+Description=146A023 SCALE SETTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Full Feature
+Item1=Basic Feature
+
+[146A024]
+Description=146A024 RF BRIDGE MODULE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A025]
+Description=146A025 PLUG & WEIGH MODULE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A026]
+Description=146A026 HAPPY HOUR DISCOUNT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A027]
+Description=146A027 BASE STATION SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=BS-01
+Item1=BS-02
+Item2=BS-03/04
+
+[146A028]
+Description=146A028 LABEL FORMAT WIDTH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=72mm
+Item1=80mm
+
+[146A029]
+Description=146A029 REMOTE MAINTENANCE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A030]
+Description=146A030 EXTERNAL PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Reserved
+Item2=POS Printer
+
+[146A031]
+Description=146A031 EL DISPLAY INFORMATION
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Gif Animation
+Item1=Promotion
+Item2=1 Gif + 1 Promotion
+Item3=2 Gifs + 1 Promotion
+Item4=1 Gif + 2 Promotion
+
+[146A032]
+Description=146A032 HIBERNATE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[146A033]
+Description=146A033 SELECTION OF PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[146A034]
+Description=146A034 MULTIMEDIA CONTENT MANAGEMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Remove After Updated to Server
+Item1=Keep A Copy After Updated to Server
+
+[146A035]
+Description=146A035 PRICE CHANGE BATCH
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, As Discount Item
+Item2=Yes, As Normal Item
+
+[146A036]
+Description=146A036 KIOSK ORDERING SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A037]
+Description=146A037 ADVANCE DISCOUNT / PUBLICITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A038]
+Description=146A038 PRINTER THERMAL HEAD TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=200 dpi
+Item1=300 dpi
+
+[146A039]
+Description=146A039 INFOMAT DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Internal + External
+Item2=External Only
+
+[146A040]
+Description=146A040 AD MODULE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Enable
+Item1=Disable
+Item2=Disable, Allow Weight Item
+
+[146A041]
+Description=146A041 MECHANICAL KEYPAD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[146A042]
+Description=146A042 SCHEDULER REBOOT
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Daily
+Item1=No
+Item2=Hourly
+Item3=Every 15 Minutes
+Item4=Weekly
+
+[146A043]
+Description=146A043 INFO-CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A044]
+Description=146A044 SOUND CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A045]
+Description=146A045 NUTRITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A046]
+Description=146A046 AUTO PRODUCT INFO GENERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A047]
+Description=146A047 SERVICE ALERT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A048]
+Description=146A048 LABEL COUNTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A049]
+Description=146A049 PLU PROGRAMMING FIELDS LIMITATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A050]
+Description=146A050 BANK TERMINAL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A051]
+Description=146A051 PLU CONTAINER NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Container Number Link Plu Number
+Item2=Plu Number Link Container Number
+
+[146A052]
+Description=146A052 FABRIC METER CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A053]
+Description=146A053 SELECTION OF MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[146A054]
+Description=146A054 WEB BROWSER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A055]
+Description=146A055 DEBUGGING LOG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[146A056]
+Description=146A056 DATABASE JOURNAL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A057]
+Description=146A057 PRE-ORDERING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A058]
+Description=146A058 BENCH TYPE DATA ENTRY METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=ASCII Code & Preset Keys
+Item1=ASCII Code Only
+
+[146A059]
+Description=146A059 ALPHA KEY SEARCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A060]
+Description=146A060 CHINESE PINYIN INPUT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A061]
+Description=146A061 FLEXIBLE BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable
+Item1=Enable
+Item2=Enable (Store Flex Barcode Number In Barcode Data)
+Item3=Enable (Always Use The Default Item Flex Barcode)
+
+[146A062]
+Description=146A062 TWSWTCP PROTOCOL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Enable With Extension Commands
+Item1=Enable
+Item2=Disable
+
+[146A063]
+Description=146A063 MECHANICAL PRESET KEY
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[146A064]
+Description=146A064 OPERATOR DISPLAY RESOLUTION
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=800 X 600 TFT
+Item1=800 X 480 TFT
+Item2=1024 X 768 TFT
+Item3=1280 X 1024 TFT
+Item4=1024 X 600 TFT
+
+[146A065]
+Description=146A065 CANGJIE INPUT METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A066]
+Description=146A066 COUPON DISCOUNT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A067]
+Description=146A067 DATABASE INITIALIZATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Group
+Item1=Individual Table
+
+[146A068]
+Description=146A068 JAPANESE INPUT METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A069]
+Description=146A069 CHINESE ZHU YIN INPUT METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A070]
+Description=146A070 LANGUAGE ENCODING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Country Specify
+Item1=UTF-8
+
+[146A071]
+Description=146A071 WIZPOD DEVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A072]
+Description=146A072 PRINTER SERVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A073]
+Description=146A073 SERVICE ALERT TYPE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=By Configuration
+Item1=By Category
+Item2=By Group
+
+[146A074]
+Description=146A074 THIRD DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Full HD
+
+[146A075]
+Description=146A075 RTC COMPENSATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A076]
+Description=146A076 SPEED-ID CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A077]
+Description=146A077 EXTERNAL SPEAKER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A078]
+Description=146A078 GRACE PERIOD
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Not Allow Enter Registration Mode
+Item2=Warning On Print Or Register Item
+
+[146A079]
+Description=146A079 NETWORK PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A080]
+Description=146A080 REBOOT AFTER POWER RESUME FROM POWER INTERRUPTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[146A081]
+Description=146A081 WEB SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A082]
+Description=146A082 ON SCREEN KEYBOARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[146A083]
+Description=146A083 BS-02
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[146A084]
+Description=146A084 BS-03/04
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A085]
+Description=146A085 SNMP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A086]
+Description=146A086 CUTTER COUNTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A087]
+Description=146A087 TWILIO SMS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A088]
+Description=146A088 KIOSK QUEUING SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A089]
+Description=146A089 CLOUD SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A090]
+Description=146A090 IP CAMERA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A091]
+Description=146A091 LOTTERY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A092]
+Description=146A092 PRICE LIST
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=System Base
+Item2=Customer Base
+
+[146A093]
+Description=146A093 COMPOSITE PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A094]
+Description=146A094 FISCAL MEMORY 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes
+Item2=Yes, With TSE
+
+[146A095]
+Description=146A095 THIRD PARTY QUEUE SYSTEM 
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Q-Better
+Item2=STE Queue System
+Item3=Generic
+
+[146A096]
+Description=146A096 E-INVOICE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A097]
+Description=146A097 SYSTEM SYNCHRONIZATION FROM REMOTE SERVER 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A098]
+Description=146A098 RFID LABEL 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A099]
+Description=146A099 CALENDAR TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Gregorian Calendar
+Item1=Iranian Calendar
+
+[146A100]
+Description=146A100 SCREEN MAGNIFICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Registration Mode
+
+[146A101]
+Description=146A101 SOFTWARE UPDATE MANAGEMENT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A102]
+Description=146A102 DIGI MANAGEMENT CONSOLE AGENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A103]
+Description=146A103 CAMERA MONITORING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A104]
+Description=146A104 WASTE MANAGEMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A105]
+Description=146A105 SHELF LIFE MANAGEMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A106]
+Description=146A106 VPN CLIENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A107]
+Description=146A107 COMBO DEAL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A108]
+Description=146A108 TOUCH KEY VIBRATOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A109]
+Description=146A109 CLEARANCE SALES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A110]
+Description=146A110 TRANSACTION DATA COMMUNICATION MODULE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=CBE
+
+[146A111]
+Description=146A111 DIGIMARC BARCODE (C) DIGIMARC CORPORATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A112]
+Description=146A112 COOP-NICOLIS QUEUE MANAGEMENT SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A113]
+Description=146A113 WEB SERVICE SERVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[146A114]
+Description=146A114 VIFTELE PRODUCT INFORMATION
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Manual Mode
+Item2=Prepack Mode
+Item3=Manual & Prepack Mode
+
+[146A115]
+Description=146A115 NOTIFY EVENT BY SIGNAL LIGHT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Notify Once
+Item2=Yes, Notify On Error Message
+
+[146A116]
+Description=146A116 PURCHASE WITH PURCHASE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A117]
+Description=146A117 USER DEFINED EVENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A118]
+Description=146A118 DINE IN TABLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A119]
+Description=146A119 TRANSLATION FILE ENCODING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Follow Language Encoding
+Item1=Country Specific
+Item2=UTF-8
+
+[146A120]
+Description=146A120 MIRRA INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A121]
+Description=146A121 PRESET KEY WITH USER DEFINED ACTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A122]
+Description=146A122 FUNCTION SOUND SPEAKER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[146A123]
+Description=146A123 EXTERNAL ORDER SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A124]
+Description=146A124 SHOP&GO (SM6000 Only)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A125]
+Description=146A125 CULINA POS INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A126]
+Description=146A126 OBJECT DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No
+Item1=DIGI AI
+Item2=Server AI
+Item3=Edge AI
+Item4=AI 1
+
+[146A127]
+Description=146A127 HEMA INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A128]
+Description=146A128 EXTERNAL AD MODULE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Yes, Checkout Scale
+Item2=Yes, DS-780
+Item3=Yes, SWS AD
+
+[146A129]
+Description=146A129 DELIOUS INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A130]
+Description=146A130 WASTELESS INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A131]
+Description=146A131 PDA INITIALIZATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A132]
+Description=146A132 MIGROS NCR CHECKOUT INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A133]
+Description=146A133 eSense
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A134]
+Description=146A134 PRODUCTION CODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A135]
+Description=146A135 CUSTOMER ECOUPON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A136]
+Description=146A136 ZEBRA ZC300 PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A137]
+Description=146A137 CHT MULTIPAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A138]
+Description=146A138 TRK SERVICE PORTAL INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A139]
+Description=146A139 SURVEY INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A140]
+Description=146A140 @LABEL INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A141]
+Description=146A141 HOPPER SCALE INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A142]
+Description=146A142 WRAPPER INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A143]
+Description=146A143 GAMMA ADJUSTMENT FOR OPERATOR DISPLAY
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A144]
+Description=146A144 GAMMA ADJUSTMENT FOR CUSTOMER DISPLAY
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[146A145]
+Description=146A145 AI GATEWAY INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+

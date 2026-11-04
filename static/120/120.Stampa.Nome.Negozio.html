@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida Completa: Stampa Nome Negozio (Shop Name) su SM-120</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1, h2, h3, h4 {
+            color: #1a252f;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+        h1 { font-size: 2.2em; text-align: center; border-bottom: none; color: #2980b9; }
+        h2 { font-size: 1.6em; }
+        h3 { font-size: 1.3em; border-bottom: 1px solid #bdc3c7; }
+        p { margin-bottom: 12px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) { background-color: #f9fbfc; }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .important {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .code-block {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e8f4f8;
+            border: 1px solid #bce8f1;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        ul, ol { margin-bottom: 15px; padding-left: 25px; }
+        li { margin-bottom: 8px; }
+        .step-title {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guida Completa: Stampa del Nome Negozio (Shop Name) su SM-120</h1>
+
+    <p>Questa guida dettagliata spiega come programmare e stampare il nome del tuo negozio (o qualsiasi testo fisso, come l'indirizzo o un numero di telefono) sulle etichette generate dalla bilancia SM-120. La procedura si divide in tre fasi fondamentali: creazione del file di testo, configurazione del formato etichetta e verifica delle impostazioni di sistema (SPEC).</p>
+
+    <div class="note">
+        <strong>Nota bene:</strong> Il nome del negozio non viene inserito direttamente nel singolo PLU, ma in un file dedicato (S5). Successivamente, il formato etichetta (S12) viene istruito per "pescare" quel testo e stamparlo nella posizione desiderata.
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 1: Creazione e Programmazione del File "Shop Name" (S5)</h2>
+    <p>In questa fase andremo a scrivere il testo che desideri stampare. Puoi creare fino a 99 file diversi, ognuno dei quali può contenere più righe di testo.</p>
+
+    <h3>Procedura passo-passo:</h3>
+    <ol>
+        <li><span class="step-title">Entra in Modalità Programmazione (S Mode):</span><br>
+            Dalla modalità peso (Stand-by), premi il tasto <strong>[MODE]</strong> per tre volte consecutive. La spia <strong>S</strong> si accenderà sul display, indicando che sei entrato in modalità programmazione.
+        </li>
+        <li><span class="step-title">Accedi al File Nome Negozio:</span><br>
+            Premi il tasto numerico <strong>[5]</strong> (oppure usa il tasto freccia in giù <strong>[▼]</strong> quattro volte).<br>
+            Il display mostrerà: <span class="code-block">S5 &rarr; SHOP NAME FILE</span>.
+        </li>
+        <li><span class="step-title">Seleziona il Numero del File:</span><br>
+            Premi il tasto <strong>[*]</strong> (asterisco).<br>
+            Il display mostrerà: <span class="code-block">S5.0 SHOP 0 NO SET</span>.<br>
+            Inserisci il numero del file che vuoi creare o modificare (es. <strong>[1]</strong>).<br>
+            Premi <strong>[*]</strong> per confermare.
+        </li>
+        <li><span class="step-title">Inserisci il Nome del Negozio (Prima Riga):</span><br>
+            Il display mostrerà: <span class="code-block">S5.1 S01.01 S1 A 100</span>.<br>
+            Ora puoi digitare il nome del tuo negozio usando i tasti alfanumerici (per i dettagli sull'inserimento dei caratteri, vedi la sezione "Inserimento Caratteri" più sotto).<br>
+            <em>Esempio:</em> Digita <strong>DIGI SHOP</strong>.
+        </li>
+        <li><span class="step-title">Modifica la Dimensione del Carattere (Opzionale):</span><br>
+            Se il nome è troppo lungo o vuoi renderlo più evidente, puoi premere il tasto <strong>[SIZE]</strong> per scorrere le dimensioni disponibili (S1~S5, M1~M5). Il display aggiornerà il codice (es. da <code>S1 A 100</code> a <code>M3 A 76</code>).
+        </li>
+        <li><span class="step-title">Aggiungi una Seconda Riga (Opzionale):</span><br>
+            Se premi <strong>[*]</strong> dopo aver scritto la prima riga, passerai alla seconda riga.<br>
+            Il display mostrerà: <span class="code-block">S5.1 S02.01 S1 A 100</span>.<br>
+            Digita il testo (es. <strong>TEL: 123456</strong>).
+        </li>
+        <li><span class="step-title">Salva ed Esci:</span><br>
+            Premi il tasto <strong>[PLU]</strong> per memorizzare il file e tornare in modalità S.
+        </li>
+    </ol>
+
+    <div class="note">
+        <strong>Inserimento Caratteri (Riferimento al Manuale):</strong><br>
+        Se non hai una tastiera estesa, puoi usare i tasti numerici come descritto nel capitolo 3.37 del Service Manual. Ad esempio, il tasto <strong>[A/a/1]</strong> include le lettere A, a e il numero 1. Premendolo una volta otterrai 'A', due volte 'a', tre volte '1'. Il cursore lampeggerà per 1.5 secondi, permettendoti di cambiare carattere. In alternativa, puoi usare il tasto <strong>[CODE]</strong> per inserire i caratteri tramite il codice ASCII (es. 67 per 'C').
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 2: Inserimento del Campo "Shop Name" nel Formato Etichetta (S12)</h2>
+    <p>Ora che il testo è in memoria, devi dire alla bilancia di stamparlo sull'etichetta. Questo si fa nel formato etichetta che stai utilizzando (che sia un formato standard T1-T12 o un Formato Libero F1-F99).</p>
+
+    <h3>Procedura passo-passo:</h3>
+    <ol>
+        <li><span class="step-title">Entra in Modalità Programmazione (S Mode):</span><br>
+            Dalla modalità peso, premi <strong>[MODE]</strong> tre volte (spia S accesa).
+        </li>
+        <li><span class="step-title">Accedi al Formato Libero (S12):</span><br>
+            Premi <strong>[1]</strong> e poi <strong>[2]</strong> (oppure usa le frecce per scorrere fino a <code>S12 &rarr; FREE FORMAT</code>).<br>
+            Premi <strong>[*]</strong> per entrare.
+        </li>
+        <li><span class="step-title">Seleziona il Formato Etichetta da Modificare:</span><br>
+            Il display mostrerà: <span class="code-block">S12.0 FREE 01-99</span>.<br>
+            Inserisci il numero del formato che stai usando (es. <strong>[1]</strong> per F1, o <strong>[8]</strong> se stai usando il formato standard T8 copiato).<br>
+            Premi <strong>[*]</strong> per confermare.
+        </li>
+        <li><span class="step-title">Configura le Impostazioni Base (se richiesto):</span><br>
+            Il sistema ti chiederà di confermare:
+            <ul>
+                <li>Larghezza (<code>WT MM</code>)</li>
+                <li>Altezza (<code>HT MM</code>)</li>
+                <li>Angolo (<code>DG ANGLE</code>)</li>
+                <li>Tipo di Etichetta (<code>ITEM LABEL</code> o <code>TOTAL LABEL</code>)</li>
+            </ul>
+            Se hai già impostato tutto, premi <strong>[*]</strong> per scorrere velocemente fino alla selezione degli elementi.
+        </li>
+        <li><span class="step-title">Aggiungi il Campo "Shop Name" (Elemento 13):</span><br>
+            Quando arrivi alla schermata che mostra un elemento (es. <code>S12.5 PLUno &larr; 1 F ITEM</code>), devi cercare l'elemento <strong>13 (SHOP NAME)</strong>.<br>
+            <strong>Come selezionarlo:</strong> Puoi digitare direttamente <strong>[1][3]</strong> e premere <strong>[*]</strong>, oppure usare i tasti freccia <strong>[<<]</strong> o <strong>[>>]</strong> per scorrere finché non vedi <code>13: SHOP NAME</code>.<br>
+            Una volta selezionato, premi <strong>[*]</strong>.
+        </li>
+        <li><span class="step-title">Imposta la Posizione di Stampa:</span><br>
+            Il display ti guiderà attraverso i seguenti parametri:
+            <ul>
+                <li><strong>X MM:</strong> Inserisci la coordinata X (distanza dal bordo sinistro in mm). Premi <strong>[*]</strong>.</li>
+                <li><strong>Y MM:</strong> Inserisci la coordinata Y (distanza dal bordo superiore in mm). Premi <strong>[*]</strong>.</li>
+                <li><strong>DG ANGLE:</strong> Scegli l'angolo di rotazione (0, 90, 180, 270) usando le frecce. Premi <strong>[*]</strong>.</li>
+                <li><strong>WT MM:</strong> Inserisci la larghezza dell'area di stampa. Premi <strong>[*]</strong>.</li>
+                <li><strong>HT MM:</strong> Inserisci l'altezza dell'area di stampa. Premi <strong>[*]</strong>.</li>
+                <li><strong>STATUS:</strong> Inserisci lo stato di stampa. Di solito si usa <strong>7</strong> (che significa "Stampa tutti gli articoli"). Premi <strong>[*]</strong>.</li>
+            </ul>
+        </li>
+        <li><span class="step-title">Salva ed Esci:</span><br>
+            Premi il tasto <strong>[PLU]</strong> per salvare il formato etichetta e tornare in modalità S.
+        </li>
+    </ol>
+
+    <div class="important">
+        <strong>Attenzione:</strong> Il nome del negozio può essere stampato su qualsiasi formato etichetta, ma è obbligatorio utilizzare un <strong>Formato Libero (F1-F99)</strong> se si desidera personalizzare la posizione, le dimensioni e l'angolo. Se stai usando un formato standard (T1-T12), il nome del negozio apparirà solo se il formato lo prevede (solitamente in alto o in basso).
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 3: Verifica delle SPEC (Impostazioni di Sistema)</h2>
+    <p>Assicurati che le specifiche di sistema siano impostate correttamente per abilitare la stampa del nome del negozio. Le SPEC si modificano in modalità Z o S a seconda del tipo.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SPEC</th>
+                <th>Descrizione</th>
+                <th>Impostazione Consigliata</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>SPEC 26</strong></td>
+                <td>Abilita la stampa del nome del negozio sull'etichetta.</td>
+                <td><strong>PRINT</strong> (se si utilizza la funzione tasto)</td>
+            </tr>
+            <tr>
+                <td><strong>SPEC 46</strong></td>
+                <td>Imposta il nome del negozio predefinito da stampare sull'etichetta.</td>
+                <td>Deve essere abilitato o puntare al file corretto (es. il file 1 creato in S5).</td>
+            </tr>
+            <tr>
+                <td><strong>SPEC 47</strong></td>
+                <td>Imposta il nome del negozio predefinito da stampare sullo scontrino.</td>
+                <td>Abilitato (se si stampano scontrini).</td>
+            </tr>
+            <tr>
+                <td><strong>SPEC 250</strong></td>
+                <td>Controlla la centratura del nome del negozio sull'etichetta.</td>
+                <td>Abilitato se si desidera centrato.</td>
+            </tr>
+            <tr>
+                <td><strong>SPEC 251</strong></td>
+                <td>Controlla la posizione di stampa del nome del negozio sullo scontrino.</td>
+                <td>Abilitato se si stampano scontrini.</td>
+            </tr>
+            <tr>
+                <td><strong>SPEC 96</strong></td>
+                <td>(Opzionale) Se vuoi che un messaggio pubblicitario venga stampato su tutte le etichette insieme al nome del negozio.</td>
+                <td>Impostare su ENABLE se necessario.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>Come modificare una SPEC:</strong><br>
+        La maggior parte delle SPEC si modificano entrando in modalità Z (premi [MODE] tre volte, spia Z accesa) e tenendo premuto il tasto <strong>[REZERO]</strong> mentre si digita il codice della SPEC (es. per la SPEC 26, premi [REZERO] + [2] + [6] + [*]). Per le SPEC 141 e 142 è necessario abilitare lo Span Switch.
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 4: Test di Stampa</h2>
+    <p>Dopo aver completato tutte le fasi, è fondamentale fare un test per verificare che tutto funzioni correttamente.</p>
+    <ol>
+        <li>Torna in modalità Registrazione (R) premendo <strong>[MODE]</strong> finché la spia R non si accende.</li>
+        <li>Chiama un PLU di prova (es. digita <strong>[1]</strong> e premi <strong>[PLU]</strong>).</li>
+        <li>Posiziona un peso sul piatto (se l'articolo è a peso) o inserisci la quantità (se non a peso).</li>
+        <li>Premi <strong>[*]</strong> per stampare l'etichetta.</li>
+        <li>Controlla l'etichetta stampata: il nome del negozio dovrebbe apparire nella posizione e con le dimensioni impostate nella Fase 2.</li>
+    </ol>
+
+    <div class="important">
+        <strong>Suggerimento per la risoluzione dei problemi:</strong><br>
+        Se il nome del negozio non viene stampato:
+        <ul>
+            <li>Verifica che il file S5 sia stato effettivamente salvato (premendo [PLU] alla fine).</li>
+            <li>Controlla che nel formato etichetta (S12) l'elemento 13 (SHOP NAME) abbia lo stato di stampa impostato su <strong>7</strong> (Stampa Tutti).</li>
+            <li>Assicurati che la SPEC 26 sia impostata su PRINT e che la SPEC 46 punti al file corretto.</li>
+            <li>Verifica che il formato etichetta utilizzato dal PLU sia quello che hai modificato (es. se hai modificato F1, il PLU deve avere LAB FR1 = F1).</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>Riepilogo Veloce (Cheat Sheet)</h2>
+    <table>
+        <tr>
+            <th>Fase</th>
+            <th>Operazione</th>
+            <th>Tasti / Percorso</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Crea il testo del negozio</td>
+            <td><strong>S5</strong> &rarr; Numero File &rarr; Digita Testo &rarr; <strong>[PLU]</strong> per salvare</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Inserisci il campo nel formato etichetta</td>
+            <td><strong>S12</strong> &rarr; Seleziona Formato (es. F1) &rarr; Cerca Elemento <strong>13 (SHOP NAME)</strong> &rarr; Imposta X, Y, Larghezza, Altezza, Stato (7) &rarr; <strong>[PLU]</strong> per salvare</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Verifica le SPEC</td>
+            <td>Controlla <strong>SPEC 26</strong> (Print), <strong>SPEC 46</strong> (Nome Negozio), <strong>SPEC 250</strong> (Centratura)</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Testa la stampa</td>
+            <td>Modalità R &rarr; Chiama PLU &rarr; Posiziona peso/quantità &rarr; <strong>[*]</strong> per stampare</td>
+        </tr>
+    </table>
+
+</body>
+</html>

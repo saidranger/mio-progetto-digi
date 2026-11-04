@@ -1,0 +1,475 @@
+[MAIN]
+SpecCount=37
+StartIndex=001
+SubType=A
+
+[142A001]
+Description=142A001 DECIMAL POINT POSITION FOR WEIGHT
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=0
+Mask=0x07
+ItemCount=4
+Item0=00000
+Item1=0000.0
+Item2=000.00
+Item3=00.000
+
+[142A002]
+Description=142A002 FORM OF DECIMAL MARKER
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x08
+ItemCount=2
+Item0=Comma
+Item1=Point
+
+[142A003]
+Description=142A003 INTERNAL COUNT PROTECTED BY SPAN SWITCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x10
+ItemCount=2
+Item0=Protected
+Item1=Not Protected
+
+[142A004]
+Description=142A004 CALIBRATION/SPEC SETTING
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x20
+ItemCount=2
+Item0=Protected
+Item1=Not Protected
+
+[142A005]
+Description=142A005 LOAD CELL SENSITIVITY
+Enable=1
+Type=Index
+Min=0
+Max=13
+Index=2
+Mask=0x0f
+ItemCount=14
+Item0=0.50 mV/V
+Item1=0.60 mV/V
+Item2=0.70 mV/V
+Item3=0.80 mV/V
+Item4=0.90 mV/V
+Item5=1.00 mV/V
+Item6=1.25 mV/V
+Item7=1.50 mV/V
+Item8=1.75 mV/V
+Item9=2.00 mV/V
+Item10=2.25 mV/V
+Item11=2.50 mV/V
+Item12=2.75 mV/V
+Item13=3.00 mV/V
+Item14=3.25 mV/V
+Item15=3.50 mV/V
+
+[142A006]
+Description=142A006 REZERO RANGE / ZERO TRACKING RANGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x01
+ItemCount=2
+Item0=+- 2% of Max
+Item1=+- 5% of Max
+
+[142A007]
+Description=142A007 ZERO RESET RANGE WHEN START
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x02
+ItemCount=2
+Item0=+- 5% of Max
+Item1=+- 10% of Max
+
+[142A008]
+Description=142A008 MINUS WEIGHT MASK
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=3
+Mask=0x0c
+ItemCount=3
+Item0=No Mask
+Item1=Net Weight Mask
+Item2=Gross Weight Mask
+
+[142A009]
+Description=142A009 ZERO RANGE EXTENSION
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x80
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[142A010]
+Description=142A010 MULTI INTERVAL RANGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x40
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[142A011]
+Description=142A011 SELECTION OF NET / GROSS DUAL RANGE
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x40
+ItemCount=2
+Item0=Gross Dual Range Method
+Item1=Net Dual Range Method
+
+[142A012]
+Description=142A012 ACTUATION WEIGHT FOR REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=4
+Mask=0x03
+ItemCount=4
+Item0=>= Net 5d and >= Gross 21d and Weight Stable
+Item1=>= Net 1d and Weight Stable
+Item2=>= Net 21d and Weight Stable
+Item3=>= Net 20d and Weight Stable
+
+[142A013]
+Description=142E013 CALIBRATION / SPEC WRITING IS NOT PROTECTED SW
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=4
+Mask=0x04
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A014]
+Description=142A014 ACTUATION WEIGHT FOR PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=8
+Mask=0x03
+ItemCount=4
+Item0=>= Net 5d and >= Gross 21d and Weight Stable
+Item1=>= Net 1d and Weight Stable
+Item2=>= Net 21d and Weight Stable
+Item3=>= Net 20d and Weight Stable
+
+[142A015]
+Description=142A015 MULTIPLE RESOLUTION SUPPORT
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x20
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A016]
+Description=142A016 TYPE OF AD
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x40
+ItemCount=2
+Item0=Version 2
+Item1=Version 3
+
+[142A017]
+Description=142A017 SELECTION OF ZERO LAMP LIGHTING POSITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=3
+Mask=0x10
+ItemCount=2
+Item0=Gross Zero
+Item1=Net Zero
+
+[142A018]
+Description=142A018 LIMITS OF INDICATION
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x00
+ItemCount=2
+Item0=Capacity +1d
+Item1=Capacity +9d
+
+[142A019]
+Description=142A019 SELECTION OF WEIGHT RANGE OF NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=6
+Mask=0x07
+ItemCount=3
+Item0=Only Net 0d
+Item1=Under Net 0d
+Item2=Always
+
+[142A020]
+Description=142A020 SELECTION OF WEIGHT STABILITY CONDITION
+Enable=0
+Type=Index
+Min=0
+Max=3
+Index=2
+Mask=0x60
+ItemCount=4
+Item0=Loose
+Item1=Normal
+Item2=Tight
+Item3=Stringent
+
+[142A021]
+Description=142A021 CAPACITY OF LOADCELL
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=17
+Mask=0x03
+ItemCount=4
+Item0=6kg
+Item1=15kg
+Item2=30kg
+Item3=Not Used
+
+[142A022]
+Description=142A022 UNIT WEIGHT SWITCHING
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=17
+Mask=0xe0
+ItemCount=2
+Item0=Disable
+Item1=kg <-> Catty
+Item2=kg <-> lb
+
+[142A023]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=17
+Mask=0x20
+
+[142A024]
+Description=142A024 SECOND SCALE
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=17
+Mask=0x10
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A025]
+Description=142A025 ROTATE 180 DEGREE SVGA DISPLAY FOR CUSTOMER
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x0000
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A026]
+Description=142A026 MULTI INTERVAL RANGE OPERATION METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=14
+Mask=0x80
+ItemCount=2
+Item0=Using Net Weight
+Item1=Using Gross Weight
+
+[142A027]
+Description=142A027 TWO SPAN POINT CALIBRATION
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=19
+Mask=0x02
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A028]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x00
+
+[142A029]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x00
+
+[142A030]
+Description=142A030 DEPTH OF AVERAGING
+Enable=1
+Type=Index
+Min=0
+Max=7
+Index=12
+Mask=0x70
+ItemCount=8
+Item0=1 D
+Item1=2 D
+Item2=4 D
+Item3=8 D (80 Hz)
+Item4=16 D (10Hz)
+Item5=32 D
+Item6=64 D
+Item7=128 D
+
+[142A031]
+Description=142A031 NEW A/D FILTERING STRENGTH (DS780)
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=12
+Mask=0x0c
+ItemCount=4
+Item0=Low
+Item1=Normal
+Item2=Upper Normal
+Item3=High
+
+[142A032]
+Description=142A032 NEW A/D ANTI-JITTER STABILIZATION (DS780)
+Enable=1
+Type=Index
+Min=0
+Max=3
+Index=11
+Mask=0x03
+ItemCount=4
+Item0=Off
+Item1=Fine
+Item2=Normal
+Item3=Coarse
+
+[142A033]
+Description=142A033 CAPACITY EXTENSION
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=13
+Mask=0x03
+ItemCount=3
+Item0=X 1
+Item1=X 10
+Item2=X 100
+
+[142A034]
+Description=142A034 GRAVITY ZONE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=1
+Mask=0x80
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A035]
+Description=142A035 GRAVITY VALUE AT PLACE OF USE (9.7000 ~ 9.9000)
+Enable=1
+Type=Integer
+Min=0
+Max=2000
+Index=5,6
+Mask=0xffe0
+Base=97000
+Decimal=4
+
+[142A036]
+Description=142A036 AUTO WEIGHT COMPENSATION BY ANGLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=12
+Mask=0x80
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[142A037]
+Description=142A037 LOAD CELL ZERO POINT RANGE (+/- 0.0~1.5 TIMES OF FULL SPAN)
+Enable=1
+Type=Integer
+Min=0
+Max=15
+Index=2
+Mask=0xf0
+Decimal=1
+

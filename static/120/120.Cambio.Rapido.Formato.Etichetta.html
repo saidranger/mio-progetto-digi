@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida: Tasto Funzione Cambio Formato Etichetta (SM-120)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1, h2, h3, h4 {
+            color: #1a252f;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 35px;
+        }
+        h1 { font-size: 2.2em; text-align: center; border-bottom: none; color: #2980b9; }
+        h2 { font-size: 1.6em; }
+        h3 { font-size: 1.3em; border-bottom: 1px solid #bdc3c7; }
+        p { margin-bottom: 12px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) { background-color: #f9fbfc; }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .important {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .code-block {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e8f4f8;
+            border: 1px solid #bce8f1;
+            padding: 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        ul, ol { margin-bottom: 15px; padding-left: 25px; }
+        li { margin-bottom: 8px; }
+        .step-title {
+            font-weight: bold;
+            color: #2980b9;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Guida: Tasto Funzione per il Cambio Rapido del Formato Etichetta</h1>
+
+    <p>Questa guida spiega come configurare un tasto funzione (assegnandolo a un tasto Preset) che permetta di cambiare al volo il formato etichetta da <strong>F1</strong> a <strong>F2</strong> (o qualsiasi altra coppia di formati liberi) durante le normali operazioni di vendita, senza dover accedere al menu di programmazione S12.</p>
+
+    <div class="note">
+        <strong>Concetto Chiave:</strong> La funzione si chiama <strong>FORMAT1</strong> (o <strong>FORMAT2</strong>) e si trova nel menu di assegnazione tasti funzione (S4.2). Una volta assegnata a un tasto fisico (es. P10), premendo quel tasto in modalità Registrazione (R) il formato etichetta attualmente in uso verrà sostituito temporaneamente con quello predefinito dalla funzione, fino a quando non si preme di nuovo il tasto o si cambia PLU.
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 1: Assegnazione del Tasto Funzione (S4.2)</h2>
+    <p>In questa fase, andremo a "mappare" la funzione di cambio formato su un tasto fisico della tastiera.</p>
+
+    <h3>Procedura passo-passo:</h3>
+    <ol>
+        <li><span class="step-title">Entra in Modalità Programmazione (S Mode):</span><br>
+            Dalla modalità peso (Stand-by), premi il tasto <strong>[MODE]</strong> per tre volte consecutive. La spia <strong>S</strong> si accenderà.
+        </li>
+        <li><span class="step-title">Accedi al Menu Assegnazione Tasti:</span><br>
+            Premi il tasto <strong>[4]</strong> (oppure usa le frecce per scorrere fino a <code>S4 &rarr; KEY ASSIGNMENT</code>).<br>
+            Il display mostrerà: <span class="code-block">S4 &rarr; KEY ASSIGNMENT</span>.
+        </li>
+        <li><span class="step-title">Entra nella Sezione Funzioni (FN AS):</span><br>
+            Premi il tasto <strong>[*]</strong> per entrare nella modalità assegnazione. Vedrai <code>S4.0 PS AS 0 NO SET</code>.<br>
+            Premi il tasto <strong>[*]</strong> per passare alla sezione Venditori (CK AS).<br>
+            Premi di nuovo il tasto <strong>[*]</strong> per arrivare alla sezione Funzioni.<br>
+            Il display mostrerà: <span class="code-block">S4.2 FN AS 0 CLEAR</span>.
+        </li>
+        <li><span class="step-title">Seleziona la Funzione "FORMAT1" (o "FORMAT2"):</span><br>
+            Ora devi scorrere o digitare il codice della funzione desiderata. La funzione per il cambio del primo formato etichetta è la numero <strong>25</strong> (FORMAT1). Se invece vuoi cambiare il secondo formato (quello di backup), la funzione è la <strong>26</strong> (FORMAT2).
+            <ul>
+                <li><strong>Per FORMAT1:</strong> Digita <strong>[2][5]</strong> sulla tastiera. Il display dovrebbe aggiornarsi mostrando <code>S4.2 FN AS 25 FORMAT1</code> (o simile).</li>
+                <li><strong>Per FORMAT2:</strong> Digita <strong>[2][6]</strong>.</li>
+            </ul>
+            <em>Nota: Se non sei sicuro del codice, puoi usare i tasti freccia <strong>[<<]</strong> o <strong>[>>]</strong> per scorrere l'elenco delle funzioni fino a trovare "FORMAT1" o "FORMAT2".</em>
+        </li>
+        <li><span class="step-title">Assegna la Funzione a un Tasto Fisico:</span><br>
+            Una volta visualizzata la funzione desiderata, premi il tasto fisico che vuoi utilizzare per il cambio (ad esempio, il tasto <strong>[P10]</strong> o qualsiasi altro tasto Preset libero).<br>
+            Il display tornerà a mostrare <code>S4.2 FN AS 0 CLEAR</code>, indicando che l'assegnazione è avvenuta con successo.
+        </li>
+        <li><span class="step-title">Salva ed Esci:</span><br>
+            Premi il tasto <strong>[C]</strong> (Clear) o <strong>[MODE]</strong> per tornare alla schermata principale della modalità S.
+        </li>
+    </ol>
+
+    <div class="note">
+        <strong>Prerequisito Importante (SPEC 146):</strong> Per poter utilizzare questa funzione, la specifica di sistema <strong>SPEC 146</strong> deve essere abilitata. La SPEC 146 controlla la possibilità di cambiare il formato etichetta tramite i tasti funzione. Se non funziona, verifica che la SPEC 146 sia impostata su <strong>ENABLE</strong>.
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 2: Configurazione dei Formati Etichetta (S12)</h2>
+    <p>Affinché il tasto funzione abbia un effetto visibile, devi assicurarti che i formati che vuoi utilizzare (es. F1 e F2) siano stati creati e configurati correttamente.</p>
+    <ol>
+        <li>Entra in modalità S e accedi a <strong>S12 (FREE FORMAT)</strong>.</li>
+        <li>Crea o modifica il formato <strong>F1</strong> (il formato "principale").</li>
+        <li>Crea o modifica il formato <strong>F2</strong> (il formato "alternativo", ad esempio con un layout diverso o con il nome del negozio in una posizione differente).</li>
+        <li>Assicurati che entrambi i formati siano salvati correttamente.</li>
+    </ol>
+    <p>Quando in un PLU (S1) imposti il formato etichetta 1 (LAB FR1) su <strong>F1</strong>, la bilancia userà F1 come formato predefinito. Premendo il tasto funzione assegnato in modalità R, la bilancia passerà temporaneamente a <strong>F2</strong>.</p>
+
+    <div class="page-break"></div>
+
+    <h2>FASE 3: Utilizzo in Modalità Registrazione (R)</h2>
+    <p>Ora che tutto è configurato, ecco come usare il tasto funzione durante la vendita.</p>
+
+    <h3>Scenario di utilizzo:</h3>
+    <ol>
+        <li>Entra in modalità <strong>R</strong> (Registrazione). La spia R sarà accesa.</li>
+        <li>Chiama un PLU che utilizza il formato <strong>F1</strong> (es. digita <strong>[1]</strong> e premi <strong>[PLU]</strong>).</li>
+        <li>Posiziona il prodotto sul piatto (o inserisci la quantità).</li>
+        <li><strong>Prima di stampare</strong>, premi il tasto funzione che hai assegnato (es. <strong>[P10]</strong>).</li>
+        <li>Il display potrebbe mostrare un messaggio di conferma o semplicemente cambiare lo stato. A questo punto, il formato attivo è diventato <strong>F2</strong>.</li>
+        <li>Premi <strong>[*]</strong> per stampare l'etichetta. L'etichetta uscirà con il layout di <strong>F2</strong>.</li>
+    </ol>
+
+    <div class="important">
+        <strong>Comportamento "Provvisorio":</strong> Come richiesto, il cambio è temporaneo. Non appena termini la transazione (o premi [C] per pulire), il formato tornerà automaticamente a quello predefinito del PLU (F1) per il prossimo articolo.
+    </div>
+
+    <div class="page-break"></div>
+    <div class="page-break"></div>
+
+<h2>FASE 3bis: Utilizzo in Modalità Prepack (PPK)</h2>
+<p>Il tasto funzione è utilizzabile anche in modalità Prepack, ma l'approccio è leggermente diverso rispetto alla modalità Manuale, poiché l'emissione dell'etichetta è automatica.</p>
+
+<h3>Procedura:</h3>
+<ol>
+    <li>Entra in modalità <strong>Prepack</strong> premendo il tasto <strong>[AUTO]</strong>. La spia <strong>P</strong> si accenderà.</li>
+    <li>Chiama il PLU desiderato (es. digita <strong>[1]</strong> e premi <strong>[PLU]</strong>).</li>
+    <li><strong>Prima di posizionare il prodotto sul piatto</strong> (o subito dopo aver chiamato il PLU), premi il tasto funzione assegnato (es. <strong>[P10]</strong>).</li>
+    <li>La bilancia passerà temporaneamente al formato <strong>F2</strong>.</li>
+    <li>Posiziona il prodotto sul piatto. La bilancia emetterà automaticamente l'etichetta con il layout di F2 non appena il peso si stabilizza.</li>
+    <li>Rimuovi il prodotto. La bilancia è pronta per il pezzo successivo e manterrà il formato F2 attivo finché non premi <strong>[C]</strong> o chiami un altro PLU.</li>
+</ol>
+
+<div class="note">
+    <strong>Nota:</strong> In modalità Prepack, il cambio di formato rimane attivo per tutta la sessione di pesatura di quel PLU. Per ripristinare il formato originale (F1), è sufficiente premere il tasto <strong>[C]</strong> (Clear) o cambiare PLU.
+</div>
+    <h2>Riepilogo Veloce (Cheat Sheet)</h2>
+    <table>
+        <tr>
+            <th>Fase</th>
+            <th>Operazione</th>
+            <th>Tasti / Percorso</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Assegna la funzione al tasto</td>
+            <td><strong>S4</strong> &rarr; <strong>[*]</strong> (x2) &rarr; <strong>[2][5]</strong> (FORMAT1) &rarr; Premi il tasto fisico (es. P10) &rarr; <strong>[C]</strong></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Verifica i formati</td>
+            <td><strong>S12</strong> &rarr; Crea/Modifica F1 e F2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Utilizzo in vendita</td>
+            <td>Modalità R &rarr; Chiama PLU (F1) &rarr; Premi <strong>[P10]</strong> &rarr; Stampa <strong>[*]</strong></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Verifica SPEC</td>
+            <td><strong>SPEC 146</strong> = ENABLE</td>
+        </tr>
+    </table>
+
+</body>
+</html>

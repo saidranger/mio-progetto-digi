@@ -1,0 +1,400 @@
+[MAIN]
+SpecCount=43
+StartIndex=201
+SubType=A
+
+[143A201]
+Description=143A201 LINERLESS PAPER (DP5000, DPS5000, DI5000 & HANGING ONLY)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A202]
+Description=143A202 PAPER WIDTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=1000
+
+[143A203]
+Description=143A203 PAPER LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=2000
+
+[143A204]
+Description=143A204 GAP LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=40
+
+[143A205]
+Description=143A205 BACK FEED LENGTH FOR LABEL FROM PEEL TO THERMAL (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=160
+
+[143A206]
+Description=143A206 PRINTING SPEED
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=100 mm/s
+Item1=110 mm/s
+Item2=120 mm/s
+Item3=130 mm/s
+Item4=140 mm/s
+Item5=150 mm/s
+
+[143A207]
+Description=143A207 PRINTING ADJUSTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Plus
+Item1=Minus
+
+[143A208]
+Description=143A208 AMOUNT OF ADJUSTMENT IN DOT
+Enable=1
+Type=Integer
+Min=0
+Max=180
+
+[143A209]
+Description=143A209 BACK FEED FUNCTION FOR GAP LABEL PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable
+Item1=Enable (Roll-In Label)
+Item2=Enable (Roll-Out Label)
+Item3=Enable (Roll-In & Roll-Out Label)
+
+[143A210]
+Description=143A210 MARK FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143A211]
+Description=143A211 PRINTING DENSITY PERCENTAGE (%)
+Enable=1
+Type=Integer
+Min=60
+Max=99
+
+[143A212]
+Description=143A212 PAPER END SENSOR FOR LINERLESS RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=1
+
+[143A213]
+Description=143A213 FORWARD FEED LENGTH AFTER PRINTING FOR NO GAP PAPER (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=480
+
+[143A214]
+Description=143A214 PRINTER FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[143A215]
+Description=143A215 PRINTING SPEED FOR LABEL WITH VERTICAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=100 mm/s
+Item1=110 mm/s
+Item2=120 mm/s
+Item3=130 mm/s
+Item4=140 mm/s
+Item5=150 mm/s
+
+[143A216]
+Description=143A216 PRINTER 1 LABEL/RECEIPT CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Sensor
+Item1=By Key
+
+[143A217]
+Description=143A217 PRINTER INITIAL STATE (LABEL/RECEIPT) -- BY KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Receipt
+Item1=Label
+
+[143A218]
+Description=143A218 THERMAL PAPER QUALITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal Quality Paper (No Over Dirve)
+Item1=Poor Quality Paper (Over Drive)
+
+[143A219]
+Description=143A219 CONTINUOUS LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143A220]
+Description=143A220 PEEL SENSOR DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143A221]
+Description=143A221 BACK FEED LENGTH FOR NO GAP LABEL (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=480
+Max2=92
+
+[143A222]
+Description=143A222 BACK FEED LENGTH FOR RECEIPT (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=480
+Max2=92
+
+[143A223]
+Description=143A223 AUTO FEED AFTER DOOR CLOSE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A224]
+Description=143A224 FEED REQUEST AFTER DOOR OPEN AND CLOSE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143A225]
+Description=143A225 FORWARD/BACK FEED DOTS FOR CONTINUOUS PRINTING (PEEL <=> CUT)
+Enable=1
+Type=Integer
+Min=0
+Max=370
+
+[143A226]
+Description=143A226 THERMAL HEAD DIAGNOSIS
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Feed
+Item2=Feed + Dynamic
+
+[143A227]
+Description=143A227 PRINTING DENSITY PERCENTAGE FOR LABEL WITH VERTICAL BARCODE (%)
+Enable=1
+Type=Integer
+Min=50
+Max=99
+
+[143A228]
+Description=143A228 PAPER LOW SENSOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143A229]
+Description=143A229 RECEIPT PRINTING ALIGNMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Left Aligned
+Item1=Center Aligned
+
+[143A230]
+Description=143A230 PEEL SENSOR THRESHOLD COMPENSATION
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Default
+Item1=+25%
+Item2=-25%
+Item3=Max-100
+
+[143A231]
+Description=143A231 COLOR LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A232]
+Description=143A232 AUTO PUMP OIL AFTER CUTTING COUNT 
+Enable=0
+Type=Integer
+Min=0
+Max=9999
+
+[143A233]
+Description=143A233 RED PRINTING DENSITY PERCENTAGE (%)
+Enable=1
+Type=Integer
+Min=20
+Max=80
+
+[143A234]
+Description=143A234 AUTO GAP CALIBRATION DURING FIRST FEED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A235]
+Description=143A235 RECEIPT PRINTING DENSITY PERCENTAGE (%)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[143A236]
+Description=143A236 THERMAL HEAD DIAGNOSTIC INTERVAL
+Enable=1
+Type=Integer
+Min=1
+Max=99
+
+[143A237]
+Description=143A237 BACK FEED DURING CUT OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes
+Item2=Yes, Follow Spec
+
+[143A238]
+Description=143A238 PAPER END REVERSE SENSING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A239]
+Description=143A239 PEEL DELAY WITHOUT CONTINUOUS PRINTING (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[143A240]
+Description=143A240 DISABLE CUTTER FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143A241]
+Description=143A241 CUTTER OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Check Door Status All Time
+Item1=Check Door Status During Start Cutting
+
+[143A242]
+Description=143A042 LINERLESS PRINTER IRONING MAINTENANCE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143A243]
+Description=143A243 LINERLESS PRINTER PAPER JAM DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+

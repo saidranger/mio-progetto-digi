@@ -1,0 +1,2946 @@
+[MAIN]
+SpecCount=287
+StartIndex=001
+SubType=B
+
+[141B001]
+Description=141B001 RECEIPT PAPER
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=60mm
+Item1=Reserved
+Item2=Reserved
+Item3=Reserved
+Item4=54mm
+#Item1=40mm
+#Item2=50mm
+#Item3=72mm
+
+[141B002]
+Description=141B002 DEFAULT ITEM LABEL FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=23
+ItemCount=24
+Item0=T1
+Item1=T2
+Item2=T3
+Item3=T4
+Item4=T5
+Item5=T6
+Item6=T7
+Item7=T8
+Item8=T9
+Item9=T10
+Item10=T11
+Item11=T12
+Item12=S
+Item13=A
+Item14=B
+Item15=C
+Item16=F1
+Item17=F2
+Item18=F3
+Item19=F4
+Item20=F5
+Item21=F6
+Item22=F7
+Item23=F8
+
+[141B003]
+Description=141B003 DEFAULT TOTAL LABEL FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=23
+ItemCount=24
+Item0=T1
+Item1=T2
+Item2=T3
+Item3=T4
+Item4=T5
+Item5=T6
+Item6=T7
+Item7=T8
+Item8=T9
+Item9=T10
+Item10=T11
+Item11=T12
+Item12=S
+Item13=A
+Item14=B
+Item15=C
+Item16=F1
+Item17=F2
+Item18=F3
+Item19=F4
+Item20=F5
+Item21=F6
+Item22=F7
+Item23=F8
+
+[141B004]
+Description=141B004 NUMBER OF YEAR DIGITS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=2 Digits (YY)
+Item1=4 Digits (YYYY)
+
+[141B005]
+Description=141B005 SELECTION OF TOTAL BARCODE PRINT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=7
+ItemCount=8
+Item0=No
+Item1=EAN13
+Item2=2D Barcode (PDF417)
+Item3=2D Barcode (QR Code)
+Item4=EAN128 (FF DD SS NNNN YYDDD C1 PPPPP C2)  
+Item5=2D Barcode (Data Matrix)
+Item6=EAN128 (XXXX MMMM AAA TTTTTTT PPPPPP CD)  
+Item7=GS1 DataBar (01)(91)
+
+[141B006]
+Description=141B006 SELECTION OF DATE FORMAT FOR PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=M / D / Y
+Item1=D / M / Y
+Item2=Y / M / D
+
+[141B007]
+Description=141B007 LABEL PRINTING BY CLERK KEY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No Print
+Item1=Print with Accumulation
+Item2=Print without Accumulation
+
+[141B008]
+Description=141B008 TOTAL LABEL PRINTING
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141B009]
+Description=141B009 SHOP NAME PRINTED ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B010]
+Description=141B010 DEFAULT SHOP NAME NUMBER FOR LABEL PRINTING
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B011]
+Description=141B011 DEFAULT SHOP NAME NUMBER FOR RECEIPT PRINTING
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B012]
+Description=141B012 SHOP NAME ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B013]
+Description=141B013 TIME FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=24 Hour
+Item1=12 Hour
+
+[141B014]
+Description=141B014 PLU NAME PREFIX PRINT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No Prefix
+Item1=PLU Number
+Item2=PLU Item Code
+
+[141B015]
+Description=141B015 CURRENCY SYMBOL POSITION ADJUSTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141B016]
+Description=141B016 DISCOUNT PRINTING ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Unit Price & Original Price
+Item1=Original Unit Price & Price
+
+[141B017]
+Description=141B017 POSITION OF SHOP NAME ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Top
+Item1=Bottom
+
+[141B018]
+Description=141B018 PRINTING CHECKSUM FOR ITEM BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Top
+Item1=Bottom
+
+[141B019]
+Description=141B019 FIRST LABEL PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Internal Label Printer
+Item1=External Label Printer
+Item2=Internal Label Printer 2
+
+[141B020]
+Description=141B020 PRINT KITCHEN TICKET
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Printer Server
+
+[141B021]
+Description=141B021 PRINT PRODUCT INFO FROM PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Follow Receipt
+Item1=Internal Printer 1
+Item2=Internal Printer 2
+Item3=External Printer
+Item4=Printer Server
+
+[141B022]
+Description=141B022 REPORT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Printer 1
+Item1=Printer 2
+Item2=Printer 3
+
+[141B023]
+Description=141B023 PRINT RECIPE WHEN LABEL IS PRINTED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B024]
+Description=141B024 PRICE TO PRINT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Local Currency
+Item1=Second Currency
+
+[141B025]
+Description=141B025 USE BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=From Packed Date
+Item1=From Batch Date
+
+[141B026]
+Description=141B026 PRINT SELL BY DATE AND USE BY DATE WHEN PACKED DATE IS CURRENT DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B027]
+Description=141B027 PRINT PLANNED PRICE ON TOTAL FILE REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141B028]
+Description=141B028 BEEF LABELLING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B029]
+Description=141B029 BEEF LABELLING COUNTRY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B030]
+Description=141B030 UNIT PRINT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Pieces
+Item1=Items
+
+[141B031]
+#Description=141B031 SELECTION OF PRINTING OPERATOR NAME ON RECEIPT AND LABEL
+Description=141B031 SELECTION OF PRINTING OPERATOR NAME ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Code Only
+Item1=Name
+
+[141B032]
+Description=141B032 DEFAULT DATA OF PRINTING SPECIAL MESSAGE NUMBER FOR RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141B033]
+Description=141B033 SELECTION OF PRINTING THANK YOU MESSAGE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[141B034]
+Description=141B034 POSITION OF SPECIAL MESSAGE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Bottom Of Receipt
+Item1=Top Of Receipt
+
+[141B035]
+Description=141B035 PRINTING ALIGNMENT OF SPECIAL MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Center Aligned
+Item1=Left Aligned
+Item2=Based on Data
+
+[141B036]
+Description=141B036 PRINT PLU TRACEABILITY IN RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Under PLU
+Item1=No Print
+Item2=Bottom Of Receipt
+
+[141B037]
+Description=141B037 PRINT CURRENCY SYMBOL & WEIGHT UNIT ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B038]
+Description=141B038 CURRENCY SYMBOL POSITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Before Price
+Item1=After Price
+
+[141B039]
+Description=141B039 DISCOUNT PRESENTATION IN RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=Line 1=New Unit Price & Line 2=Discount Calculation
+Item1=Line 1=Original Price & Line 2=Discount Subtraction
+Item2=Discount Unit Price (With Profit Printed)
+Item3=Original Unit Price (With Profit Printed)
+Item4=Discount Unit Price (No Profit & No Discount Printed)
+Item5=Discount Unit Price With Indicator (With Profit Printed)
+
+[141B040]
+Description=141B040 ALIGNMENT OF INGREDIENT DATA
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Center Aligned
+Item1=Left Aligned
+Item2=Right Aligned
+Item3=Based On Data
+
+[141B041]
+Description=141B041 PRINT NUMBER OF LINE OF PLU COMMODITY ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Print
+Item1=Single Line
+Item2=2 Lines
+Item3=3 Lines
+
+[141B042]
+Description=141B042 LABEL PRINTING ON CLERK KEY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Print
+Item1=Print With Accumulation
+Item2=Print Without Accumulation
+Item3=PLU Print Format 2
+
+[141B043]
+Description=141B043 TOTAL LABEL AFTER PRINTING RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B044]
+Description=141B044 TRACEABILITY MAX WEIGHT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable
+Item1=Enable With Weight Check (Enforce)
+Item2=Enable Without Weight Check
+Item3=Enable With Weight Check (Warning)
+
+[141B045]
+Description=141B045 TRACEABILITY EAT BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141B046]
+Description=141B046 DEFAULT LABEL FORMAT FOR TRACEABILITY PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=7
+ItemCount=8
+Item0=F1
+Item1=F2
+Item2=F3
+Item3=F4
+Item4=F5
+Item5=F6
+Item6=F7
+Item7=F8
+
+[141B047]
+Description=141B047 DEFAULT BARCODE FOR TRACEABILITY PRINTING (EAN-13)
+Enable=1
+Type=Index
+Min=0
+Max=20
+ItemCount=21
+Item0=F1F2 CCCCC XCD XXXX CD (13 Digit Non PLU)
+Item1=F2 CCCCCC XCD XXXX CD (13 Digit Non PLU)
+Item2=F1F2 CCCCC O XXXX CD (13 Digit Non PLU)
+Item3=F1F2 CCCCCC XXXX CD (13 Digit Non PLU)
+Item4=F1F2 CCCCC XXXXX CD (13 Digit Non PLU)
+Item5=F2 CCCCCC XXXXX CD (13 Digit Non PLU)
+Item6=F2 CCCCC XXXXXX CD (13 Digit Non PLU)
+Item7=F1F2 CCCCCCCCCC CD (13 Digit PLU)
+Item8=F1F2 CCCC XXXXXX CD (13 Digit Non PLU)
+Item9=F1F2 CCCCC CD (8 Digit PLU)
+Item10=F2 CC XXXX CD (8 Digit Non PLU)
+Item11=Non Barcode
+Item12=F1X2 CCCCC XCD XXXX CD (13 Digit Non PLU)
+Item13=F1X2 CCCCCC XXXX CD (13 Digit Non PLU)
+Item14=F1F2 CCCC XCD XXXXX CD (13 DIgit Non PLU)
+Item15=F2 CCCCC XCD XXXXX CD (13 Digit Non PLU)
+Item16=F1F2 CCC XXXXXXX CD (13 Digit Non PLU)
+Item17=F1F2 CC XXXXXXXX CD (13 Digit Non PLU)
+Item18=CCC WWWW PPPPP CD (13 Digit Non PLU)
+Item19=Non Barcode
+Item20=F1F2 CCCCC PCD XXXX CD(13 Digit Non PLU)
+
+[141B048]
+Description=141B048 DEFAULT FLAG FOR TRACEABILITY PRINTING (EAN-13)
+Enable=1
+Type=Integer
+Min=0
+Max=100
+
+[141B049]
+Description=141B049 DATE PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Packed Date Depend On Sell & Use By Date
+Item1=Print All
+Item2=Print Sell & Use By Date When Value > 0
+
+[141B050]
+Description=141B050 PRINT SELL BY DATE AND PACKED DATE TITLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B051]
+Description=141B051 PRINT USE BY DATE TITLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B052]
+Description=141B052 PRINT STORAGE TEMPERATURE TITLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B053]
+Description=141B053 USE QUANTITY AND SYMBOL FROM PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B054]
+Description=141B054 USE ITEM LABEL FIELD FOR PREPACK TOTAL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Partial
+Item2=Item Label Fields Only
+
+[141B055]
+Description=141B055 TOTAL PRICE FOR RECEIPT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=All
+Item1=Total Price Greater Than or Equal to 0
+Item2=Total Price Greater Than 0
+Item3=Total Price Not Equal to 0
+
+[141B056]
+Description=141B056 PRINT TARE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B057]
+Description=141B057 PRINT ORDER SUB-TOTAL ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B058]
+Description=141B058 C TYPE FIELD ON PRINT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=C1-C4
+Item1=C5
+
+[141B059]
+Description=141B059 PRINT TALON BARCODE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B060]
+Description=141B060 SECOND RECEIPT PRINTING (TALON)
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No Print
+Item1=Continuous Print
+Item2=1 Second Print
+Item3=3 Seconds Print
+Item4=User Select
+
+[141B061]
+Description=141B061 LABEL FORMAT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=Print Format 1 and Format 2
+Item1=Print Format 1 and Auto Print Format 2
+Item2=Format 1 in Manual Mode and 2 in Prepack
+Item3=Format 1 in Prepack Mode and 2 in Manual
+Item4=Format 1 For Normal Item and 2 For Discount Item
+Item5=Format 1 For Normal Item and 2 For Shop&Go Item
+
+[141B062]
+Description=141B062 PRINT IMAGE ON SECOND RECEIPT (TALON)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B063]
+Description=141B063 PRINT SHOP NAME ON SECOND RECEIPT (TALON)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B064]
+Description=141B064 PRINT VOID RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B065]
+Description=141B065 ITEM LABEL PRINTING FOR REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[141B066]
+Description=141B066 CHARACTERS MONTH FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Integer Month
+Item1=2-Char Month
+Item2=3-Char Month
+
+[141B067]
+Description=141B067 PRINT SECOND RECEIPT ON CORRECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B068]
+Description=141B068 PRINT ADVERTISEMENT ON ALL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B069]
+Description=141B069 ADVERTISEMENT PRINT POSITION
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=First Line (Back)
+Item1=Below
+Item2=Above
+Item3=First Line (Front)
+Item4=Last Line (Back)
+Item5=Bottom Row
+
+[141B070]
+Description=141B070 VERTICAL ALIGNMENT OF INGREDIENT DATA
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Top Aligned
+Item1=Center Aligned
+Item2=Auto-Fit
+Item3=Bottom Aligned
+
+[141B071]
+Description=141B071 FORCE SHELF LIFE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141B072]
+Description=141B072 FIELD TITLES
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Text Title
+Item1=Fixed Title
+Item2=Text & Fixed Title
+
+[141B073]
+Description=141B073 NUTRITION TEMPLATE
+Enable=1
+Type=Index
+Min=0
+Max=14
+ItemCount=15
+Item0=Standard
+Item1=Simplify
+Item2=Simplify Condensed
+Item3=Standard Condensed
+Item4=Tabulated
+Item5=Tabulated Extra Condensed
+Item6=Simplify Condensed 2
+Item7=Tabulated Condensed 2
+Item8=Standard New
+Item9=Simplified New
+Item10=Tabulated New
+Item11=Dual Panel New
+Item12=Dual Panel New (60mm)
+Item13=User Defined New #87
+Item14=User Defined New #89
+
+[141B074]
+Description=141B074 CONCATENATE OF COOL TEXT PRINT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Concatenate All Lines 
+Item1=Concatenate Per Line 
+Item2=No Concatenate 
+
+[141B075]
+Description=141B075 TOP MARGIN FOR RECEIPT PRINTING (MM)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B076]
+Description=141B076 BOTTOM MARGIN FOR RECEIPT PRINTING (MM)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B077]
+Description=141B077 LABEL FORMAT FOR ORDER LABEL (5301~5400)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141B078]
+Description=141B078 PRINT SUB-TOTAL WITHOUT DISCOUNT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B079]
+Description=141B079 PRINT WHEN LABEL FORMAT IS NOT EXISTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Message
+Item1=Bypass
+
+[141B080]
+Description=141B080 PRINTING WEIGHT DATA
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=kg only
+Item1=kg / g
+Item2=g only
+
+[141B081]
+Description=141B081 PRINT POSITION FOR SERVING SIZE AND SERVING CONTAINER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Serving Size Top & Serving Container Bottom
+Item1=Serving Container Top & Serving Size Bottom
+
+[141B082]
+Description=141B082 PRINTING OF SERVING SIZE AND SERVING CONTAINER ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Print Both
+Item1=Print Serving Size
+Item2=Print Serving Container
+
+[141B083]
+Description=141B083 PRINTING POSITION FOR PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Right Aligned
+Item1=Left Aligned
+
+[141B084]
+Description=141B084 INGREDIENT PRINT WHEN OUT OF PRINT AREA
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=Max Lines on First Label
+Item1=No Print
+Item2=Max Lines on First Label, rest on Second Label
+Item3=Max Lines on First Label, all on Second Label
+Item4=No Print on First Label, all on Second Label
+Item5=Not Print Label
+
+[141B085]
+Description=141B085 WEIGHT PRINT FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Follow Non Weighed Status
+Item2=Follow Weighed Status
+
+[141B086]
+Description=141B086 SEPARATOR FOR DATE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=None
+Item1=Space
+Item2=Dot
+Item3=Hyphen
+Item4=Slash
+
+[141B087]
+Description=141B087 PRINT SELL BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Registration & Prepack Mode 
+Item1=Registration Mode 
+Item2=Prepack Mode 
+Item3=No Print 
+
+[141B088]
+Description=141B088 PRINT PACKED DATE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Registration & Prepack Mode 
+Item1=Registration Mode 
+Item2=Prepack Mode 
+Item3=No Print 
+
+[141B089]
+Description=141B089 STRIP '0' IN RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B090]
+Description=141B090 BASKET RECEIPT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Sub-Total
+Item1=All Items
+
+[141B091]
+Description=141B091 PRINT PLU INGREDIENT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No Print
+Item1=All Items With Ingredient
+Item2=Selected Items Only
+
+[141B092]
+Description=141B092 PRINTING POSITION FOR INGREDIENT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=End Of Receipt
+Item1=Below Each Item
+
+[141B093]
+Description=141B093 SORTING FOR WEIGHED & NON WEIGHED ITEMS ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B094]
+Description=141B094 SELECT PRINT ITEM ON PREPACK TOTAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Status On Item Label
+Item1=Manual Total Label Status
+
+[141B095]
+Description=141B095 UNIT PRICE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Without Price Base
+Item1=With Price Base
+
+[141B096]
+Description=141B096 USE BY DATE AS SELL BY DATE IN REPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B097]
+Description=141B097 REPACK INDICATOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Number
+Item1=Asterisk(*)
+
+[141B098]
+Description=141B098 PRINT ALL MULTI-BARCODE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B099]
+Description=141B099 POINT PRINTING IF NO CUSTOMER SELECTED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B100]
+Description=141B100 START LINE OF COMMODITY NAME PRINTING ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=First Line
+Item1=Second Line
+Item2=Third Line
+Item3=Fourth Line
+
+
+[141B101]
+Description=141B101 ORDER AND BASKET ITEMS PRINT FORMAT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Itemized
+Item1=Summarized
+
+[141B102]
+Description=141B102 PRINTING QUALITY FOR PRODUCT INFO
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Diffused Dither
+Item1=Ordered Dither
+Item2=Threshold Dither
+
+[141B103]
+Description=141B103 AVERAGE WEIGHT AND AVERAGE PRICE PRINTING FOR WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B104]
+Description=141B104 PRODUCT INFO DISPLAY AND PRINTING RATIO 
+Enable=1
+Type=Index
+Min=0
+Max=8
+ItemCount=9
+Item0=1
+Item1=2
+Item2=3
+Item3=4
+Item4=5
+Item5=6
+Item6=7
+Item7=8
+Item8=9
+
+[141B105]
+Description=141B105 PRINT POSITION FOR TRACEABILITY DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Right Aligned
+Item1=Left Aligned
+
+[141B106]
+Description=141B106 NUTRITION PRINTING ON SECOND LABEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=0 Degree
+Item1=180 Degree
+Item2=No Print
+
+[141B107]
+Description=141B107 SPECIAL MESSAGE NUMBER FOR ORDER RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141B108]
+Description=141B108 SECOND BASKET RECEIPT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No Print
+Item1=Continuous Print
+Item2=1 Second Print
+Item3=3 Seconds Print
+Item4=User Select
+
+[141B109]
+Description=141B109 PRINT SHOP NAME ON TOTAL LABEL 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B110]
+Description=141B110 DEFAULT e.LABEL FORMAT 
+Enable=1
+Type=Integer
+Min=1001
+Max=1100
+
+[141B111]
+Description=141B111 ALTERNATE LABEL FORMAT WHEN THERMAL DIAGNOSTIC FAILED
+Enable=1
+Type=Index
+Min=0
+Max=9
+ItemCount=10
+Item0=Not Use
+Item1=F1
+Item2=F2
+Item3=F3
+Item4=F4
+Item5=F5
+Item6=F6
+Item7=F7
+Item8=F8
+Item9=Current Format + Offset 30
+
+[141B112]
+Description=141B112 PRINT BATCH REPORT WHEN CLEARING REPORT IN Z-MODE
+Enable=1
+Type=Index
+Min=0
+Max=9
+ItemCount=10
+Item0=No Print
+Item1=Batch Report 1
+Item2=Batch Report 2
+Item3=Batch Report 3
+Item4=Batch Report 4
+Item5=Batch Report 5
+Item6=Batch Report 6
+Item7=Batch Report 7
+Item8=Batch Report 8
+Item9=Batch Report 9
+
+[141B113]
+Description=141B113 PRICE ROUNDING ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=17
+Mask=0x08
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141B114]
+Description=141B114 ACTUAL PRICE IN REPORT
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=17
+Mask=0x04
+ItemCount=3
+Item0=With Sub-Total Discount & Rounding
+Item1=Without Sub-Total Discount & Rounding
+Item2=With Sub-Total Discount
+
+[141B115]
+Description=141B115 AUTO PRINT STATUS IN LABEL FORMAT BY FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable
+Item2=Enable, With Weight Check
+
+[141B116]
+Description=141B116 PRINT CUSTOMER POINT AS CURRENCY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B117]
+Description=141B117 PRINT USE BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Registration & Prepack Mode
+Item1=Registration Mode
+Item2=Prepack Mode
+Item3=No Print
+
+[141B118]
+Description=141B118 DUAL WEIGHT IN PREPACK TOTAL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B119]
+Description=141B119 TARE PRINT ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Tare With Proportional Tare
+Item1=Tare Without Proportional Tare
+
+[141B120]
+Description=141B120 ORIGINAL PRICE AND ORIGINAL UNIT PRICE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print Without Cross Bar
+Item1=Print With Cross Bar
+
+[141B121]
+Description=141B121 DEFAULT INFO-CARD FORMAT
+Enable=1
+Type=Integer
+Min=2001
+Max=2100
+
+[141B122]
+Description=141B122 DEFAULT FONT FOR C1~C4 DATA ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Fixed Pitch Font
+Item1=Proportional Font
+
+[141B123]
+Description=141B123 COOL TEXT & PRE-TEXT ALIGNMENT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Left Aligned 
+Item1=Center Aligned
+Item2=From Status
+
+[141B124]
+Description=141B124 GRAND TOTAL LABEL IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Individual PLU
+Item1=All PLUs
+
+[141B125]
+Description=141B125 POSITION FOR PRICE FIELD IN e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Right Aligned
+Item1=Left Aligned
+
+[141B126]
+Description=141B126 NUMBER OF LABEL FOR NON WEIGHED ITEM IN PREPACK MODE 
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B127]
+Description=141B127 PRINT VOIDED ITEM ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141B128]
+Description=141B128 STRIP `0' FOR PLU CODE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B129]
+Description=141B129 FREE FORMAT FOR WIPS DISPLAY
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B130]
+Description=141B130 DEFAULT PLU TEXT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable (99999999)
+Item2=Enable (0)
+
+[141B131]
+Description=141B131 PRINT ZERO UNIT PRICE AND TOTAL PRICE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B132]
+Description=141B132 AUTO PRINT SUB-TOTAL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print  
+Item1=Print     
+
+[141B133]
+Description=141B133 LABEL FEED AFTER BATCH JOB
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes       
+
+[141B134]
+Description=141B134 SUPPRESS ZERO FOR DATE PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes       
+
+[141B135]
+Description=141B135 PRINT DAY FOR SELL BY DATE > 90 DAYS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes       
+Item1=No
+
+[141B136]
+Description=141B136 DUPLICATE UNIT PRICE AND PRICE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes       
+
+[141B137]
+Description=141B137 FREE FORMAT FOR FOOD TRACE LABEL
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B138]
+Description=141B138 VERTICAL ALIGNMENT OF DATE & TIME ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Bottom Aligned
+Item1=Center Aligned
+
+[141B139]
+Description=141B139 AUTO SHRINK WHEN PRINT AREA NOT ENOUGH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B140]
+Description=141B140 DATA PRINT ON AVERAGE WEIGHT FIELD
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Average Weight
+Item1=Original Net Weight
+Item2=Proportional Tare
+
+[141B141]
+Description=141B141 PRINT COUNTRY CODE IN FRONT OF LOT NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B142]
+Description=141B142 DO NOT PRINT SELL BY DATE WHEN VALUE GREATER THAN
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141B143]
+Description=141B143 PRINT LABEL 2 FORMAT ON THE SAME LABEL AS LABEL 1 FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B144]
+Description=141B144 SELECTION OF LABEL FORMAT FOR LABEL 2 FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B145]
+Description=141B145 PRINT PRE-ORDERING RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B146]
+Description=141B146 RECEIPT HEADER TEXT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Multi Translation
+Item1=Single Translation
+
+[141B147]
+Description=141B147 ITEM DETAIL PRESENTATION ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Unit Price Follow By Quantity/Weight
+Item1=Quantity/Weight Follow By Unit Price
+
+[141B148]
+Description=141B148 TENDER AND CHANGE AMOUNT ON RECEIPT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141B149]
+Description=141B149 VERTICAL ALIGNMENT OF SPECIAL MESSAGE DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Center Aligned
+Item1=Top Aligned
+
+[141B150]
+Description=141B150 REGENERATE NON WEIGHED ITEM LABEL IMAGE DURING CONTINUOUS PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B151]
+Description=141B151 RECEIPT GROUPING BY DEPARTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B152]
+Description=141B152 PRINT SUMMARY IN INVENTORY REPORT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=PLU Summary
+Item2=Category Summary
+Item3=PLU + Category Summary
+
+[141B153]
+Description=141B153 PRINT LABEL BY CLERK KEY IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes, Clear By New PLU
+Item2=Yes, Clear By Switching Mode
+
+[141B154]
+Description=141B154 RE-CALCULATE UNIT PRICE FOR e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B155]
+Description=141B155 RECEIPT GROUP NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B156]
+Description=141B156 PRINT PRICE WITH TAX ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B157]
+Description=141B157 DELAY TIME BETWEEN RECEIPTS (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B158]
+Description=141B158 ALTERNATE e.LABEL FORMAT FOR DISCOUNT ITEM 
+Enable=1
+Type=Integer
+Min=0
+Max=1099
+
+[141B159]
+Description=141B159 DISCOUNT INFO ON e.LABEL UNIT PRICE FIELD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes, Quantity Fixed Price Only
+
+[141B160]
+Description=141B160 ALTERNATE INFO-CARD FORMAT FOR DISCOUNT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=2100
+
+[141B161]
+Description=141B161 SECOND LABEL FOR ORDER ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B162]
+Description=141B162 PRODUCT INFO PAPER WIDTH
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Follow Receipt Paper Width
+Item1=60 mm
+Item2=72 mm
+Item3=80 mm
+
+[141B163]
+Description=141B163 CASH IN / CASH OUT IN STORE REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B164]
+Description=141B164 UPDATE IMAGE FIELD NUMBER BY IMAGE FUNCTION KEY
+Enable=1
+Type=Integer
+Min=0
+Max=10
+
+[141B165]
+Description=141B165 SECOND PRICE BASE FOR WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Follow PLU Status
+Item1=/kg
+Item2=/500g
+Item3=/250g
+Item4=/100g
+
+[141B166]
+Description=141B166 PRINT JULIAN DATE FOR PACKED DATE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=YDDD
+Item2=DDD
+Item3=YYDDD
+
+[141B167]
+Description=141B167 DELAY TO PRINT NEXT LABEL IN PREPACK MODE FOR CONTINUOUS LABEL (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B168]
+Description=141B168 QUEUE TICKET FORMAT
+Enable=1
+Type=Integer
+Min=4001
+Max=4099
+
+[141B169]
+Description=141B169 SHOP NAME ON QUEUE TICKET FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B170]
+Description=141B170 PRINT ORIGINAL UNIT PRICE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Item Only
+Item1=Always
+
+[141B171]
+Description=141B171 PRINT SECOND CURRENCY ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B172]
+Description=141B172 PRINT LABEL BY PRINT KEY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Allow
+Item1=Only In Prepack Mode
+Item2=Only In Manual Mode
+Item3=Inhibit
+
+[141B173]
+Description=141B173 RECEIPT NUMBER FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=NNNNN
+Item1=NNN (Online), SNNN (Offline)
+Item2=NNN
+Item3=NNNN
+Item4=DDNNN (D Is Day Of Month)
+Item5=DNNNN (D Is Day Of Week)
+
+[141B174]
+Description=141B174 INGREDIENT TEXT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Plain Text
+Item1=Html Text With Character Size Information
+Item2=Html Text Only
+Item3=Html Text With Filter Character Size Information
+
+[141B175]
+Description=141B175 DELAY TO PRINT ORDER LABEL FOR CONTINUOUS LABEL (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B176]
+Description=141B176 AUTO FIT FOR ALL C-FIELDS ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes
+Item2=Yes, Exclude Text
+
+[141B177]
+Description=141B177 SHOW CURRENCY AND SYMBOL ON e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B178]
+Description=141B178 SHOW TITLES ON e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B179]
+Description=141B179 PRINTING CONDITION FOR SECOND LABEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Always
+Item1=Nutrition Label Only
+Item2=Based On First Label
+
+[141B180]
+Description=141B180 USE PRINT FORMAT TOTAL TRACEABILITY FIELDS FOR ITEM TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B181]
+Description=141B181 DEFAULT INFO-TAG FORMAT 
+Enable=1
+Type=Integer
+Min=1001
+Max=1100
+
+[141B182]
+Description=141B182 SUB-TOTAL AND GRAND TOTAL LABEL FORMAT 
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B183]
+Description=141B183 DRAW PLU NAME ON RECEIPT WITH FONT BOUNDARY HEIGHT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B184]
+Description=141B184 GLOBAL PACKAGING INDICATOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B185]
+Description=141B185 PACKAGING INDICATOR 
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141B186]
+Description=141B186 TEXT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Plain Text
+Item1=Html Text With Character Size Information
+Item2=Html Text Only
+Item3=Html Text With Filter Character Size Information
+
+[141B187]
+Description=141B187 DATE CODE IN PRINT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Day Of Week
+Item2=Day Of Year
+
+[141B188]
+Description=141B188 DEFAULT LABEL REDUCE FIELD SIZE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Fraction Part On Top
+Item1=Fraction Part At Bottom
+
+[141B189]
+Description=141B189 LABEL REDUCE FIELD SIZE FORMAT FOR TOTAL PRICE (USER PROGRAMMED)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B190]
+Description=141B190 PRINT MULTI-BARCODE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Based On Label Size
+Item1=Always
+
+[141B191]
+Description=141B191 PRINTING FORMAT FOR SLAUGHTER HOUSE AND CUTTING HALL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Country + Slaughter House / Cutting Hall
+Item1=Slaughter House / Cutting Hall Only
+Item2=Country Only
+
+[141B192]
+Description=141B192 SHOW CONTAINER NUMBER ON e.LABEL AND INFO-CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B193]
+Description=141B193 GRAND TOTAL QUANTITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Number Of Item Label Printed
+Item1=Number Of Sub-Total Label Printed
+
+[141B194]
+Description=141B194 SPECIAL MESSAGE TEXT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Plain Text
+Item1=Html Text With Character Size Information
+Item2=Html Text Only
+Item3=Html Text With Filter Character Size Information
+
+[141B195]
+Description=141B195 PRINT TERM STORE REPORT WHEN CLEARING TERM REPORT IN Z-MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B196]
+Description=141B196 SUB-TOTAL THRESHOLD TO PRINT SECOND SPECIAL MESSAGE ON RECEIPT 
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141B197]
+Description=141B197 SECOND SPECIAL MESSAGE NUMBER ON RECEIPT 
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141B198]
+Description=141B198 PRINT KITCHEN TICKET AFTER RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B199]
+Description=141B199 PRINT KITCHEN TICKET AFTER ORDER STORED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B200]
+Description=141B200 PRINT LABEL 2 FROM PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Internal Printer 1
+Item1=External Label Printer
+Item2=Internal Printer 2
+
+[141B201]
+Description=141B201 AUTO FIT IMAGE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B202]
+Description=141B202 PRINT TARE UNIT SYMBOL ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B203]
+Description=141B203 TEXT HEIGHT FOR S1 ~ M5 In LABEL FOR C-FIELDS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow Font Height
+Item1=Configured Height
+
+[141B204]
+Description=141B204 PRINT TRACEABILITY TITLE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print
+Item1=No Print
+
+[141B205]
+Description=141B205 DECIMAL POSITION FOR RE-CALCULATED UNIT PRICE ON LABEL
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow System Unit Price
+Item1=Follow Recalculated Unit Price
+
+[141B206]
+Description=141B206 PRINT SUB-TOTAL DISCOUNT % VALUE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No Print
+Item1=Print
+
+[141B207]
+Description=141B207 PRINT RECEIPT FROM PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Auto Select Printer
+Item1=Internal Printer 1
+Item2=Internal Printer 2
+Item3=External Printer
+Item4=Printer Server
+
+[141B208]
+Description=141B208 VARIABLE TEXT ITEM CODE DATA LENGTH ON LABEL 
+Enable=1
+Type=Integer
+Min=0
+Max=20
+
+[141B209]
+Description=141B209 QUEUE KIOSK QUEUE TICKET FORMAT 
+Enable=1
+Type=Integer
+Min=4001
+Max=4999
+
+[141B210]
+Description=141B210 SELL BY DATE PRINTING FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Date
+Item1=Number Of Day (Index + 1)
+
+[141B211]
+Description=141B211 PRINT RECEIPT BY SCANNING CLERK IN SUB-TOTAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B212]
+Description=141B212 HTML RENDERING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Use QWebview
+Item1=Use QLabel
+
+[141B213]
+Description=141B213 PRINT LARGER RECEIPT OR CUSTOMER NUMBER IF HAVING KITCHEN TICKET
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Receipt Number
+Item2=Customer Number
+Item3=Receipt And Customer Number
+
+
+[141B214]
+Description=141B214 BONUS COUPON FROM FREE FORMAT (5001 ~ 5100)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141B215]
+Description=141B215 PRINT KITCHEN TICKET ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow PLU Flag
+Item1=Print All
+
+[141B216]
+Description=141B216 PRINT POINT INFORMATION ON RECEIPT IF CUSTOMER WITHOUT COUPON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B217]
+Description=141B217 LABEL REDUCE FIELD SIZE FORMAT FOR COUPON VALUE (USER PROGRAMMED)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B218]
+Description=141B218 PRINT ORIGINAL PRICE ON LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Item Only
+Item1=Always
+
+[141B219]
+Description=141B219 MESSAGE LABEL FORMAT FOR UNKNOWN CUSTOMER (5101~5200)
+Enable=1
+Type=Integer
+Min=0
+Max=5200
+
+[141B220]
+Description=141B220 NUMBER OF DIGIT FOR LABEL SERIAL NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=5
+
+[141B221]
+Description=141B221 PRINT ZERO CHANGE AMOUNT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B222]
+Description=141B222 ADDITIONAL INGREDIENT LABEL FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B223]
+Description=141B223 PRINT RECEIPT 2D BARCODE DATA ON TOTAL LABEL BARCODE FIELD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B224]
+Description=141B224 PRINT REPORT FROM PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Follow Receipt
+Item1=Internal Printer 1
+Item2=Internal Printer 2
+Item3=External Printer
+Item4=Printer Server
+
+[141B225]
+Description=141B225 PRINT E-INVOICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B226]
+Description=141B226 PRINT E-INVOICE TRANSACTION DETAIL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B227]
+Description=141B227 SHOP NAME ON KITCHEN TICKET
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B228]
+Description=141B228 SLAUGHTER HOUSE AND CUTTING HALL ON TOTAL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Code
+Item1=Name
+Item2=Code (Concatenated)
+Item3=Name (Concatenated)
+
+[141B229]
+Description=141B229 PRINT PAYMENT DETAIL ON CLERK REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B230]
+Description=141B230 DATA PRINT ON DUPLICATE UNIT PRICE FIELD
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Unit Price
+Item1=Unit Price Before Tax
+Item2=Second Unit Price
+
+[141B231]
+Description=141B231 SECOND UNIT PRICE FIELD DATA ON e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Original Unit Price
+Item1=Actual Unit Price
+
+[141B232]
+Description=141B232 e.LABEL REDUCE SIZE FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B233]
+Description=141B233 AUTO FIT FOR TRACEABILITY FIELDS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B234]
+Description=141B234 SELL BY DATE OR SELL BY TIME FOR INDIVIDUAL PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141B235]
+Description=141B235 USE SELL BY TIME AS FROZEN DATE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B236]
+Description=141B236 SPECIAL MESSAGE NUMBER FOR BASKET RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141B237]
+Description=141B237 TIME FORMAT FOR LABEL PRINTING 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=HH:MM
+Item1=Hour Only
+Item2=Hour Only In 12 Hour Format
+
+[141B238]
+Description=141B238 NUMBER OF KITCHEN TICKET
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141B239]
+Description=141B239 PRINT ADDITIONAL INGREDIENT ON TEXT FIELD NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=16
+
+[141B240]
+Description=141B240 PACKED TIME IN REGISTRATION MODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow PLU Status
+Item1=RTC
+
+[141B241]
+Description=141B241 NUTRITION WITH SYMBOL 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B242]
+Description=141B242 PRINT ORDER TAKE DOCKET ON BOTTOM OF RECEIPT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B243]
+Description=141B243 AUTO FIT FOR ALL FIELDS ON LABEL BY CONFIGURATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B244]
+Description=141B244 TAX PRESENTATION ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Calculation
+Item1=Tabulated
+
+[141B245]
+Description=141B245 LABEL FORMAT 1 FOR SELF SERVICE MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B246]
+Description=141B246 LABEL FORMAT 2 FOR SELF SERVICE MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B247]
+Description=141B247 DELAY TO PRINT LABEL FORMAT 2 FOR GAP LABEL (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141B248]
+Description=141B248 PRINT DAY FOR USE BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes       
+Item1=No
+
+[141B249]
+Description=141B249 TRACEABILITY FIELDS LENGTH LIMITATION ON LABEL 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B250]
+Description=141B250 VERTICAL ALIGNMENT OF TEXT DATA
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Center Aligned
+Item1=Top Aligned
+Item2=Bottom Aligned
+
+[141B251]
+Description=141B251 PRINT COUPON WITHOUT CUSTOMER 
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B252]
+Description=141B252 WEIGHT BREAK POINT UNIT ON TEXT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=kg
+Item1=g
+
+[141B253]
+Description=141B253 PRINT TEXT ON INGREDIENT AREA IF INGREDIENT NOT PRINT 
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141B254]
+Description=141B254 LABEL FORMAT 2 FOR PRICE MARKDOWN
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B255]
+Description=141B255 DISCOUNT FORMAT OFFSET FOR INFO-TAG WITH MULTIPLE PLU 
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B256]
+Description=141B256 PRINT PAYMENT INFO IN STORE REPORT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Payment Status
+Item1=Always
+
+[141B257]
+Description=141B257 NEW NUTRITION TEMPLATE 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes
+Item2=Yes, With Extended Nutrifacts
+
+[141B258]
+Description=141B258 PRINT USE BY DATE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B259]
+Description=141B259 PRINT RECEIPT TRACEABILITY FOLLOW ITEM LABEL TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B260]
+Description=141B260 VAT REGISTRATION NUMBER 
+Enable=1
+Type=Integer
+Min=0
+Max=999999999
+
+[141B261]
+Description=141B261 PRINT INGREDIENT IN INGREDIENT FUNCTION KEY FROM PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Internal Printer 1
+Item1=Follow Receipt
+Item2=By Ingredient Label Format
+
+[141B262]
+Description=141B262 EXTEND TOTAL LABEL FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B263]
+Description=141B263 ITEM LABEL DATE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=From Spec
+Item1=From Config
+
+[141B264]
+Description=141B264 PARSE TRACEABILITY DATA BY FLEX AI
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B265]
+Description=141B265 PRINT TITLE BEFORE QUANTITY FOR OZ ITEMS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B266]
+Description=141B266 PRINT CLERK TITLE ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B267]
+Description=141B267 QUEUE PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=TVP1500
+Item1=3rd Party Printer
+
+[141B268]
+Description=141B268 PRINT 200DPI NUTRITION IMAGE ON 300DPI PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B269]
+Description=141B269 CHECK PRINTER ERROR ON START UP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141B270]
+Description=141B270 LABEL PRINTING BY CLERK KEY ON ORDER PREPARING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Follow 141B007
+Item1=No Print
+Item2=Print with Accumulation
+Item3=Print without Accumulation
+
+[141B271]
+Description=141B271 PRINT NUTRITION HIGH CONTENT IMAGE ON ITEM LABEL IMAGE FIELD
+Enable=1
+Type=Integer
+Min=0
+Max=10
+
+[141B272]
+Description=141B272 COMMODITY NAME/SPECIAL MESSAGE/PLACE PRINT WHEN OUT OF PRINT AREA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Print Max
+Item1=Not Print Label
+
+[141B273]
+Description=141B273 PRINT TOTAL WEIGHT ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B274]
+Description=141B274 PRINT NUMBER OF LINE OF COMMODITY NAME ON KITCHEN TICKET
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=1 Line
+Item1=2 Lines
+Item2=3 Lines
+
+[141B275]
+Description=141B275 PRINT ADVERTISEMENT ON LABEL FIELD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B276]
+Description=141B276 PRINT PLACE ON ALL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B277]
+Description=141B277 PLACE PRINT POSITION
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=First Line (Back)
+Item1=Below
+Item2=Above
+Item3=First Line (Front)
+Item4=Last Line (Back)
+Item5=Top Row
+
+[141B278]
+Description=141B278 DELAY TO PRINT ADDITIONAL ITEM LABEL FOR CONTINUOUS LABEL (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B279]
+Description=141B279 ITEM LABEL TEXT FIELD PRINT CONDITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B280]
+Description=141B280 AUTO WRAP CONFIGURATION FOR ITEM LABEL FIELDS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B281]
+Description=141B281 SHIFT RECEIPT TO LEFT (DOTS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141B282]
+Description=141B282 EXTENDED FIELD FOR TEXT AND SPECIAL MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B283]
+Description=141B283 COMMODITY NAME TEXT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Plain Text
+Item1=Reserved
+Item2=Html Text Only
+
+[141B284]
+Description=141B284 PRINT SCANNED QR CODE ON TEXT FIELD NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=16
+
+[141B285]
+Description=141B285 PRINT ESSELUNGA MULTIPLE TRACEABILITY INFO ON TEXT FIELD
+Enable=1
+Type=Integer
+Min=0
+Max=16
+
+[141B286]
+Description=141B286 PRINT SMALL RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141B287]
+Description=141B287 AUTO FIT FOR TOTAL LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+

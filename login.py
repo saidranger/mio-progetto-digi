@@ -23,7 +23,7 @@ with st.form('login_form'):
 
 # Verifichiamo se l'utente esiste
 if submit_button:
-    if user_exists(username, password):
+    if user_exists(username.lower(), password):
         st.success('Login success')
         st.session_state.user_logged_in = True  # Impostiamo lo stato di login
         st.switch_page("Home.py")

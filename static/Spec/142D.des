@@ -1,0 +1,41 @@
+[MAIN]
+SpecCount=3
+StartIndex=001
+SubType=D
+
+[142D001]
+Description=142D001 TAX
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=6
+Mask=0x80
+ItemCount=2
+Item0=No Tax
+Item1=Tax
+
+[142D002]
+Description=142D002 SELECTION OF ITEM PRICE PRINTING
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=7
+Mask=0x01
+ItemCount=2
+Item0=Item Price before Tax
+Item1=Item Price after Tax
+
+[142D003]
+Description=142D003 SELECTION OF TAX ROUNDING METHOD
+Enable=0
+Type=Index
+Min=0
+Max=1
+Index=14
+Mask=0x04
+ItemCount=2
+Item0=Rounding
+Item1=Truncate
+

@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM-120 Training Guide - Applicazione (Traduzione Completa)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+        h1, h2, h3, h4 {
+            color: #1a252f;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 { font-size: 2em; text-align: center; border-bottom: none; }
+        h2 { font-size: 1.6em; }
+        h3 { font-size: 1.3em; }
+        h4 { font-size: 1.1em; border-bottom: 1px solid #bdc3c7; }
+        p { margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            font-size: 0.85em;
+        }
+        th, td {
+            border: 1px solid #dcdcdc;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        tr:nth-child(even) {
+            background-color: #f9fbfc;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .page-break {
+            border-top: 3px dashed #95a5a6;
+            margin: 50px 0;
+            padding-top: 20px;
+        }
+        .image-placeholder {
+            background-color: #e0e0e0;
+            border: 1px solid #bdc3c7;
+            padding: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            margin: 20px 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .code-block {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SM-120 Guida di Formazione - Applicazione</h1>
+
+    <h2>1. INTRODUZIONE ALLA BILANCIA</h2>
+
+    <h3>1.1 Informazioni di Base</h3>
+    <div class="image-placeholder">[Immagine: Pannello display con indicatori TARE, WEIGHT, UNIT PRICE, TOTAL PRICE]</div>
+    <table>
+        <tr><th>PARTI</th><th>NOTE</th></tr>
+        <tr><td>TARE kg</td><td>Peso del vassoio o del sacchetto di plastica, se necessario</td></tr>
+        <tr><td>WEIGHT kg</td><td>Peso degli articoli sul piatto</td></tr>
+        <tr><td>UNIT PRICE $/kg</td><td>Prezzo unitario degli articoli</td></tr>
+        <tr><td>$ TOTAL PRICE</td><td>Prezzo totale degli articoli</td></tr>
+        <tr><td>ZERO</td><td>Quando il peso è uguale a zero, questa spia si accende</td></tr>
+        <tr><td>NET</td><td>Quando qualcosa è stato tarato, questa spia si accende</td></tr>
+    </table>
+
+    <h3>1.2 Definizione dei Tasti</h3>
+    <table>
+        <tr><th>PARTI</th><th>NOTE</th></tr>
+        <tr><td>P1～P56</td><td>Tasti preset, possono essere impostati come articoli o funzioni</td></tr>
+        <tr><td>V1～V4</td><td>Tasti venditore, per gestire più conti contemporaneamente</td></tr>
+        <tr><td>0～9</td><td>Tasti numerici</td></tr>
+        <tr><td>FIX</td><td>Tasto Fix, può fissare la tara o il prezzo unitario fino al successivo click</td></tr>
+        <tr><td>Mode</td><td>Tasto modalità, per cambiare modalità</td></tr>
+    </table>
+
+    <h3>1.3 Istruzioni sulle Modalità</h3>
+    <table>
+        <tr><th>Tasto</th><th>Funzione</th></tr>
+        <tr><td></td><td>Tasto subtotale/cambio, esce da uno stato specifico o calcola il resto dopo aver gestito i conti</td></tr>
+        <tr><td>AUTO</td><td>Cambia modalità tra manuale e prepack</td></tr>
+        <tr><td>Rezero</td><td>Tasto Rezero, cerca di trovare il punto zero quando il piatto è vuoto ma il peso non è zero; tasto speciale se usato con altri tasti</td></tr>
+        <tr><td>×</td><td>Tasto moltiplicazione, per cambiare i valori se disponibili</td></tr>
+        <tr><td>—</td><td>Tasto sottrazione, segno negativo o tasto invio</td></tr>
+        <tr><td>C</td><td>Tasto cancellazione, per cancellare il risultato o scegliere "Sì" in alcuni stati</td></tr>
+        <tr><td>+</td><td>Tasto tara, peso tara o scegliere "No" in alcuni stati</td></tr>
+        <tr><td>PLU</td><td>Tasto PLU, per richiamare un PLU o salvare dati in uno stato specifico</td></tr>
+        <tr><td></td><td>Tasto avanzamento carta</td></tr>
+        <tr><td></td><td>Tasto stampa, stampa PLU o passa alla pagina successiva</td></tr>
+    </table>
+
+    <p><strong>Modalità:</strong></p>
+    <table>
+        <tr><th>Modalità</th><th>Menu</th><th>Note</th></tr>
+        <tr><td>R (Reset)</td><td></td><td>Modalità vendite, per effettuare transazioni</td></tr>
+        <tr><td>X</td><td>X1.1 READ MG DAILY<br>X2.1 READ PLU DAILY<br>X3.1 READ DEPT DAILY<br>X4.1 READ SALES DAILY</td><td>Può stampare solo in modalità scontrino, la SPEC 421 controlla l'intervallo del report.<br>Può stampare attraverso:<br>1) Creare file MG/PLU/DEPT<br>2) Collegare PLU a MG/DEPT<br>3) Stampare PLU</td></tr>
+        <tr><td>Z</td><td>Z1.0 RESET SALES DAILY<br>Z2.0 RESET SALES MONTHLY<br>Z3.0 RESET SALES TERM<br>Z4.0 RESET TRACE REPORT<br>Z5.0 RESET CLERK LOG FILE<br>Z6.0 RESET PARTIAL MG REPORT (SPEC480=1)</td><td>Reset report. Usare il tasto PRINT per scegliere se resettare i report.</td></tr>
+        <tr><td>S</td><td>S1 PLU FILE<br>S2 DEPT FILE<br>S3 MGROUP FILE<br>S4 KEY ASSIGNMENT<br>S5 SHOP NAME FILE<br>S6 ADVER MESSAGE<br>S7 CLERK FILE<br>S8 DATE AND TIME<br>S9 SP MESSAGE<br>S10 INGR FILE<br>S11 TEXT FILE<br>S12 FREE FORMAT<br>S13 SCROLL MESSAGE<br>S14 SCROLL SEQUENC<br>S15 PLACE FILE<br>S16 MACHIN SETTING<br>S17 LOGO FILE<br>S18 TAX FILE<br>S19 PLU ITEM<br>S20 MEMORY STATUS<br>S21 I/F TEST<br>S22 USER PRT LINE<br>S23 USER RPT DATA<br>S24 USER RPT SEQ<br>S25 ALLERGEN FILE<br>S26 APC MG CODE<br>S29 NUTRITION FILE<br>S30 TEMPERATURE<br>S31 MULTI-BARCODE<br>S32 2D BAR TEXT<br>S33 TRACE TEXT<br>S34 COUNTRY FILE<br>S35 CUTTING HALL<br>S36 SLAUGHTERHOUSE<br>S37 TRACEABILITY<br>S38 FLEXI NUTRI<br>S39 FLEXI NUTRI FF<br>S40 USAGE FILE<br>S46 FLEXI BARCODE<br>S47 KIND FILE<br>S48 CATEGORY FILE<br>S49 BREED FILE<br>S50 UPDATE DATE<br>S51 STOCK KEY FILE</td><td>Modalità programmazione.<br>Reset record: Inserire il file e il numero, usare il tasto per scegliere se cancellare.<br>Reset interi file: In modalità Z, premere Rezero+230, usare il tasto 'X' per scegliere clear memory.</td></tr>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>1.4 Esempi di Report</h2>
+    <p>Il manuale originale mostra numerosi esempi di report stampati. Di seguito la lista dei report disponibili e una loro descrizione:</p>
+    <ul>
+        <li><strong>X1.1 READ MG DAILY:</strong> Report giornaliero Gruppo Principale (M.G. #, Support Rate, Customer, Actual Price, Planned Price, Quantity, Weight, Profit, Last Act Date, Discount Price, Price/Customer, Quantity/Customer, Price/Quantity).</li>
+        <li><strong>X2.1 READ PLU DAILY:</strong> Report giornaliero PLU (PLU#, Nome, Actual Price, Planned Price, Quantity, Weight, Profit, Last Act Date).</li>
+        <li><strong>X3.1 READ DEPT DAILY:</strong> Report giornaliero Reparto (DEPT.#, Support Rate, Customer, Actual Price, Planned Price, Quantity, Weight, Profit, Last Act Date, Discount Price, Refund Count, Refund Price).</li>
+        <li><strong>X4.1 READ SALES DAILY:</strong> Report giornaliero Vendite (Grand Total, Gross Sale Quantity/Weight/Amount, Discount, PLU Percent Discount, PLU Amount Discount, Percent Discount, Amount Discount, Item Correct, Void, Refund, Net Sale, SP Rounding, Customer, Cash Sales, Credit Sales, Received-on-account, Paid Out, Cash-in-drawer, Receipt Consecutive Number).</li>
+        <li><strong>X5.1 READ 24 HOUR DAILY:</strong> Report giornaliero 24 Ore (Store Total, fasce orarie 11H-12H, ecc. con Actual Price, Planned Price, Customer, Quantity, Price/Customer, Quantity/Customer, Price/Quantity).</li>
+        <li><strong>X6.1 READ ABC DAILY:</strong> Report giornaliero ABC (Rank A, B, C con PLU#, Actual Price, percentuali).</li>
+        <li><strong>X7.1 READ CLERK DAILY:</strong> Report giornaliero Commesso (Clerk #, Actual Price, Planned Price, Customer, Quantity, Weight, Price/Customer, ecc.).</li>
+        <li><strong>X8.1 READ PPK DEPT DAILY:</strong> Report giornaliero Pre-pack Reparto (DEPT.#, Actual Price, Planned Price, Quantity, Weight, Profit, Weight/Quantity, Price/Quantity).</li>
+        <li><strong>X3.2 READ DEPT MONTHLY:</strong> Report mensile Reparto.</li>
+        <li><strong>X4.2 READ SALES MONTHLY:</strong> Report mensile Vendite.</li>
+        <li><strong>X5.2 READ 24 HOUR MONTHLY:</strong> Report mensile 24 Ore.</li>
+        <li><strong>X8.2 READ PPK MG DAILY:</strong> Report giornaliero Pre-pack Gruppo Principale.</li>
+        <li><strong>1.4 READ MG TERM:</strong> Report a termine Gruppo Principale.</li>
+        <li><strong>2.4 READ PLU TERM:</strong> Report a termine PLU.</li>
+        <li><strong>3.4 READ DEPT TERM:</strong> Report a termine Reparto.</li>
+        <li><strong>X4.4 READ SALES TERM:</strong> Report a termine Vendite.</li>
+        <li><strong>X5.4 READ 24 HOUR TERM:</strong> Report a termine 24 Ore.</li>
+        <li><strong>X6.4 READ ABC TERM:</strong> Report a termine ABC.</li>
+        <li><strong>X9.4 READ TAX:</strong> Report Tasse (TAX1 VAT, Amount Incl., Amount Excl., Tax Amount).</li>
+        <li><strong>X4.3 READ STORE SUMMARY:</strong> Report riassuntivo del negozio (Manual Mode Summary, Prepack Mode Summary, Total Summary).</li>
+        <li><strong>X0.1 TRACEABILITY REPORT:</strong> Report Tracciabilità (Reference#, PLU, Weight, Total).</li>
+        <li><strong>X0.2 CLERK LOG REPORT:</strong> Report Log Commesso (Clerk#, Reported, PLU#, Old Unit Price, New Unit Price, Supervisor ID).</li>
+        <li><strong>X0.3 BATCH REPORT:</strong> Report Batch (definito dall'utente).</li>
+        <li><strong>X0.4 USER PROGRAM REPORT:</strong> Report programmabile dall'utente.</li>
+        <li><strong>X0.5 UPLOAD FISCAL DATA:</strong> Caricamento dati fiscali (richiede SPEC723=1).</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <h2>2. MANUTENZIONE DELLA BILANCIA</h2>
+
+    <h3>2.1 Tasti di Combinazione</h3>
+    <h4>2.1.1 Lista Tasti di Combinazione</h4>
+    <table>
+        <tr><th>Modalità</th><th>Combinazione</th><th>Span Switch Necessario</th><th>Effetto</th></tr>
+        <tr><td>R</td><td>Rezero+P22+On/Off<br><em>(effetto solo se la bilancia è spenta con il tasto soft switch)</em></td><td>√</td><td>Entra in modalità aggiornamento</td></tr>
+        <tr><td>R</td><td>Rezero+Feed</td><td></td><td>Identifica gli spazi tra le etichette</td></tr>
+        <tr><td>R</td><td>Rezero+◇</td><td></td><td>Esce dalla modalità self-service <em>(effetto solo se SPEC 664=1)</em></td></tr>
+        <tr><td>R</td><td>Rezero+V1</td><td></td><td>Esce dalla modalità self-service <em>(effetto solo se SPEC 664=1)</em></td></tr>
+        <tr><td>R</td><td>Rezero+X</td><td></td><td>Entra in modalità self-service <em>(effetto solo se SPEC 664=1)</em></td></tr>
+        <tr><td>R</td><td>Rezero+V3</td><td></td><td>Cambia il tipo di carta tra etichetta e scontrino</td></tr>
+        <tr><td>Z</td><td>Rezero+009</td><td>√</td><td>Visualizza il valore A/D</td></tr>
+        <tr><td>Z</td><td>Rezero+019</td><td></td><td>Visualizza il valore A/D originale</td></tr>
+        <tr><td>Z</td><td>Rezero+100</td><td></td><td>Visualizza le informazioni sul firmware corrente</td></tr>
+        <tr><td>Z</td><td>Rezero+111</td><td></td><td>Visualizza numero di serie e tipo di cassetta</td></tr>
+        <tr><td>Z</td><td>Rezero+112</td><td></td><td>Imposta Sub-S/N della bilancia</td></tr>
+        <tr><td>Z</td><td>Rezero+141</td><td></td><td>Impostazione SPEC 141 (1~599)</td></tr>
+        <tr><td>Z</td><td>Rezero+142</td><td>√</td><td>Impostazione SPEC 142 (600+)</td></tr>
+        <tr><td>Z</td><td>Rezero+230</td><td></td><td>Cancella dati: 1) PLU, 2) commesso, 3) file report, 4) dati memoria, 5) buffer tempo reale</td></tr>
+        <tr><td>Z</td><td>Rezero+284</td><td></td><td>Visualizza stato Span Switch</td></tr>
+    </table>
+
+    <h4>2.1.2 Menu Tasti di Combinazione</h4>
+    <p><strong>REZERO+009 (Richiede Span Switch ON)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>1 073465 0</td><td></td><td>Visualizza Valore A/D</td></tr>
+    </table>
+
+    <p><strong>REZERO+019</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>1 073465 1</td><td>073463</td><td>Visualizza Valore A/D Originale</td></tr>
+    </table>
+
+    <p><strong>REZERO+100</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>STE58 BOOT VR1.01</td><td></td><td>Visualizza versione Firmware corrente</td></tr>
+        <tr><td>STE58 MAIN VR01.13</td><td>STD VERSION COUNTRY: 2</td><td></td></tr>
+        <tr><td>STE58 CONST VR01.13</td><td>DESC01</td><td></td></tr>
+        <tr><td>STE58 FONT VR1.02</td><td>STD</td><td></td></tr>
+        <tr><td>STE58 BMAP VR1.00</td><td>CAEN</td><td></td></tr>
+    </table>
+
+    <p><strong>REZERO+111</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SCALE S/N 99999999</td><td>DISPLAY SCALE S/N</td><td>Visualizza Numero di Serie</td></tr>
+        <tr><td></td><td>SM-120LL</td><td>SM120 NORMAL CASSETTE (Cassetta Normale)</td></tr>
+        <tr><td></td><td>CASSETTE Type</td><td>SM120 LINERLESS CASSETTE (Cassetta Linerless)</td></tr>
+        <tr><td></td><td></td><td>SM120 NO CASSETTE (Nessuna Cassetta)</td></tr>
+    </table>
+
+    <p><strong>REZERO+112</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SET SCALE SUB-S/N 00000000</td><td>SET SCALE SUB-S/N</td><td>Imposta Sub-Serial Number</td></tr>
+        <tr><td>SUB-S/N 00000000 CONFIRM?</td><td>SET SCALE SUB-S/N</td><td>Cliccare PLU per questo passo. Print per confermare.</td></tr>
+    </table>
+
+    <p><strong>REZERO+230</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Conferma Prima Schermata</th><th>Conferma Seconda Schermata</th></tr>
+        <tr><td>CLEAR PLU FILE</td><td>CLEAR PLU FILE ?</td><td>CLEAR Y-C N-T</td><td>CLEAR CLEAR/TARE KEY</td></tr>
+        <tr><td>CLEAR CLERK DATA</td><td>CLEAR CLERK DATA ?</td><td>CLEAR Y-C N-T</td><td>CLEAR CLEAR/TARE KEY</td></tr>
+        <tr><td>CLEAR REPORT FILES</td><td>CLEAR REPORT FILE ?</td><td>CLEAR Y-C N-T</td><td>CLEAR CLEAR/TARE KEY</td></tr>
+        <tr><td>CLEAR MEMORY DATA</td><td>CLEAR MEMORY DATA ?</td><td>CLEAR Y-C N-T</td><td>CLEAR CLEAR/TARE KEY</td></tr>
+        <tr><td>CLEAR REAL TIME BUF</td><td>CLEAR REAL TIME BUFFER ?</td><td>CLEAR Y-C N-T</td><td>CLEAR CLEAR/TARE KEY</td></tr>
+    </table>
+
+    <p><strong>REZERO+284</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>STE58 VR01.03 S-OFF</td><td>SPAN SWITCH OFF</td><td>Visualizza stato Span Switch</td></tr>
+    </table>
+
+    <p><strong>REZERO+503</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>ADJ CFD 0 0</td><td>ADJUST PRIMARY PRINT POS</td><td>Regola Posizione di Stampa Primaria</td></tr>
+    </table>
+
+    <p><strong>REZERO+514</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>ADJ PFD 0 0</td><td>ADJUST PRINT POSITION</td><td>Regola Posizione di Stampa</td></tr>
+    </table>
+
+    <p><strong>REZERO+515</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>PEEL PFD 0.7 1.9</td><td>PEEL SENSOR VOLTAGE</td><td>Regola Tensione Sensore Peel</td></tr>
+    </table>
+
+    <p><strong>REZERO+516</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>GAP PFD 0 1.7</td><td>GAP SENSOR VOLTAGE</td><td>Regola Tensione Sensore Gap</td></tr>
+    </table>
+
+    <p><strong>REZERO+519</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>P ED VO 2.0 3.0</td><td>REMOVE PAPER & PRESS [*]</td><td>Regola Tensione Fine Carta</td></tr>
+    </table>
+
+    <p><strong>REZERO+544</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FISCAL DATA UPLOAD</td><td>FISCAL DATA UPLOAD</td><td>Caricamento Dati Fiscali</td></tr>
+    </table>
+
+    <p><strong>REZERO+0141</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>LOAD DFTSPEC Y-C N-T</td><td>LOAD DEFAULT SPEC?</td><td>Carica SPEC 141 Predefinite</td></tr>
+    </table>
+
+    <p><strong>REZERO+0415 (effetto solo dopo SPEC214=1 e reboot)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SCALE IP 010010092015</td><td>SCALE IP ADDRESS</td><td>Visualizza IP DHCP</td></tr>
+        <tr><td>SUBNET MASK 255255255000</td><td>SUBNET MASK ADDRESS</td><td>Visualizza Subnet Mask DHCP</td></tr>
+        <tr><td>GATEWAY 010010092250</td><td>GATEWAY</td><td>Visualizza Gateway DHCP</td></tr>
+    </table>
+
+    <p><strong>REZERO+0416</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SCALE IP 010010092015</td><td>SCALE IP ADDRESS</td><td>Visualizza IP Statico</td></tr>
+    </table>
+
+    <p><strong>REZERO+0417</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SERVER IP 010010092000</td><td>SERVER IP ADDRESS</td><td>Visualizza IP Server</td></tr>
+    </table>
+
+    <p><strong>REZERO+0418</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>SUBNET MASK 255255255000</td><td>SUBNET MASK ADDRESS</td><td>Visualizza Subnet Mask Statico</td></tr>
+    </table>
+
+    <p><strong>REZERO+0419</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SCALE USER 5 admin</td><td></td><td>Visualizza account utente FTP</td></tr>
+    </table>
+
+    <p><strong>REZERO+0420</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SCALE admin</td><td></td><td>Visualizza password utente FTP</td></tr>
+    </table>
+
+    <p><strong>REZERO+0421</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>GATEWAY 010010092250</td><td>GATEWAY</td><td>Visualizza Gateway Statico</td></tr>
+    </table>
+
+    <p><strong>REZERO+0422</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>DHCP HOST NAME 0</td><td></td><td>Visualizza Nome Host DHCP</td></tr>
+    </table>
+
+    <p><strong>REZERO+0423</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>CALL PLU SIP 255255255255</td><td>CALL PLU SERVER IP ADDR</td><td>Imposta IP Server Chiamata PLU</td></tr>
+    </table>
+
+    <p><strong>REZERO+0429</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SRV USER 5 admin</td><td></td><td>Imposta account utente FTP server</td></tr>
+    </table>
+
+    <p><strong>REZERO+0430</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SRV PWD 5 admin</td><td></td><td>Imposta password FTP server</td></tr>
+    </table>
+
+    <p><strong>REZERO+0431</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SRV D PATH 9 \download</td><td></td><td>Imposta percorso download FTP server remoto</td></tr>
+    </table>
+
+    <p><strong>REZERO+0432</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP SRV U PATH 9 \upload</td><td></td><td>Imposta percorso upload FTP server remoto</td></tr>
+    </table>
+
+    <p><strong>REZERO+0439</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP AUTOUSER 5 admin</td><td></td><td>Imposta account utente funzione Auto Upload</td></tr>
+    </table>
+
+    <p><strong>REZERO+0440</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP AUTOPWD 5 admin</td><td></td><td>Imposta password funzione Auto Upload</td></tr>
+    </table>
+
+    <p><strong>REZERO+0441</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>FTP AUTOPATH 1 \</td><td></td><td>Imposta percorso upload funzione Auto Upload</td></tr>
+    </table>
+
+    <p><strong>REZERO+0442</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>AUTO U SRV IP 192168001000</td><td>SERVER IP ADDRESS</td><td>Imposta IP Server Upload funzione Auto Upload</td></tr>
+    </table>
+
+    <p><strong>REZERO+0448</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>CLOUD IP ADDR 255255255255</td><td>CLOUD IP ADDRESS</td><td>Imposta IP Cloud</td></tr>
+    </table>
+
+    <p><strong>REZERO+0449</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>DNS IP ADDR 255255255255</td><td>DNS IP ADDRESS</td><td>Imposta IP DNS Cloud</td></tr>
+    </table>
+
+    <p><strong>REZERO+0612</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>ETHERNET 00600377C06C</td><td>SCALE ETHERNET ADDRESS</td><td>Imposta Indirizzo MAC</td></tr>
+    </table>
+
+    <p><strong>REZERO+0823</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>PRINTER USAGE 158</td><td>THERMAL PRINTER USAGE</td><td>Visualizza Utilizzo Stampante Termica</td></tr>
+        <tr><td>2072 PRINTER CUT PAPER COUNT</td><td></td><td>Visualizza Conteggio Tagli Carta</td></tr>
+    </table>
+
+    <p><strong>REZERO+1439 (effetto solo dopo aver ricevuto il file SPEC)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>LOAD</td><td>LOAD 141 SPEC</td><td>Carica SPEC141</td></tr>
+        <tr><td>LOAD</td><td>LOAD 141 SPEC & 142 SPEC</td><td>Carica SPEC141 & 142 (effetto solo con Span Switch ON)</td></tr>
+    </table>
+
+    <p><strong>REZERO+2851 (Richiede Span Switch ON)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>STE58VR01.13b19f</td><td></td><td>Visualizza Versione Bilancia e checksum A/D</td></tr>
+    </table>
+
+    <p><strong>REZERO+8715 (Richiede Span Switch ON)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>CAL 00</td><td>CALIBRATE ZERO POINT</td><td>Calibra Punto Zero</td></tr>
+        <tr><td>CAL SP</td><td>CALIBRATE SPAN</td><td>Calibra Span (1.500/3.000/4.500/6.000/7.500/9.000/10.500/12.000/13.500/15.000). Questa scelta ha effetto solo dopo SPEC684=1, usare il tasto Clear per cambiare.</td></tr>
+    </table>
+
+    <p><strong>REZERO+8822 (Richiede Span Switch ON)</strong></p>
+    <table>
+        <tr><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>COUNTRY CODE 2-> STD</td><td>SELECT COUNTRY</td><td></td></tr>
+        <tr><td>LOAD DEFAULT SPEC Y-C N-T</td><td>LOAD DEFAULT SPEC ?</td><td>YES = CLEAR KEY, NO = TARE KEY</td></tr>
+        <tr><td>CHANGE SCALE TYPE Y-C N-T</td><td>CHANGE SCALE TYPE/CAP. ?</td><td>YES = CLEAR KEY, NO = TARE KEY</td></tr>
+        <tr><td>SCALE TYPE 2 -> 120LL-P</td><td>SELECT SCALE TYPE</td><td>0: 120LL-B, 1: 120LL-E, 2: 120LL-P, 3: 120LL-H, 4: 120LL-S, 5: 120-B, 6: 120-E, 7: 120-P, 8: 120-H, 9: 120-S, 10: LL-B-40, 11: B-40</td></tr>
+        <tr><td>SCALE CAP -> 3kg</td><td>SELECT CAPACITY</td><td>3kg/6kg/12kg/15kg/30kg/60kg, 3lb/6lg/12lb/15lb/30lb/60lb</td></tr>
+        <tr><td>SCALE RES -> 1/3000S</td><td>SELECT RESOLUTION</td><td>1/3000S, 1/3000M, 1/7500S</td></tr>
+        <tr><td>CLEAR MEMORY Y-C N-T</td><td>CLEAR MEMORY ?</td><td>YES = CLEAR KEY, NO = TARE KEY</td></tr>
+    </table>
+
+    <p><strong>Tabella Codici Paese:</strong></p>
+    <table>
+        <tr><th>Codice</th><th>Paese</th><th>Codice</th><th>Paese</th><th>Codice</th><th>Paese</th><th>Codice</th><th>Paese</th></tr>
+        <tr><td>0</td><td>AA Japan</td><td>23</td><td>UK United Kingdom</td><td>46</td><td>IR Israel</td><td>69</td><td>TT Trinidad and Tobago</td></tr>
+        <tr><td>1</td><td>U1 U.S.A.</td><td>24</td><td>IL Ireland (Kg)</td><td>47</td><td>VY Slovenia</td><td>70</td><td>UD Uganda</td></tr>
+        <tr><td>2</td><td>STD Standard</td><td>25</td><td>IL (LB) Ireland (Lb)</td><td>48</td><td>MS Malaysia</td><td>71</td><td>LV Latvia</td></tr>
+        <tr><td>3</td><td>CN China</td><td>26</td><td>CA Canada (Kg)</td><td>49</td><td>SN Spain</td><td>72</td><td>CVS Slovakia</td></tr>
+        <tr><td>4</td><td>HK Hong Kong</td><td>27</td><td>CA (LB) Canada (Lb)</td><td>50</td><td>VZ Venezuela</td><td>73</td><td>SK Sri Lanka</td></tr>
+        <tr><td>5</td><td>TW Taiwan</td><td>28</td><td>AG Argentina</td><td>51</td><td>CO Croatia</td><td>74</td><td>SV Slovenia</td></tr>
+        <tr><td>6</td><td>EX Export</td><td>29</td><td>MX Mexico</td><td>52</td><td>MA Macedonian</td><td>75</td><td>UA Ukraine</td></tr>
+        <tr><td>7</td><td>KE Korea</td><td>30</td><td>BZ Brazil</td><td>53</td><td>FR France</td><td>76</td><td>KZ Kazakhstan</td></tr>
+        <tr><td>8</td><td>AR Australia And New Zealand</td><td>31</td><td>CE Chile</td><td>54</td><td>WG Germany</td><td>77</td><td>IT Italy</td></tr>
+        <tr><td>9</td><td>SF South Africa</td><td>32</td><td>EA Egypt</td><td>55</td><td>BL Bulgaria</td><td>78</td><td>SZ Switzerland</td></tr>
+        <tr><td>10</td><td>CS Cyprus</td><td>33</td><td>JD Jordan</td><td>56</td><td>BW Botswana</td><td>79</td><td>ID India</td></tr>
+        <tr><td>11</td><td>GC Greece</td><td>34</td><td>LN Lebanon</td><td>57</td><td>CP Comores</td><td>80</td><td>CD New Caledonia</td></tr>
+        <tr><td>12</td><td>TU Turkey</td><td>35</td><td>IRN Iran</td><td>58</td><td>LS Lesotho</td><td>81</td><td>CM Colombia</td></tr>
+        <tr><td>13</td><td>CV Czech Republic</td><td>36</td><td>CR Canary Islands</td><td>59</td><td>MU Mauritius</td><td>82</td><td>AM Armenia</td></tr>
+        <tr><td>14</td><td>HG Hungary</td><td>37</td><td>TL Thailand</td><td>60</td><td>MW Malawi</td><td>83</td><td>GE Georgia</td></tr>
+        <tr><td>15</td><td>PL Poland</td><td>38</td><td>EC European Community</td><td>61</td><td>MZ Mozambique</td><td>84</td><td>MN Mongolia</td></tr>
+        <tr><td>16</td><td>UR Russia</td><td>39</td><td>NL Netherlands</td><td>62</td><td>NM Namibia</td><td></td><td></td></tr>
+        <tr><td>17</td><td>AS Austria</td><td>40</td><td>BG Belgium</td><td>63</td><td>RE Reunion</td><td></td><td></td></tr>
+        <tr><td>18</td><td>DM Denmark</td><td>41</td><td>SA Saudi Arabs</td><td>64</td><td>SH Seychelles</td><td></td><td></td></tr>
+        <tr><td>19</td><td>FL Finland</td><td>42</td><td>IC Iceland</td><td>65</td><td>SW Swaziland</td><td></td><td></td></tr>
+        <tr><td>20</td><td>NW Norway</td><td>43</td><td>IE Indonesia</td><td>66</td><td>WZ Zimbabwe</td><td></td><td></td></tr>
+        <tr><td>21</td><td>SD Sweden</td><td>44</td><td>CB Cuba</td><td>67</td><td>ZM Zambia</td><td></td><td></td></tr>
+        <tr><td>22</td><td>PG Portugal</td><td>45</td><td>KY Kenya</td><td>68</td><td>AE U.A.E</td><td></td><td></td></tr>
+    </table>
+
+    <h3>2.2 Informazioni sui Codici a Barre</h3>
+    <h4>2.2.1 Gamma Supportata</h4>
+    <table>
+        <tr><th>Tipo</th><th>Nome</th><th>Esempio Codice a Barre</th><th>Esempio Formato</th><th>Spiegazione</th></tr>
+        <tr><td>S1-Normal</td><td>EAN8</td><td>89031 1017</td><td>F1F2 CCCCC CD</td><td>I codici a barre EAN-8 possono essere usati per codificare i GTIN-8. Inizia con un prefisso GS1 di 2 o 3 cifre, un elemento di riferimento di 5 o 4 cifre e una cifra di controllo.</td></tr>
+        <tr><td>S1-Normal</td><td>EAN13</td><td>9780201 379624</td><td>F1F2 CCCCCCCCC CD</td><td>I 13 digit sono raggruppati in: gruppo sinistro (digit 2-7), gruppo destro (digit 8-13, il 13 è il check digit).</td></tr>
+        <tr><td>S4+FLETX1</td><td>EAN8/13</td><td>//</td><td>//</td><td>Come il normale.</td></tr>
+        <tr><td>S4+FLETX1</td><td>ITF</td><td>201254300472003234</td><td>F1F2 CCCCC WWWWW TTTTT CD</td><td>Codice a barre da 4-22 digit, numero pari.</td></tr>
+        <tr><td>S4+FLETX1</td><td>INDIA BARCODE</td><td>A12345@00001</td><td>HHHH+FF+ITEM CODE+S1+DATA1+S2+DATA2+LAST BYTE</td><td>Tipo speciale di codice a barre.</td></tr>
+        <tr><td>S3-1-Multi-barcode</td><td>EAN128 AUTO</td><td>6 9 2 3 4 5 0 6 5 6 1 8</td><td>/</td><td>EAN 128 è una variante del Code 128 usata principalmente nella distribuzione retail/logistica.</td></tr>
+        <tr><td>S3-1-Multi-barcode</td><td>CODE128</td><td>6 9 2 3 4 5 0 6 5 6 1 8</td><td>/</td><td>Code 128 consiste in tre set di caratteri: A, B, C. Supporta tutti i 128 caratteri ASCII.</td></tr>
+        <tr><td>S3-1-Multi-barcode</td><td>PDF417</td><td>/</td><td>/</td><td>PDF417 è un formato di codice a barre lineare impilato usato in trasporti, carte d'identità e gestione inventario.</td></tr>
+    </table>
+
+    <h4>2.2.2 GS1 Barcode AI (SM-120)</h4>
+    <table>
+        <tr><th>AI</th><th>SM-120</th><th>FORMATO DATI</th><th>FNC1 Richiesto (solo SM-120)</th></tr>
+        <tr><td>(00)</td><td>18X CD</td><td>1 pack indicator + 7 UCC/EAN prefix + 9 serial no. + EAN check digit</td><td>N2+N18</td></tr>
+        <tr><td>(01)</td><td>14X CD</td><td>1 pack indicator + EAN13</td><td>N2+N14</td></tr>
+        <tr><td>(02)</td><td>14X CD</td><td>1 pack indicator + EAN8 + '00000'</td><td>N2+N14</td></tr>
+        <tr><td>(11)</td><td>6X CD</td><td>production date (YYMMDD)</td><td>N2+N6</td></tr>
+        <tr><td>(13)</td><td>6X CD</td><td>pack date (YYMMDD)</td><td>N2+N6</td></tr>
+        <tr><td>(15)</td><td>6X CD</td><td>sell by date (YYMMDD)</td><td>N2+N6</td></tr>
+        <tr><td>(17)</td><td>6X CD</td><td>used by date (YYMMDD)</td><td>N2+N6</td></tr>
+        <tr><td></td><td>4X CD</td><td>quantity</td><td>N2+X..8(FNC1)</td></tr>
+        <tr><td>(37)</td><td>4X CD</td><td>quantity</td><td>N2+X..8(FNC2)</td></tr>
+        <tr><td>(31xx)</td><td>6X CD</td><td>weight</td><td>N4+N6</td></tr>
+        <tr><td>(32xx)</td><td>6X CD</td><td>weight (lb)</td><td>N4+N6</td></tr>
+        <tr><td>(94)</td><td>26X CD</td><td>ITF (without AI)</td><td></td></tr>
+        <tr><td>(10)</td><td>20X CD</td><td>ref. no</td><td>N2+X..20(FNC1)</td></tr>
+        <tr><td>(251)</td><td>30X CD</td><td>lot</td><td>N3+X..30(FNC1)</td></tr>
+        <tr><td>(422)</td><td>3X CD</td><td>born country</td><td>N3+N3(FNC1)</td></tr>
+        <tr><td>(423)</td><td>3X CD</td><td>fatten country</td><td>N3+N3+N..12(FNC1)</td></tr>
+        <tr><td>(424)</td><td>3X CD</td><td>slaughter house country</td><td>N3+N3(FNC1)</td></tr>
+        <tr><td>(425)</td><td>3X CD</td><td>cutting hall country</td><td>N3+N3(FNC1)</td></tr>
+        <tr><td>(426)</td><td>3X CD</td><td>origin country</td><td>N3+N3(FNC1)</td></tr>
+        <tr><td>(7030)</td><td>6X CD</td><td>slaughter house country + slaughter house</td><td>N4+N3+X..27(FNC1)</td></tr>
+        <tr><td>(7031)</td><td>6X CD</td><td>cutting hall country + cutting hall</td><td>N4+N3+X..27(FNC1)</td></tr>
+        <tr><td>(910)</td><td>20X CD</td><td>ref no. (without AI)</td><td>X..20(FNC1)</td></tr>
+        <tr><td>(392x)</td><td>7X CD</td><td>price(0~999, x = 0~3)</td><td>N4+N3+N..15(FNC1)</td></tr>
+        <tr><td>(97)</td><td>2X CD</td><td>vendor no.</td><td>N2+N2</td></tr>
+        <tr><td>(975)</td><td>22X CD</td><td>13 EAN + 2 scale code + 2 trace #+ 5 item label # (without AI)</td><td>N22</td></tr>
+        <tr><td>(943)</td><td>29X CD</td><td>ITF + 3 machine code (without AI)</td><td>N29</td></tr>
+        <tr><td>(915)</td><td>26X CD</td><td>FF CCCCC PPPPP WWWWW/QQQQ QYMMDDHH CD</td><td>N26</td></tr>
+        <tr><td>(971)</td><td>6X CD</td><td>6 machine code</td><td>N3 + N6</td></tr>
+        <tr><td>(972)</td><td>7X CD</td><td>7 Item label #</td><td>N3 + N7</td></tr>
+        <tr><td>(330x)</td><td>6X CD</td><td>gross weight (kg)</td><td>N4+N6</td></tr>
+        <tr><td>(7003)</td><td>10X CD</td><td>used by date and time (YYMMDDHHmm)</td><td>N4+N10 (FNC1)</td></tr>
+        <tr><td>(93)</td><td>8X CD</td><td>PLU code</td><td>N2 + N...8 (FNC1)</td></tr>
+    </table>
+    <p><strong>Solo per la Cina:</strong></p>
+    <table>
+        <tr><th>AI</th><th>SM-120</th><th>FORMATO DATI</th><th>FNC1 Richiesto (solo SM-120)</th></tr>
+        <tr><td>[00]</td><td>18X CD</td><td>1 pack indicator + 7 UCC/EAN prefix + 9 serial no. + EAN check digit</td><td>N18</td></tr>
+        <tr><td>[01]</td><td>14X CD</td><td>1 pack indicator + EAN13</td><td>N14</td></tr>
+        <tr><td>[02]</td><td>14X CD</td><td>1 pack indicator + EAN8 + '00000'</td><td>N14</td></tr>
+        <tr><td>[11]</td><td>6X CD</td><td>production date (YYMMDD)</td><td>N6</td></tr>
+        <tr><td>[13]</td><td>6X CD</td><td>pack date (YYMMDD)</td><td>N6</td></tr>
+        <tr><td>[15]</td><td>6X CD</td><td>sell by date (YYMMDD)</td><td>N6</td></tr>
+        <tr><td>[17]</td><td>6X CD</td><td>used by date (YYMMDD)</td><td>N6</td></tr>
+        <tr><td>[31xx]</td><td>6X CD</td><td>Weight</td><td>N6</td></tr>
+        <tr><td>[941]</td><td>8X CD</td><td>item barcode</td><td></td></tr>
+        <tr><td>[949]</td><td>1X CD</td><td>ITF checksum</td><td>N1</td></tr>
+        <tr><td>[9490]</td><td>1X CD</td><td>Lotus China checksum</td><td>N1</td></tr>
+        <tr><td>[97]</td><td>2X CD</td><td>vendor no.</td><td>N2</td></tr>
+        <tr><td>[99xx]</td><td>1X CD</td><td>Fixed number. Il primo x indica le cifre. Il secondo x indica il numero.</td><td>X..9</td></tr>
+        <tr><td>[95]</td><td>6X CD</td><td>used by date (DDMMYY)</td><td>N6</td></tr>
+        <tr><td>[951]</td><td>6X CD</td><td>sell by date (DDMMYY)</td><td>N6</td></tr>
+        <tr><td>[952]</td><td>4X CD</td><td>sell by time (HHmm)</td><td>N4</td></tr>
+        <tr><td>[9740]</td><td>5X CD</td><td>weight or quantity</td><td>N5</td></tr>
+        <tr><td>[971x]</td><td>1X CD</td><td>Machine code (Spec48). La x indica le cifre (1~6).</td><td>X..6</td></tr>
+        <tr><td>[972x]</td><td>1X CD</td><td>Item label #. La x indica le cifre (1~7).</td><td>X..7</td></tr>
+        <tr><td>[973x]</td><td>1X CD</td><td>Store code (Spec371). La x indica le cifre (1~5).</td><td>X..5</td></tr>
+        <tr><td>[9741]</td><td>6X CD</td><td>6 digit total price.</td><td>N6</td></tr>
+        <tr><td>[977]</td><td>2X CD</td><td>Login vender no.</td><td>N2</td></tr>
+        <tr><td>[9491]</td><td>1X CD</td><td>Carrefour Brazil checksum</td><td>N1</td></tr>
+    </table>
+    <p><em>Formato -- F ()CD. Esempio: F (94)CD. Spiegazione: n - cifra numerica, x...8 - fino a 8 cifre numeriche.</em></p>
+
+    <div class="page-break"></div>
+
+    <h2>3. STRUTTURA LOGICA DELLA BILANCIA</h2>
+
+    <h3>3.1 Informazioni sui File</h3>
+    <table>
+        <tr><th>Parti</th><th>File</th><th>Intervallo</th><th>Note</th></tr>
+        <tr><td>PLU</td><td>Department</td><td>0-999999</td><td>97/98/99 sono codici predefiniti di fabbrica, non modificabili</td></tr>
+        <tr><td>PLU</td><td>MG</td><td>0-999999</td><td>997/998/999 sono codici predefiniti di fabbrica, non modificabili</td></tr>
+        <tr><td>PLU</td><td>PLU</td><td>0-999999</td><td>999997/999998/999999 sono codici predefiniti di fabbrica, non modificabili</td></tr>
+        <tr><td>PLU</td><td>PLU Selection/Tax Rate</td><td>1-9</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Ingredient</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Special Message</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Advertisement</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Shop Name</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Text</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Place</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>2D Barcode Text</td><td>1-99</td><td></td></tr>
+        <tr><td>File di Testo</td><td>Usage</td><td>1-99</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Print format File</td><td>1-99</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Linked Nutrition</td><td>1-999999</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Linked Storage Temperature</td><td>1-999999</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Multi-barcode</td><td>1-999999</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Flexi-barcode</td><td>1-9</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Image File</td><td>1-999999</td><td></td></tr>
+        <tr><td>PLU Linked</td><td>Flexi-nutrition</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Department Total</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>MG Total</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>PLU Total</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Clerk Total</td><td>1-99</td><td></td></tr>
+        <tr><td>Totali</td><td>Sales Total</td><td>1-3</td><td>1: Giornaliero, 2: Mensile, 3: A termine</td></tr>
+        <tr><td>Totali</td><td>Tax Total</td><td>1-9</td><td></td></tr>
+        <tr><td>Totali</td><td>Real Time Receipt Buffer</td><td>0-2</td><td>0: Scontrino, 1: Etichetta totale, 2: Etichetta articolo</td></tr>
+        <tr><td>Totali</td><td>Real Time Total Receipt Buffer</td><td>0-2</td><td>0: Scontrino, 1: Etichetta totale, 2: Etichetta articolo</td></tr>
+        <tr><td>Totali</td><td>Stock Record File</td><td>XXXXYYY</td><td>4-digit list No. + 0 + 3-digit serial No.</td></tr>
+        <tr><td>Totali</td><td>Clerk Log File</td><td>1-9999</td><td></td></tr>
+        <tr><td>Totali</td><td>PLU Transaction File</td><td>1-9999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Item label serial number</td><td>1-9999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Traceability Record File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Traceability Report File</td><td>1-9999</td><td></td></tr>
+        <tr><td>Totali</td><td>Clerk Log File</td><td>1-9999</td><td></td></tr>
+        <tr><td>Totali</td><td>PLU Transaction File</td><td>1-9999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Item label serial number</td><td>1-9999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Traceability Record File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Totali</td><td>Scroll Message File</td><td>1-9</td><td></td></tr>
+        <tr><td>Totali</td><td>Scroll Sequence file</td><td>1-9</td><td></td></tr>
+        <tr><td>Totali</td><td>Key Assignment</td><td>0-2</td><td></td></tr>
+        <tr><td>Totali</td><td>Clerk</td><td>1-99</td><td></td></tr>
+        <tr><td>Totali</td><td>Password</td><td>1</td><td></td></tr>
+        <tr><td>Totali</td><td>Date & Time File</td><td>255/256</td><td>Codice 255 per valore di aggiornamento data/ora; 256 per valore di cambio data/ora</td></tr>
+        <tr><td>Totali</td><td>Machine Setting</td><td>000001</td><td></td></tr>
+        <tr><td>Totali</td><td>Stock Function Key File</td><td>1-99</td><td></td></tr>
+        <tr><td>Altri</td><td>Batch Report File</td><td>00bb00ss</td><td>Il codice batch report consiste di 2 cifre batch # e 2 cifre sequenza #. bb: batch #, ss: sequence #</td></tr>
+        <tr><td>Altri</td><td>Scale Data File</td><td>XXXXXXXX</td><td></td></tr>
+        <tr><td>Altri</td><td>Logo File</td><td>1-4</td><td></td></tr>
+        <tr><td>Altri</td><td>Spec File</td><td>0-799</td><td></td></tr>
+        <tr><td>Altri</td><td>Report Format Line File</td><td>1-99</td><td></td></tr>
+        <tr><td>Altri</td><td>Report Format Data File</td><td>1-99</td><td></td></tr>
+        <tr><td>Altri</td><td>Report Format Sequence File</td><td>1-99</td><td></td></tr>
+        <tr><td>Altri</td><td>Allergen File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Traceability Group File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Kind File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Category File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Breed File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Slaughter House File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Cutting Hall File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Country File</td><td>1-9999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Traceability Barcode File</td><td>1-999999</td><td></td></tr>
+        <tr><td>Tracciabilità</td><td>Traceability Text File</td><td>1-999999</td><td></td></tr>
+    </table>
+
+    <h3>3.2 Dimensioni dei Caratteri</h3>
+    <table>
+        <tr><th>#</th><th>Carattere</th><th>Codice Dati</th><th>Dimensione</th><th>#</th><th>Carattere</th><th>Codice Dati</th><th>Dimensione</th></tr>
+        <tr><td>Standard Japan</td><td></td><td></td><td></td><td>4</td><td>J1</td><td>16</td><td>16 × 16</td></tr>
+        <tr><td>1</td><td>S1</td><td>0</td><td>5 × 7</td><td>24</td><td>J2</td><td>17</td><td>16 × 32</td></tr>
+        <tr><td>2</td><td>S2</td><td>1</td><td>16 × 10</td><td>25</td><td>J3</td><td>18</td><td>32 × 32</td></tr>
+        <tr><td>3</td><td>S3</td><td>2</td><td>27 × 12</td><td>26</td><td>J4</td><td>19</td><td>24 × 24</td></tr>
+        <tr><td>4</td><td>S4</td><td>3</td><td>37 × 16</td><td>27</td><td>J5</td><td>19</td><td>24 × 24</td></tr>
+        <tr><td>5</td><td>S5</td><td>4</td><td>49 × 22</td><td>7</td><td>M1</td><td>5</td><td>10 × 14</td></tr>
+        <tr><td>China</td><td></td><td></td><td></td><td>8</td><td>M2</td><td>6</td><td>12 × 20</td></tr>
+        <tr><td>9</td><td>M3</td><td>7</td><td>14 × 24</td><td>29</td><td>G1</td><td>22</td><td>24 × 24</td></tr>
+        <tr><td>10</td><td>M4</td><td>8</td><td>14 × 32</td><td>30</td><td>G2</td><td>23</td><td>48 × 48</td></tr>
+        <tr><td>11</td><td>M5</td><td>9</td><td>18 × 44</td><td>31</td><td>G3</td><td>20</td><td>16 × 16</td></tr>
+        <tr><td>13</td><td>X1 (solo scontrino)</td><td>80</td><td>5 × 14</td><td>32</td><td>G4</td><td>21</td><td>32 × 32</td></tr>
+        <tr><td>14</td><td>X2 (solo scontrino)</td><td>81</td><td>6 × 20</td><td>33</td><td>G5</td><td>24</td><td>16 × 32</td></tr>
+        <tr><td>15</td><td>X3 (solo scontrino)</td><td>82</td><td>7 × 24</td><td>34</td><td>G6</td><td>25</td><td>24 × 48</td></tr>
+        <tr><td>16</td><td>X4 (solo scontrino)</td><td>83</td><td>7 × 32</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>17</td><td>X5 (solo scontrino)</td><td>84</td><td>9 × 44</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.3 Tipi di Formato Etichetta</h3>
+    <table>
+        <tr><th>#</th><th>Tipo dimensione etichetta</th><th>Note</th><th>#</th><th>Tipo dimensione etichetta</th><th>Note</th></tr>
+        <tr><td>0</td><td>Segui SPEC macchina</td><td>Tipo etichetta per SMT</td><td>13</td><td>S1</td><td>T1</td></tr>
+        <tr><td>14</td><td>A2</td><td>T2</td><td>15</td><td>B3</td><td>T3</td></tr>
+        <tr><td>16</td><td>C4</td><td>T4</td><td>17</td><td>U2 (per USA)</td><td></td></tr>
+        <tr><td>5</td><td>T5</td><td>U3 (per USA)</td><td>Free Format</td><td></td><td></td></tr>
+        <tr><td>6</td><td>T6</td><td>U4 (per USA)</td><td>17-115</td><td>F1 - F99</td><td></td></tr>
+        <tr><td>7</td><td>T7</td><td>U5 (per USA)</td><td></td><td></td><td></td></tr>
+        <tr><td>8</td><td>T8</td><td>U6 (per USA)</td><td></td><td></td><td></td></tr>
+        <tr><td>9</td><td>T9</td><td>U7 (per USA)</td><td></td><td></td><td></td></tr>
+        <tr><td>10</td><td>T10</td><td>U8 (per USA)</td><td></td><td></td><td></td></tr>
+        <tr><td>11</td><td>T11</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>12</td><td>T12</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.4 Lista Menu File PLU (S1)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>Campo Influenzato in S19</th></tr>
+        <tr><td>1.1</td><td>PLU 0.00 PR-kg</td><td>ENTER UNIT PRICE</td><td>SPEC600=1</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.1</td><td>PLU 0.00 PR-100g</td><td>ENTER UNIT PRICE</td><td>SPEC600=0</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.1</td><td>PLU 0.00 PR-lb</td><td>ENTER UNIT PRICE</td><td>SPEC600=2</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.1</td><td>PLU 0.00 PR-PCS</td><td>ENTER UNIT PRICE</td><td></td><td>UNIT PRICE</td></tr>
+        <tr><td>1.2</td><td>PLU DFT 0 LAB FR1</td><td>SELECT LABEL FORMAT 1</td><td>T1-T12,S,A,B,C</td><td>LABEL FORMAT 1</td></tr>
+        <tr><td>1.3</td><td>PLU NO 0 LAB FR2</td><td>SELECT LABEL FORMAT 2</td><td>T1-T12,S,A,B,C</td><td>LABEL FORMAT 2</td></tr>
+        <tr><td>1.4</td><td>C01.01 S1 A 70</td><td>Invisible when 1.2 don't have commodity field</td><td></td><td>COMMODITY NAME</td></tr>
+        <tr><td>1.4</td><td>C02.01 S1 A 69A</td><td>Invisible when 1.2 don't have commodity field</td><td></td><td>COMMODITY NAME</td></tr>
+        <tr><td>1.4</td><td>C03.01 S1 A 69A</td><td>Invisible when 1.2 don't have commodity field</td><td></td><td>COMMODITY NAME</td></tr>
+        <tr><td>1.5</td><td>PLU EAN BARCODE</td><td>SELECT ITF/EAN BARCODE</td><td></td><td>ITF SELECTION</td></tr>
+        <tr><td>1.5</td><td>PLU ITF BARCODE</td><td>SELECT ITF/EAN BARCODE</td><td></td><td>ITF SELECTION</td></tr>
+        <tr><td>1.6</td><td>PLU DFLT BAR CODE</td><td>SELECT BARCODE</td><td>Note 1</td><td>BARCODE</td></tr>
+        <tr><td>1.7</td><td>PLU 20 FLAG</td><td>ENTER FLAG CODE</td><td></td><td>BARCODE/BARCODE FLAG DATA</td></tr>
+        <tr><td>1.8</td><td>PLU 000 IT CODE</td><td>ENTER ITEM CODE</td><td></td><td>BARCODE ITEM CODE</td></tr>
+        <tr><td>1.9</td><td>PLU 0000 EX CODE</td><td>ENTER EXITEM CODE</td><td>Visible when 1.5 choose EAN,1.6 choose FFCCCCCCCCCC</td><td>BARCODE (OR EAN 5 DIG ADD-ON)</td></tr>
+        <tr><td>1.10</td><td>PLU PRICE RS DATA</td><td>SELECT RIGHT SIDE DATA</td><td>Invisible when SPEC1=3</td><td>BARCODE (AND TYPE MUST INCLUDE RIGHT SIDE DATA)</td></tr>
+        <tr><td>1.11</td><td>PLU EAN ADD OFF</td><td>SELECT EAN ADD ON/OFF</td><td>Invisible when 1.5 choose ITF</td><td>EAN 5 DIG ADD-ON</td></tr>
+        <tr><td>1.11</td><td>PLU EAN ADD WEIGHT</td><td>SELECT EAN ADD ON/OFF</td><td>Invisible when 1.5 choose ITF</td><td>EAN 5 DIG ADD-ON</td></tr>
+        <tr><td>1.11</td><td>PLU EAN ADD SELLDT</td><td>SELECT EAN ADD ON/OFF</td><td>Invisible when 1.5 choose ITF</td><td>EAN 5 DIG ADD-ON</td></tr>
+        <tr><td>1.12</td><td>PLU 997 MG NO</td><td>ENTER MAIN GROUP CODE</td><td></td><td>MAIN GROUP CODE</td></tr>
+        <tr><td>1.13</td><td>PLU PRINT SELL DT</td><td>SELECT SELL BY DATE</td><td></td><td>SELL BY DATE</td></tr>
+        <tr><td>1.13</td><td>PLU NPRINT SELL DT</td><td>SELECT SELL BY DATE</td><td></td><td>SELL BY DATE</td></tr>
+        <tr><td>1.14</td><td>PLU 0 SELL DT</td><td>DAYS AFTER CURRENT DATE</td><td>Invisible when 1.13 choose N</td><td>SELL BY DATE</td></tr>
+        <tr><td>1.15</td><td>PLU PRINT SELL TM</td><td>SELECT SELL BY TIME</td><td></td><td>SELL BY TIME</td></tr>
+        <tr><td>1.15</td><td>PLU NPRINT SELL TM</td><td>SELECT SELL BY TIME</td><td></td><td>SELL BY TIME</td></tr>
+        <tr><td>1.16</td><td>PLU TIME PRESENT</td><td>SELECT SELL BY TIME TYPE</td><td>Invisible when 1.15 choose N</td><td>SELL BY TIME</td></tr>
+        <tr><td>1.16</td><td>PLU TIME KEY-IN</td><td>SELECT SELL BY TIME TYPE</td><td>Invisible when 1.15 choose N</td><td>SELL BY TIME</td></tr>
+        <tr><td>1.17</td><td>PLU 0000 SELL TM</td><td>ENTER SELL BY TIME</td><td>Invisible when 1.16 choose PRESENT</td><td>SELL BY TIME</td></tr>
+        <tr><td>1.18</td><td>PLU PRINT USED DT</td><td>SELECT USED BY DATE</td><td></td><td>USED BY DATE</td></tr>
+        <tr><td>1.18</td><td>PLU NPRINT USED DT</td><td>SELECT USED BY DATE</td><td></td><td>USED BY DATE</td></tr>
+        <tr><td>1.19</td><td>PLU 0 USED DT</td><td>DAYS AFTER PACKED DATE</td><td>Invisible when 1.18 choose N</td><td>USED BY DATE</td></tr>
+        <tr><td>1.20</td><td>PLU PRINT PACK DT</td><td>SELECT PACKED DATE</td><td></td><td>PACKED DATE</td></tr>
+        <tr><td>1.20</td><td>PLU NPRINT PACK DT</td><td>SELECT PACKED DATE</td><td></td><td>PACKED DATE</td></tr>
+        <tr><td>1.21</td><td>PLU 0 PACK DT</td><td>DAYS AFTER ACTUAL DATE</td><td>Invisible when 1.21 choose N</td><td>PACKED DATE</td></tr>
+        <tr><td>1.22</td><td>PLU PRINT PACK TM</td><td>SELECT PACKED TIME</td><td></td><td>PACKED TIME</td></tr>
+        <tr><td>1.22</td><td>PLU NPRINT PACK TM</td><td>SELECT PACKED TIME</td><td></td><td>PACKED TIME</td></tr>
+        <tr><td>1.23</td><td>PLU TIME PRESENT</td><td>SELECT PACKED TIME TYPE</td><td>Invisible when 1.22 choose N</td><td>PACKED TIME</td></tr>
+        <tr><td>1.23</td><td>PLU TIME KEY-IN</td><td>SELECT PACKED TIME TYPE</td><td>Invisible when 1.22 choose N</td><td>PACKED TIME</td></tr>
+        <tr><td>1.24</td><td>PLU 0000 PACK TM</td><td>ENTER PACKED TIME</td><td>Invisible when 1.22 choose PRESENT</td><td>PACKED TIME</td></tr>
+        <tr><td>1.25</td><td>PLU 0.00 COST</td><td>ENTER ITEM COST</td><td></td><td>COST</td></tr>
+        <tr><td>1.26</td><td>PLU 0.000 TARE</td><td>ENTER ITEM TARE</td><td></td><td>TARE</td></tr>
+        <tr><td>1.27</td><td>PLU NO USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU PCS USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU FOR USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU kg USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU Ib USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU g USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU oz USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *7 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *8 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *9 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *10 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *11 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.27</td><td>PLU *12 USYMBOL</td><td>SELECT ITEM UNIT SYMBOL</td><td>Visible when 1.1 choose PR-PCS</td><td>QUANTITY UNIT</td></tr>
+        <tr><td>1.28</td><td>PLU 0 QTY</td><td>ENTER ITEM QUANTITY</td><td>Visible when 1.1 choose PR-PCS. Visible for weigh item when SPEC166=1</td><td>QUANTITY</td></tr>
+        <tr><td>1.29</td><td>PLU NO DISCOUNT</td><td>SELECT DISCOUNT TYPE</td><td>Invisible when SPEC100=1</td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU FREE ITEM</td><td>SELECT DISCOUNT TYPE #A</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU UPRICE CONST</td><td>SELECT DISCOUNT TYPE #B</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU UPRICE PERCENT</td><td>SELECT DISCOUNT TYPE #C</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU PRICE CONST</td><td>SELECT DISCOUNT TYPE #D</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU PRICE PERCENT</td><td>SELECT DISCOUNT TYPE #E</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU FIXED PRICE</td><td>SELECT DISCOUNT TYPE #F</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.29</td><td>PLU UP/PCS - UP/kg</td><td>SELECT DISCOUNT TYPE #G</td><td></td><td>DISCOUNT STATUS</td></tr>
+        <tr><td>1.30</td><td>PLU 0.000 1ST LMT</td><td>MIN WEIGHT FOR 1ST DISC</td><td>Invisible when 1.29 choose #A/#B/#G/#F</td><td>DISCOUNT STATUS (OR DISC 1 1ST TARGET)</td></tr>
+        <tr><td>1.31</td><td>PLU 0.00 1ST AMT</td><td>ENTER 1ST UP DISCOUNT</td><td>Invisible when 1.29 choose #A/#B/#G/#F</td><td>DISCOUNT STATUS (OR DISC 1 1ST TARGET)</td></tr>
+        <tr><td>1.32</td><td>PLU 99.999 2ND LMT</td><td>MIN WEIGHT FOR 2ND DISC</td><td>Invisible when 1.29 choose #A/#B/#G/#F</td><td>DISCOUNT STATUS (OR DISC 2 2ND TARGET)</td></tr>
+        <tr><td>1.33</td><td>PLU 0.00 2ND AMT</td><td>ENTER 2ND UP DISCOUNT</td><td>Invisible when 1.29 choose #A/#B/#G</td><td>DISCOUNT STATUS (OR DISC 2 2ND TARGET)</td></tr>
+        <tr><td>1.34</td><td>PLU NO MARK DN</td><td>SELECT MARKDOWN TYPE</td><td></td><td>MARK DOWN STATUS</td></tr>
+        <tr><td>1.34</td><td>PLU UPRICE MARK DN</td><td>SELECT MARKDOWN TYPE</td><td></td><td>MARK DOWN STATUS</td></tr>
+        <tr><td>1.34</td><td>PLU TPRICE MARK DN</td><td>SELECT MARKDOWN TYPE</td><td></td><td>MARK DOWN STATUS</td></tr>
+        <tr><td>1.34</td><td>PLU ALL MARK DN</td><td>SELECT MARKDOWN TYPE</td><td></td><td>MARK DOWN STATUS</td></tr>
+        <tr><td>1.35</td><td>PLU 000000 ST DATE</td><td>ENTER DISCOUNT START DATE</td><td>Invisible when 1.29 choose #A/#B/#G</td><td>DIS SCHEDULE DT (OR TM)</td></tr>
+        <tr><td>1.36</td><td>PLU 0000 ST TIME</td><td>ENTER DISCOUNT START TIME</td><td>Invisible when 1.29 choose #A/#B/#G</td><td>DIS SCHEDULE DT (OR TM)</td></tr>
+        <tr><td>1.37</td><td>PLU 000000 ED DATE</td><td>ENTER DISCOUNT END DATE</td><td>Invisible when 1.29 choose #A/#B/#G</td><td>DIS SCHEDULE DT (OR TM)</td></tr>
+        <tr><td>1.38</td><td>PLU 0000 ED TIME</td><td>ENTER DISCOUNT END TIME</td><td>Invisible when 1.29 choose #A/#B/#G</td><td>DIS SCHEDULE DT (OR TM)</td></tr>
+        <tr><td>1.39</td><td>PLU DAY_WK 0000000</td><td>DISCOUNT OF WEEK</td><td></td><td>DISC DAY OF WEEK</td></tr>
+        <tr><td>1.40</td><td>PLU 0 SMG NUM</td><td>ENTER SPEC MSG #</td><td></td><td>SPECIAL MESSAGE #</td></tr>
+        <tr><td>1.41</td><td>PLU 0 IMG NUM</td><td>ENTER INGREDIENT #</td><td></td><td>INGREDIENT #</td></tr>
+        <tr><td>1.42</td><td>PLU 0 ADVERT</td><td>ENTER ADVERTISEMENT #</td><td></td><td>ADVERTISEMENT #</td></tr>
+        <tr><td>1.42</td><td>M01.01 S1 A 66</td><td>For SM-100/101 only</td><td></td><td>SPECIAL MESSAGE</td></tr>
+        <tr><td>1.43</td><td>M01.01 S1 A 66</td><td>For SM-100/101 only</td><td></td><td>INGREDIENT</td></tr>
+        <tr><td>1.44</td><td>PLU 0 PLC NUM</td><td>ENTER PLACE #</td><td></td><td>PRODUCTION PLACE</td></tr>
+        <tr><td>1.45</td><td>PLU 0.00 PRICE2</td><td>ENTER 2ND PRICE</td><td></td><td>2ND PRICE</td></tr>
+        <tr><td>1.46</td><td>PLU 0 TAX NO</td><td>ENTER TAX #</td><td>Invisible when SPEC603=0</td><td>TAX #</td></tr>
+        <tr><td>1.48</td><td>PLU 0.00 % TARE</td><td>ENTER ITEM TARE</td><td>Invisible when SPEC687=0</td><td>PROPORTIONAL</td></tr>
+        <tr><td>1.48</td><td>PLU PRINT NET WT</td><td>ENTER ITEM TARE</td><td>Invisible when SPEC687=0</td><td>PROPORTIONAL</td></tr>
+        <tr><td>1.49</td><td>PLU UPOVRD INHIBIT</td><td>UNIT PRICE OVERRIDE</td><td>Invisible when SPEC178=0</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.49</td><td>PLU UPOVRD ALLOW</td><td>UNIT PRICE OVERRIDE</td><td>Invisible when SPEC178=0</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.50</td><td>PLU 0 IMAGE 1</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.51</td><td>PLU 0 IMAGE 2</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.52</td><td>PLU 0 IMAGE 3</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.53</td><td>PLU 0 IMAGE 4</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.54</td><td>PLU 0 IMAGE 5</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.55</td><td>PLU 0 IMAGE 6</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.56</td><td>PLU 0 IMAGE 7</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.57</td><td>PLU 0 IMAGE 8</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.58</td><td>PLU 0 IMAGE 9</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.59</td><td>PLU 0 IMAGE 10</td><td>ENTER IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.60</td><td>PLU 0.00 CUSDIS</td><td>CUSTOMER DISCOUNT</td><td></td><td>CUSTOMER DISC</td></tr>
+        <tr><td>1.61</td><td>PLU 0 S TEMP</td><td>ENTER TEMPERATURE #</td><td></td><td>TEMPERATURE</td></tr>
+        <tr><td>1.63</td><td>PLU 0 COUPLE</td><td>ENTER COUPLE PLU #</td><td></td><td>COUPLED PLU</td></tr>
+        <tr><td>1.64</td><td>PLU TRACE INHIBIT</td><td>SELECT TRACEABILITY</td><td>Invisible when SPEC258=0</td><td>TRACEABILITY</td></tr>
+        <tr><td>1.64</td><td>PLU TRACE ALLOW</td><td>SELECT TRACEABILITY</td><td>Invisible when SPEC258=0</td><td>TRACEABILITY</td></tr>
+        <tr><td>1.64</td><td>PLU TRACE AUTO</td><td>SELECT TRACEABILITY</td><td>Invisible when SPEC258=0</td><td>TRACEABILITY</td></tr>
+        <tr><td>1.65</td><td>PLU 0 TRACE</td><td>ENTER TRACEABILITY #</td><td>Invisible when SPEC258=0</td><td>TRACEABILITY</td></tr>
+        <tr><td>1.67</td><td>PLU UPCHG ALLOW</td><td>UNIT PRICE CHANGE</td><td>Invisible when SPEC244=0</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.67</td><td>PLU UPCHG INHIBIT</td><td>UNIT PRICE CHANGE</td><td>Invisible when SPEC244=0</td><td>UNIT PRICE</td></tr>
+        <tr><td>1.68</td><td>PLU 0 PACK I</td><td>ENTER PACKAGING INDICATOR</td><td></td><td>PACK INDICATOR</td></tr>
+        <tr><td>1.69</td><td>PLU 0 E PREFI</td><td>ENTER PLU UCC/EAN PREFIX</td><td></td><td>PACK INDICATOR</td></tr>
+        <tr><td>1.70</td><td>0 SERIAL</td><td>ENTER PLU SERIAL NUMBER</td><td></td><td>PACK INDICATOR</td></tr>
+        <tr><td>1.71</td><td>PLU 0 M BAR 1</td><td>ENTER MULTI BARCODE 1 #</td><td></td><td>MULTI BARCODE 1</td></tr>
+        <tr><td>1.72</td><td>PLU 0 M BAR 2</td><td>ENTER MULTI BARCODE 2 #</td><td></td><td>MULTI BARCODE 2</td></tr>
+        <tr><td>1.73</td><td>PLU 0 TMBAR 1</td><td>ENTER TTL MULTI BAR 1 #</td><td></td><td>TTL MULTI BAR 1</td></tr>
+        <tr><td>1.74</td><td>PLU 0 TMBAR 2</td><td>ENTER TTL MULTI BAR 2 #</td><td></td><td>TTL MULTI BAR 2</td></tr>
+        <tr><td>1.81</td><td>PLU PRINT NUTRI</td><td>SELECT NUTRITION</td><td></td><td>FLEXI NUTRITION #</td></tr>
+        <tr><td>1.81</td><td>PLU NPRINT NUTRI</td><td>SELECT NUTRITION</td><td></td><td>FLEXI NUTRITION #</td></tr>
+        <tr><td>1.82</td><td>PLU 0 NUTRI</td><td>ENTER NUTRITION #</td><td></td><td>NUTRITION</td></tr>
+        <tr><td>1.83</td><td>PLU 0 ID CODE</td><td>ENTER INDIA EXCODE</td><td>Invisible when SPEC467=0, 1.5=ITF, 1.6=F BAR. Effected by SPEC467</td><td></td></tr>
+        <tr><td>1.84</td><td>PLU HEAD 0</td><td></td><td>Invisible when SPEC467=0, 1.5=ITF, 1.6=F BAR. Effected by SPEC467</td><td></td></tr>
+        <tr><td>1.85</td><td>PLU PRESENT DATE</td><td>SELECT PACKED DATE SOURCE</td><td></td><td>PACKED DATE</td></tr>
+        <tr><td>1.85</td><td>PLU PRODUCTION DT</td><td>SELECT PACKED DATE SOURCE</td><td></td><td>PACKED DATE</td></tr>
+        <tr><td>1.86</td><td>PLU 000000 PRO DT</td><td>ENTER PRODUCTION DATE</td><td></td><td>PRODUCTION DATE</td></tr>
+        <tr><td>1.87</td><td>PLU 0 TEXT 1</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.88</td><td>PLU 0 TEXT 2</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.89</td><td>PLU 0 TEXT 3</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.90</td><td>PLU 0 TEXT 4</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.91</td><td>PLU 0 TEXT 5</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.92</td><td>PLU 0 TEXT 6</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.93</td><td>PLU 0 TEXT 7</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.94</td><td>PLU 0 TEXT 8</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.95</td><td>PLU 0 TEXT 9</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.96</td><td>PLU 0 TEXT 10</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.97</td><td>PLU 0 TEXT 11</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.98</td><td>PLU 0 TEXT 12</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.99</td><td>PLU 0 TEXT 13</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.100</td><td>PLU 0 TEXT 14</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.101</td><td>PLU 0 TEXT 15</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.102</td><td>PLU 0 TEXT 16</td><td>ENTER TEXT #</td><td>Invisible when SPEC320=0</td><td>PLU LINKED TEXT</td></tr>
+        <tr><td>1.103</td><td>PLU 0 IMAGE 1</td><td>ENTER DISC PRICE IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.104</td><td>PLU 0 IMAGE 2</td><td>ENTER DISC PRICE IMAGE #</td><td></td><td>IMAGE</td></tr>
+        <tr><td>1.105</td><td>PLU 0000 PROD TM</td><td>ENTER PRODUCTION TIME</td><td></td><td>PRODUCTION TIME</td></tr>
+        <tr><td>1.106</td><td>PLU 0 USAGE</td><td>ENTER USAGE #</td><td></td><td>USAGE #</td></tr>
+        <tr><td>1.107</td><td>PLU TIME PRESENT</td><td>SELECT USED BY TIME TYPE</td><td></td><td>USED BY TIME</td></tr>
+        <tr><td>1.107</td><td>PLU TIME KEY-IN</td><td>SELECT USED BY TIME TYPE</td><td></td><td>USED BY TIME</td></tr>
+        <tr><td>1.108</td><td>PLU 0000 USED TM</td><td>ENTER USED BY TIME</td><td></td><td>USED BY TIME</td></tr>
+    </table>
+
+    <p><strong>Note per i formati codice a barre (S1.6):</strong></p>
+    <p>2f5c4x4wD F: flag C: Item code XCD: center checksum calculated from X's PCD: center checksum calculated from flag and C's R: Clerk No. (2) + PLU No. (3) N: Receipt or label serial No. X's: Price or weight or quantity ?: means don't care</p>
+    <p><strong>TIPO SCANDINAVO:</strong> Fornito spec663 'Nordic Country' impostato su '1:Allow'. Barcode type FX CCCCCC XXXX CD. Right side data is 'Weight'. Flag = 23; if weight is under 10kg and 1g digits have to add to right side data. Flag = 24; if weight is 10kg but under 100kg and also cut 10g digits from right side data. Flag = 25; if weight is 100kg or over and also cut 10g and 100g digits from right side data. Fornito spec663 'Nordic Country' impostato su '0:Inhibit'. Barcode type FX CCCCCC XXXX CD. Right side data is 'Weight' or 'Price' or 'Qty'. X2 represented the no. of digits truncated.</p>
+    <table>
+        <tr><th>EAN</th><th>ITF</th><th>Note</th></tr>
+        <tr><td>FFCCCCCSXXXXX</td><td>2f5c4x4wD</td><td></td></tr>
+        <tr><td>FCCCCCCSXXXXX</td><td>1f6c4x4wD</td><td></td></tr>
+        <tr><td>FFCCCCCOXXXXX0</td><td>2f5c04x4wD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX0</td><td>2f6c4x4wD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX</td><td>2f5c5x5wD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX</td><td>1f6c5x5wD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX0</td><td>1f5c6x6wD</td><td></td></tr>
+        <tr><td>FFCCCCCCCCCCCC0</td><td>2f10cD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX0</td><td>2f4c6x6wD</td><td></td></tr>
+        <tr><td>FFCCCCCC</td><td>2f5cD</td><td></td></tr>
+        <tr><td>FFCCXXXXX</td><td>1f2c4x4wD</td><td></td></tr>
+        <tr><td>NO BARCODE</td><td>NO BARCODE</td><td></td></tr>
+        <tr><td>FXCCCCCSXXXXX</td><td>1f1s5c4x4wD</td><td></td></tr>
+        <tr><td>FXCCCCCCXXXXX0</td><td>1f1s6c4x4wD</td><td></td></tr>
+        <tr><td>FFCCCCCSXXXXX0</td><td>2f4c5x5wD</td><td></td></tr>
+        <tr><td>FCCCCCCSXXXXX0</td><td>1f5c5x5wD</td><td></td></tr>
+        <tr><td>FFCCCCCCXXXXX</td><td>2f3c7x7wD</td><td></td></tr>
+        <tr><td>FFCCCCXXXXX0</td><td>2f2c8x8wD</td><td></td></tr>
+        <tr><td>CCCWWWWPPPPPD0</td><td>3c4w5pD</td><td></td></tr>
+        <tr><td>CCCCCCCCXXXXX</td><td>7c7x</td><td></td></tr>
+        <tr><td>FFCCCCCPXXXXX</td><td>2f5c4x4wD</td><td></td></tr>
+        <tr><td>FFRRRRRXXXXX</td><td>2f5r5x5wD</td><td></td></tr>
+        <tr><td>FCCCCCCXXXXX</td><td>1f5c6x5wD</td><td></td></tr>
+        <tr><td>FFCCCCCPPPPPPD</td><td>3f4c5p5wD</td><td></td></tr>
+        <tr><td>FFCCCCCCWWWWWD</td><td>2f5c5w5pD</td><td></td></tr>
+        <tr><td>FFCCCCCCWWWWWD</td><td>1f5c5w6pD</td><td></td></tr>
+        <tr><td>FFCCCCCCWWWWWD</td><td>2f6c5w4xD</td><td></td></tr>
+        <tr><td>CCCCCCCCXXXXX</td><td>7c7x6w</td><td></td></tr>
+        <tr><td>FFCCCCXXXXX</td><td>2f3c6x5wD</td><td></td></tr>
+        <tr><td>FCCCCCCCCWWWWWD</td><td>1f7c4w5pD</td><td></td></tr>
+        <tr><td>FFCCNNNNPPPPPD</td><td>2f2c3n5p5wD</td><td></td></tr>
+        <tr><td>FFCNNNNPPPPPD</td><td>2f1c4n5p5wD</td><td></td></tr>
+    </table>
+
+    <h3>3.5 DEPARTMENT FILE (S2)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>2.0</td><td>DEPT 0 NO SET</td><td>ENTER DEPARTMENT #</td><td></td></tr>
+        <tr><td>2.1</td><td>DEPT NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.6 MAIN GROUP (S3)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>3.0</td><td>MG 0 NO SET</td><td>ENTER MAIN GROUP #</td><td></td></tr>
+        <tr><td>3.1</td><td>MG 97 DEPT NO</td><td>LINK TO DEPARTMENT #</td><td></td></tr>
+        <tr><td>3.2</td><td>Mg NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.7 PRESET KEY (S4)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th><th>Etichetta</th><th>Prepack</th><th>Ricevuta</th><th>SPEC Correlata</th></tr>
+        <tr><td>4.0</td><td>PS AS 0 NO SET</td><td>PRESET KEY FOR PLU #</td><td>Assegna PLU ai tasti preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.0</td><td>PAGE 0 ASSIGN</td><td>ENTER PAGE ASSIGNMENT</td><td>0-first page; 1-second page; 2-third page</td><td></td><td></td><td></td><td>203=1 or 2</td></tr>
+        <tr><td>4.1</td><td>CK AS O NO SET</td><td>PRESET KEY FOR CLERK #</td><td>Assegna Vender keys ai tasti preset. Per tipo P/H/EV/BS, V1-V4 possono essere assegnati direttamente, V5-V99 devono creare il file clerk in S7 prima. Per tipo B, V1-V99 devono creare il file clerk in S7 prima.</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 0 CLEAR</td><td>CLEAR FUNCTION KEY</td><td>Usato per cancellare il valore di un certo tasto preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 1 ADVERT</td><td>ADVERTISEMENT</td><td>Cambia temporaneamente il numero pubblicità</td><td>✓</td><td>✓</td><td>✓</td><td>67=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 2 -PRICE</td><td>PRICE DISCOUNT</td><td>Sconto certo per prezzo totale temporaneamente. Total Price - Discount Value</td><td>✓</td><td>✓</td><td>✓</td><td>68=0 & 653=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 3 -P.PERC</td><td>PRICE % DISCOUNT</td><td>Sconto percentuale certo per prezzo totale temporaneamente. Total Price - Total Price x Discount %. Questa funzione può essere usata con S16.1 (Discount Rate). Effetto solo se si usa Vender key per gestire i conti. Es. S16.1 è 80.00%: chiama PLU e memorizza su vender key, clicca questo tasto funzione, il tasso predefinito sarà 80.00%.</td><td>✓</td><td>✓</td><td>✓</td><td>69=0 & 653=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 4 -UPRICE</td><td>UNIT PRICE DISCOUNT</td><td>Sconto certo per prezzo unitario temporaneamente. Unit Price - Discount Value</td><td>✓</td><td>✓</td><td>✓</td><td>70=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 5 -U.PERC</td><td>UNIT PRICE % DISCOUNT</td><td>Sconto percentuale certo per prezzo unitario temporaneamente. Unit Price - Unit Price x Discount %</td><td>✓</td><td>✓</td><td>✓</td><td>71=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 6 PACK DT</td><td>PACK DATE</td><td>Usato per cambiare la data di confezionamento del PLU temporaneamente. Packed date = Actual Date + Entered days</td><td>✓</td><td>✓</td><td>✓</td><td>72=0 & 654=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 7 -PACK</td><td>NEGATIVE PACK DATE</td><td>Usato per cambiare la data di confezionamento negativa del PLU temporaneamente. Packed date = Actual Date - Entered days. SPEC109=1 Packed date should early than sell by date</td><td>✓</td><td>✓</td><td>✓</td><td>73=0 & 654=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 8 SELL DT</td><td>SELL BY DATE</td><td>Usato per cambiare la data di vendita del PLU temporaneamente. Sell by Date = Actual Date + Entered days</td><td>✓</td><td>✓</td><td>✓</td><td>74=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 9 SYMBOL</td><td>SYMBOL SET FUNCTION</td><td>Cambia il simbolo dell'unità per articolo non a peso in modalità PPK. (SPEC 75 set to ENABLE & change Unit Symbol for Non- Weight Item in MANUAL Mode, SPEC 169 set to PRN IN MAL MODE)</td><td></td><td></td><td></td><td>75=0 & 169=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 10 QTY SET</td><td>QUANTITY SET</td><td>Usato per cambiare il set di quantità del PLU temporaneamente. Chiama plu non a peso e clicca il tasto funzione per cambiare il Quantity Set da stampare</td><td>✓</td><td>✓</td><td>✓</td><td>76=0 & 131=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 11 UP CHG</td><td>PRICE CHANGE</td><td>Usato per cambiare il prezzo unitario del PLU temporaneamente</td><td></td><td></td><td></td><td>77=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 12 REFUND</td><td>REFUND ITEM</td><td>Usato per rimborsare il prezzo totale del PLU</td><td>X</td><td>X</td><td></td><td>78=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 13 SHOP NM</td><td>SHOP NAME</td><td>Usato per cambiare il nome del negozio del PLU temporaneamente</td><td></td><td></td><td></td><td>79=0 & 26=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 14 LOGO</td><td>LOGO</td><td>Usato per cambiare il logo del PLU temporaneamente</td><td></td><td></td><td></td><td>80=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 15 PRN SEL</td><td>PRINT SELECT</td><td>Usato per cambiare lo stato di stampa di ogni campo del PLU temporaneamente</td><td></td><td></td><td></td><td>81=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 16 SUB TTL</td><td>SUB TOTAL</td><td>Usato per stampare il sub-totale per PLU in modalità PPK. Calcola e pulisce durante la chiamata PLU. Free Format-total label per modificare il layout. Spec234 controlla il tipo di codice a barre. Spec259 controlla la stampa automatica del sub-totale per articoli non a peso. Il formato etichetta sub-totale deve andare con il formato etichetta plu. SPEC130 controlla la stampa del campo sull'etichetta.</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 17 GRD TTL</td><td>GRAND TOTAL</td><td>Usato per stampare il sub-totale per PLU in modalità PPK. Calcola e non pulisce durante la chiamata PLU. Spec225 controlla l'intervallo delle statistiche. 85=0. Il formato etichetta grandtotal deve andare con il formato etichetta plu. SPEC130 controlla la stampa del campo sull'etichetta.</td><td></td><td></td><td></td><td>85=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 18 PAC QTY</td><td>PACKED QUANTITY</td><td>Usato per impostare il valore predefinito della quantità per le etichette</td><td>X</td><td>X</td><td></td><td>66=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 19 PR MARK</td><td>PRICE MARKDOWN</td><td>Sconto certo markdown per prezzo totale temporaneamente. Total Price = Mark Down Value</td><td></td><td></td><td></td><td>105=5 & 653=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 20 PPER MK</td><td>PRICE % MARKDOWN</td><td>Sconto percentuale markdown per prezzo totale temporaneamente. Total Price = Total Price x Mark Down %</td><td></td><td></td><td></td><td>106=0 & 653=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 21 UP MARK</td><td>UNIT PRICE MARKDOWN</td><td>Sconto certo markdown per prezzo unitario temporaneamente. Unit Price = Mark Down Value</td><td></td><td></td><td></td><td>107=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 22 UPER MK</td><td>UNIT PRICE % MARKDOWN</td><td>Sconto percentuale markdown per prezzo unitario temporaneamente. Unit Price = Unit Price x Mark Down %</td><td></td><td></td><td></td><td>108=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 23 STOR UP</td><td>STORE UNIT PRICE</td><td>Memorizza il prezzo unitario del PLU dopo l'override</td><td></td><td></td><td></td><td>103=0 & 42=0 (or 178=1)</td></tr>
+        <tr><td>4.2</td><td>FN AS 24 PLACE</td><td>PLACE</td><td>Usato per cambiare il luogo del PLU temporaneamente</td><td></td><td></td><td></td><td>82=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 25 FORMAT 1</td><td>LABEL FORMAT 1</td><td>Usato per cambiare il formato etichetta 1 del PLU temporaneamente</td><td></td><td></td><td></td><td>146=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 26 FORMAT 2</td><td>LABEL FORMAT 2</td><td>Usato per cambiare il formato etichetta 2 del PLU temporaneamente</td><td></td><td></td><td></td><td>146=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 27 PNOADD</td><td>PERPACK NON ADD</td><td>Stampa articolo confezionato Non-Add nel Totale Generale in modalità PPK</td><td></td><td></td><td></td><td>147=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 28 MAIN GP</td><td>MAIN GROUP NUMBER</td><td>Inserisci Numero Gruppo Principale per Inserimento Manuale Prezzo in modalità MAN & PPK</td><td></td><td></td><td></td><td>149=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 29 APC SW</td><td>AUTO PLU CALL</td><td>Concerta con la funzione APC, questo tasto controlla la chiamata PLU tramite tasto PLU o chiamata automatica</td><td></td><td></td><td></td><td>441=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 30 SC SQ</td><td>PROGRAM SCROLL SEQUENCE</td><td>Usato per inserire manualmente il peso per articolo a peso temporaneamente in modalità prepack</td><td></td><td></td><td></td><td>677=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 32 ITME CD</td><td>ITEM CODE</td><td>Cambia il Codice Articolo sull'etichetta in modalità MAN & PPK</td><td></td><td></td><td></td><td>162=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 33 NET CON</td><td>NET CONTENT</td><td>Usato per sostituire temporaneamente la quantità mentre un plu non a peso è impostato con simbolo unità 'FOR' in S1.27 e la quantità in S1.28. In modalità R, chiama plu e clicca il tasto funzione per calcolare il prezzo unitario. Poi usa il tasto X e una nuova quantità per calcolare il nuovo prezzo totale. P.S. la nuova quantità deve essere divisibile esattamente per.</td><td></td><td></td><td></td><td>456=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 34 EURO SW</td><td>EURO CURRENCY SWITCH</td><td>Usato per visualizzare il secondo prezzo in euro in modalità subtotale temporaneamente</td><td></td><td></td><td></td><td>171=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 35 SW KEY</td><td>SWITCH KEY</td><td>Usato per cambiare proprietà tra articolo a peso e non a peso temporaneamente</td><td></td><td></td><td></td><td>185=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 36 PR KEY</td><td>PRICE KEY</td><td>Usato per sostituire temporaneamente il prezzo totale mentre un plu non a peso è impostato con simbolo unità 'FOR' in S1.27 e la quantità in S1.28. In modalità R, chiama plu e inserisci il nuovo prezzo totale, usa il tasto funzione per cambiare il prezzo totale corrente, calcolerà il nuovo prezzo unitario dividendo il prezzo totale per la quantità.</td><td></td><td></td><td></td><td>456=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 37 REF PLU</td><td>REFERENCE PLU</td><td>Per chiamare il PLU di Riferimento quando il PLU è programmato con Numero PLU di Riferimento in modalità MAN & PPK</td><td></td><td></td><td></td><td>204=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 38 PRT KEY</td><td>PRINT KEY</td><td>Usato per mettere un tasto stampa in tutte le modalità</td><td></td><td></td><td></td><td>205=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 39 PLU REP</td><td>PLU REPEAT</td><td>Ripete il PLU dopo la stampa in Modalità MAN</td><td></td><td></td><td></td><td>210=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 40 FLAG CD</td><td>FLAG CODE</td><td>Cambia il Codice Flag sull'etichetta in modalità MAN & PPK</td><td></td><td></td><td></td><td>213=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 41 NS/PO</td><td>NO SALE/PAID OUT</td><td>Usato per aprire il cassetto contanti in modalità R, o eseguire l'operazione di paid out in modalità X</td><td></td><td></td><td></td><td>222=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 42 TAX INF</td><td>TAX INFORMATION</td><td>Usato per controllare lo stato di stampa delle Informazioni Fiscali sulla Ricevuta</td><td></td><td></td><td></td><td>221=1 & 603=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 43 PASSWD UP</td><td>OVERRIDE PASSWD</td><td>Cambia il Prezzo Unitario in modalità MAN & PPk</td><td></td><td></td><td></td><td>227=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 44 APC MG</td><td>CHANGE MG CODE FOR APC</td><td>Imposta diversi gruppi principali e cifre plu vanno con SPEC40. Imposta questo tasto funzione e chiama prima il gruppo principale poi usa il codice plu per chiamare automaticamente il plu. Es. 1001 e 2001, la prima cifra è il numero del gruppo principale e usa 001 per chiamare diversi plu</td><td></td><td></td><td></td><td>39=1 & 40=X & 442=0 & 443≠0</td></tr>
+        <tr><td>4.2</td><td>FN AS 45 HALF KEY</td><td>PLU QTY AND PRICE HALF</td><td>Per articolo non a peso, secondo prezzo=0.00, cambierà a 1/2 prezzo, secondo prezzo≠0.00, cambierà al valore del secondo prezzo</td><td></td><td></td><td></td><td>237=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 46 CHEQ FT</td><td>TENDER BY CHEQUE</td><td>Usato per pagare con assegno</td><td>X</td><td>X</td><td>X</td><td>239=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 47 VOUC FT</td><td>TENDER BY VOUCHER</td><td>Usato per pagare con voucher</td><td>X</td><td>X</td><td>X</td><td>240=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 48 DISC FT</td><td>DIRECT DISCOUNT</td><td>PLU di Sconto su Prezzo Unitario o Prezzo Unitario % in modalità MAN & PPK</td><td></td><td></td><td></td><td>242=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 49 ING FUN</td><td>INGREDIENT SELECTION</td><td>Usato per cambiare l'ingrediente del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 50 CUS DISC</td><td>CUSTOMER DISCOUNT</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 51 RES DISC</td><td>RESTAURANT DISCOUNT</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 52 STA DISC</td><td>STAFF DISCOUNT</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 53 MUL SUB</td><td>MULTI. SUBTOTAL</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 54 BK TRAD</td><td>BLACK TRADING</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 55 FLT CUST</td><td>FLOATING CUSTOMER</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 56 PEAPOD</td><td>PREPACK PRICE OVERRIDE</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 57 CREDIT</td><td>CREDIT</td><td>Usato per pagare con voucher</td><td>X</td><td>X</td><td>X</td><td>239=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 58 BATCH F</td><td>BATCH FILE PRT</td><td>Per stampare uno/alcuni PLU particolari in una volta sola</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 59 BORN</td><td>BORN FOR BEEF LABEL</td><td>Usato per cambiare il paese di nascita del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 60 FATTEN</td><td>FATTEN FIR BEEF LABEL</td><td>Usato per cambiare il paese di ingrassamento del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 61 SLAUGHT</td><td>SLAUGHT HOUSE</td><td>Usato per cambiare ID Macello e dati paese del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 62 CUT</td><td>CUT FOR BEEF LABEL</td><td>Usato per cambiare ID sala di taglio e dati paese del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 63 REF NO</td><td>REFERENCE FOR BEEF LABEL</td><td>Usato per cambiare il numero di riferimento (data o codice libero) del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1 & 272=0/1</td></tr>
+        <tr><td>4.2</td><td>FN AS 64 ORIGIN</td><td>ORIGIN FOR BEEF LABEL</td><td>Usato per cambiare il paese di origine del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 65 TRACE S</td><td>TRACEABILITY SET</td><td>Temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 66 TRACE N</td><td>TRACELINK FOR BEEF LINK</td><td>Usato per cambiare i dati di tracciabilità del PLU temporaneamente</td><td>X</td><td>X</td><td></td><td>258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 67 WT CHK</td><td>WEIGHT CHECKING</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 68 PSET SH</td><td>PRESET SHIFT KEY</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 69 LBL RCT</td><td>LABEL/RECEIPT SWITCH</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 70 CLK ASSN</td><td>CLERK ASSIGNMENT(LBL)</td><td>Per formato codice a barre #21(SF ONLY)</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 71 TR UPDT</td><td>TRACE UPDATE FUNC</td><td>Usato per aggiornare il numero di Tracciabilità al PLU mentre il tipo di tracciabilità=allow</td><td></td><td></td><td></td><td>298=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 72 DEL PLU</td><td>IR_DEL_PLU_FUNC</td><td>Funzione cancella PLU</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 73 CUSTOME</td><td>TAIWAN_CUSTOME_NO_FUNC</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 74 TAX FUNC</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 75 LOGGING</td><td>OPERATOR LOGGING FUNC</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 76 INV FUN</td><td>INVENTORY FUNCTION</td><td>Per selezionare la Modalità Inventario in Modalità Registrazione</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 77 TRA CLR</td><td>TRACEABILITY CLEAR</td><td>Per cancellare la stampa delle Informazioni di Tracciabilità in modalità Registrazione</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 78 SP MSG</td><td>SPECIAL MESSAGE</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 79 DT PRN</td><td>DATE PRINTING</td><td>Usato per abilitare la data di vendita e la data di confezionamento temporaneamente</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 80 IMAGE</td><td>IMAGE FUNCTION</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 81 #/RA</td><td>#/RA</td><td>Per stampare un numero non-add sullo scontrino in modalità R, o eseguire l'operazione di pagamento ricevuto in acconto in modalità X</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 82 PRN SEL</td><td>PRINT SELL BY DATE</td><td>Per disabilitare o abilitare la Data di Vendita sull'Etichetta in modalità MAN & PPK</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 83 REG FUN</td><td>CLK AUTO REGISTER</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 84 PLU PRT</td><td>PRINT PLU TTL REPORT</td><td>Stampa il Report PLU in Modalità Registrazione</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 85 RCT PRT</td><td>PRINT RECEIPT</td><td>Usato per controllare lo stato di stampa della modalità scontrino</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 86 LBL PRT</td><td>LABEL PRT W/O REPORT</td><td>Stampa etichetta articolo senza aggiornare i dati della transazione al Report</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 87 SR #</td><td>SERIAL NUMBER</td><td>Usato per cambiare il numero di serie</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 88</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 89</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 90 AUTO-0</td><td>AUTO-ZERO</td><td>Usato per schermare il peso entro 5d, e si accenderà una lampada a sinistra della luce P</td><td></td><td></td><td></td><td>601=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 91 BARCODE</td><td>MANUAL BARCODE ENTER</td><td>Usato per inserire manualmente il codice a barre</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 92 PWD R</td><td>R MODE PASSWORD</td><td>Usato per criptare la modalità R</td><td></td><td></td><td></td><td>64=0/2 & 440=1/2</td></tr>
+        <tr><td>4.2</td><td>FN AS 93 UP/T FN</td><td>UP/TARE CHANGE SECURITY</td><td>Usato per cambiare prezzo unitario e tara per funzione di sicurezza</td><td></td><td></td><td></td><td>312=1 & 695=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 94 TEXT 16</td><td>TEXT 16</td><td>Usato per modificare la 1a linea nel file testo 16, 4 caratteri</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 95 TEXT 15</td><td>TEXT 15</td><td>Usato per modificare la 1a linea nel file testo 15, 10 caratteri</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 96 TEXT 14</td><td>TEXT 14</td><td>Usato per modificare la 1a linea nel file testo 14, 10 caratteri</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 97 TEXT 13</td><td>TEXT 13</td><td>Usato per modificare la 1a linea nel file testo 13, 10 caratteri</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 98 TEXT 12</td><td>TEXT 12</td><td>Usato per impostare i dati della quota di peso, avrà un limite superiore di peso per questo PLU e può essere ridotto da ogni etichetta</td><td></td><td></td><td></td><td>458=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 100 STOCKOP</td><td>STOCK OPERATION</td><td>Usato per fare operazioni di stock in modalità scontrino, deve essere impostato in S51 prima</td><td></td><td></td><td></td><td>475=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 101 DI162WT</td><td>WEIGHT FROM DI162</td><td>Usato per ottenere il peso da DI-162</td><td></td><td></td><td></td><td>63=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 102 CRTCARD</td><td>TENDER BY CREDIT CARD</td><td>Usato per pagare con carta di credito</td><td></td><td></td><td></td><td>478=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 103 CASH IN</td><td>CASH IN</td><td>Operazione Cash In/Out</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 104 CASHOUT</td><td>CASH OUT</td><td>Operazione Cash In/Out</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 105 PLULIST</td><td>PRINT PLU LIST</td><td>Usato per stampare la lista PLU</td><td></td><td></td><td></td><td>51=3 & 52=8 & 53=0 & 54=0 & 493≠0 & 494=0/1</td></tr>
+        <tr><td>4.2</td><td>FN AS 106 M CARD</td><td>MEMBERSHIP CARD</td><td>Usato per inserire il numero della carta fedeltà tramite lettore</td><td></td><td></td><td></td><td>501=1 & 258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 107 K TRACE SET</td><td>KOREA TRACEABILITY</td><td>Usato per modificare il file di tracciabilità Corea, questa funzione permette di modificare il file di tracciabilità in modalità R</td><td></td><td></td><td></td><td>502=1/2</td></tr>
+        <tr><td>4.2</td><td>FN AS 108 LASTRCT</td><td>LAST RECEIPT</td><td>Usato per richiamare l'ultimo scontrino per aggiungere o annullare articoli (502=1), ristampare l'ultimo scontrino (502=2)</td><td></td><td></td><td></td><td>241=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 109 LNG PLU CALL UP</td><td>LONG PLU CODE</td><td>Usato per chiamare il PLU con codice lungo inviato dal software</td><td></td><td></td><td></td><td>510=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 110 WT LMT SET</td><td>WEIGHT LIMIT</td><td>L'intervallo tra limit1 e limit2 è consentito per stampare un certo plu</td><td></td><td></td><td></td><td>513=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 111 PAYOUT</td><td>PAYOUT KEY</td><td>Usato per prelevare con carta di credito. 1) Gestisci un conto 2) clicca tasto cambio 3) inserisci importo 4) clicca tasto funzione payout 5) clicca tasto funzione credito</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 112 Q NEXT</td><td>NEXT CUSTOMER</td><td>Usato per chiamare il prossimo cliente per la coda</td><td></td><td></td><td></td><td>60=6</td></tr>
+        <tr><td>4.2</td><td>FN AS 113 Q PREV</td><td>PREVIOUS CUSTOMER</td><td>Usato per chiamare il cliente precedente per la coda</td><td></td><td></td><td></td><td>60=6</td></tr>
+        <tr><td>4.2</td><td>FN AS 114 FTP CON</td><td>CONNECT FTP SERVER</td><td>Usato per connettersi manualmente al server FTP</td><td></td><td></td><td></td><td>50=0</td></tr>
+        <tr><td>4.2</td><td>FN AS 115 REWRAP</td><td>REWRAP KEY</td><td>Usato per cambiare la modalità di processo mentre si mette il campo rewrap sul formato etichetta</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 116 PRODUCT PLU</td><td>PRODUCT DATE & TIME</td><td>Usato per cambiare la data e ora di produzione nel file PLU</td><td></td><td></td><td></td><td>48≠0 & 258=1</td></tr>
+        <tr><td>4.2</td><td>FN AS 117 SCANREF</td><td>SCAN REFERENCE CODE</td><td>Usato per chiamare le informazioni di tracciabilità tramite scanner. 1) imposta il testo del codice a barre 2D 2) collegalo al multi-codice a barre</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.2</td><td>FN AS 118 DEGREE</td><td>DEGREE NO</td><td>Usato per cambiare il numero di grado nel file di tracciabilità Corea</td><td></td><td></td><td></td><td>258=1</td></tr>
+        <tr><td>4.3</td><td>VK AS F DISC 0.00</td><td>FIXED DISCOUNT KEY</td><td>Usato per mettere un tasto sconto fisso al tasto preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.3</td><td>VK AS % DISC 0.00</td><td>% DISCOUNT KEY</td><td>Usato per mettere un tasto sconto percentuale al tasto preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.3</td><td>VK AS P TARE 0.00</td><td>PRESET TARE KEY</td><td>Usato per mettere un tasto tara fissa al tasto preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.3</td><td>VK AS B PRT 0</td><td>BATCH REPORT KEY</td><td>Usato per mettere un tasto report batch al tasto preset</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4.3</td><td>VK AS TRACE 0</td><td>TRACEABILITY KEY</td><td>Usato per mettere un tasto numero tracciabilità fisso al tasto preset</td><td></td><td></td><td></td><td>258=1</td></tr>
+        <tr><td>4.3</td><td>VK AS UP % D 0.00</td><td>UNIT PRICE % DISCOUNT KEY</td><td>Usato per mettere un tasto sconto percentuale prezzo unitario al tasto preset</td><td></td><td></td><td></td><td>258=1</td></tr>
+    </table>
+
+    <h3>3.8 SHOP NAME FILE (S5)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>5.0</td><td>SHOP 0 NO SET</td><td>ENTER SHOP NAME #</td><td></td></tr>
+        <tr><td>5.1</td><td>S01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.9 ADVERTISEMENT (S6)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>6.0</td><td>ADVER 0 NO SET</td><td>ENTER ADVERTISEMENT #</td><td></td></tr>
+        <tr><td>6.1</td><td>A01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.10 CLERK FILE (S7)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>7.0</td><td>CLERK 0 NO SET</td><td>ENTER CLERK #</td><td></td></tr>
+        <tr><td>7.1</td><td>CLERK NAME 0</td><td></td><td></td></tr>
+        <tr><td>7.2</td><td>CLERK 0 OLD PWD</td><td></td><td>Invisible for the first password setting</td></tr>
+        <tr><td>7.2</td><td>CLERK 0 NEW PWD</td><td></td><td>Invisible when SPEC695=0</td></tr>
+        <tr><td>7.4</td><td>SV ID 0 Y-1/N-0</td><td></td><td>Invisible when SPEC695=0</td></tr>
+    </table>
+
+    <h3>3.11 DATE AND TIME (S8)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>8.0</td><td>DATE 122517 MMDDY</td><td>ENTER DATE IN MMDDY</td><td>L'ordine della data va con l'impostazione SPEC17</td></tr>
+        <tr><td>8.1</td><td>TIME 1212 HMM</td><td>ENTER TIME IN HMM</td><td></td></tr>
+    </table>
+
+    <h3>3.12 SP MESSAGE (S9)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>9.0</td><td>SP MG 0 NO SET</td><td>ENTER SPECIAL MESSAGE #</td><td></td></tr>
+        <tr><td>9.1</td><td>M01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.13 INGREDIENT FILE (S10)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>10.0</td><td>INGR 0 NO SET</td><td>ENTER INGREDIENT #</td><td></td></tr>
+        <tr><td>10.1</td><td>G01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.14 TEXT FILE (S11)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>11.0</td><td>TEXT 0 NO SET</td><td>ENTER TEXT #</td><td></td></tr>
+        <tr><td>11.1</td><td>T01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.15 LABEL FORMAT (S12)</h3>
+    <table>
+        <tr><th>Larghezza</th><th>Altezza</th><th>Water MARK</th><th>Angolo</th><th>Item</th></tr>
+        <tr><td colspan="5">1:PLU# X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">14:Discount Value X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">15:Used Date X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">16:Logo X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">17:Main Group Code X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">18:Department Code X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">19:Scale # X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">20:Ingredient X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">21:Special Message X Position Y Position Degree Width Height Status Thickness</td></tr>
+        <tr><td colspan="5">22:Frame 1 X Position Y Position Degree Width Height Status Thickness</td></tr>
+        <tr><td colspan="5">23:Frame 2 X Position Y Position Degree Width Height Status Thickness</td></tr>
+        <tr><td colspan="5">24:Tare X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">25:Clerk X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">26:Text 1 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">27:Text 2 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">28:Text 3 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">29:Text 4 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">30:Text 5 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">31:Text 6 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">32:Text 7 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">33:Text 8 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">34:Text 9 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">35:Text 10 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">36:Text 11 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">37:Text 12 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">38:Text 13 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">39:Text 14 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">40:Text 15 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">41:Text 16 X Position Y Position Degree Width Height Status Text # (361=1)</td></tr>
+        <tr><td colspan="5">42:Price (+Tax) X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">43:Tax Rate X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">44:Place X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">45:Normal Price X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">46:Normal Unit Price X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">47:Image 1 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">48:Image 2 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">49:Image 3 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">50:Image 4 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">51:Image 5 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">52:Image 6 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">53:Image 7 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">54:Image 8 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">55:Image 9 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">56:Image 10 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">57:Average Price X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">58:Average Weight X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">60:Euro Unit Price X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">61:Euro Total Price X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">66:Born Country X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">67:Fatten Country X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">68:Slaughter House X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">69:Cutting Hall X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">70:Reference # X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">71:Origin X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">72:Temperature X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">73:Multi Barcode 1 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">74:Multi Barcode 2 X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">75:Serial Number X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">76:Gross Weight X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">77:Rewrap X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">78:Kind X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">79:Category X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">80:Breed X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">81:Contact X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">82:Gtin X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">83:Supplier Code X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">84:Supplier Name X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">85:Supplier Address1 X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">86:Supplier Address2 X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">87:Advertisement X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">88:Discount Price Tag X Position Y Position Degree Width Height Status P Tag # Sizing (181=3)</td></tr>
+        <tr><td colspan="5">89:Disc Price Image 1 X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">90:Disc Price Image 2 X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">91:Traceability Text X Position Y Position Degree Width Height Status Sizing (181=3)</td></tr>
+        <tr><td colspan="5">92:Production Date X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">93:Production Time X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">94:Usage X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">95:Degree Image X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">96:Arabic Price (-TAX) X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5"><strong>Total</strong></td></tr>
+        <tr><td colspan="5">1:PLU # X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">2:Packed Date X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">3:Weight X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">4:Quantity X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">5:Quantity Unit X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">6:Price (+Tax) X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">7:Packed Time X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">8:Total Title X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">9:Barcode X Position Y Position Degree Height Status</td></tr>
+        <tr><td colspan="5">10:Clerk X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">11:Text 17 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">12:Text 18 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">13:Text 19 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">14:Text 20 X Position Y Position Degree Width Height Status</td></tr>
+        <tr><td colspan="5">15:Price (-Tax) X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">16:Excluded Tax Amount X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">17:Included Tax Amount X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">18:Euro Total Price X Position Y Position Degree Status C Size CENT</td></tr>
+        <tr><td colspan="5">20:Born Country X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">21:Fatten Country X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">22:Slaughter House X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">23:Cutting Hall X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">24:Reference # X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">25:Original Country X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">26:TLL Multi Barcode 1 X Position Y Position Degree Width Height Status CENT</td></tr>
+        <tr><td colspan="5">27:TLL Multi Barcode 2 X Position Y Position Degree Width Height Status CENT</td></tr>
+        <tr><td colspan="5">28:Serial No X Position Y Position Degree Status C Size</td></tr>
+        <tr><td colspan="5">29:Transaction List X Position Y Position Degree Width Height Status CENT</td></tr>
+    </table>
+    <p><em>Per etichetta totale: * TTL Multi Barcode 1 viene stampato solo quando SPEC130=0 sotto etichetta subtotale o grand total. * TTL Multi Barcode 2 viene stampato solo in modalità etichetta manuale.</em></p>
+
+    <h3>3.16 SCROLL MESSAGE (S13)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>13.0</td><td>SC MG 0 NO SET</td><td>ENTER SCROLL MESSAGE #</td><td></td></tr>
+        <tr><td>13.1</td><td>SC MG 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.17 SCROLL SEQUENCE (S14)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>14.0</td><td>SC SQ 0 NO SET</td><td>ENTER SCROLL SEQUENCE #</td><td></td></tr>
+        <tr><td>14.1</td><td>SC SQ MSG NO 000</td><td>ENTER SCROLL MESSAGE #</td><td></td></tr>
+        <tr><td>14.2</td><td>SC SQ ATTRIB 000 000</td><td>ENTER SCROLL PATTERN</td><td></td></tr>
+        <tr><td>14.3</td><td>SC SQ SPEED 000 000</td><td>ENTER SCROLL SPEED</td><td></td></tr>
+    </table>
+    <p><em>* Per abilitare il file sequenza, andare in S14.0 inserire il numero file e cliccare plu.</em></p>
+
+    <h3>3.18 PLACE FILE (S15)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Descrizione</th></tr>
+        <tr><td>15.0</td><td>PLACE 0 NO SET</td><td>ENTER PLACE #</td><td></td></tr>
+        <tr><td>15.1</td><td>P01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.19 MACHINE SETTING (S16)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>SPEC Correlata</th></tr>
+        <tr><td>16.1</td><td>RATE 0.00 DISC</td><td>ENTER DISCOUNT RATE</td><td>Sconto globale fisso usando dopo aver gestito il conto tramite Vender key attraverso il tasto funzione 'PRICE % DISCOUNT' sotto modalità ricevuta ed etichetta totale</td><td></td></tr>
+        <tr><td>16.5</td><td>EURO DP 0</td><td>ENTER EURO RATE DP</td><td>Punto decimale per prezzo Euro</td><td>171=1</td></tr>
+        <tr><td>16.6</td><td>EURO RATE 0</td><td>ENTER EURO RATE</td><td>Tasso per prezzo Euro</td><td>171=1</td></tr>
+        <tr><td>16.7</td><td>CURR2 NAME 0</td><td>Name of second currency</td><td></td><td>425≠0</td></tr>
+        <tr><td>16.8</td><td>CURR2 DP 0</td><td>ENTER 2ND CURR RATE DP</td><td>Punto decimale per seconda valuta</td><td>425≠0</td></tr>
+        <tr><td>16.9</td><td>CURR2 RATE 0</td><td>ENTER 2ND CURRENCY RATE</td><td>Tasso per seconda valuta</td><td>425≠0</td></tr>
+    </table>
+
+    <h3>3.20 LOGO FILE (S17)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>SPEC Correlata</th></tr>
+        <tr><td>17.0</td><td>LOGO 0 NO SET</td><td>ENTER LOGO #</td><td></td><td></td></tr>
+        <tr><td>17.1</td><td>LOGO 0 X-POS</td><td>ENTER X CO-ORDINATE</td><td></td><td></td></tr>
+        <tr><td>17.2</td><td>LOGO 0 Y-POS</td><td>ENTER Y CO-ORDINATE</td><td></td><td></td></tr>
+        <tr><td>17.3</td><td>LOGO 000000 001-01</td><td>EDIT LOGO</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.21 TAX FILE (S18)</h3>
+    <p><em>* Abilitato solo dopo SPEC 603=1</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>SPEC Correlata</th></tr>
+        <tr><td>18.0</td><td>TAX 0 NO SET</td><td>ENTER TAX #</td><td></td><td></td></tr>
+        <tr><td>18.1</td><td>TAX 0.00 INCLUDE</td><td>SELECT TYPE AND ENTER</td><td></td><td></td></tr>
+        <tr><td>18.1</td><td>TAX 0.00 EXCLUDE</td><td>SELECT TYPE AND ENTER</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.22 PLU ITEM SELECT (S19)</h3>
+    <table>
+        <tr><th>Menu</th><th>Descrizione</th><th>Valore Predefinito</th></tr>
+        <tr><td>S19.1 ITEM LABFR1</td><td>SELECT LABEL FORMAT 1</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM LABFR2</td><td>SELECT LABEL FORMAT 2</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM BARCODE</td><td>SELECT BARCODE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM FLAG</td><td>SELECT BARCODE FLAG DATA</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM ITCODE</td><td>SELECT BARCODE ITEM CODE</td><td>PROGRAMS</td></tr>
+        <tr><td>S19.1 ITEM MGCODE</td><td>SELECT MAIN GROUP CODE</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM SELLDT</td><td>SELECT SELL BY DATE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM SELLTM</td><td>SELECT SELL BY TIME</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM USEDDT</td><td>SELECT USED BY DATE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PACKDT</td><td>SELECT PACKED DATE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PACKTM</td><td>SELECT PACKED TIME</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM COST</td><td>SELECT COST</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TARE</td><td>SELECT TARE</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM QTY</td><td>SELECT QUANTITY</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM Q.UNIT</td><td>SELECT QUANTITY UNIT</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM DISCNT</td><td>SELECT DISCOUNT STATUS</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM SCH DT</td><td>SELECT DISC SCHEDULE DT</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM SCH TM</td><td>SELECT DISC SCHEDULE TM</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM MARKDN</td><td>SELECT MARK DOWN STATUS</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM 1STLMT</td><td>SELECT DISC 1 1ST TARGET</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM 2NDLMT</td><td>SELECT DISC 2 2ND TARGET</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM SMGNUM</td><td>SELECT SPECIAL MESSAGE #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM INGNUM</td><td>SELECT INGREDIENT #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM COMNAM</td><td>SELECT COMMODITY NAME</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM PLUSCR</td><td>SELECT PLU SCROLL (U1)</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PLUTEX</td><td>SELECT PLU LINKED TEXT</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PLCNUM</td><td>SELECT PRODUCTION PLACE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM IMAGE</td><td>SELECT IMAGE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM BONUS</td><td>SELECT BONUS</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM NUTRI</td><td>SELECT NUTRITION</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM IFSEL</td><td>SELECT ITF SELECTION</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM REFPLU</td><td>SELECT REFERENCE PLU #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM SECPLU</td><td>SELECT SECURITY PLU</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM COUPLU</td><td>SELECT COUPLED PLU</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM DAY WK</td><td>SELECT DISC DAY OF WEEK</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM ADD-ON</td><td>SELECT EAN 5 DIG ADD-ON</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TAX</td><td>SELECT TAX #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PRICE2</td><td>SELECT 2ND PRICE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM % TARE</td><td>SELECT PROPORTIONAL</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM CUSDIS</td><td>SELECT CUSTOMER DISC</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM RESDIS</td><td>SELECT RESTAURANT DISC</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM STADIS</td><td>SELECT STAFF DISCOUNT</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TRACE</td><td>SELECT TRACEABILITY</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TEMP</td><td>SELECT STORE TEMPERATURE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PACK .I</td><td>SELECT PACK INDICATOR</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM M1BARC</td><td>SELECT MULTI BARCODE 1</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM M2BARC</td><td>SELECT MULTI BARCODE 2</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TM1BAR</td><td>SELECT TTL MULTI BAR 1</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM TM2BAR</td><td>SELECT TTL MULTI BAR 2</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM U.PRIC</td><td>SELECT UNIT PRICE</td><td>PROGRAM</td></tr>
+        <tr><td>S19.1 ITEM ADVER</td><td>SELECT ADVERTISEMENT #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM F NUTR</td><td>SELECT FLEXI NUTRITION #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PRO DT</td><td>SELECT PRODUCTION DATE</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM PRO TM</td><td>SELECT PRODUCTION TIME</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM USAGE #</td><td>SELECT USAGE #</td><td>SKIP</td></tr>
+        <tr><td>S19.1 ITEM USEDTM</td><td>SELECT USED BY TIME</td><td>SKIP</td></tr>
+    </table>
+
+    <h3>3.23 LOOK MEMORY STATUS (S20)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>20.0</td><td>PLU P 3 LF 37903</td><td>PROGRAMMED/LEFT PLU</td><td>Memoria Mainboard per plu: 2M≈8000+, 4M≈18000+, 8M≈37000+</td></tr>
+        <tr><td>20.1</td><td>SD P 0 LF 0</td><td>USED/LEFT SD CARD</td><td>Questo è usato per la memoria fiscale</td></tr>
+    </table>
+
+    <h3>3.24 INTERFACE TEST (S21)</h3>
+    <p><em>* Abilitato solo dopo che SPAN SWITCH è ON, usa il tasto X per cambiare menu.</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>21.1</td><td>RS-232C I/F TEST</td><td>SELECT I/F TEST</td><td></td></tr>
+        <tr><td>21.2</td><td>ETHERNET I/F TEST</td><td>SELECT I/F TEST</td><td></td></tr>
+        <tr><td>21.3</td><td>CASH-DRAWER I/F TEST</td><td>SELECT I/F TEST</td><td>C/D OPEN ? Y-P N-C</td></tr>
+    </table>
+
+    <h3>3.25 USER REPORT LINE (S22)</h3>
+    <p><em>* Abilitato solo dopo SPEC524=1</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>22.0</td><td>U RPT O NO SET</td><td>ENTER USER REPORT LINE #</td><td></td></tr>
+        <tr><td>22.1</td><td>G01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.26 USER REPORT LINE (S23)</h3>
+    <p><em>* Abilitato solo dopo SPEC524=1</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>23.0</td><td>U RPT O NO SET</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>23.1</td><td>U RPT O TYPE NO</td><td>SELECT REPORT TYPE</td><td>Fare riferimento al modulo sottostante</td></tr>
+        <tr><td>23.2</td><td>U RPT O ST NUM</td><td>ENTER START #</td><td>Fare riferimento al modulo sottostante</td></tr>
+        <tr><td>23.3</td><td>U RPT O ED NUM</td><td>ENTER END #</td><td>Fare riferimento al modulo sottostante</td></tr>
+    </table>
+    <table>
+        <tr><th>Tipo</th><th>Nome Report</th><th>Start# ~ End#</th></tr>
+        <tr><td>0x11</td><td>Text</td><td>0</td></tr>
+        <tr><td>0x31</td><td>PLU daily</td><td>1 - 999999</td></tr>
+        <tr><td>0x33</td><td>PLU term</td><td>1 - 999999</td></tr>
+        <tr><td>0x41</td><td>Dept. daily</td><td>1 - 999999</td></tr>
+        <tr><td>0x42</td><td>Dept.monthly</td><td>1 - 999999</td></tr>
+        <tr><td>0x43</td><td>Dept.term</td><td>1 - 999999</td></tr>
+        <tr><td>0x44</td><td>Dept. PPK daily</td><td>1 - 999999</td></tr>
+        <tr><td>0x51</td><td>MG daily</td><td>1 - 999999</td></tr>
+        <tr><td>0x53</td><td>MG term</td><td>1 - 999999</td></tr>
+        <tr><td>0x54</td><td>MG PPK daily</td><td>1 - 999999</td></tr>
+        <tr><td>0x61</td><td>Clerk daily</td><td>1 - 99</td></tr>
+        <tr><td>0x71</td><td>Tax</td><td>1 - 9</td></tr>
+    </table>
+
+    <h3>3.26 USER REPORT SEQUENCE (S24)</h3>
+    <p><em>* Abilitato solo dopo SPEC524=1</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>24.0</td><td>U RPT O NO SET</td><td>ENTER USER REPORT SEQ #</td><td></td></tr>
+        <tr><td>24.1</td><td>U RPT O TYPE NO</td><td>ENTER RESET REPORT TYPE</td><td>0: No, 1: Reset sales daily report, 2: Reset sales monthly report, 3: Reset sales term report</td></tr>
+        <tr><td>24.2</td><td>U RPT PWD ALLOW</td><td>SELECT CHECK PWD</td><td></td></tr>
+        <tr><td>24.3</td><td>U RPT O DATA# 1</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.4</td><td>U RPT O DATA# 2</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.5</td><td>U RPT O DATA# 3</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.6</td><td>U RPT O DATA# 4</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.7</td><td>U RPT O DATA# 5</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.8</td><td>U RPT O DATA# 6</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.9</td><td>U RPT O DATA# 7</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.10</td><td>U RPT O DATA# 8</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.11</td><td>U RPT O DATA# 9</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.12</td><td>U RPT O DATA# 10</td><td>ENTER USER REPORT DATA #</td><td></td></tr>
+        <tr><td>24.13</td><td>U RPT RECEIPT</td><td>SELECT REPORT TYPE</td><td>Ricevuta/Etichetta</td></tr>
+        <tr><td>24.14</td><td>U RPT CLS RT INHIBIT</td><td>CLEAR REAL TIME BUFFER</td><td>Inibisci/Consenti</td></tr>
+    </table>
+
+    <h3>3.27 ALLERGEN FILE (S25)</h3>
+    <p><em>* Abilitato solo dopo SPEC534 ≠ 0</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>25.0</td><td>ALLER O NO SET</td><td>ENTER ALLERGEN #</td><td></td></tr>
+        <tr><td>25.1</td><td>ALLER O</td><td></td><td></td></tr>
+        <tr><td>25.2</td><td>ALLER DEFAULT</td><td>SELECT ALLERGEN FONT</td><td>0: Default, 1: Frame, 2: Inverse, 3: Underline, 4: Double (Vertical and Horizontal), 5: Double (Vertical), 6: Double (Horizontal)</td></tr>
+    </table>
+
+    <h3>3.28 APC MG CODE (S26)</h3>
+    <p><em>* Abilitato solo dopo SPEC39=1 & 443 ≠ 0</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>26.0</td><td>APC 000 MG NO</td><td>ENTER AUTO PLU MG CODE</td><td></td></tr>
+    </table>
+    <p><strong>SPEC Correlate:</strong></p>
+    <table>
+        <tr><th>39</th><th>Calling of PLU</th><th>0 Manual, 1 Auto</th></tr>
+        <tr><td>40</td><td>PLU Digits for Auto PLU Calling/Time-out Calling</td><td>0 3 Digits / 0.5 sec, 1 4 Digits / 1.0 sec</td></tr>
+        <tr><td>442</td><td>Change Main Group Code for Auto Plu Call Function Key Enable</td><td>0 Allow</td></tr>
+        <tr><td>443</td><td>Prefix Fixed Code to PLU Code for Auto PLU Calling</td><td>0 No, 1 1 Digit</td></tr>
+    </table>
+
+    <h3>3.29 TRANS LIST FORMAT (S27)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>27.0</td><td>TRANS 0 NO SET</td><td>ENTER TRANS LIST FORMAT #</td><td></td></tr>
+        <tr><td>27.1</td><td>P01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+    <p><strong>SPEC Correlate:</strong></p>
+    <table>
+        <tr><th>181</th><th>Continuous Label</th><th>0 Disable, 2 Enable with 2D Barcode, 1 Enable, 3 User Programmable</th></tr>
+        <tr><td>530</td><td>Print 2D Barcode on Receipt and Total Label</td><td>0 No, 1 PDF417</td></tr>
+    </table>
+    <p><strong>Note1: Contenuti del File Testo Codice a Barre 2D</strong></p>
+    <p>Il simbolo '%%(xxxx)' può essere programmato nella posizione in cui il valore dovrebbe apparire. L'ID 'xxxx' è in ASCII.</p>
+    <table>
+        <tr><th>ID 'xxxx'</th><th>Contenuto Dati</th><th>ID 'xxxx'</th><th>Contenuto Dati</th></tr>
+        <tr><td>1201</td><td>PLU #</td><td>1275</td><td>Item label serial #</td></tr>
+        <tr><td>1202</td><td>Total Price (-Tax)</td><td>1281</td><td>Traceability contact</td></tr>
+        <tr><td>1203</td><td>Unit Price</td><td>1282</td><td>Traceability GTIN</td></tr>
+        <tr><td>1204</td><td>Weight</td><td>1283</td><td>Traceability supplier code</td></tr>
+        <tr><td>1206</td><td>Pack date</td><td>1284</td><td>Traceability supplier name</td></tr>
+        <tr><td>1207</td><td>Pack time</td><td>1285</td><td>Traceability supplier address1</td></tr>
+        <tr><td>1208</td><td>Commodity name (first line)</td><td>1286</td><td>Traceability supplier address2</td></tr>
+        <tr><td>1212</td><td>Item barcode</td><td>3710</td><td>Traceability lot #</td></tr>
+        <tr><td>1219</td><td>Machine code</td><td>3721</td><td>Traceability barcode (See Note2)</td></tr>
+        <tr><td>1270</td><td>Traceability reference #</td><td>3722</td><td>Traceability GM code barcode 1 (See Note3)</td></tr>
+        <tr><td>1275</td><td>Item label serial #</td><td>3723</td><td>Traceability GM code barcode 2 (See Note4)</td></tr>
+    </table>
+
+    <p><strong>1. Esempio 1</strong> Programmare il File Testo come sotto:</p>
+    <table>
+        <tr><th>Linea #</th><th>Dati</th><th>Font</th></tr>
+        <tr><td>1</td><td>%%(1275): %%(1420) %%(1204) %%(1209)</td><td>S5</td></tr>
+    </table>
+
+    <h3>3.30 NUTRITION FILE (S29)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>29.0</td><td>NUTRI O NO SET</td><td>ENTER NUTRITION #</td><td></td></tr>
+        <tr><td>29.1</td><td>NUTRI S-NU O</td><td></td><td></td></tr>
+        <tr><td>29.2</td><td>NUTRI C-NU O</td><td></td><td></td></tr>
+        <tr><td>29.3</td><td>NUTRI O CAL-NUT</td><td>ENTER CALORIES</td><td></td></tr>
+        <tr><td>29.4</td><td>NUTRI O CAL-FAT</td><td>ENTER CALORIES FAT</td><td></td></tr>
+        <tr><td>29.5</td><td>NUTRI O TTL-FAT</td><td>ENTER TOTAL FAT</td><td></td></tr>
+        <tr><td>29.6</td><td>NUTRI O T-FAT-P</td><td>ENTER TOTAL FAT %</td><td></td></tr>
+        <tr><td>29.7</td><td>NUTRI O SAT-FAT</td><td>ENTER SATURATED FAT</td><td></td></tr>
+        <tr><td>29.8</td><td>NUTRI O S-FAT-P</td><td>ENTER SATURATED FAT %</td><td></td></tr>
+        <tr><td>29.11</td><td>NUTRI O CHOLES</td><td>ENTER CHOLESTROL</td><td></td></tr>
+        <tr><td>29.12</td><td>NUTRI O CHOLE-P</td><td>ENTER CHOLESTROL %</td><td></td></tr>
+        <tr><td>29.13</td><td>NUTRI O SODIUM</td><td>ENTER SODIUM</td><td></td></tr>
+        <tr><td>29.14</td><td>NUTRI O SODIU-P</td><td>ENTER SODIUM %</td><td></td></tr>
+        <tr><td>29.15</td><td>NUTRI O TL-CARB</td><td>ENTER CARBOHYDRATE</td><td></td></tr>
+        <tr><td>29.16</td><td>NUTRI O TL-CA-P</td><td>ENTER CARBOHYDRATE %</td><td></td></tr>
+        <tr><td>29.17</td><td>NUTRI O DIE-FIB</td><td>ENTER FIBER</td><td></td></tr>
+        <tr><td>29.18</td><td>NUTRI O DI-FB-P</td><td>ENTER FIBER %</td><td></td></tr>
+        <tr><td>29.19</td><td>NUTRI O SUGARS</td><td>ENTER SUGARS</td><td></td></tr>
+        <tr><td>29.20</td><td>NUTRI O PROTEIN</td><td>ENTER PROTEIN</td><td></td></tr>
+        <tr><td>29.21</td><td>NUTRI O VITA-A</td><td>ENTER VITAMIN A</td><td></td></tr>
+        <tr><td>29.22</td><td>NUTRI O VITA-C</td><td>ENTER VITAMIN C</td><td></td></tr>
+        <tr><td>29.23</td><td>NUTRI O CALCIUM</td><td>ENTER CALCIUM</td><td></td></tr>
+        <tr><td>29.24</td><td>NUTRI O IRON</td><td>ENTER IRON</td><td></td></tr>
+        <tr><td>29.25</td><td>NUTRI O THIAMIN</td><td>ENTER THIAMIN</td><td></td></tr>
+        <tr><td>29.26</td><td>PLU NPRINT THIAMIN</td><td>SELECT THIAMIN</td><td></td></tr>
+        <tr><td>29.27</td><td>PLU PRINT THIAMIN</td><td>SELECT THIAMIN</td><td></td></tr>
+        <tr><td>29.28</td><td>NUTRI O RIBOFLA</td><td>ENTER RIBOFLAVIN</td><td></td></tr>
+        <tr><td>29.29</td><td>PLU NPRINT RIBOFLA</td><td>SELECT RIBOFLAVIN</td><td></td></tr>
+        <tr><td>29.30</td><td>NUTRI O NIACIN</td><td>ENTER NIACIN</td><td></td></tr>
+        <tr><td>29.31</td><td>PLU NPRINT NIACIN</td><td>SELECT NIACIN</td><td></td></tr>
+        <tr><td>29.32</td><td>TEMPL STANDARD</td><td>SELECT TEMPLATE</td><td>STANDARD/SIMPLITY/SIMPLITY COND/STANDARD COND/TABULATED/TAB EXTRA COND</td></tr>
+    </table>
+
+    <h3>3.31 TEMPERATURE (S30)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>30.0</td><td>TEMP 0 NO SET</td><td>ENTER TEMPERATURE #</td><td></td></tr>
+        <tr><td>30.1</td><td>TEMP NON TEMP 1</td><td>ENTER TEMPERATURE 1</td><td></td></tr>
+        <tr><td>30.2</td><td>TEMP NON TEMP 2</td><td>ENTER TEMPERATURE 2</td><td></td></tr>
+    </table>
+
+    <h3>3.32 MULTI-BARCODE (S31)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>31.0</td><td>M BAR 0 NO SET</td><td>ENTER MULTI BARCODE #</td><td></td></tr>
+        <tr><td>31.1</td><td>E_A M 0</td><td></td><td></td></tr>
+        <tr><td>31.1</td><td>E_A DEFAULT</td><td>SELECT BARCODE</td><td>86: Default, 1: EAN128, 2: RSS, 3: CODE128, 4: PDF417, 5: GS1 QR, 6: GS1 DataMatrix, 7: GS1 DataBar Composite (#4 ~ 7 for multi barcode 2 only), 8: Codabar, 9: Code39, 10: GM code</td></tr>
+        <tr><td>31.1</td><td>E_B M 0</td><td></td><td></td></tr>
+        <tr><td>31.1</td><td>E_B DEFAULT</td><td>SELECT BARCODE</td><td>Stesse opzioni di E_A DEFAULT</td></tr>
+        <tr><td>31.1</td><td>E_C F (00)18XCD</td><td>F CD</td><td></td></tr>
+        <tr><td>31.1</td><td>E_C F (94)26XCD</td><td>F CD</td><td></td></tr>
+        <tr><td>31.1</td><td>E_C DEFAULT</td><td>SELECT BARCODE</td><td>Stesse opzioni di E_A DEFAULT</td></tr>
+        <tr><td>31.1</td><td>T2D 0 NO SET</td><td>ENTER 2D BARCODE TEXT #</td><td></td></tr>
+        <tr><td>31.1</td><td>T2D DEFAULT</td><td>SELECT BARCODE</td><td>Stesse opzioni di E_A DEFAULT</td></tr>
+    </table>
+    <p><em>* Per l'elenco AI, fare riferimento al Capitolo 2.2.2 GS1 Barcode AI</em></p>
+
+    <h3>3.33 2D BARCODE TEXT (S32)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>32.0</td><td>TXT2D 0 NO SET</td><td>ENTER 2D BARCODE TEXT #</td><td></td></tr>
+        <tr><td>32.1</td><td>T01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+    <p><em>* AI LIST</em></p>
+    <p><strong>Note1: Contenuti del File Testo Codice a Barre 2D</strong></p>
+    <p>Il simbolo '%%(xxxx)' può essere programmato nella posizione in cui il valore dovrebbe apparire. L'ID 'xxxx' è in ASCII.</p>
+    <table>
+        <tr><th>ID 'xxxx'</th><th>Contenuto Dati</th><th>ID 'xxxx'</th><th>Contenuto Dati</th></tr>
+        <tr><td>1201</td><td>PLU #</td><td>1275</td><td>Item label serial #</td></tr>
+        <tr><td>1202</td><td>Total Price (-Tax)</td><td>1281</td><td>Traceability contact</td></tr>
+        <tr><td>1203</td><td>Unit Price</td><td>1282</td><td>Traceability GTIN</td></tr>
+        <tr><td>1204</td><td>Weight</td><td>1283</td><td>Traceability supplier code</td></tr>
+        <tr><td>1206</td><td>Pack date</td><td>1284</td><td>Traceability supplier name</td></tr>
+        <tr><td>1207</td><td>Pack time</td><td>1285</td><td>Traceability supplier address1</td></tr>
+        <tr><td>1208</td><td>Commodity name (first line)</td><td>1286</td><td>Traceability supplier address2</td></tr>
+        <tr><td>1219</td><td>Machine code</td><td>3710</td><td>Traceability lot #</td></tr>
+        <tr><td>1270</td><td>Traceability reference #</td><td>3721</td><td>Traceability barcode (See Note2)</td></tr>
+        <tr><td>1275</td><td>Item label serial #</td><td>3722</td><td>Traceability GM code barcode 1 (See Note3)</td></tr>
+        <tr><td>1281</td><td>Traceability contact</td><td>3723</td><td>Traceability GM code barcode 2 (See Note4)</td></tr>
+    </table>
+    <p><em>Note2: L'ID '3721' è per il GS1 QR Code come raccomandazione. Max. 1111 caratteri possono essere programmati nel file Traceability Barcode che è collegato nel file Traceability Group.</em></p>
+
+    <h3>3.34 TRACET TEXT FILE (S33)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>33.0</td><td>T TXT 0 NO SET</td><td>ENTER TRACEABILITY TEXT #</td><td></td></tr>
+        <tr><td>33.1</td><td>A01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.35 COUNTRY FILE (S34)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>34.0</td><td>COUN 0 NO SET</td><td>ENTER COUNTRY #</td><td></td></tr>
+        <tr><td>34.1</td><td>COUN NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.36 CUTTING HALL FILE (S35)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>35.0</td><td>HALL 0 NO SET</td><td>ENTER CUTTING HALL #</td><td></td></tr>
+        <tr><td>35.1</td><td>HALL 0 COUNTRY</td><td>LINK TO COUNTRY #</td><td></td></tr>
+        <tr><td>35.2</td><td>HALL NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.37 SLAUGHTERHOUSE HOUSE (S36)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>36.0</td><td>HOUSE 0 NO SET</td><td>ENTER SLAUGHTER HOUSE #</td><td></td></tr>
+        <tr><td>36.1</td><td>HOUSE 0 COUNTRY</td><td>LINK TO COUNTRY #</td><td></td></tr>
+        <tr><td>36.2</td><td>HOUSE NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.38 TRACEABILITY (S37)</h3>
+    <p><em>* Abilitato solo dopo SPEC258=1</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>37.0</td><td>TRACE 0 NO SET</td><td>ENTER TRACEABILITY #</td><td></td></tr>
+        <tr><td>37.1</td><td>TRACE 0 BORN</td><td>ENTER BORN COUNTRY #</td><td></td></tr>
+        <tr><td>37.2</td><td>TRACE 0 FATTEN</td><td>ENTER FATTEN COUNTRY #</td><td></td></tr>
+        <tr><td>37.3</td><td>TRACE 0 S HOUSE</td><td>ENTER SLAUGHTER HOUSE #</td><td></td></tr>
+        <tr><td>37.4</td><td>TRACE 0 LINK 0</td><td>LINK COUNTRY # FOR S H</td><td></td></tr>
+        <tr><td>37.5</td><td>TRACE 0 C HALL</td><td>ENTER CUTTING HALL #</td><td></td></tr>
+        <tr><td>37.6</td><td>C CNT 0 LINK 0</td><td>LINK COUNTRY # FOR C H</td><td></td></tr>
+        <tr><td>37.7</td><td>TRACE 0 ORIGIN</td><td>ENTER ORIGIN COUNTRY #</td><td></td></tr>
+        <tr><td>37.8</td><td>R-CD NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.8</td><td>TRACE 000000 REF D</td><td>ENTER REFERENCE CODE #</td><td>Effetto solo dopo SPEC272=1</td></tr>
+        <tr><td>37.9</td><td>GTIN NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.10</td><td>LOT NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.11</td><td>TRACE 0 KIND</td><td>ENTER KIND #</td><td></td></tr>
+        <tr><td>37.12</td><td>TRACE 0 CATEG</td><td>ENTER CATEGORY #</td><td></td></tr>
+        <tr><td>37.13</td><td>TRACE 0 BREED</td><td>ENTER BREED #</td><td></td></tr>
+        <tr><td>37.14</td><td>COUNT NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.15</td><td>TRACE 000000 EAT D</td><td>ENTER EAT BY DATE</td><td>Effetto solo dopo SPEC335=1</td></tr>
+        <tr><td>37.16</td><td>TRACE 0.000 WEIGHT</td><td>ENTER MAXIMUM WEIGHT</td><td>Effetto solo dopo SPEC336=1</td></tr>
+        <tr><td>37.17</td><td>S CD NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.18</td><td>S NM NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.19</td><td>S AD 1 NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.20</td><td>S AD 2 NAME 0</td><td></td><td></td></tr>
+        <tr><td>37.21</td><td>TRACE 0 T TEXT</td><td>ENTER TRACEABILITY TEXT #</td><td></td></tr>
+    </table>
+
+    <h3>3.39 FLEXI NUTRITION (S38)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th></tr>
+        <tr><td>38.0</td><td>FREE 0 1-99</td><td>ENTER FREE FORMAT #</td></tr>
+        <tr><td>38.1</td><td>F NUT S-NU 0</td><td></td></tr>
+        <tr><td>38.2</td><td>F NUT C-NU 0</td><td></td></tr>
+        <tr><td>38.3</td><td>F NUT 100g</td><td>SELECT 100G / 100ML</td></tr>
+        <tr><td>38.3</td><td>F NUT 100ml</td><td>SELECT 100G / 100ML</td></tr>
+        <tr><td>38.4</td><td>F NUT 0 g</td><td>ENTER UNIT WEIGHT PORTION</td></tr>
+        <tr><td>38.5</td><td>F NUT 0 PORTION</td><td>ENTER NUMBER OF PORTIONS</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 NO USYM</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 g</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 mg</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 µg</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 kJ</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 kcal</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 *7</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 *8</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 *9</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.6</td><td>F NUT 0 *10</td><td>ENTER ENERGY (KCAL)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 NO USYM</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 g</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 mg</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 µg</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 kJ</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 kCal</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 *7</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 *8</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 *9</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.7</td><td>F NUT 0 *10</td><td>ENTER ENERGY (KJ)</td></tr>
+        <tr><td>38.8</td><td>F NUT 0 %</td><td>ENTER ENERGY (KJ)%</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 NO USYM</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 g</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 mg</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 µg</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 kJ</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 kCal</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 *7</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 *8</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 *9</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.9</td><td>F NUT 0 *10</td><td>ENTER TOTAL FAT</td></tr>
+        <tr><td>38.10</td><td>F NUT 0 %</td><td>ENTER TOTAL FAT %</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 NO USYM</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 g</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 mg</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 µg</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 kJ</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 kCal</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 *7</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 *8</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 *9</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.11</td><td>F NUT 0 *10</td><td>ENTER SATURATED FAT</td></tr>
+        <tr><td>38.12</td><td>F NUT 0 %</td><td>ENTER SATURATED FAT %</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 NO USYM</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 g</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 mg</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 µg</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 kJ</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 kcal</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 *7</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 *8</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 *9</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.13</td><td>F NUT 0 *10</td><td>ENTER CARBOHYDRATE</td></tr>
+        <tr><td>38.14</td><td>F NUT 0 %</td><td>ENTER CARBOHYDRATE %</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 NO USYM</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 g</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 mg</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 µg</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 kJ</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 kcal</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 *7</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 *8</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 *9</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.15</td><td>F NUT 0 *10</td><td>ENTER SUGARS</td></tr>
+        <tr><td>38.16</td><td>F NUT 0 %</td><td>ENTER SUGARS %</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 NO USYM</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 g</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 mg</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 µg</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 kJ</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 kcal</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 *7</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 *8</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 *9</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.17</td><td>F NUT 0 *10</td><td>ENTER PROTEIN</td></tr>
+        <tr><td>38.18</td><td>F NUT 0 %</td><td>ENTER PROTEIN %</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 NO USYM</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 g</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 mg</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 µg</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 kJ</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 kCal</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 *7</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 *8</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 *9</td><td>ENTER SALT</td></tr>
+        <tr><td>38.19</td><td>F NUT 0 *10</td><td>ENTER SALT</td></tr>
+        <tr><td>38.20</td><td>F NUT 0 %</td><td>ENTER SALT %</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 NO USYM</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 g</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 mg</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 µg</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 kCal</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 *7</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 *8</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 *9</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.21</td><td>F NUT 0 *10</td><td>ENTER VITAMIN A</td></tr>
+        <tr><td>38.22</td><td>F NUT 0 %</td><td>ENTER VITAMIN A %</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 NO USYM</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 g</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 mg</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 µg</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 kCal</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 *7</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 *8</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 *9</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.23</td><td>F NUT 0 *10</td><td>ENTER VITAMIN D</td></tr>
+        <tr><td>38.24</td><td>F NUT 0 %</td><td>ENTER VITAMIN D %</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 NO USYM</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 g</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 mg</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 µg</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 kcal</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 *7</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 *8</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 *9</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.25</td><td>F NUT 0 *10</td><td>ENTER VITAMIN E</td></tr>
+        <tr><td>38.26</td><td>F NUT 0 %</td><td>ENTER VITAMIN E %</td></tr>
+        <tr><td>38.27</td><td>F NUT 0 NO USYM</td><td>ENTER VITAMIN K</td></tr>
+        <tr><td>38.28</td><td>F NUT 0 %</td><td>ENTER VITAMIN K %</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 NO USYM</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 g</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 mg</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 µg</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 kcal</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 *7</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 *8</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 *9</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.29</td><td>F NUT 0 *10</td><td>ENTER VITAMIN C</td></tr>
+        <tr><td>38.30</td><td>F NUT 0 %</td><td>ENTER VITAMIN C %</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 NO USYM</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 g</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 mg</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 µg</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 kJ</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 kcal</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 *7</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 *8</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 *9</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.31</td><td>F NUT 0 *10</td><td>ENTER THIAMIN</td></tr>
+        <tr><td>38.32</td><td>F NUT 0 %</td><td>ENTER THIAMINE %</td></tr>
+        <tr><td>38.33</td><td>F NUT O NO USYM</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 g</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 mg</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 µg</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 kJ</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 kcal</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 *7</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 *8</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 *9</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.33</td><td>F NUT 0 *10</td><td>ENTER RIBOFLAVIN</td></tr>
+        <tr><td>38.34</td><td>F NUT 0 %</td><td>ENTER RIBOFLAVIN %</td></tr>
+        <tr><td>38.35</td><td>F NUT O NO USYM</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 g</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 mg</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 µg</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 kJ</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 kcal</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 *7</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 *8</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 *9</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.35</td><td>F NUT 0 *10</td><td>ENTER NIACIN</td></tr>
+        <tr><td>38.36</td><td>F NUT 0 %</td><td>ENTER NIACIN %</td></tr>
+        <tr><td>38.37</td><td>F NUT O NO USYM</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 g</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 mg</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 µg</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 kcal</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 *7</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 *8</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 *9</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.37</td><td>F NUT 0 *10</td><td>ENTER VITAMIN B6</td></tr>
+        <tr><td>38.38</td><td>F NUT 0 %</td><td>ENTER VITAMIN B6 %</td></tr>
+        <tr><td>38.39</td><td>F NUT O NO USYM</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 g</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 mg</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 µg</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 kJ</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 kcal</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 *7</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 *8</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 *9</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.39</td><td>F NUT 0 *10</td><td>ENTER FOLIC ACID</td></tr>
+        <tr><td>38.40</td><td>F NUT 0 %</td><td>ENTER FOLIC ACID %</td></tr>
+        <tr><td>38.41</td><td>F NUT O NO USYM</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 g</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 mg</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 µg</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 kJ</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 kcal</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 *7</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 *8</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 *9</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.41</td><td>F NUT 0 *10</td><td>ENTER VITAMIN B12</td></tr>
+        <tr><td>38.42</td><td>F NUT 0 %</td><td>ENTER VITAMIN B12 %</td></tr>
+        <tr><td>38.43</td><td>F NUT O NO USYM</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 g</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 mg</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 µg</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 kJ</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 kcal</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 *7</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 *8</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 *9</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.43</td><td>F NUT 0 *10</td><td>ENTER BIOTIN</td></tr>
+        <tr><td>38.44</td><td>F NUT 0 %</td><td>ENTER BIOTIN %</td></tr>
+        <tr><td>38.45</td><td>F NUT O NO USYM</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 g</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 mg</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 μ g</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 kJ</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 kcal</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 *7</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 *8</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 *9</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.45</td><td>F NUT 0 *10</td><td>ENTER PANTOTHENIC ACID</td></tr>
+        <tr><td>38.46</td><td>F NUT 0 %</td><td>ENTER PANTOTHENIC ACID %</td></tr>
+        <tr><td>38.47</td><td>F NUT O NO USYM</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 g</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 mg</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 μ g</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 kJ</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 kcal</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 *7</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 *8</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 *9</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.47</td><td>F NUT 0 *10</td><td>ENTER POTASSIUM</td></tr>
+        <tr><td>38.48</td><td>F NUT 0 %</td><td>ENTER POTASSIUM %</td></tr>
+        <tr><td>38.49</td><td>F NUT O NO USYM</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 g</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 mg</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 μ g</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 kJ</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 kcal</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 *7</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 *8</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 *9</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.49</td><td>F NUT 0 *10</td><td>ENTER CHLORIDE</td></tr>
+        <tr><td>38.50</td><td>F NUT 0 %</td><td>ENTER CHLORIDE %</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 NO USYM</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 g</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 mg</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 µg</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 kJ</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 kcal</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 *7</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 *8</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 *9</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.51</td><td>F NUT 0 *10</td><td>ENTER CALCIUM</td></tr>
+        <tr><td>38.52</td><td>F NUT 0 %</td><td>ENTER CALCIUM %</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 NO USYM</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 g</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 mg</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 µg</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 kJ</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 kcal</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 *7</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 *8</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 *9</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.53</td><td>F NUT 0 *10</td><td>ENTER PHOSPHORUS</td></tr>
+        <tr><td>38.54</td><td>F NUT 0 %</td><td>ENTER PHOSPHORUS %</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 NO USYM</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 g</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 mg</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 µg</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 kJ</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 kcal</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 *7</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 *8</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 *9</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.55</td><td>F NUT 0 *10</td><td>ENTER MAGNESIUM</td></tr>
+        <tr><td>38.56</td><td>F NUT 0 %</td><td>ENTER MAGNESIUM %</td></tr>
+        <tr><td>38.57</td><td>F NUT 0 NO USYM</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 0 g</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 1 mg</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 2 µg</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 3 kJ</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 4 kcal</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 5 *7</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 6 *8</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 7 *9</td><td>ENTER IRON</td></tr>
+        <tr><td>38.57</td><td>F NUT 8 *10</td><td>ENTER IRON</td></tr>
+        <tr><td>38.58</td><td>F NUT 0 %</td><td>ENTER IRON %</td></tr>
+        <tr><td>38.59</td><td>F NUT 0 NO USYM</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 0 g</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 1 mg</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 2 µg</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 3 kJ</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 4 kcal</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 5 *7</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 6 *8</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 7 *9</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.59</td><td>F NUT 8 *10</td><td>ENTER ZINC</td></tr>
+        <tr><td>38.60</td><td>F NUT 0 %</td><td>ENTER ZINC %</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 NO USYM</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 1 g</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 mg</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 2 µg</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 3 kJ</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 kCal</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 *7</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 *8</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 *9</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.61</td><td>F NUT 0 *10</td><td>ENTER COPPER</td></tr>
+        <tr><td>38.62</td><td>F NUT 0 %</td><td>ENTER COPPER %</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 NO USYM</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 g</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 mg</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 μ g</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 kJ</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 kCal</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 *7</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 *8</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 *9</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.63</td><td>F NUT 0 *10</td><td>ENTER MANGANESE</td></tr>
+        <tr><td>38.64</td><td>F NUT 0 %</td><td>ENTER MANGANESE %</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 NO USYM</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 g</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 mg</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 μ g</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 kJ</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 kCal</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 *7</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 *8</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 *9</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.65</td><td>F NUT 0 *10</td><td>ENTER FLUORIDE</td></tr>
+        <tr><td>38.66</td><td>F NUT 0 %</td><td>ENTER FLUORIDE %</td></tr>
+        <tr><td>38.67</td><td>F NUT 0 NO USYM</td><td>ENTER SELENIUM</td></tr>
+        <tr><td>38.68</td><td>F NUT 0 %</td><td>ENTER SELENIUM %</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 NO USYM</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 g</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 mg</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 µg</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 kJ</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 kcal</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 *7</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 *8</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 *9</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.69</td><td>F NUT 0 *10</td><td>ENTER CHROMIUM</td></tr>
+        <tr><td>38.70</td><td>F NUT 0 %</td><td>ENTER CHROMIUM %</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 NO USYM</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 g</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 mg</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 µg</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 kJ</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 kcal</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 *7</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 *8</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.71</td><td>F NUT 0 *9</td><td>ENTER MOLYBDENUM</td></tr>
+        <tr><td>38.72</td><td>F NUT 0 %</td><td>ENTER MOLYBDENUM %</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 NO USYM</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 g</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 mg</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 µg</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 kJ</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 kcal</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 *7</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 *8</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.73</td><td>F NUT 0 *9</td><td>ENTER IODINE</td></tr>
+        <tr><td>38.74</td><td>F NUT 0 %</td><td>ENTER IODINE %</td></tr>
+    </table>
+    <p><strong>Elenco dei codici per Flexi-Nutrition (S38):</strong></p>
+    <table>
+        <tr><th>1:Serving Size</th><th>21:Vitamin A</th><th>41:Vitamin B12</th><th>61:Copper</th></tr>
+        <tr><td>2:Serving Container</td><td>22:Vitamin A %</td><td>42:Vitamin B12 %</td><td>62:Copper %</td></tr>
+        <tr><td>3:Selection 100g/100ml</td><td>23:Vitamin D</td><td>43:Biotin</td><td>63:Manganese</td></tr>
+        <tr><td>4:Unit Weight Portion</td><td>24:Vitamin D %</td><td>44:Biotin %</td><td>64:Manganese %</td></tr>
+        <tr><td>5:Number of Portions</td><td>25:Vitamin E</td><td>45:Pantothenic Acid</td><td>65:Fluoride</td></tr>
+        <tr><td>6:Energy (KCal)</td><td>26:Vitamin E %</td><td>46:Pantothenic Acid %</td><td>66:Fluoride %</td></tr>
+        <tr><td>7:Energy (KJ)</td><td>27:Vitamin K</td><td>47:Potassium</td><td>67:Selenium</td></tr>
+        <tr><td>8:Energy %</td><td>28:Vitamin K %</td><td>48:Potassium %</td><td>68:Selenium %</td></tr>
+        <tr><td>9:Total Fat</td><td>29:Vitamin C</td><td>49:Chloride</td><td>69:Chromium</td></tr>
+        <tr><td>10:Total Fat %</td><td>30:Vitamin C %</td><td>50:Chloride %</td><td>70:Chromium %</td></tr>
+        <tr><td>11:Saturated Fat</td><td>31:Thiamine</td><td>51:Calcium</td><td>71:Molybdenum</td></tr>
+        <tr><td>12:Saturated Fat %</td><td>32:Thiamine %</td><td>52:Calcium %</td><td>72:Molybdenum %</td></tr>
+        <tr><td>13: Carbohydrate</td><td>33:Riboflavin</td><td>53:Phosphorus</td><td>73:Iodine</td></tr>
+        <tr><td>14: Carbohydrate %</td><td>34:Riboflavin %</td><td>54:Phosphorus %</td><td>74:Iodine %</td></tr>
+        <tr><td>15:Sugar</td><td>35:Niacin</td><td>55:Magnesium</td><td></td></tr>
+        <tr><td>16:Sugar %</td><td>36:Niacin %</td><td>56:Magnesium %</td><td></td></tr>
+        <tr><td>17:Protein</td><td>37:Vitamin B6</td><td>57:Iron</td><td></td></tr>
+        <tr><td>18:Protein %</td><td>38:Vitamin B6 %</td><td>58:Iron %</td><td></td></tr>
+        <tr><td>19:Salt</td><td>39:Folic Acid</td><td>59:Zinc</td><td></td></tr>
+        <tr><td>20:Salt %</td><td>40:Folic Acid %</td><td>60:Zinc %</td><td></td></tr>
+    </table>
+
+    <h3>3.40 FLEXI-NUTRITION FREE FORMAT (S39)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Dettaglio</th></tr>
+        <tr><td>39.0</td><td>FREE0 1 - 99</td><td>ENTER FREE FORMAT #</td><td></td></tr>
+        <tr><td>39.5</td><td>SER S &lt;- 1F ITEM</td><td>1: SERVING SIZE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SER C &lt;- 2F ITEM</td><td>2: SERVING CONTAINER</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SELEC &lt;- 3F ITEM</td><td>3: SELECTION 100g/100ml</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>UW P &lt;- 4F ITEM</td><td>4: UNIT WEIGHT PORTION</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>NUM P &lt;- 5F ITEM</td><td>5: NUMBER OF PORTIONS</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>E CAL &lt;- 6F ITEM</td><td>6: ENERGY (KCAL)</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>E J &lt;- 7F ITEM</td><td>7: ENERGY (KJ)</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>E J P &lt;- 8F ITEM</td><td>8: ENERGY %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>T FAT &lt;- 9F ITEM</td><td>9: TOTAL FAT</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>T F P &lt;- 10F ITEM</td><td>10: TOTAL FAT %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>S FAT &lt;- 11F ITEM</td><td>11: SATURATED FAT</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>S F P &lt;- 12F ITEM</td><td>12: SATURATED FAT %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CARBO &lt;- 13F ITEM</td><td>13: CARBOHYDRATE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CAR P &lt;- 14F ITEM</td><td>14: CARBOHYDRATE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SUGAR &lt;- 15F ITEM</td><td>15: SUGAR</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SUG P &lt;- 16F ITEM</td><td>16: SUGAR %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PROTE &lt;- 17F ITEM</td><td>17: PROTEIN</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PRO P &lt;- 18F ITEM</td><td>18: PROTEIN %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SALT &lt;- 19F ITEM</td><td>19: SALT</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SAL P &lt;- 20F ITEM</td><td>20: SALT %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>VITA &lt;- 21F ITEM</td><td>21: VITAMIN A</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V A P &lt;- 22F ITEM</td><td>22: VITAMIN A %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V I T &lt;- 23F ITEM</td><td>23: VITAMIN D</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V D P &lt;- 24F ITEM</td><td>24: VITAMIN D %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>VIT E &lt;- 25F ITEM</td><td>25: VITAMIN E</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V E P &lt;- 26F ITEM</td><td>26: VITAMIN E %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>VIT K &lt;- 27F ITEM</td><td>27: VITAMIN K</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V K P &lt;- 28F ITEM</td><td>28: VITAMIN K %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>VIT C &lt;- 29F ITEM</td><td>29: VITAMIN C</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V C P &lt;- 30F ITEM</td><td>30: VITAMIN C %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>THIAM &lt;- 31F ITEM</td><td>31: THIAMINE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>THI P &lt;- 32F ITEM</td><td>32: THIAMINE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>RIBOF &lt;- 33F ITEM</td><td>33: RIBOFLAVIN</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>RIB P &lt;- 34F ITEM</td><td>34: RIBOFLAVIN %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>NIACI &lt;- 35F ITEM</td><td>35: NIACIN</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>NIA P &lt;- 36F ITEM</td><td>36: NIACIN %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>VI B6 &lt;- 37F ITEM</td><td>37: VITAMIN B6</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V B6 P &lt;- 38F ITEM</td><td>38: VITAMIN B6 %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>FOLIC &lt;- 39F ITEM</td><td>39: FOLIC ACID</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>F A P &lt;- 40F ITEM</td><td>40: FOLIC ACID %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V B12 &lt;- 41F ITEM</td><td>41: VITAMIN B12</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>V B12 P &lt;- 42F ITEM</td><td>42: VITAMIN B12 %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>BIOTI &lt;- 43F ITEM</td><td>43: BIOTIN</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>BIOP &lt;- 44F ITEM</td><td>44: BIOTIN %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PANTO &lt;- 45F ITEM</td><td>45: PANTOTHENIC ACID</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PAN P &lt;- 46F ITEM</td><td>46: PANTOTHENIC ACID %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>POTAS &lt;- 47F ITEM</td><td>47: POTASSIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>POT P &lt;- 48F ITEM</td><td>48: POTASSIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CHLOR &lt;- 49F ITEM</td><td>49: CHLORIDE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CHL P &lt;- 50F ITEM</td><td>50: CHLORIDE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CALCI &lt;- 51F ITEM</td><td>51: CALCIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CAL P &lt;- 52F ITEM</td><td>52: CALCIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PHOSP &lt;- 53F ITEM</td><td>53: PHOSPHORUS</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>PHOP &lt;- 54F ITEM</td><td>54: PHOSPHORUS %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MAGNE &lt;- 55F ITEM</td><td>55: MAGNESIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MAG P &lt;- 56F ITEM</td><td>56: MAGNESIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>IRON &lt;- 57F ITEM</td><td>57: IRON</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>IRO P &lt;- 58F ITEM</td><td>58: IRON %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>ZINC &lt;- 59F ITEM</td><td>59: ZINC</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>ZIN P &lt;- 60F ITEM</td><td>60: ZINC %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>COPPE &lt;- 61F ITEM</td><td>61: COPPER</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>COP P &lt;- 62F ITEM</td><td>62: COPPER %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MANGA &lt;- 63F ITEM</td><td>63: MANGANESE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MAN P &lt;- 64F ITEM</td><td>64: MANGANESE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>FLUOR &lt;- 65F ITEM</td><td>65: FLUORIDE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>FLU P &lt;- 66F ITEM</td><td>66: FLUORIDE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SELEN &lt;- 67F ITEM</td><td>67: SELENIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>SELP &lt;- 68F ITEM</td><td>68: SELENIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CHROM &lt;- 69F ITEM</td><td>69: CHROMIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>CHR P &lt;- 70F ITEM</td><td>70: CHROMIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MOLYB &lt;- 71F ITEM</td><td>71: MOLYBENIUM</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>MOL P &lt;- 72F ITEM</td><td>72: MOLYBENIUM %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>IODIN &lt;- 73F ITEM</td><td>73: IODINE</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+        <tr><td>39.5</td><td>IOD P &lt;- 74F ITEM</td><td>74: IODINE %</td><td>X POSITION, Y POSITION, ANGLE, PRINT STATUS, CHARACTER SIZE</td></tr>
+    </table>
+
+    <h3>3.41 COUNTRY FILE (S40)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>40.0</td><td>USAGE 0 NO SET</td><td>ENTER USAGE #</td><td></td></tr>
+        <tr><td>40.1</td><td>P01.01 S1 A 100</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.42 QUEUING SYSTEM FILE (S41)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>41.0</td><td>QUEYE 0 NO SET</td><td>ENTER QUEUING SYSTEM #</td><td></td></tr>
+        <tr><td>41.1</td><td>QUEUE 000000000000</td><td>SERVER IP ADDRESS</td><td></td></tr>
+        <tr><td>41.2</td><td>QUEUE 00000 PORT</td><td>ENTER PORT</td><td></td></tr>
+        <tr><td>41.3</td><td>QUEUE NEXT 0</td><td></td><td></td></tr>
+        <tr><td>41.4</td><td>QUEUE PREV 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.43 Flexi-Barcode (S46)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>SPEC Correlata</th></tr>
+        <tr><td>46.0</td><td>S46.0 F BAR O N SET</td><td>ENTER FLEXI-BARCODE #</td><td>1~9</td><td></td></tr>
+        <tr><td>46.1</td><td>S46.1 F BAR NO CODE128</td><td>SELECT CODE128 BARCODE</td><td>No/Yes</td><td></td></tr>
+        <tr><td>46.1</td><td>S46.1 F BAR 2 FLAG</td><td>ENTER FLAG TYPE</td><td>0: F2, 1: F1F2, 2: No flag</td><td></td></tr>
+        <tr><td>46.2</td><td>S46.2 F BAR O ITEM CD</td><td>ENTER ITEM CODE #</td><td>0~10 (0~14 for India code128)</td><td></td></tr>
+        <tr><td>46.3</td><td>S46.3 F BAR 0 DATA 1</td><td>ENTER DATA 1 TYPE #</td><td>0: Weight, 1: Quantity, 2: Unit price, 3: Weight/QTY, 4: Total price, 5: Original Price, 6: User Programmable, 7: Machine code, 8: Receipt number / Item label number, 9: Total Label number</td><td></td></tr>
+        <tr><td>46.4</td><td>S46.4 F BAR 0 DIGIT</td><td>ENTER DATA 1 DIGIT #</td><td>0~9</td><td></td></tr>
+        <tr><td>46.5</td><td>S46.5 F BAR 0 SHIFT</td><td>ENTER DATA 1 SHIFT #</td><td>0: No right shift, 1: Right shift, 2: Right shift x 2, 3: Left shift, 4: Left shift x 2, 5: Left shift x 3</td><td></td></tr>
+        <tr><td>46.6</td><td>S46.6 F BAR 0 DATA 2</td><td>ENTER DATA 2 TYPE #</td><td>0: Weight, 1: Quantity, 2: Unit price, 3: Weight/QTY, 4: Total price, 5: Original Price, 6: User Programmable, 7: Machine code, 8: Receipt number / Item label number, 9: Total Label number</td><td></td></tr>
+        <tr><td>46.7</td><td>S46.7 F BAR 0 DIGIT</td><td>ENTER DATA 2 DIGIT #</td><td>0~9</td><td></td></tr>
+        <tr><td>46.8</td><td>S46.8 F BAR 0 SHIFT</td><td>ENTER DATA 2 SHIFT #</td><td>0: No right shift, 1: Right shift, 2: Right shift x 2, 3: Left shift, 4: Left shift x 2, 5: Left shift x 3</td><td></td></tr>
+        <tr><td>46.9</td><td>S46.9 F BAR NO MIDDLE CD</td><td>SELECT MIDDLE CHECK DIGIT</td><td>No/Yes (invisible when CODE128=YES)</td><td></td></tr>
+        <tr><td>46.10</td><td>S46.10 F BAR NO LAST CD</td><td>SELECT LAST CHECK DIGIT</td><td>No/Yes</td><td></td></tr>
+        <tr><td>46.11</td><td>S46.11 F BAR ITF BARCODE</td><td>SELECT BARCODE TYPE</td><td>ITF/EAN (invisible when CODE128=YES)</td><td></td></tr>
+    </table>
+    <p><em>P.S. Mentre si usa lo spostamento dati, si deve impostare SPEC713 & 714 per farlo funzionare.</em></p>
+    <table>
+        <tr><th>713</th><th>Data1 of Flexi-Barcode Shift</th><th>✓✓✓</th><th>0 Normal, 1 Quantity2, 3Weight, Price</th></tr>
+        <tr><td>714</td><td>Data2 of Flexi-Barcode Shift</td><td>✓✓✓</td><td>0 Normal, 1 Quantity2, 3Weight, Price</td></tr>
+    </table>
+
+    <h3>3.44 KIND FILE (S47)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>47.0</td><td>KIND 0 NO SET</td><td>ENTER KIND #</td><td></td></tr>
+        <tr><td>47.1</td><td>KIND NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.45 CATEGORY FILE (S48)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>48.0</td><td>CATEG 0 NO SET</td><td>ENTER CATEGORY #</td><td></td></tr>
+        <tr><td>48.1</td><td>CATEG NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.46 BREED FILE (S49)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>49.0</td><td>BREED 0 NO SET</td><td>ENTER BREED #</td><td></td></tr>
+        <tr><td>48.1</td><td>BREED NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.47 UPDATE DATE & TIME (S50)</h3>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th></tr>
+        <tr><td>50.0</td><td>DATE 000000 0000</td><td>SCALE UPDATE DATE & TIME</td><td></td></tr>
+        <tr><td>48.1</td><td>BREED NAME 0</td><td></td><td></td></tr>
+    </table>
+
+    <h3>3.48 STOCK FUNCTION (S51)</h3>
+    <table>
+        <tr><th>475</th><th>Stock Operation Function Key Enable</th><th>✓</th><th>0 Inhibit, 1 Allow</th></tr>
+        <tr><td></td><td>Stock Operation Function Key Enable</td><td>✓✓</td><td>0 Inhibit, 2 Allow (Label Mode), 1 Allow (Receipt Mode), 3 Allow (Both)</td></tr>
+    </table>
+    <p><em>P.S. Solo quando il valore = 1 è possibile impostare il tasto funzione '100 Stock Operation'.</em></p>
+    <table>
+        <tr><th>Menu</th><th>Prima Schermata</th><th>Seconda Schermata</th><th>Note</th><th>SPEC Correlata</th></tr>
+        <tr><td>51.0</td><td>S51.0 STOCK 0 NO SET</td><td>ENTER STOCK KEY #</td><td></td><td>475≠0</td></tr>
+        <tr><td>51.1</td><td>S51.1 STOCK WEIGHT</td><td>SELECT STOCK TYPE</td><td>Weight/QTY/Manual weight/Follow PLU</td><td></td></tr>
+        <tr><td>51.2</td><td>S51.2 STOCK TP 0</td><td>Title display in total price column when stock operation. Max.7</td><td></td><td></td></tr>
+        <tr><td>51.3</td><td>S51.3 STOCK L2 0</td><td>Title display in 2nd line when stock operation. Max.25</td><td></td><td></td></tr>
+        <tr><td>51.4</td><td>S51.4 STOCK PT 0</td><td>Title print in stock list. Max.48</td><td></td><td></td></tr>
+        <tr><td>51.5</td><td>S51.5 STOCK PREFIX INHIBIT</td><td>SELECT ENTER PREFIX CODE</td><td>Inhibit/Allow</td><td></td></tr>
+        <tr><td>51.6</td><td>S51.6 STOCK REASON INHIBIT</td><td>SELECT ENTER REASON</td><td>Inhibit/Allow</td><td></td></tr>
+        <tr><td>51.7</td><td>S51.7 STOCK DP INHIBIT</td><td>SELECT USE DOT POINT SPEC</td><td>Inhibit/Allow</td><td></td></tr>
+        <tr><td>51.8</td><td>S51.8 STOCK PLU ALL</td><td>SELECT PLU TYPE</td><td>All item/Weighed item/Non- weighed item</td><td></td></tr>
+        <tr><td>51.9</td><td>S51.9 STOCK SHOP INHIBIT</td><td>SELECT USE PLU AS SHOP</td><td>Inhibit/Allow with PLU file/Allow with shop file</td><td></td></tr>
+        <tr><td>51.10</td><td>S51.10 STOCK PTLIST ALLOW</td><td>SELECT PRINT LIST</td><td>Allow/Inhibit</td><td></td></tr>
+    </table>
+
+</body>
+</html>

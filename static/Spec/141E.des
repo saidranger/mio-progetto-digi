@@ -1,0 +1,289 @@
+[MAIN]
+SpecCount=28
+StartIndex=001
+SubType=E
+
+[141E001]
+Description=141E001 FUNCTIONS KEYS IN SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E002]
+Description=141E002 SEARCH FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E003]
+Description=141E003 DEPARTMENT FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E004]
+Description=141E004 FIXED UNIT PRICE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E005]
+Description=141E005 FIXED UNIT PRICE PERCENTAGE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E006]
+Description=141E006 PACKED DATE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Inhibit
+Item1=Prepack and Manual
+Item2=Prepack Only
+Item3=Manual Only
+
+[141E007]
+Description=141E007 MINUS PACKED DATE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E008]
+Description=141E008 SELL BY DATE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Inhibit
+Item1=Prepack and Manual
+Item2=Prepack Only
+Item3=Manual Only
+
+[141E009]
+Description=141E009 UNIT SYMBOL FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E010]
+Description=141E010 QUANTITY SET FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E011]
+Description=141E011 PRICE CHANGE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E012]
+Description=141E012 REFUND ITEM FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E013]
+Description=141E013 SHOP NAME FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E014]
+Description=141E014 PRINT SELECT FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E015]
+Description=141E015 SUB-TOTAL FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E016]
+Description=141E016 GRAND TOTAL FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E017]
+Description=141E017 PACK QUANTITY KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E018]
+Description=141E018 PRICE DISCOUNT FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E019]
+Description=141E019 PERCENTAGE DISCOUNT FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E020]
+Description=141E020 RECEIPT WITH TAX INFORMATION FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E021]
+Description=141E021 RECEIPT WITH TAX INFORMATION FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E022]
+Description=141E022 DISPLAY OF MESSAGE IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E023]
+Description=141E023 CABINET FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141E024]
+Description=141E024 WEIGHT CHECK FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141E025]
+Description=141E025 FIXED FORMAT 1 FUNCTION KEY
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141E026]
+Description=141E026 FAMILA INVENTORY FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141E027]
+Description=141E027 REPEAT PLU FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable     
+Item1=Enable      
+
+[141E028]
+Description=141E028 MARKDOWN AND DISCOUNT FUNCTION KEY ACTIVE TIME FRAME
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable     
+Item1=Enable      
+

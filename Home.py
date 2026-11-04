@@ -15,11 +15,11 @@ def main():
     body()
 
 def body():
-    @st.dialog("Dialog", width="large")
+    @st.dialog("Pulire il DB", width="large")
     def mostra_mio_dialog():        
         st.write(paragrafo3)
         st.image("./static/dbmaintanance.png", width="stretch")
-        st.markdown("Una volta pulito possiamo copiarlo in **c:\programdata\digiproject** come visto in precedenza.")
+        st.markdown("Una volta pulito possiamo copiarlo in **c:\\programdata\\digiproject** come visto in precedenza.")
         if st.button("Chiudi",type="primary"):
             st.rerun()
     st.header("DigiProject",anchor="digiproject")
@@ -57,12 +57,12 @@ def Attivazione():
 
 def footer():
     with st.container(border=True,horizontal=True,autoscroll=True):
-        st.markdown("[:primary[DigiProject]](#digiproject)")
-        st.markdown("[:primary[Attivazione Licenza]](#attivazione)")
+        st.markdown("[DigiProject](#digiproject)")
+        st.markdown("[Attivazione Licenza](#attivazione)")
 
 if 'user_logged_in' in st.session_state and st.session_state.user_logged_in:
     main()
 else:
-    st.error(r"$\textsf{\Large Il contenuto è privato fai il login per accedere.}$")
+    st.error(r":gray[$\textsf{\Large Il contenuto è privato fai il login per accedere.}$]")
     if st.button(label="**Fai il login**", icon="🔑",type='primary'):
         st.switch_page("login.py")

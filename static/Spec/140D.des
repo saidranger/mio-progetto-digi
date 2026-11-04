@@ -1,0 +1,244 @@
+[MAIN]
+SpecCount=24
+
+StartIndex=001
+SubType=D
+
+
+[140D001]
+Description=140D001 MULTIPLICATION OPERATION IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=0
+Mask=0x0000
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140D002]
+Description=140D002 REZERO WHEN ENTERING REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=18
+Mask=0x80
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140D003]
+Description=140D003 ALLOW NON WEIGHED ITEMS IN MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=Non Unit Price Re-calculated Item Only
+
+[140D004]
+Description=140D004 UNIT WEIGHT DISPLAY AND PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=kg
+Item1=Gram
+
+[140D005]
+Description=140D005 GROSS WEIGHT DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Gross Weight
+Item1=Net Weight + Proportional Tare
+
+[140D006]
+Description=140D006 PREPACK MODE CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Prepack Text
+Item1=Weight And Price
+
+[140D007]
+Description=140D007 SWITCHING TO/FROM PREPACK MODE WHEN GROSS WEIGHT NOT ZERO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140D008]
+Description=140D008 WEIGHT STABILITY CHECK FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[140D009]
+Description=140D009 NET WEIGHT DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Net Weight
+Item1=Net Weight + Proportional Tare
+
+[140D010]
+Description=140D010 DELETE REAL TIME BUFFER IN CLOSING & REPORT MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140D011]
+Description=140D011 TIMEOUT TO ACTIVATE CUSTOMER DISPLAY'S SCREENSAVER WHEN WEIGHT NOT ZERO (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[140D012]
+Description=140D012 DISPLAY MANUAL WEIGHT ON TARE FIELD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D013]
+Description=140D013 BACKWARD WEIGHT CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Based On Single Range
+Item2=Based On Dual Range
+
+[140D014]
+Description=140D014 FORCE REMOVE WEIGHT WHEN RETURNING FROM OPERATOR SCREENSAVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D015]
+Description=140D015 ACTIVATION OF OPERATOR SCREENSAVER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Activate When Net Weight<=0
+Item1=Activate When Gross Weight<=0
+Item2=Activate When Gross Weight And Net Weight=0
+
+[140D016]
+Description=140D016 PRINT IMPERIAL WEIGHT INFORMATION ON PREPACK LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D017]
+Description=140D017 DISPLAY TOTAL WEIGHT IN SUB-TOTAL AND CHANGE MODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D018]
+Description=140D018 ZERO START WEIGHT FOR WEIGHED ITEM 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D019]
+Description=140D019 WEIGHT VERIFICATION GROUP NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[140D020]
+Description=140D020 ALLOW TO OPERATE SCALE IF WEIGHT VERIFICATION OUT OF TOLERANCE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[140D021]
+Description=140D021 PRINT MANUAL WEIGHT TITLE ON RECEIPT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140D022]
+Description=140D022 LVDS RESET INTERVAL (SECONDS) 
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[140D023]
+Description=140D023 ACTIVATE SCREEN BY TOUCHING SCREEN OR PRESSING KEYPAD 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[140D024]
+Description=140D024 SHOW TOTAL QUANTITY ON DISPLAY AND LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+

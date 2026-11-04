@@ -1,0 +1,51 @@
+[MAIN]
+SpecCount=4
+StartIndex=001
+SubType=C
+
+
+[140C001]
+Description=140C001 TAX
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=6
+Mask=0x80
+ItemCount=2
+Item0=No Tax
+Item1=Tax
+
+[140C002]
+Description=140C002 SELECTION OF TAX ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=14
+Mask=0x04
+ItemCount=3
+Item0=Rounding
+Item1=Truncate
+Item2=Cut up
+
+[140C003]
+Description=140C003 INCLUDE SUB-TOTAL PRICE ROUNDING VALUE IN TAX
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140C004]
+Description=140C004 INDIVIDUAL TAX ROUNDING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+

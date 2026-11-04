@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuale di Servizio SM-120LL (Tradotto)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 { font-size: 2em; text-align: center; }
+        h2 { font-size: 1.5em; }
+        h3 { font-size: 1.2em; }
+        p { margin-bottom: 10px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .page-break {
+            border-top: 2px dashed #ccc;
+            margin: 40px 0;
+            padding-top: 20px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .image-placeholder {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        ul, ol {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Manuale di Servizio SM-120LL (5ª Edizione)</h1>
+
+    <h3>Cronologia delle Modifiche</h3>
+    <table>
+        <tr><th>Versione</th><th>Data</th><th>Note</th></tr>
+        <tr><td>V1</td><td>Aprile 2014</td><td>Prima release</td></tr>
+        <tr><td>V2</td><td>Giugno 2014</td><td>Aggiunta comunicazione FTP</td></tr>
+        <tr><td>V3</td><td>Ottobre 2014</td><td>Aggiunta Funzionalità Comuni</td></tr>
+        <tr><td>V4</td><td>Marzo 2015</td><td>Cambio lista specifiche in file pdf <br> Aggiunte nuove funzioni <br> Modificato capitolo Smontaggio <br> Modificata connessione con @Label <br> Aggiunto Smontaggio tipo H</td></tr>
+        <tr><td>V5</td><td>Novembre 2015</td><td>Aggiunta guida tipo EV BS <br> Aggiunte alcune definizioni di interfaccia <br> Aggiunta impostazione Scanner <br> Modificata guida Auto-Sizing <br> Aggiunto Layout del tipo BS <br> Aggiunta Impostazione Scanner</td></tr>
+    </table>
+
+    <div class="page-break"></div>
+
+    <h2>Indice</h2>
+    <ol>
+        <li><strong>INFORMAZIONI GENERALI</strong>
+            <ul>
+                <li>1.1 Vista d'insieme</li>
+                <li>1.2 Pannello Display</li>
+                <li>1.3 Pannello Tasti</li>
+                <li>1.4 Caratteristiche</li>
+                <li>1.5 Specifiche</li>
+                <li>1.6 Funzioni dei Tasti</li>
+                <li>1.7 Indicatori</li>
+                <li>1.8 Schema a blocchi della Connessione Elettrica</li>
+            </ul>
+        </li>
+        <li><strong>CONFIGURAZIONE</strong>
+            <ul>
+                <li>2.1 Cambio Modalità</li>
+                <li>2.2 Impostazione Paese</li>
+                <li>2.3 Calibrazione</li>
+                <li>2.4 Impostazione Specifiche</li>
+                <li>2.5 Impostazione Password</li>
+                <li>2.6 Regolazione</li>
+                <li>2.7 Cancella File</li>
+                <li>2.8 Lista Specifiche</li>
+            </ul>
+        </li>
+        <li><strong>MODALITÀ PROGRAMMAZIONE</strong>
+            <ul>
+                <li>3.1 File Programmabili</li>
+                <li>3.2 Spiegazione Generale</li>
+                <li>3.3 File Reparto</li>
+                <li>3.4 File Gruppo Principale</li>
+                <li>3.5 Programma / Salta Dati Articolo</li>
+                <li>3.6 Programmazione PLU</li>
+                <li>3.7 Stato Memoria</li>
+                <li>3.8 Assegnazione Tasti</li>
+                <li>3.9 File Nome Negozio</li>
+                <li>3.10 File Pubblicità</li>
+                <li>3.11 File Venditore</li>
+                <li>3.12 Programma Data E Ora</li>
+                <li>3.13 File Messaggio Speciale</li>
+                <li>3.14 File Ingredienti</li>
+                <li>3.15 File Testo</li>
+                <li>3.16 File Formato Libero</li>
+                <li>3.17 File Luogo</li>
+                <li>3.18 Impostazione Macchina</li>
+                <li>3.19 File Logo</li>
+                <li>3.20 File Tassa</li>
+                <li>3.21 File Messaggio Scorrevole</li>
+                <li>3.22 File Sequenza Scorrevole</li>
+                <li>3.23 File Codice a Barre Flessibile</li>
+                <li>3.24 File Linea Report Utente</li>
+                <li>3.25 File Dati Report Utente</li>
+                <li>3.26 File Sequenza Report Utente</li>
+                <li>3.27 File Temperatura</li>
+                <li>3.28 File Multi Codice a Barre</li>
+                <li>3.29 File Testo Codice a Barre 2D</li>
+                <li>3.30 File Paese</li>
+                <li>3.31 File Sala di Taglio</li>
+                <li>3.32 File Macello</li>
+                <li>3.33 File Tipo / Categoria</li>
+                <li>3.34 File Razza</li>
+                <li>3.35 File Tracciabilità</li>
+                <li>3.36 File Tasto Stock</li>
+                <li>3.37 Metodo di Inserimento Caratteri ASCII</li>
+                <li>3.38 Metodo di Inserimento Codice ASCII</li>
+            </ul>
+        </li>
+        <li><strong>MODALITÀ REGISTRAZIONE</strong>
+            <ul>
+                <li>4.1 ON/OFF</li>
+                <li>4.2 Reset e Verifica Peso</li>
+                <li>4.3 Sottrazione Tara</li>
+                <li>4.4 Chiamata PLU</li>
+                <li>4.5 Operazione Fix</li>
+                <li>4.6 Cambio Modalità Operativa</li>
+                <li>4.7 Stampa Etichetta Articolo in Modalità Manuale</li>
+                <li>4.8 Stampa Etichetta Totale in Modalità Manuale</li>
+                <li>4.9 Correzione Dati</li>
+                <li>4.10 Stampa Etichetta Articolo in Modalità Pre-pack</li>
+            </ul>
+        </li>
+        <li><strong>MODALITÀ REPORT DI LETTURA</strong>
+            <ul>
+                <li>5.1 Selezione Fattore Report</li>
+                <li>5.2 Selezione Tipo Report</li>
+            </ul>
+        </li>
+        <li><strong>MODALITÀ REPORT DI RESET</strong>
+            <ul>
+                <li>6.1 Report di Reset</li>
+            </ul>
+        </li>
+        <li><strong>LISTA ERRORI HARDWARE</strong>
+            <ul>
+                <li>7.1 Messaggi di Errore Normali</li>
+                <li>7.2 Lista Errori Fatali</li>
+            </ul>
+        </li>
+        <li><strong>Impostazione Rete</strong>
+            <ul>
+                <li>8.1 Impostazione Base</li>
+                <li>8.2 Server FTP</li>
+                <li>8.3 Client FTP</li>
+            </ul>
+        </li>
+        <li><strong>Aggiornamento Firmware</strong>
+            <ul>
+                <li>9.1 Firmware</li>
+                <li>9.2 Procedura</li>
+                <li>9.3 Carica SPEC Predefinite</li>
+            </ul>
+        </li>
+        <li><strong>Facility</strong>
+            <ul>
+                <li>10.1 Facility</li>
+                <li>10.2 Metodo di Applicazione</li>
+            </ul>
+        </li>
+        <li><strong>Smontaggio</strong>
+            <ul>
+                <li>11.1 Strumenti</li>
+                <li>11.2 Smontaggio</li>
+                <li>11.3 Smontaggio del tipo H</li>
+            </ul>
+        </li>
+        <li><strong>Comunicazione FTP</strong>
+            <ul>
+                <li>12.1 Preparazione</li>
+                <li>12.2 Invia/ricevi dati</li>
+            </ul>
+        </li>
+        <li><strong>Funzionalità Comuni</strong>
+            <ul>
+                <li>13.1 Funzione Server/Client</li>
+                <li>13.2 Impostazione Tracciabilità</li>
+                <li>13.3 Impostazione Etichetta Nutrizionale</li>
+                <li>13.4 Stampa Allergeni</li>
+                <li>13.5 Report Programmabile dall'Utente</li>
+                <li>13.6 Codice a Barre 2D</li>
+                <li>13.7 Testo Codice a Barre 2D</li>
+                <li>13.8 Collegamento SM-120LL con @Label</li>
+                <li>13.9 Etichetta Prezzo Sconto SM-120</li>
+                <li>13.10 Stampa Codice a Barre 2D tramite @Label</li>
+                <li>13.12 Stampa Immagine tramite @Label</li>
+                <li>13.13 SM-120 Auto-Sizing</li>
+                <li>13.14 Impostazione Scanner</li>
+                <li>13. EV BS type</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <h2>1. INFORMAZIONI GENERALI</h2>
+
+    <h3>1.1 Vista d'insieme</h3>
+    <p>Tipo da Banco</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo da banco]</div>
+    <p>Tipo a Colonna</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo a colonna con dimensioni]</div>
+    <p>1 Tipo Elevato</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo elevato con dimensioni]</div>
+    <p>Tipo Elevato BS (72)</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo elevato BS 72 con dimensioni]</div>
+    <p>Tipo Elevato BS (120)</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo elevato BS 120 con dimensioni]</div>
+    <p>Tipo Pensile (72)</p>
+    <div class="image-placeholder">[Immagine: Disegno tecnico del tipo pensile 72 con dimensioni]</div>
+
+    <h3>1.2 Pannello Display</h3>
+    <div class="image-placeholder">[Immagine: Pannello display con indicatori TARE, WEIGHT, UNIT PRICE, TOTAL PRICE]</div>
+
+    <h3>1.3 Pannello Tasti</h3>
+    <p>Tipo da Banco</p>
+    <div class="image-placeholder">[Immagine: Layout tastiera per tipo da banco]</div>
+    <p>Tipo Elevato / A Colonna / Pensile</p>
+    <div class="image-placeholder">[Immagine: Layout tastiera per tipo elevato/colonna/pensile]</div>
+    <p>Tipo BS 72 tasti</p>
+    <div class="image-placeholder">[Immagine: Layout tastiera BS 72 tasti]</div>
+    <p>Tipo BS 120 tasti</p>
+    <p>Questo tipo deve prima impostare spec 299=1 per cambiare tipo.</p>
+    <div class="image-placeholder">[Immagine: Layout tastiera BS 120 tasti]</div>
+
+    <h3>1.4 Caratteristiche</h3>
+    <ul>
+        <li>Bilancia a stampa digitale composta da funzioni di registratore di cassa elettronico e funzione di stampa etichette.</li>
+        <li>Stampante a testina termica ad alta velocità e affidabilità, larghezza massima di stampa 60mm, velocità massima di stampa 110mm/sec.</li>
+        <li>Facilità di gestione della carta grazie al meccanismo appositamente progettato.</li>
+        <li>Taglierina Automatica (SM-120LL).</li>
+        <li>Orologio integrato che aggiorna automaticamente data e ora.</li>
+        <li>Risposta rapida alle variazioni di peso.</li>
+        <li>Capacità: 3kg, 6kg, 12kg, 15kg, 30kg, 6lb, 12lb, 15lb e 30lb.</li>
+        <li>Risoluzione: Risoluzione Display 1/3.000. : Risoluzione Interna 1/90.000.</li>
+        <li>Display cliente e operatore (display a colonna cliente opzionale).</li>
+        <li>LCD FSTN 202 x 32 pixel con retroilluminazione.</li>
+        <li>55 (Banco) / 73 (Colonna / Elevato) tasti switch: Tasto ON/OFF, 10 tasti numerici, 32/56/72/120 tasti preset, 12/16 tasti operativi.</li>
+        <li>18 file dati per Reparto, Gruppo Principale, PLU, ecc.</li>
+        <li>Vari report.</li>
+        <li>Funzione Ethernet.</li>
+        <li>Scheda Ethernet wireless opzionale.</li>
+        <li>Interfaccia RS232C per comunicazione dati e connessione scanner di codici a barre.</li>
+        <li>Cassetto contanti opzionale.</li>
+    </ul>
+
+    <h3>1.5 Specifiche</h3>
+    <h4>1.5.1 Display</h4>
+    <ul>
+        <li>Visualizzazione Peso Tara : 4 cifre.</li>
+        <li>Visualizzazione Peso : 5 cifre.</li>
+        <li>Visualizzazione Prezzo Unitario : 6 cifre.</li>
+        <li>Visualizzazione Prezzo Totale : 7 cifre.</li>
+        <li>Display Seconda Linea: 25 caratteri.</li>
+    </ul>
+
+    <h4>1.5.2 Condizioni operative</h4>
+    <ul>
+        <li>Fonte di Alimentazione : AC 100V ~ 240V, 50~60Hz.</li>
+        <li>Temperatura Operativa : - 10 °C ~ +40 °C.</li>
+        <li>Umidità Operativa : 15% ~ 85% RH.</li>
+        <li>Consumo Energetico : 0.5A.</li>
+    </ul>
+
+    <h4>1.5.3 Dimensioni</h4>
+    <p>Dimensione piatto :356(L) x 283(P) mm.</p>
+    <p>Dimensioni complessive:</p>
+    <ul>
+        <li>a) Banco : 361(L) x 427(P) x 146(A) mm.</li>
+        <li>b) Colonna : 361(L) x 500(P) x 584(A) mm.</li>
+        <li>c) Elevato : 361(L) x 470(P) x 531(A) mm.</li>
+        <li>d) BS EV 75tasti: 361(L) x 374 (P) x 725 (A) mm.</li>
+        <li>e) BS EV 120tasti: 361/500(L) x 374 (P) x 725 (A) mm.</li>
+    </ul>
+
+    <h4>1.5.4 Capacità/Minima Graduazione/Campo Tara</h4>
+    <p><strong>Intervallo Singolo</strong></p>
+    <table>
+        <tr><th>Capacità</th><th>Minima Graduazione</th><th>Campo Tara</th></tr>
+        <tr><td>3kg</td><td>1g (1e = 30IR)</td><td>0 - 1.499 kg</td></tr>
+        <tr><td>6kg / 6lb</td><td>2g / 0.002lb (1e = 30IR)</td><td>0 - 2.998 kg / lb</td></tr>
+        <tr><td>12kg / 12lb</td><td>2g / 0.002lb (1e = 15IR)</td><td>0 - 5.998 kg / lb</td></tr>
+        <tr><td>15kg / 15lb</td><td>5g / 0.005lb (1e = 30IR)</td><td>0 - 7.495 kg / lb</td></tr>
+        <tr><td>30kg / 30lb</td><td>10g / 0.01lb (1e = 30IR)</td><td>0 - 14.99 kg / lb</td></tr>
+    </table>
+
+    <p><strong>Intervallo Multiplo</strong></p>
+    <table>
+        <tr><th>Capacità</th><th>Minima Graduazione</th><th>Campo Tara</th></tr>
+        <tr><td>6kg / 6lb</td><td>(0-3 kg/lb) -- 1g / 0.001lb (1e=15IR)<br>(3-6 kg/lb) -- 2g / 0.002lb (1e=30IR)</td><td>0 - 2.999 kg / lb</td></tr>
+        <tr><td>15kg / 15lb</td><td>(0-6 kg/lb) -- 2g / 0.002lb (1e=12IR)<br>(6-15 kg/lb) -- 5g / 0.005lb (1e=30IR)</td><td>0 - 5.998kg / lb</td></tr>
+        <tr><td>30kg / 30lb</td><td>(0-15 kg/lb) -- 5g / 0.005lb (1e=15IR)<br>(15-30 kg/lb) -- 10g / 0.01lb (1e=30IR)</td><td>0 - 9.995kg / lb</td></tr>
+    </table>
+    <p><em>Nota: IR = Risoluzione Interna; e = Divisione (Incremento Minimo). Conteggio interno (capacità massima) = 90000 IR.</em></p>
+
+    <h4>1.5.5 Risoluzione</h4>
+    <p>Risoluzione Display 1/3.000. Risoluzione Interna 1/90.000.</p>
+
+    <h4>1.5.6 Dispositivo di Stampa</h4>
+    <ul>
+        <li>Testina Termica : Toshiba TPH60R9.</li>
+        <li>Risoluzione : 480 punti (8 punti / mm).</li>
+        <li>Larghezza Massima di Stampa : 60mm.</li>
+        <li>Larghezza Carta : 62mm (scontrino) / 60mm (etichetta).</li>
+        <li>Velocità di Stampa : Massimo 110 mm / sec.</li>
+        <li>Durata : 100 milioni di impulsi, 100km o più.</li>
+        <li>Rilevatori / Sensori : Rilevatore blocco sportello stampante, Rilevatore fissaggio Taglierina Automatica, sensore gap etichetta, sensore peel etichetta.</li>
+        <li>Taglierina Automatica : ORC- RTB70- B</li>
+    </ul>
+
+    <h4>1.5.7 Connettori Esterni</h4>
+    <p>Presa AC. Porta controllo cassetto contanti (tensione di pilotaggio 24V).</p>
+    <div class="image-placeholder">[Immagine: Connettore RJ9]</div>
+    <table>
+        <tr><th>RJ9(4P4C) PIN#</th><th>SEGNALE</th></tr>
+        <tr><td>1#</td><td>NA</td></tr>
+        <tr><td>2#</td><td>+24V</td></tr>
+        <tr><td>3#</td><td>DRW_OPEN</td></tr>
+        <tr><td>4#</td><td>NA</td></tr>
+    </table>
+    <p>1 x interfaccia RS- 232C.</p>
+    <div class="image-placeholder">[Immagine: Schema cavo RS-232 DB9]</div>
+    <p>Ethernet.</p>
+
+    <h3>1.6 Funzioni dei Tasti</h3>
+    <table>
+        <tr><td><strong>TASTO ON/OFF</strong></td><td>Accende o spegne il display.</td></tr>
+        <tr><td><strong>TASTO PRESET P1~P74</strong></td><td>Imposta o richiama prezzo unitario e valore tara.</td></tr>
+        <tr><td><strong>TASTI NUMERICI 0 ~ 9</strong></td><td>Inseriscono dati numerici.</td></tr>
+        <tr><td><strong>TASTO TARE</strong></td><td>Imposta o Cancella il valore Tara. Seleziona "NO" in modalità S e Z. Test di stampa articolo in modalità S.</td></tr>
+        <tr><td><strong>TASTO CLEAR (C)</strong></td><td>Per Backspace o Cancella valore numerico. Seleziona "YES" in modalità S e Z.</td></tr>
+        <tr><td><strong>TASTO RE-ZERO</strong></td><td>Riporta il peso a ZERO.</td></tr>
+        <tr><td><strong>TASTO PREPACK (AUTO)</strong></td><td>Alterna la modalità Manuale e la modalità Pre-pack. (Lo stato della modalità è indicato nell'indicatore P e M.) - P - MODALITÀ PRE-PACK - M - MODALITÀ MANUALE</td></tr>
+        <tr><td><strong>TASTO CHANGE</strong></td><td>Calcola l'Importo del Resto. Esce dalla schermata di programmazione senza salvare i dati in modalità S.</td></tr>
+        <tr><td><strong>TASTO MULTIPLE (X)</strong></td><td>Registra il numero di prodotti Non a Peso. Seleziona l'elemento di programmazione come dati PLU, Nome Negozio in modalità S. Seleziona Tipo Report in modalità X. Seleziona Tipo Transazione Dati in modalità Z.</td></tr>
+        <tr><td><strong>TASTO CLERK (V1~V4)</strong></td><td>Accumula il Prezzo Totale.</td></tr>
+        <tr><td><strong>TASTO VOID</strong></td><td>Corregge i dati di vendita.</td></tr>
+        <tr><td><strong>TASTO PLU</strong></td><td>Richiama i dati PLU in modalità R. Memorizza i dati programmati in modalità S.</td></tr>
+        <tr><td><strong>TASTO FEED</strong></td><td>Avanza Etichetta o carta Scontrino.</td></tr>
+        <tr><td><strong>TASTO PRINT</strong></td><td>Stampa Etichetta o Scontrino.</td></tr>
+        <tr><td><strong>TASTO SELEZIONE MODALITÀ</strong></td><td>Cinque Modalità possono essere selezionate usando questo tasto. <br> Indicatore R - MODALITÀ REGISTRAZIONE <br> Indicatore X - MODALITÀ VERIFICA <br> Indicatore S - MODALITÀ PROGRAMMAZIONE <br> Indicatore Z - MODALITÀ TOTALE <br> Indicatore X (Lampeggiante) - Modalità Impostazione Password</td></tr>
+        <tr><td><strong>Tasto Diminuisci/Aumenta Conteggio Specifiche</strong></td><td>Usato solo quando si impostano SPEC 141 & 142. Seleziona dati parametro come dati SPEC. Sposta cursore a sinistra o destra.</td></tr>
+    </table>
+
+    <h3>1.7 Indicatori</h3>
+    <ul>
+        <li><strong>ZERO:</strong> Acceso quando il punto zero è regolato e il peso è stabile.</li>
+        <li><strong>NET:</strong> Acceso quando viene eseguita la sottrazione tara.</li>
+        <li><strong>FIX T:</strong> Acceso quando il peso tara è fisso.</li>
+    </ul>
+
+    <h3>1.8 Schema a blocchi della Connessione Elettrica</h3>
+    <div class="image-placeholder">[Immagine: Schema a blocchi della connessione elettrica]</div>
+
+    <div class="page-break"></div>
+
+    <h2>2. CONFIGURAZIONE</h2>
+
+    <h3>2.1 Cambio Modalità</h3>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY (PT, kg, $/kg, $)</th><th>NOTE</th></tr>
+        <tr><td></td><td>0.000 | 0.000 | 0.00 | 0.00</td><td>Modalità peso. Spia R accesa.</td></tr>
+        <tr><td>[MODE][MODE]</td><td>X MODALITÀ</td><td>Entra in modalità X. Spia X accesa.</td></tr>
+    </table>
+
+    <h3>2.2 Impostazione Paese</h3>
+    <p>Questa funzione è usata per l'impostazione iniziale della bilancia e della Memoria. (Span Switch abilitato.)</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[8][8][2][2][2]</td><td>SPEC2-STD COUNTRY</td><td>Imposta paese.</td></tr>
+        <tr><td>[>]</td><td>SPEC3-CN COUNTRY</td><td>[>], [<] o [X] per selezionare il paese. [*] per aggiornare l'impostazione del paese.</td></tr>
+        <tr><td>[*]</td><td>LOAD DEFAULT SPEC Y-C N-T</td><td>[C] per caricare l'impostazione SPEC predefinita, [T] per saltare.</td></tr>
+        <tr><td>[C]</td><td>SCALE TYPE &rarr; POLE</td><td>Imposta tipo bilancia.</td></tr>
+        <tr><td>[X]</td><td>SCALE TYPE &rarr; BENCH</td><td>[X], [- ] per selezionare il tipo, [*] per aggiornare l'impostazione del tipo.</td></tr>
+        <tr><td>[*]</td><td>SCALE CAP. &rarr; 3KG</td><td>Imposta capacità bilancia.</td></tr>
+        <tr><td>[X]</td><td>SCALE CAP. &rarr; 6KG</td><td>[X], [- ] per selezionare la capacità, [*] per aggiornare l'impostazione della capacità.</td></tr>
+        <tr><td>[*]</td><td>SCALE RES. &rarr; 1/3000S</td><td>Imposta risoluzione.</td></tr>
+        <tr><td>[X]</td><td>SCALE RES. &rarr; 1/3000M</td><td>[X], [- ] per selezionare la risoluzione, [*] per aggiornare l'impostazione della risoluzione.</td></tr>
+        <tr><td>[*]</td><td>CLEAR MEMORY Y-C N-T</td><td>[C] per cancellare la memoria, [T] per saltare.</td></tr>
+        <tr><td>[C]</td><td>Z1.0 RESET SALES DAILY</td><td>Ritorna alla modalità Z.</td></tr>
+    </table>
+    <p><em>Nota1: Per il primo utilizzo di SM-120(LL), eseguire questa operazione per l'inizializzazione.</em></p>
+
+    <h3>2.3 Calibrazione</h3>
+    <p>Prima della Calibrazione, verificare che le specifiche che indicano la capacità di peso, la graduazione minima e la sensibilità della cella di carico siano impostate correttamente.</p>
+    <div class="note">
+        <strong>Attenzione:</strong><br>
+        Può funzionare solo quando lo SPAN SWITCH è attivo (ABILITATO). Prima di Calibrare, entrare in modalità Z.
+    </div>
+
+    <h4>2.3.1 Operazione di Calibrazione</h4>
+    <p>(Vedere la procedura dettagliata nella sezione 2.3.2 per l'uscita e la gestione).</p>
+
+    <h4>2.3.2 Uscita dalla Calibrazione</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>Premere SPAN SWITCH</td><td>Z1.0 RESET SALES DAILY</td><td>SPAN SWITCH è attivo (ABILITATO).</td></tr>
+        <tr><td>[Rezero]+[8][7][1][5]</td><td>CAL 00</td><td>Inserire [8][7][1][5] mentre si preme [Rezero].</td></tr>
+        <tr><td>[T]</td><td>Z1.0 RESET SALES DAILY</td><td>Esce in modalità Z. Spia Z sempre accesa.</td></tr>
+    </table>
+
+    <h3>2.4 Impostazione Specifiche</h3>
+    <h4>2.4.1 Inserimento Specifiche (142)</h4>
+    <div class="note">
+        Attenzione: 1. Può funzionare solo quando lo SPAN switch è attivo (ABILITATO). 2. Prima di impostare (141,142), entrare in modalità Z.
+    </div>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>Premere SPAN SWITCH</td><td>Z1.0 RESET SALES DAILY</td><td>SPAN SWITCH è attivo (ABILITATO).</td></tr>
+        <tr><td>[Rezero]+[1][4][2]</td><td>SPEC 600 XXX (setting) / XXX (former)</td><td>Inserire [1][4][2] mentre si preme [Rezero]. XXX: Dati SPEC.</td></tr>
+        <tr><td>[SPEC 601]</td><td>XXXXXX</td><td>...</td></tr>
+        <tr><td>[SPEC 600]</td><td>XXXXXX</td><td>...</td></tr>
+        <tr><td>[6][1][5] [X]</td><td>SPEC 600 &rarr; SPEC 615</td><td>615 XXX</td></tr>
+        <tr><td>[&gt;]</td><td>SPEC 615 XXXXXX</td><td>[&gt;] seleziona dati SPEC. Sposta cursore a destra.</td></tr>
+        <tr><td>[&lt;]</td><td>SPEC 615 XXXXXX</td><td>[&lt;] seleziona dati SPEC. Sposta cursore a sinistra.</td></tr>
+        <tr><td>[1] [*]</td><td>SPEC 615 &rarr; SPEC 616 001 XXX XXXXXX XXX</td><td>[*] per aggiornare le specifiche, aumenta il conteggio.</td></tr>
+        <tr><td>[2]</td><td>SPEC 616 002 XXXXXX</td><td>...</td></tr>
+        <tr><td>[C]</td><td>SPEC 616 000 XXXXXX</td><td>Cancella i dati inseriti.</td></tr>
+        <tr><td>[PLU] * Note 1</td><td>Z1.0 RESET SALES DAILY</td><td>Memorizza le specifiche aggiornate ed esce in modalità Z.</td></tr>
+    </table>
+    <p><em>Nota 1: Se si preme il tasto [T], non memorizza le specifiche aggiornate ed esce in modalità Z.</em></p>
+
+    <h4>2.4.2 Inserimento Specifiche (141)</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[1][4][1]</td><td>SPEC 000 XXX (setting) / XXX (former)</td><td>Inserire [1][4][1] mentre si preme [Rezero]. XXX: Dati SPEC.</td></tr>
+        <tr><td>[^]</td><td>SPEC 001 XXXXXX</td><td>[^] aumenta solo il conteggio, non aggiorna i dati.</td></tr>
+        <tr><td>[^]</td><td>SPEC 000 XXXXXX</td><td>[^] diminuisce solo il conteggio, non aggiorna i dati.</td></tr>
+        <tr><td>[1][7] [X]</td><td>SPEC 000 &rarr; SPEC 017 017 XXXXXX XXX</td><td>Va al conteggio specifiche designato. (000~441 è abilitato).</td></tr>
+        <tr><td>[&gt;]</td><td>SPEC 017 XXXXXX</td><td>[&gt;] sposta il cursore a destra.</td></tr>
+        <tr><td>[&lt;]</td><td>SPEC 017 XXXXXX</td><td>[&lt;] sposta il cursore a sinistra.</td></tr>
+        <tr><td>[1] [*]</td><td>SPEC 017 &rarr; SPEC 018 001 XXX XXXXXX XXX</td><td>[*] per aggiornare le specifiche.</td></tr>
+        <tr><td>[C]</td><td>SPEC 018 000 XXXXXX</td><td>Cancella i dati inseriti.</td></tr>
+        <tr><td>[PLU] * Note 1</td><td>Z1.0 RESET SALES DAILY</td><td>Memorizza ed esce in modalità Z.</td></tr>
+    </table>
+
+    <h3>2.5 Impostazione Password</h3>
+    <h4>2.5.1 Procedure di Impostazione Password</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[MODE]</td><td>PWD X XXXXX SET</td><td>Visualizza password per modalità X. XXXX: vecchia password. 0: Non impostata. (1~4 bit abilitati). Spia X lampeggia.</td></tr>
+        <tr><td>[1][2][3][4] [*]</td><td>PWD X 1234 SET</td><td>Imposta password per modalità X come 1234. Premere [*] per salvare. Spia S lampeggia.</td></tr>
+        <tr><td>[*]</td><td>PWD Z XXXX SET</td><td>Visualizza password per modalità Z. Spia Z lampeggia.</td></tr>
+        <tr><td>[3][3] [C]</td><td>PWD Z 0 SET</td><td>Cancella la password per modalità Z.</td></tr>
+        <tr><td>[*]</td><td>PWD P XXXX SET</td><td>Visualizza password per modalità PWD. Spie R X S Z lampeggiano.</td></tr>
+        <tr><td>[1][1][1][1]</td><td>PWD P 1111 SET</td><td>Imposta password per modalità PWD come 1111. Spie R X S Z lampeggiano.</td></tr>
+        <tr><td>[*]</td><td>0.000 0.000 0.00 0.00</td><td>Ritorna in modalità R dopo l'impostazione.</td></tr>
+    </table>
+
+    <h4>2.5.2 Uso della Password</h4>
+    <p><em>{Ipotesi: PWD X: 1111; PWD S: Non impostata; PWD P: 1234}</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>0.000 0.000 0.00 0.00</td><td>Modalità peso. Spia R accesa.</td></tr>
+        <tr><td>[MODE][MODE] (entro 3 secondi)</td><td>ENTER PWD X</td><td>Richiede password modalità X. Spia X accesa.</td></tr>
+        <tr><td>[1][2][3][4] [*]</td><td>ENTER PWD X ****</td><td>Password errata. Riprovare.</td></tr>
+        <tr><td>[1][1][1][1] [*]</td><td>X1.0 READ SALES DAILY</td><td>Password corretta. Entra in modalità X.</td></tr>
+        <tr><td>[MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[MODE]</td><td>ENTER PWD Z</td><td>Richiede password modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[3][3] [*]</td><td>Z1.0 RESET SALES DAILY **</td><td>Password corretta. Entra in modalità Z.</td></tr>
+        <tr><td>[MODE]</td><td>ENTER PWD P</td><td>Richiede password modalità PWD.</td></tr>
+        <tr><td>[1][2][3][4] [*]</td><td>PWD X 1111 / PWD P ****</td><td>Password corretta. Entra in modalità PWD.</td></tr>
+        <tr><td>[MODE]</td><td>0.000 0.000 0.00 0.00</td><td>Torna alla modalità Peso. Spia R accesa.</td></tr>
+    </table>
+
+    <h3>2.6 Regolazione</h3>
+    <h4>2.6.1 Visualizzazione Impostazione Span Switch</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[2][8][4]</td><td>STE16 VX.XX S-OFF</td><td>Inserire [2][8][4] mentre si preme [Rezero].</td></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Esce dopo 3 secondi.</td></tr>
+    </table>
+    <p><em>Nota: la finestra s/kg mostra la versione del software.</em></p>
+
+    <h4>2.6.2 Conteggio Interno e Conteggio A/D</h4>
+    <p>Può funzionare solo quando lo Span Switch è attivo (ABILITATO).</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[0][0][9]</td><td>216 5460</td><td>Inserire [0][0][9] mentre si preme [Rezero]. La finestra s/kg mostra il conteggio A/D, la finestra s mostra il conteggio interno.</td></tr>
+        <tr><td>[T]</td><td>Z1.0 RESET SALES DAILY</td><td>[T] per uscire.</td></tr>
+    </table>
+
+    <h4>2.6.3 Visualizzazione Tensione Sensore Gap</h4>
+    <p>Questa impostazione è disponibile solo per SM-120.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[5][1][6]</td><td>GAPPFD 0.6 1.0</td><td>Inserire [5][1][6] mentre si preme [Rezero]. La finestra s/kg mostra la tensione del sensore gap, la finestra s mostra il nuovo valore.</td></tr>
+        <tr><td>[T]</td><td>Z1.0 RESET SALES DAILY</td><td>[T] per uscire.</td></tr>
+    </table>
+
+    <h4>2.6.4 Visualizzazione Tensione Sensore Peel</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[5][1][5]</td><td>PEELPFD 1.0 1.7</td><td>Inserire [5][1][5] mentre si preme [Rezero].</td></tr>
+    </table>
+
+    <h4>2.6.5 Impostazione Avanzamento</h4>
+    <p>Questa funzione è usata per regolare la posizione di stampa sull'etichetta.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[5][1][4]</td><td>ADJPFD 00</td><td>Inserire [5][1][4] mentre si preme [Rezero]. $/kg mostra vecchio valore, s mostra nuovo valore.</td></tr>
+        <tr><td>[1][0]</td><td>ADJPFD 010</td><td>Per spostare in alto il punto di stampa, inserire il nuovo valore (es. 10 punti).</td></tr>
+        <tr><td>[1][0][ - ]</td><td>ADJPFD 0-10</td><td>Per spostare in basso, inserire il valore e premere [-].</td></tr>
+        <tr><td>[PLU]</td><td>0.000 0.000 0.00 0.00</td><td>Salva l'impostazione.</td></tr>
+        <tr><td>[T]</td><td>Z1.0 RESET SALES DAILY</td><td>Se si vuole uscire senza salvare, premere [T].</td></tr>
+    </table>
+
+    <h4>2.6.6 Condizioni d'Uso Stampante Termica</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[0][8][2][3]</td><td>PRINTER USAGE 5</td><td>Visualizza le condizioni d'uso della stampante termica (metri).</td></tr>
+        <tr><td>[T]</td><td>Z1.0 RESET SALES DAILY</td><td>[T] per uscire.</td></tr>
+    </table>
+
+    <h4>2.6.7 Impostazione Tensione Sensore Fine Carta</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[5][1][9]</td><td>P EDV 01.0 0.2</td><td>Inserire [5][1][9] mentre si preme [Rezero]. $/kg mostra la tensione del sensore, s mostra la tensione corrente.</td></tr>
+        <tr><td>Rimuovere carta e [*]</td><td>PEDV1 1.0 2.9</td><td>Visualizza tensione senza carta.</td></tr>
+        <tr><td>Inserire carta e [*]</td><td>Z1.0 RESET SALES DAILY</td><td>Memorizza la tensione del sensore fine carta ed esce.</td></tr>
+    </table>
+
+    <h3>2.7 Cancella File</h3>
+    <p>Questa funzione è usata per cancellare i file in Memoria.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td></td><td>Z1.0 RESET SALES DAILY</td><td>Modalità Z. Spia Z accesa.</td></tr>
+        <tr><td>[Rezero]+[2][3][0]</td><td>CLEAR PLU FILE</td><td>File PLU.</td></tr>
+        <tr><td>[^]</td><td>CLEAR VENDER DATA</td><td>Dati transazione venditore.</td></tr>
+        <tr><td>[^]</td><td>CLEAR REPORT FILES</td><td>File report.</td></tr>
+        <tr><td>[^]</td><td>CLEAR MEMORY DATA</td><td>Tutti i file in memoria.</td></tr>
+        <tr><td>[^]</td><td>CLEAR MEMORY Y-C N-T</td><td>[C] per cancellare i dati, [T] per uscire.</td></tr>
+        <tr><td>[C] o [T]</td><td>Z1.0 RESET SALES DAILY</td><td>Ritorna in modalità Z.</td></tr>
+    </table>
+
+    <h3>2.8 Lista Specifiche</h3>
+    <p>Fare riferimento al documento Spec List.</p>
+    <div class="image-placeholder">[Icona PDF: SM120SPECI_v0107.pdf]</div>
+
+    <div class="page-break"></div>
+
+    <h2>3. MODALITÀ PROGRAMMAZIONE</h2>
+
+    <h3>3.1 File Programmabili</h3>
+    <p>In Modalità Programmazione, ci sono due modi per selezionare il File di Programmazione usando tasti diversi come:</p>
+    <ul>
+        <li>Inserire il tasto Numerico.</li>
+        <li>Premere il tasto [^] o [v] per selezionare il File Dati.</li>
+    </ul>
+    <p>I file elencati di seguito possono essere programmati in MODALITÀ PROGRAMMAZIONE (Modalità S).</p>
+    <table>
+        <tr><th>Tasto da Premere</th><th>File Dati</th><th>Tasto da Premere</th><th>File Dati</th></tr>
+        <tr><td>[1]</td><td>Programmazione PLU</td><td>[2] [0]</td><td>Stato Memoria</td></tr>
+        <tr><td>[2]</td><td>Programmazione Reparto</td><td>[2] [1]</td><td>Test I/F</td></tr>
+        <tr><td>[3]</td><td>Programmazione Gruppo Principale</td><td>[2] [2]</td><td>Programmazione Linea Report Utente</td></tr>
+        <tr><td>[4]</td><td>Assegnazione Tasti</td><td>[2] [3]</td><td>Programmazione Dati Report Utente</td></tr>
+        <tr><td>[5]</td><td>Programmazione Nome Negozio</td><td>[2] [4]</td><td>Programmazione Sequenza Report Utente</td></tr>
+        <tr><td>[6]</td><td>Programmazione Pubblicità</td><td>[2] [6]</td><td>Codice APC MG</td></tr>
+        <tr><td>[7]</td><td>Programmazione Venditore</td><td>[2] [9]</td><td>Programmazione Nutrizione</td></tr>
+        <tr><td>[8]</td><td>Programmazione Data e Ora</td><td>[3] [0]</td><td>Programmazione Temperatura</td></tr>
+        <tr><td>[9]</td><td>Programmazione Messaggio Speciale</td><td>[3] [1]</td><td>Programmazione Multi Codice a Barre</td></tr>
+        <tr><td>[1] [0]</td><td>Programmazione Ingredienti</td><td>[3] [2]</td><td>Programmazione Testo Codice a Barre 2D</td></tr>
+        <tr><td>[1] [1]</td><td>Programmazione Testo</td><td>[3] [4]</td><td>Programmazione Paese</td></tr>
+        <tr><td>[1] [2]</td><td>Programmazione Formato Libero</td><td>[3] [5]</td><td>Programmazione Sala di Taglio</td></tr>
+        <tr><td>[1] [3]</td><td>Programmazione Messaggio Scorrevole</td><td>[3] [6]</td><td>Programmazione Macello</td></tr>
+        <tr><td>[1] [4]</td><td>Programmazione Sequenza Scorrevole</td><td>[3] [7]</td><td>Programmazione Tracciabilità</td></tr>
+        <tr><td>[1] [5]</td><td>Programmazione Luogo</td><td>[4] [6]</td><td>Programmazione Codice a Barre Flessibile</td></tr>
+        <tr><td>[1] [6]</td><td>Impostazione Macchina</td><td>[4] [7]</td><td>Programmazione Tipo</td></tr>
+        <tr><td>[1] [7]</td><td>Programmazione Logo</td><td>[4] [8]</td><td>Programmazione Categoria</td></tr>
+        <tr><td>[1] [8]</td><td>Programmazione Tassa</td><td>[4] [9]</td><td>Programmazione Razza</td></tr>
+        <tr><td>[1] [9]</td><td>Programma o Salta Dati Articolo</td><td>[5] [1]</td><td>Programmazione Tasto Funzione Stock</td></tr>
+    </table>
+
+    <h3>3.2 Spiegazione Generale</h3>
+    <p>I file REPARTO, GRUPPO PRINCIPALE e PLU sono collegati come mostrato di seguito. Con il seguente metodo di collegamento, è possibile ottenere informazioni più dettagliate e concrete sulla transazione di vendita o sui dati di pre-pack stampando vari report.</p>
+
+    <h4>FILE REPARTO</h4>
+    <p>Il FILE REPARTO è la categoria più ampia i cui articoli sono come CARNE, PESCE, VERDURA o GASTRONOMIA ecc.</p>
+
+    <h4>FILE GRUPPO PRINCIPALE</h4>
+    <p>Il file GRUPPO PRINCIPALE è la categoria intermedia che include articoli come MANZO, MAIALE, POLLO, ecc. È possibile collegare un Gruppo Principale a un Reparto nel file Gruppo Principale. Il Numero Tassa può essere assegnato a un Gruppo Principale. La Tassa assegnata si applicherà a tutti i PLU assegnati al Gruppo Principale.</p>
+
+    <h4>FILE PLU</h4>
+    <p>Il File PLU è la categoria più piccola che include articoli come FETTA DI MANZO, SPALLA DI MANZO e LOMBATA DI MANZO. È possibile collegare il PLU a un Gruppo Principale nel file di programmazione PLU.</p>
+    
+    <div class="image-placeholder">[Diagramma ad albero: NEGOZIO -> REPARTO -> GRUPPO PRINCIPALE -> PLU]</div>
+
+    <h3>3.3 File Reparto</h3>
+    <p>Il file Reparto è usato per categorizzare i Gruppi Principali. I Numeri di Reparto tra 1 ~ 999999 sono disponibili per la programmazione. I Gruppi Principali che non sono collegati a nessun Reparto saranno assegnati automaticamente al Numero di Reparto 97. Sono disponibili massimo 16 caratteri per file e ognuno con 1 linea.</p>
+
+    <h4>3.3.1 Programma File Reparto</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[2] o [X], [ ]</td><td>S2 &rarr; DEPT FILE</td><td>Seleziona Programmazione Reparto.</td></tr>
+        <tr><td>[*]</td><td>S2.0 DEPT 0 NO SET</td><td>$/kg mostra il codice DEPT.</td></tr>
+        <tr><td>[1]</td><td>S2.0 DEPT 1 NO SET</td><td>Inserire numero reparto (Es. [1]).</td></tr>
+        <tr><td>[*]</td><td>S2.1 DEPT NAME 0</td><td>Entra nella programmazione reparto, imposta il nome.</td></tr>
+        <tr><td>[M][E][A][T]</td><td>S2.1 DEPT NAME 4</td><td>Inserire nome DEPT. (usare tasti lettere) (Es. "MEAT" per Dept. No 1). I metodi di inserimento lettere ASCII fanno riferimento a 3.37.</td></tr>
+        <tr><td>[PLU]</td><td>S2 &rarr; DEPT FILE</td><td>Memorizza il file reparto, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Il numero dopo "NAME" nel display Totale mostra la posizione del cursore.</em></p>
+    <p><em>Nota2: I numeri DEPT. da 1 a 999999 sono disponibili. (No.97 è il default per la programmazione PLU, e i PLU non collegati sono assegnati a No.97) (I file Non-PLU a peso sono assegnati a DEPT 98) (I file Non-PLU non a peso sono assegnati a DEPT 99)</em></p>
+    <p><em>Nota3: I nomi dei Reparti programmati non vengono stampati sull'etichetta/scontrino ma servono per i report.</em></p>
+
+    <h4>3.3.2 Cancella File Reparto</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[2] o [ ]</td><td>S2 &rarr; DEPT FILE</td><td>Seleziona Programmazione Reparto.</td></tr>
+        <tr><td>[*]</td><td>S2.0 DEPT 0 NO SET</td><td>$/kg indica il codice DEPT.</td></tr>
+        <tr><td>[1]</td><td>S2.0 DEPT 1 NO SET</td><td>Inserire numero reparto (Es. [1]). Cancella Dept. No.1 per "MEAT".</td></tr>
+        <tr><td>[-]</td><td>S2.0 DEPT DEL ? Y-C N-T</td><td>[C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S2 &rarr; DEPT FILE</td><td>Cancella il file Dept. 1, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Quando esiste il FILE GRUPPO PRINCIPALE sotto il File Reparto, il Numero di Reparto non può essere cancellato. Inoltre, i Numeri di Reparto 97, 98 e 99 non possono essere cancellati.</em></p>
+
+    <h3>3.4 File Gruppo Principale</h3>
+    <p>Il Gruppo Principale è la categoria intermedia e può essere assegnato a un Reparto. Il file Gruppo Principale è usato per categorizzare i PLU. I Numeri di Gruppo Principale da 1 a 999999 sono disponibili. I PLU non collegati saranno assegnati al Numero 997. La TASSA è assegnata a ogni Gruppo Principale. La TASSA assegnata si applicherà a tutti i PLU assegnati al Gruppo Principale. Massimo 16 caratteri per file, ognuno con 1 linea.</p>
+
+    <h4>3.4.1 Programma File Gruppo Principale</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[3] o [^]</td><td>S3 &rarr; MGROUP FILE</td><td>Seleziona Programmazione Gruppo Principale.</td></tr>
+        <tr><td>[*]</td><td>S3.0 MG 0 NO SET</td><td>$/kg indica il codice Gruppo Principale.</td></tr>
+        <tr><td>[1][1][1]</td><td>S3.0 MG 111 NO SET</td><td>Seleziona Gruppo Principale No. (Es. [1][1][1]).</td></tr>
+        <tr><td>[*]</td><td>S3.1 MG (default) 97 DEPT NO</td><td>Entra nella programmazione, imposta il numero di Reparto.</td></tr>
+        <tr><td>[1]</td><td>S3.1 MG 1 DEPT NO</td><td>Collega Gruppo Principale 111 al Reparto 1.</td></tr>
+        <tr><td>[*]</td><td>S3.2 MG NAME 0</td><td>Nome del Gruppo Principale 111 è "BEEF". Imposta il numero Tassa.</td></tr>
+        <tr><td>[B][E][E][F]</td><td>S3.2 MG BEEF NAME 4</td><td>Tassa del Gruppo Principale 111 è la tassa numero 1.</td></tr>
+        <tr><td>[1]</td><td>S3.3 MG 1 TAX NO</td><td>Memorizza il file, torna in modalità S. (Premere [&] e poi [C] per uscire senza salvare).</td></tr>
+        <tr><td>[PLU]</td><td>S3 &rarr; MGROUP FILE</td><td>...</td></tr>
+    </table>
+    <p><em>Nota1: Per la programmazione dell'aliquota fiscale, fare riferimento a 3.20 File Tassa. Se non necessario collegare la Tassa, premere [*] per saltare. Questa procedura viene saltata se SPEC 603 è impostato su "NO TAX".</em></p>
+    <p><em>Nota2: Il numero dopo "NAME" mostra la posizione del cursore.</em></p>
+    <p><em>Nota3: I numeri da 1 a 999999 sono disponibili. (997 è il default). I file Non-PLU (a peso) sono assegnati a MG 998. I file Non-PLU (non a peso) sono assegnati a MG 999.</em></p>
+    <p><em>Nota4: I nomi dei Gruppi Principali non vengono stampati sull'etichetta ma servono per i report.</em></p>
+    <p><em>Nota5: Ogni Gruppo Principale deve essere collegato al Reparto esistente.</em></p>
+
+    <h4>3.4.2 Cancella File Gruppo Principale</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[3] o [ ]</td><td>S3 &rarr; MGROUP FILE</td><td>Seleziona Programmazione Gruppo Principale.</td></tr>
+        <tr><td>[*]</td><td>S3.0 MG 0 NO SET</td><td>Inserire Numero Gruppo Principale (Es. [1][1][1]).</td></tr>
+        <tr><td>[1][1][1]</td><td>S3.0 MG 111 NO SET</td><td>[C] per Sì, [T] per No.</td></tr>
+        <tr><td>[-]</td><td>S3.0 MG DEL ? Y-C N-T</td><td>Cancella M.G. file 111, torna in modalità S.</td></tr>
+        <tr><td>[C]</td><td>S3 &rarr; MGROUP FILE</td><td>...</td></tr>
+    </table>
+    <p><em>Nota1: Quando esiste il FILE PLU sotto il File Gruppo Principale, il Numero non può essere cancellato. I numeri 997, 998 e 999 non possono essere cancellati.</em></p>
+
+    <h3>3.5 Programma / Salta Dati Articolo</h3>
+    <p>I parametri PLU non necessari verranno saltati automaticamente grazie alla funzione auto-skip, è possibile impostare solo i parametri PLU necessari nella procedura di programmazione PLU "Programma File PLU". I seguenti parametri sono disponibili per la funzione Programma / Salta.</p>
+    <table>
+        <tr><th>No.</th><th>Display</th><th>Parametro</th><th>Simbolo</th></tr>
+        <tr><td>1</td><td>[LABFR1]</td><td>1. Formato etichetta 1</td><td>LABFR1</td></tr>
+        <tr><td>2</td><td>[LABFR2]</td><td>2. Formato etichetta 2</td><td>LABFR2</td></tr>
+        <tr><td>3</td><td>[BACODE]</td><td>3. Selezione codice a barre</td><td>BACODE</td></tr>
+        <tr><td>4</td><td>[FLAG]</td><td>4. Dati flag codice a barre</td><td>FLAG</td></tr>
+        <tr><td>5</td><td>[ITCODE]</td><td>5. Codice articolo codice a barre</td><td>ITCODE</td></tr>
+        <tr><td>6</td><td>[MGCODE]</td><td>6. Codice Gruppo Principale</td><td>MGCODE</td></tr>
+        <tr><td>7</td><td>[SELLDT]</td><td>7. Data vendita entro</td><td>SELLDT</td></tr>
+        <tr><td>8</td><td>[SELLTM]</td><td>8. Ora vendita entro</td><td>SELLTM</td></tr>
+        <tr><td>9</td><td>[USEDDT]</td><td>9. Data utilizzo entro</td><td>USEDDT</td></tr>
+        <tr><td>10</td><td>[PACKDT]</td><td>10. Data confezionamento</td><td>PACKDT</td></tr>
+        <tr><td>11</td><td>[PACKTM]</td><td>11. Ora confezionamento</td><td>PACKTM</td></tr>
+        <tr><td>12</td><td>[COST]</td><td>12. Costo</td><td>COST</td></tr>
+        <tr><td>13</td><td>[TARE]</td><td>13. Tara</td><td>TARE</td></tr>
+        <tr><td>14</td><td>[QTY]</td><td>14. Quantità</td><td>QTY</td></tr>
+        <tr><td>15</td><td>[Q.UNIT]</td><td>15. Unità di quantità</td><td>QUNIT</td></tr>
+        <tr><td>16</td><td>[DISCNT]</td><td>16. Stato sconto</td><td>DISCNT</td></tr>
+        <tr><td>17</td><td>[SCH DT]</td><td>17. Data pianificazione sconto</td><td>SCHDT</td></tr>
+        <tr><td>18</td><td>[SCH TM]</td><td>18. Ora pianificazione sconto</td><td>SCHTM</td></tr>
+        <tr><td>19</td><td>[MARKDN]</td><td>19. Stato ribasso</td><td>MARKDN</td></tr>
+        <tr><td>20</td><td>[1STLMT]</td><td>20. 1° obiettivo per sconto 1</td><td>FSTLMT</td></tr>
+        <tr><td>21</td><td>[2NDLMT]</td><td>21. 2° obiettivo per sconto 2</td><td>SNDLMT</td></tr>
+        <tr><td>22</td><td>[SMGNUM]</td><td>22. Messaggio speciale #</td><td>SMGNUM</td></tr>
+        <tr><td>23</td><td>[INGNUM]</td><td>23. Ingredienti #</td><td>INGNUM</td></tr>
+        <tr><td>24</td><td>[COMMNAM]</td><td>24. Nome merce</td><td>COMMNAM</td></tr>
+        <tr><td>25</td><td>[PLUSCR]</td><td>25. Scorrimento PLU (solo U1)</td><td>PLUSCR</td></tr>
+        <tr><td>26</td><td>[PLUTEX]</td><td>26. Campo testo collegato PLU</td><td>PLUTEX</td></tr>
+        <tr><td>27</td><td>[PLCNUM]</td><td>27. Luogo di produzione</td><td>PLCNUM</td></tr>
+        <tr><td>28</td><td>[IMAGE]</td><td>28. Immagine</td><td>IMAGE</td></tr>
+        <tr><td>29</td><td>[BONUS]</td><td>29. Bonus</td><td>BONUS</td></tr>
+        <tr><td>30</td><td>[NUTRI]</td><td>30. Nutrizione</td><td>NUTRI</td></tr>
+        <tr><td>31</td><td>[ITFSEL]</td><td>31. Selezione ITF</td><td>ITFSEL</td></tr>
+        <tr><td>32</td><td>[REFPLU]</td><td>32. PLU di riferimento No.</td><td>REFPLU</td></tr>
+        <tr><td>33</td><td>[SECPLU]</td><td>33. PLU di sicurezza</td><td>SECPLU</td></tr>
+        <tr><td>34</td><td>[COUPLU]</td><td>34. PLU accoppiato</td><td>COUPLU</td></tr>
+        <tr><td>35</td><td>[DAY WK]</td><td>35. Giorno della settimana sconto</td><td>DAYWK</td></tr>
+        <tr><td>36</td><td>[ADD-ON]</td><td>36. EAN 5 cifre ADD-ON</td><td>ADDON</td></tr>
+        <tr><td>37</td><td>[TAX]</td><td>37. Tassa No.</td><td>TAX</td></tr>
+        <tr><td>38</td><td>[PRICE2]</td><td>38. 2° Prezzo</td><td>PRICE2</td></tr>
+        <tr><td>39</td><td>[% TARE]</td><td>39. Tara proporzionale</td><td>PROTARE</td></tr>
+        <tr><td>40</td><td>[CUSDIS]</td><td>40. Sconto cliente</td><td>CUSDIS</td></tr>
+        <tr><td>41</td><td>[RESDIS]</td><td>41. Sconto ristorante</td><td>RESDIS</td></tr>
+        <tr><td>42</td><td>[STADIS]</td><td>42. Sconto personale</td><td>STADIS</td></tr>
+        <tr><td>43</td><td>[TRACE]</td><td>43. Sconto tracciabilità</td><td>TRACE</td></tr>
+        <tr><td>44</td><td>[TEMP]</td><td>44. Temperatura di conservazione</td><td>TEMP</td></tr>
+        <tr><td>45</td><td>[PACK.I]</td><td>45. Indicatore confezione</td><td>PACKI</td></tr>
+        <tr><td>46</td><td>[M1BARC]</td><td>46. Multi Codice a Barre 1</td><td>M1BARC</td></tr>
+        <tr><td>47</td><td>[M2BARC]</td><td>47. Multi Codice a Barre 2</td><td>M2BARC</td></tr>
+        <tr><td>48</td><td>[TM1BAR]</td><td>48. Totale Multi Codice a Barre 1</td><td>TM1BAR</td></tr>
+        <tr><td>49</td><td>[TM2BAR]</td><td>49. Totale Multi Codice a Barre 2</td><td>TM2BAR</td></tr>
+        <tr><td>50</td><td>[U.PRIC]</td><td>50. Selezione prezzo unitario</td><td>UPRIC</td></tr>
+        <tr><td>51</td><td>[ADVER]</td><td>51. Pubblicità #</td><td>ADVER</td></tr>
+    </table>
+
+    <h4>Programma/Salta Dati Articolo (Procedura)</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[1][9] o []</td><td>S19 &rarr; PLU ITEM</td><td>Seleziona Modalità Selezione Articolo PLU ed entra.</td></tr>
+        <tr><td>[*]</td><td>S19. 1 ITEM LABFR1 PROGRA M</td><td>Entra nella modalità di selezione parametro Programma o Salta.</td></tr>
+        <tr><td>[*][*][*][*]</td><td>S19. 1 ITEM MGCODE SKIP</td><td>Seleziona parametro del Gruppo Principale.</td></tr>
+        <tr><td>[X]</td><td>S19. 1 ITEM MGCODE PROGRA M</td><td>Seleziona PROGRAMMA per il parametro Gruppo Principale.</td></tr>
+        <tr><td>[PLU]</td><td>S19 &rarr; PLU ITEM</td><td>Dopo aver finito l'impostazione, salva.</td></tr>
+    </table>
+    <p><em>1: Premere il tasto [*] per il parametro successivo o il tasto [ ] per il precedente e premere [X] per selezionare PROGRAMMA o SALTA per ogni parametro, se necessario.</em></p>
+    <p><em>Nota2: Se si vuole uscire senza salvare, premere [*] seguito da [C].</em></p>
+
+    <h3>3.6 Programmazione PLU</h3>
+    <p>I seguenti elementi possono essere programmati in modalità PROGRAMMAZIONE PLU. Se l'elemento non appare nella programmazione PLU, verificare se il parametro è impostato su ABILITA in Programma / Salta Dati Articolo.</p>
+    <p>Il file PLU per articolo a peso e articolo non a peso elencati di seguito possono essere programmati secondo il seguente ordine.</p>
+    
+    <h4>Articolo a Peso / Articolo Non a Peso (Elenco Passaggi)</h4>
+    <table>
+        <tr><th>Passo</th><th>File PLU (Articolo Non a Peso)</th><th>Note</th></tr>
+        <tr><td>P1.0</td><td>PLU No.</td><td></td></tr>
+        <tr><td>P1.1</td><td>Prezzo Unitario (6 cifre)</td><td></td></tr>
+        <tr><td>P1.2</td><td>Formato etichetta per la 1a etichetta</td><td>Fare riferimento alla Lista Formati Etichetta.</td></tr>
+        <tr><td>P1.3</td><td>Formato etichetta per la 2a etichetta</td><td>Solo formato libero No.1~99.</td></tr>
+        <tr><td>P1.4</td><td>Dimensione Carattere Nome Merce</td><td></td></tr>
+        <tr><td>P1.4</td><td>Nome Merce</td><td></td></tr>
+        <tr><td>P1.5</td><td>Selezione Formato Codice a Barre ITF</td><td></td></tr>
+        <tr><td>P1.6</td><td>Selezione Codice a Barre</td><td></td></tr>
+        <tr><td>P1.7</td><td>Dati Flag</td><td>* Cifre di Flag e dati articolo selezionabili nella selezione tipo codice a barre in P1.6.</td></tr>
+        <tr><td>P1.8</td><td>Codice Articolo No.</td><td>Solo se il Codice Articolo è più di 6 cifre.</td></tr>
+        <tr><td>P1.9</td><td>Codice Articolo No. (Ultime 4 cifre)</td><td>Solo se Spec01 impostato su 3.</td></tr>
+        <tr><td>P1.10</td><td>Dati Lato Destro del Codice a Barre Articolo</td><td></td></tr>
+        <tr><td>P1.12</td><td>Gruppo Principale No.</td><td></td></tr>
+        <tr><td>P1.13</td><td>Seleziona se stampare data vendita entro</td><td>* Se si seleziona No Stampa, la data in P1.14 viene saltata.</td></tr>
+        <tr><td>P1.14</td><td>Data vendita entro (Giorni dopo la data corrente)</td><td>* Se si seleziona No Stampa, la selezione in P1.16 e l'ora in P1.17 vengono saltate.</td></tr>
+        <tr><td>P1.15</td><td>Seleziona se stampare ora vendita entro</td><td>* Se P1.16 seleziona ORA PRESENTE, la selezione in P1.17 viene saltata.</td></tr>
+        <tr><td>P1.16</td><td>Seleziona dati inseriti o ora presente</td><td>* Se si seleziona No Stampa, la Data utilizzo entro in P1.19 viene saltata.</td></tr>
+        <tr><td>P1.17</td><td>Ora vendita entro (Se selezionato Inserimento)</td><td>* Se si seleziona No Stampa, la Data utilizzo entro in P1.19 viene saltata.</td></tr>
+        <tr><td>P1.18</td><td>Seleziona se stampare data utilizzo entro</td><td>* Se si seleziona No Stampa, la Data utilizzo entro in P1.19 viene saltata.</td></tr>
+        <tr><td>P1.19</td><td>Data utilizzo entro (giorni dopo la data di confezionamento)</td><td>* Se si seleziona No Stampa, la Data confezionamento in P1.21 viene saltata.</td></tr>
+        <tr><td>P1.20</td><td>Seleziona se stampare data confezionamento</td><td>* Se si seleziona No Stampa, la Data confezionamento in P1.21 viene saltata.</td></tr>
+        <tr><td>P1.21</td><td>Data confezionamento (giorni dopo la data effettiva)</td><td>* Se si seleziona No Stampa, la selezione in P1.23 e l'ora in P1.24 vengono saltate.</td></tr>
+        <tr><td>P1.23</td><td>Seleziona se stampare dati inseriti o ora effettiva</td><td>* Se P1.23 seleziona ORA PRESENTE, la selezione in P1.24 viene saltata.</td></tr>
+        <tr><td>P1.24</td><td>Ora confezionamento (se selezionato Inserimento)</td><td></td></tr>
+        <tr><td>P1.25</td><td>Prezzo di costo</td><td></td></tr>
+        <tr><td>P1.26</td><td>TARA</td><td></td></tr>
+        <tr><td>P1.27</td><td>Simbolo Unità (PCS / FOR / kg / lb / g / oz / NO SYMBOL)</td><td></td></tr>
+        <tr><td>P1.28</td><td>Quantità</td><td></td></tr>
+        <tr><td>P1.29</td><td>Tipo di Sconto su Volume</td><td>* Dipende dall'impostazione SPEC 100.</td></tr>
+        <tr><td>P1.30</td><td>1° obiettivo di sconto su volume</td><td></td></tr>
+        <tr><td>P1.31</td><td>Valore sconto per il 1° obiettivo</td><td>* Se si seleziona No Sconto, i parametri P1.30 ~ P1.38 vengono saltati.</td></tr>
+        <tr><td>P1.32</td><td>2° obiettivo di sconto su volume</td><td></td></tr>
+        <tr><td>P1.33</td><td>Valore sconto per il 2° obiettivo</td><td></td></tr>
+        <tr><td>P1.34</td><td>Tipo di stampa del prezzo scontato (Mark Down)</td><td>*Inserire tramite tasti numerici (0~3)</td></tr>
+        <tr><td>P1.35</td><td>Pianificazione Sconto su Volume (Data inizio)</td><td></td></tr>
+        <tr><td>P1.36</td><td>Pianificazione Sconto su Volume (Ora inizio)</td><td></td></tr>
+        <tr><td>P1.37</td><td>Pianificazione Sconto su Volume (Data fine)</td><td></td></tr>
+        <tr><td>P1.38</td><td>Pianificazione Sconto su Volume (Ora fine)</td><td></td></tr>
+        <tr><td>P1.39</td><td>Selezione Giorno della Settimana Sconto.</td><td></td></tr>
+        <tr><td>P1.40</td><td>Messaggio speciale No.</td><td>(Selezionare No. dal file S/message)</td></tr>
+        <tr><td>P1.41</td><td>Ingredienti No.</td><td>(Selezionare No. dal file Ingredienti)</td></tr>
+        <tr><td>P1.44</td><td>Luogo di produzione</td><td>(Selezionare No. dal file Luogo)</td></tr>
+        <tr><td>P1.42</td><td>Pubblicità No.</td><td>(Selezionare No. dal file Pubblicità)</td></tr>
+        <tr><td>P1.44</td><td>Luogo di produzione</td><td>(Selezionare No. dal file Luogo)</td></tr>
+        <tr><td>P1.45</td><td>2° Prezzo</td><td></td></tr>
+        <tr><td>P1.46</td><td>Numero TASSA</td><td>(Selezionare Numero dal File TASSA) *Dipende da SPEC 603.</td></tr>
+        <tr><td>P1.49</td><td>Override prezzo unitario per PLU</td><td></td></tr>
+        <tr><td>P1.50 ~ P1.59</td><td>Immagine 1 ~ 10 No.</td><td></td></tr>
+        <tr><td>P1.63</td><td>PLU Accoppiato No.</td><td></td></tr>
+        <tr><td>P1.64</td><td>Tracciabilità</td><td>*Dipende da SPEC 258.</td></tr>
+        <tr><td>P1.65</td><td>Collegamento Tracciabilità</td><td>*Dipende da SPEC 258.</td></tr>
+        <tr><td>P1.67</td><td>Cambio prezzo unitario per PLU</td><td>*Dipende da SPEC 244.</td></tr>
+        <tr><td>P1.68</td><td>Indicatore Confezione</td><td></td></tr>
+        <tr><td>P1.69</td><td>Prefisso PLU UCC/EAN</td><td></td></tr>
+        <tr><td>P1.70</td><td>Numero Seriale PLU</td><td></td></tr>
+        <tr><td>P1.71</td><td>Multi-codice a barre 1</td><td></td></tr>
+        <tr><td>P1.72</td><td>Multi-codice a barre 2</td><td></td></tr>
+        <tr><td>P1.73</td><td>Totale Multi-codice a barre 1</td><td></td></tr>
+        <tr><td>P1.74</td><td>Totale Multi-codice a barre 2</td><td></td></tr>
+        <tr><td>P1.81</td><td>Seleziona se stampare nutrizione</td><td></td></tr>
+        <tr><td>P1.82</td><td>Nutrizione No.</td><td>(Selezionare No. dal file Nutrizione)</td></tr>
+        <tr><td>P1.83</td><td>Codice Articolo Esteso India</td><td>*Dipende da SPEC 467.</td></tr>
+        <tr><td>P1.84</td><td>Intestazione Codice a Barre India</td><td>*Dipende da SPEC 467.</td></tr>
+        <tr><td>P1.85</td><td>Seleziona Sorgente Data Confezionamento</td><td></td></tr>
+        <tr><td>P1.86</td><td>Inserisci Data Produzione</td><td></td></tr>
+    </table>
+
+    <h4>3.6.1 Programma File PLU (articolo a peso)</h4>
+    <p>I dati PLU (articolo a peso) vengono programmati seguendo la procedura sottostante.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[*]</td><td>S1.0 PLU 0 NO SET</td><td>Entra in modalità programmazione PLU. $/kg mostra il numero PLU.</td></tr>
+        <tr><td>[1][0][0]</td><td>S1.0 PLU 100 NO SET</td><td>Inserire il nuovo Numero PLU (Es. 100) desiderato.</td></tr>
+        <tr><td>[*]</td><td>S1.1 PLU 0.00 PR-KG</td><td>Entra nella programmazione PLU. Inserire prezzo unitario (Es.5.80 $/kg).</td></tr>
+        <tr><td>[5][8][0][*]</td><td>S1.2 PLU DFT0 LAB FR1</td><td>Seleziona Formato etichetta per 1a Etichetta premendo [< o [>]. (T1~T12,S,A,B,C,F1~F8 disponibili).</td></tr>
+        <tr><td>[< o [>]</td><td>S1.2 PLU T66 LAB FR1</td><td>Imposta il Formato (Es. T6) premendo [6] o [>].</td></tr>
+        <tr><td>[*]</td><td>S1.3 PLU NO0 LAB FR2</td><td>Seleziona Formato etichetta per 2a Etichetta (solo F1~F99).</td></tr>
+        <tr><td>[< o [>]</td><td>S1.4 C01 .01 S1 A 100</td><td>Inserire nome merce (Es. "SLICE").</td></tr>
+        <tr><td>[S][L][I][C][E]</td><td>S1.4 C02 .01 S1 A 100</td><td>Inserire la 2a linea del nome merce.</td></tr>
+        <tr><td>[*]</td><td>S1.5 PLU EAN BARCODE</td><td>Seleziona il tipo di BARCODE premendo [X] o [>]. (EAN o ITF).</td></tr>
+        <tr><td>[*]</td><td>S1.6 PLU DFLT BARCODE</td><td>Seleziona formato codice a barre premendo [<] o [>]. (Es.2f5c4i4wD).</td></tr>
+        <tr><td>[< o [>]</td><td>S1.7 PLU 20 FLAG</td><td>Imposta dati flag (Es.29). Il Flag predefinito può essere impostato in SPEC 3~6.</td></tr>
+        <tr><td>[2][9]</td><td>S1.8 PLU 00000 IT CODE</td><td>Inserire codice articolo (Es.10010).</td></tr>
+        <tr><td>[1]0]0]1]0]</td><td>S1.9 PLU 00000 EX CODE</td><td>Nessun codice articolo aggiunto del PLU 100.</td></tr>
+        <tr><td>[*]</td><td>S1.12 PLU 997 MG NO</td><td>Imposta il numero Gruppo Principale (default MG 997). Inserire MG No. (Es.111). Collega PLU 100 a MG 111.</td></tr>
+        <tr><td>[1][1][1]</td><td>S1.13 PLU NPRINT SELL DT</td><td>Premere [< o [>] per cambiare se stampare la data di vendita (Es. Stampa).</td></tr>
+        <tr><td>[< o [>]</td><td>S1.14 PLU 0 SELL DT</td><td>Imposta data vendita entro (Es.3 giorni). 3 cifre (0-999).</td></tr>
+        <tr><td>[3]</td><td>S1.15 PLU NPRINT SELL TM</td><td>Premere [< o [>] per cambiare se stampare l'ora di vendita (Es. No stampa).</td></tr>
+        <tr><td>[*]</td><td>S1.18 PLU NPRINT USED DT</td><td>Premere [< o [>] per cambiare se stampare la data di utilizzo (Es. No stampa). Imposta data/ora utilizzo come per vendita.</td></tr>
+        <tr><td>[*]</td><td>S1.20 PLU NPRINT PACK DT</td><td>Premere [< o [>] per cambiare se stampare la data di confezionamento.</td></tr>
+        <tr><td>[< o [>]</td><td>S1.21 PLU 0 PACK DT</td><td>Se necessario, la data di confezionamento può essere impostata al giorno successivo (Es. 1 giorno dopo).</td></tr>
+        <tr><td>[1][*]</td><td>S1.22 PLU NPRINT PACK TM</td><td>Premere [< o [>] per cambiare se stampare l'ora di confezionamento.</td></tr>
+        <tr><td>[< o [>]</td><td>S1.23 PLU TIME PRESENT</td><td>Premere [< o [>] per cambiare tra ora inserita e ora presente.</td></tr>
+        <tr><td>[< o [>]</td><td>S1.24 PLU 0000 PACK TM</td><td>Imposta l'ora di confezionamento (Es. 18:00).</td></tr>
+        <tr><td>[1][8][0][0]</td><td>S1.25 PLU 0.00 COST</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S1.26 PLU 0.000 TARE</td><td>Inserire Tara Preset del PLU 10 (Es.0.100kg).</td></tr>
+        <tr><td>[1][0][0]</td><td>S1.29 PLU NO DISCONT</td><td>6 tipi di sconto selezionabili premendo [< o [>] (Es. sconto PREZZO UNITARIO).</td></tr>
+        <tr><td>[< o [>]</td><td>S1.30 PLU 0.000 1ST LMT</td><td>Imposta 1° limite di peso a 0.1kg (Es.0.100kg).</td></tr>
+        <tr><td>[1][0][0]</td><td>S1.31 PLU 0.00 1ST AMT</td><td>Imposta 1° importo sconto a $ 0.30.</td></tr>
+        <tr><td>[3][0]</td><td>S1.32 PLU 99.999 2ND LMT</td><td>Imposta 2° limite di peso a 1.000kg.</td></tr>
+        <tr><td>[1][0][0][0]</td><td>S1.33 PLU 0.00 2ND AMT</td><td>Imposta 2° importo sconto a $ 0.50.</td></tr>
+        <tr><td>[5][0]</td><td>S1.34 PLU NO MARK DOWN</td><td>Cambia selezione con [< o [>]: No mark down / Unit price mark down / Total price mark down / all mark down.</td></tr>
+    </table>
+    <p><em>(Nota: La procedura per gli articoli non a peso è simile, come mostrato nella pagina 51 del manuale originale. Si omette per brevità ma segue la stessa logica).</em></p>
+
+    <h4>3.6.3 Funzione PLU [COPIA]</h4>
+    <p>I dati PLU programmati possono essere facilmente copiati in un nuovo PLU. La funzione è molto utile per risparmiare tempo o evitare errori per la programmazione di dati PLU simili, specialmente in caso di descrizioni lunghe di Ingredienti.</p>
+    <p><em>Esempio: Il PLU No.124 è programmato con la maggior parte dei dati del PLU No. 100 già in memoria.</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S. Spia S accesa.</td></tr>
+        <tr><td>[*]</td><td>S1.0 PLU 0 NO SET</td><td>Entra in modalità programmazione PLU.</td></tr>
+        <tr><td>[1][2][4]</td><td>S1.1 PLU 124 NO SET</td><td>Seleziona PLU 124, entra nella programmazione.</td></tr>
+        <tr><td>[X]</td><td>S1.1 PLU 0 COPY</td><td>Premere [X] per entrare nella funzione copia PLU.</td></tr>
+        <tr><td>[1][0][0] [*]</td><td>S1.1 PLU 5.80 PR-KG</td><td>Copia i dati del PLU 100 nel PLU 124.</td></tr>
+        <tr><td>[4][8][0] [*]</td><td>S1.2 PLU T66 LAB FR1</td><td>Prezzo unitario del PLU 124 è 4.80 $/kg.</td></tr>
+        <tr><td>[*]</td><td>S1.3 PLU NO0 LAB FR2</td><td>Il 1° formato etichetta è T6.</td></tr>
+        <tr><td>[*]</td><td>S1.4 C01.01 SLICE S1 A 95</td><td>Nome merce del PLU 124 è "SLICE". Premere [*] 4 volte.</td></tr>
+        <tr><td>Premere [*] 4 volte</td><td>S1.8 PLU 10100 IT CODE</td><td>Codice articolo del PLU 124 è 10124.</td></tr>
+        <tr><td>[1][0][1][2][4]</td><td>S1.8 PLU 10124 IT CODE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S1.9 PLU 00000 EX CODE</td><td>...</td></tr>
+        <tr><td>[PLU]</td><td>S1 &rarr; PLU FILE</td><td>Memorizza il file PLU 124, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.6.4 Cancella File PLU</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[*]</td><td>S1.0 PLU 0 NO SET</td><td>Entra in modalità programmazione PLU.</td></tr>
+        <tr><td>[1][2][4]</td><td>S1.0 PLU 124 NO SET</td><td>Seleziona PLU 124 (Es. Cancella PLU No.124).</td></tr>
+        <tr><td>[-]</td><td>S1.0 PLU DEL ? Y-C N-T</td><td>Premere [-] per cancellare il PLU 124. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S1 &rarr; PLU FILE</td><td>Cancella il file PLU No.124, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Solo il file PLU programmato può essere cancellato.</em></p>
+    <p><em>Nota2: Nell'ultima operazione, premendo [T] si torna alla Modalità S senza cancellare il file PLU 124.</em></p>
+
+    <h4>3.6.5 Funzione di stampa Sconto su Volume e Mark Down</h4>
+    <p>La funzione Sconto su Volume è usata per impostare un prezzo speciale durante un periodo di vendita. Il manager del negozio può programmare il prezzo scontato durante un periodo di vendita, e può evitare perdite di vendita causate dal non ripristino del prezzo originale dopo il periodo di sconto.</p>
+    
+    <p><strong>Tipi di Sconto su Volume</strong></p>
+    <p>Il manager può selezionare un tipo di sconto tra 5 tipi. Le formule sono mostrate nella tabella seguente.</p>
+    <table>
+        <tr><th>Tipo di Sconto</th><th>Formula</th><th>Esempio</th></tr>
+        <tr><td>Articolo Gratuito</td><td>Prezzo = 0 / Totale = 0</td><td>Per chiamare PLU con Prezzo Unitario 0, SPEC 231 deve essere "ALLOW".</td></tr>
+        <tr><td>Sconto Prezzo Unitario</td><td>(1) Prezzo Unitario = Prezzo Unitario Originale - Importo sconto.<br>(2) Prezzo Unitario = Importo sconto.</td><td>Originale = $10.00, Sconto = $2.00.<br>(1) Unitario = $8.00<br>(2) Unitario = $2.00</td></tr>
+        <tr><td>Sconto % Prezzo Unitario</td><td>Prezzo Unitario = Originale x (100% - % Sconto)</td><td>Originale = $10.00, % Sconto = 20%.<br>Unitario = $8.00</td></tr>
+        <tr><td>Sconto Prezzo Totale</td><td>Prezzo Totale = Prezzo Originale - Importo Sconto</td><td>Originale = $10.00, Sconto = $2.00.<br>Totale = $8.00</td></tr>
+        <tr><td>Sconto % Prezzo Totale</td><td>Prezzo Totale = Originale x (100% - % Sconto)</td><td>Originale = $10.00, % Sconto = 20%.<br>Totale = $8.00</td></tr>
+        <tr><td>Sconto Prezzo Fisso</td><td>Prezzo Totale = Importo Prezzo Fisso</td><td>Originale = $10.00, Fisso = $8.00.<br>Totale = $8.00</td></tr>
+    </table>
+
+    <p><strong>Funzione di Stampa Mark Down (Come stampare il prezzo scontato)</strong></p>
+    <p>La funzione Mark Down Print è usata per stampare il prezzo scontato e il prezzo originale con doppie linee incrociate quando l'articolo è scontato. Può essere selezionata tra 4 tipi: No Mark down / Unit Price Mark down / Price Mark down / Unit Price & Price Mark down.</p>
+
+    <h3>3.7 Stato Memoria</h3>
+    <p>La funzione è usata per controllare il numero di PLU esistenti e i PLU programmabili rimanenti.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[2][0]</td><td>S20 &rarr; MEMORY STATUS</td><td>Seleziona modalità controllo stato memoria.</td></tr>
+        <tr><td>[*]</td><td>S20.0 PLUP 7 LF 4544</td><td>[T] per tornare in modalità S.</td></tr>
+    </table>
+
+    <h3>3.8 Assegnazione Tasti</h3>
+    <p>I tasti Preset possono essere usati per l'assegnazione di PLU, Venditori, Tasti Funzione e Tasti Valore per velocizzare l'operazione in modalità R.</p>
+
+    <h4>3.8.1 Assegnazione PLU</h4>
+    <p>Il Numero PLU può essere assegnato a un tasto preset per richiamare i dati PLU premendo il tasto assegnato in Modalità Registrazione.</p>
+    <p><em>Esempio: Assegna PLU Numero 100 al Tasto Preset Numero 1.</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[4] o [^] tre volte</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>Modalità Assegnazione Tasti è il MENU 4 in modalità S.</td></tr>
+        <tr><td>[*]</td><td>S4.0 PS AS 0 NO SET</td><td>Entra in modalità assegnazione PLU.</td></tr>
+        <tr><td>[1][0][0]</td><td>S4.0 PS AS 100 NO SET</td><td>Inserire PLU No.100.</td></tr>
+        <tr><td>[PRESET 1]</td><td>S4.0 PS AS 0 NO SET</td><td>PLU No.100 è stato assegnato al Tasto Preset 1.</td></tr>
+        <tr><td>[^][C]</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>Torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: PLU No. non esistenti non possono essere assegnati.</em></p>
+    <p><em>Nota2: Se si assegna un PLU a un tasto già occupato da un altro PLU, il vecchio dato viene sostituito, ma un PLU non può sostituire tasti già assegnati a Funzioni, Venditori o Valori.</em></p>
+
+    <h4>3.8.2 Assegnazione Venditore</h4>
+    <p>Il Numero Venditore può essere assegnato a un tasto preset per accumulare dati di transazione.</p>
+    <p><em>Esempio: Assegna Venditore Numero 5 al Tasto Preset Numero 2.</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[4] o [^] tre volte</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S4.0 PS AS 0 NO SET</td><td>Entra in modalità assegnazione PLU.</td></tr>
+        <tr><td>[*]</td><td>S4.1 CK AS 0 NO SET</td><td>Entra in stato assegnazione Tasto Venditore.</td></tr>
+        <tr><td>[5]</td><td>S4.1 CK AS 5 NO SET</td><td>Inserire Venditore No.5.</td></tr>
+        <tr><td>[PRESET 2]</td><td>S4.0 CK AS 0 NO SET</td><td>Venditore No.5 è stato assegnato al Tasto Preset 2.</td></tr>
+        <tr><td>[^][C]</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>Torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Venditori non esistenti non possono essere assegnati.</em></p>
+    <p><em>Nota2: Tasti non assegnati possono essere impostati come tasti venditore.</em></p>
+
+    <h4>3.8.3 Assegnazione Tasto Funzione</h4>
+    <p>Assegnando i seguenti tasti funzione ai tasti Preset, le funzioni possono essere usate toccando i tasti assegnati.</p>
+    <p><em>Esempio: Assegna Tasto Funzione 2 al Tasto Preset Numero 25.</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[4] o [^] tre volte</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S4.0 PS AS 0 NO SET</td><td>Entra in modalità assegnazione PLU.</td></tr>
+        <tr><td>[*]</td><td>S4.1 VR 0 NO SET</td><td>Entra in stato assegnazione Tasto Venditore.</td></tr>
+        <tr><td>[*]</td><td>S4.2 FN AS 0 CLEAR</td><td>Entra in stato assegnazione Tasto Funzione.</td></tr>
+        <tr><td>[X][X]</td><td>S4.2 FN AS 2-PRICE</td><td>Seleziona funzione SCONTO PREZZO.</td></tr>
+        <tr><td>[PRESET 25]</td><td>S4.2 FN AS 0 CLEAR</td><td>La funzione SCONTO PREZZO è stata assegnata al Tasto Preset 25.</td></tr>
+        <tr><td>[○][C]</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>Torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Tasti non assegnati possono essere impostati come tasti funzione.</em></p>
+
+    <h4>3.8.4 Assegnazione Tasto Valore</h4>
+    <p>Assegnando i seguenti tasti valore ai tasti Preset, le funzioni possono essere usate toccando i tasti assegnati.</p>
+    <p><em>Esempio: Assegna Tasto Tara Preset (0.150kg) al Tasto Preset Numero 26.</em></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[4] o [▶] tre volte</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S4.0 PS AS 0 NO SET</td><td>Entra in modalità assegnazione PLU.</td></tr>
+        <tr><td>[*]</td><td>S4.1 VR AS 0 NO SET</td><td>Entra in stato assegnazione Tasto Venditore.</td></tr>
+        <tr><td>[*]</td><td>S4.2 FN AS 0 CLEAR</td><td>Entra in stato assegnazione Tasto Funzione.</td></tr>
+        <tr><td>[*]</td><td>S4.3 VK AS F DISC 0.00</td><td>Entra in stato assegnazione Tasto Valore.</td></tr>
+        <tr><td>[X][X]</td><td>S4.3 VK AS P TARE 0.000</td><td>Seleziona funzione Tara Preset.</td></tr>
+        <tr><td>[1][5][0]</td><td>S4.3 VK AS P TARE 0.150</td><td>Inserire Tara preset (0.150kg).</td></tr>
+        <tr><td>[PRESET 26]</td><td>S4.3 VK AS P TARE 0.000</td><td>Tara preset è stata assegnata al Tasto Preset 26.</td></tr>
+        <tr><td>[○][C]</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>Torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Tasti non assegnati possono essere impostati come tasti valore.</em></p>
+
+    <h4>3.8.5 Cancella Assegnazione Tasto Preset</h4>
+    <p>La seguente operazione serve per cancellare l'Assegnazione del Tasto Preset per tasti PLU, Funzione e Venditore.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[4] o [▶] tre volte</td><td>S4 &rarr; KEY ASSIGNMENT</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S4.0 PS AS 0 NO SET</td><td>Entra in modalità assegnazione PLU.</td></tr>
+        <tr><td>[*]</td><td>S4.2 FN AS 0 CLEAR</td><td>Entra in stato assegnazione Tasto Funzione.</td></tr>
+        <tr><td>[PRESET 25]</td><td>S4.2 FN AS DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+    </table>
+    <p><em>Nota1: Tasti non assegnati non possono essere cancellati.</em></p>
+    <p><em>Nota2: Premendo [T] si torna alla modalità di cancellazione senza cancellare il tasto.</em></p>
+
+    <h3>3.9 File Nome Negozio</h3>
+    <p>I dati del Nome Negozio verranno stampati su Etichetta o Scontrino. Possono essere programmati fino a 999999 Nomi Negozio con un massimo di 99 linee ciascuno. Il Nome Negozio predefinito stampato sull'etichetta può essere impostato in SPEC 46 e la centratura in SPEC 250. Per lo scontrino, SPEC 47 e SPEC 251.</p>
+
+    <h4>3.9.1 Programma File Nome Negozio</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[5] o [▼] quattro volte</td><td>S5 &rarr; SHOP NAME FILE</td><td>Il File Nome Negozio è il MENU 5 in modalità S.</td></tr>
+        <tr><td>[*]</td><td>S5.0 SHOP 0 NO SET</td><td>Entra in modalità programmazione File Nome Negozio.</td></tr>
+        <tr><td>[1][*]</td><td>S5.1 S01.01 S1 A 100</td><td>Inserire codice nome negozio (Es. No.1).</td></tr>
+        <tr><td>[SIZE][D][I][G][I] [SP][S][H][O][P]</td><td>S5.1 S01.10 S2 A 76</td><td>Premere [SIZE] per cambiare dimensione carattere. Inserire il nome (Es. "DIGI SHOP").</td></tr>
+        <tr><td>[*]</td><td>S5.1 S02.01 S1 A 100</td><td>Programma la 2a linea del nome negozio.</td></tr>
+        <tr><td>[T][E][L][:].</td><td>S5.1 S02.13 S1 A 88</td><td>Inserire il nome negozio per la 2a linea (Es. "TEL:57234888").</td></tr>
+        <tr><td>[PLU]</td><td>S5 &rarr; SHOP NAME FILE</td><td>Memorizza il File Nome Negozio 1, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.9.2 Cancella File Nome Negozio</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[5] o [▼] quattro volte</td><td>S5 &rarr; SHOP NAME FILE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S5.0 SHOP 0 NO SET</td><td>Entra in modalità programmazione.</td></tr>
+        <tr><td>[1]</td><td>S5.0 SHOP 1 NO SET</td><td>Inserire il file negozio 1 (Es. No.1).</td></tr>
+        <tr><td>[-]</td><td>S5.0 SHOP DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S5 &rarr; SHOP NAME FILE</td><td>Cancella il File Nome Negozio 1, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Per annullare la cancellazione, premere [T].</em></p>
+    <p><em>Nota2: File Nome Negozio non esistenti non possono essere cancellati.</em></p>
+
+    <h3>3.10 File Pubblicità</h3>
+    <p>Il messaggio pubblicitario è la descrizione promozionale sull'etichetta, come "PER BARBECUE" o "FRESCO". Massimo 99 linee per messaggio, fino a 999999 messaggi. Per stampare il messaggio, il Tasto Funzione [ADVERTISEMENT] deve essere assegnato a un tasto preset.</p>
+    <p><em>Nota: Il messaggio pubblicitario su tutte le etichette può essere impostato in SPEC 96.</em></p>
+
+    <h4>3.10.1 Programma File Pubblicità</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[6] o [ ] cinque volte</td><td>S6 &rarr; ADVER MESSAGE</td><td>Seleziona modalità programmazione pubblicità.</td></tr>
+        <tr><td>[*]</td><td>S6.0 ADVER 0 NO SET</td><td>Entra in modalità programmazione file pubblicità.</td></tr>
+        <tr><td>[1][*]</td><td>S6.1 A01.01 S1 A 100</td><td>Inserire il File Pubblicità No.1 (Es. No.1).</td></tr>
+        <tr><td>[T][H][A][N][K][SP][Y][O][U]</td><td>S6.1 A01.10 S1 A 91</td><td>Inserire la pubblicità come per il Nome Merce (Es. "THANK YOU").</td></tr>
+        <tr><td>[SIZE]</td><td>S6.1 A01.10 S2 A 76</td><td>Premere [SIZE] per cambiare dimensione carattere.</td></tr>
+        <tr><td>[SIZE]...[SIZE]</td><td>S6.1 A01.10 L5 A 21</td><td>Cambia dimensione in L5. (S1~S5; M1~M5).</td></tr>
+        <tr><td>[*]</td><td>S6.1 A02.01 S1 A 100</td><td>Programma la 2a linea del file pubblicità.</td></tr>
+        <tr><td>[PLU]</td><td>S6 &rarr; ADVER MESSAGE</td><td>Memorizza il File Pubblicità 1, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.10.2 Cancella File Pubblicità</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[6] o [ ] cinque volte</td><td>S6 &rarr; ADVER MESSAGE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S6.0 ADVER 0 NO SET</td><td>Entra in modalità programmazione file pubblicità.</td></tr>
+        <tr><td>[1]</td><td>S6.0 ADVER 1 NO SET</td><td>Inserire il File Pubblicità 1 (Es. No.1).</td></tr>
+        <tr><td>[ - ]</td><td>S6.0 ADVER DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S6 &rarr; ADVER MESSAGE</td><td>Cancella il File Pubblicità 1, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Per annullare, premere [T].</em></p>
+    <p><em>Nota2: File inesistenti non possono essere cancellati.</em></p>
+
+    <h3>3.11 File Venditore</h3>
+    <p>Il file Venditore è usato per programmare i nomi degli operatori. Massimo 16 caratteri per nome. Un numero venditore programmato può essere assegnato a un tasto preset. Il Numero o Nome Venditore (a seconda di SPEC 21) sarà stampato sull'etichetta.</p>
+
+    <h4>3.11.1 Programma File Venditore</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[7] o [ ] sei volte</td><td>S7 &rarr; VENDER FILE</td><td>Seleziona modalità programmazione file venditore.</td></tr>
+        <tr><td>[*]</td><td>S7.0 CLERK 0 NO SET</td><td>Entra in modalità programmazione File Venditore.</td></tr>
+        <tr><td>[1][*]</td><td>S7.1 CLERK 1 NAME 0</td><td>Seleziona tasto venditore (Es. V1). Programma nome operatore per Venditore 1.</td></tr>
+        <tr><td>[M][I][K][E]</td><td>S7.1 CLERK NAME 4</td><td>Inserire nome operatore per V1 (Es. "MIKE").</td></tr>
+        <tr><td>[PLU]</td><td>S7 &rarr; VENDER FILE</td><td>Memorizza il File Venditore V1, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.11.2 Cancella File Venditore</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[7] o [ ] sei volte</td><td>S7 &rarr; VENDER FILE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S7.0 CLERK 0 NO SET</td><td>Entra in modalità programmazione File Venditore.</td></tr>
+        <tr><td>[5]</td><td>S7.0 CLERK 5 NO SET</td><td>Inserire tasto venditore (Es. V5).</td></tr>
+        <tr><td>[-]</td><td>S7.0 CLERK DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S7 &rarr; VENDER FILE</td><td>Cancella il File Venditore 5, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Per annullare, premere [T].</em></p>
+    <p><em>Nota2: File inesistenti non possono essere cancellati.</em></p>
+    <p><em>Nota3: V1 - V4 e V99 sono venditori predefiniti che non possono essere cancellati.</em></p>
+
+    <h3>3.12 Programma Data E Ora</h3>
+    <p>Il sistema di orologio integrato funziona automaticamente una volta impostato. Data (Mese/Giorno/Anno): 2 cifre per parte; Ora (Ora/Minuto): 2 cifre per parte.</p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[8] o [ ] sette volte</td><td>S8 &rarr; DATE AND TIME</td><td>Seleziona modalità programmazione Data e Ora.</td></tr>
+        <tr><td>[*]</td><td>P8.0 DATE 010100 MMDDYY</td><td>Entra in modalità programmazione Data e Ora.</td></tr>
+        <tr><td>[0][8][1][9][0][4][*]</td><td>P8.1 TIME 0000 HHMM</td><td>Imposta Mese 08, Giorno 19, Anno 04 (Es. 2004-08-19).</td></tr>
+        <tr><td>[9][0][0][*]</td><td>S8 &rarr; DATE AND TIME</td><td>Imposta Ora 9, Minuto 05. Memorizza ed esce.</td></tr>
+    </table>
+
+    <h3>3.13 File Messaggio Speciale</h3>
+    <p>Il Messaggio Speciale può essere usato come descrizione sull'etichetta (es. ricette), collegabile in ogni PLU. Poiché il formato standard non ha un'area di stampa per questo, è necessario usare un Formato Libero con area Messaggio Speciale.</p>
+
+    <h4>3.13.1 Programma File Messaggio Speciale</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[9] o [^] otto volte</td><td>S9 &rarr; SP MESSAGE</td><td>Seleziona modalità programmazione messaggio speciale.</td></tr>
+        <tr><td>[*]</td><td>S9.0 SP MG 0 NO SET</td><td>Entra in modalità programmazione file messaggio speciale.</td></tr>
+        <tr><td>[1][*]</td><td>S9.1 M01.01 S1 A 100</td><td>Inserire il File Messaggio Speciale No.1 (Es. No.1).</td></tr>
+        <tr><td>[M][A][D][E][SP][I] [N][SP][C][H][I][N] [A]</td><td>S9.1 M01.14 S1 A 87</td><td>Inserire il messaggio (Es. "MADE IN CHINA") come per il Nome Merce.</td></tr>
+        <tr><td>[SIZE]</td><td>S9.1 M01.14 S2 A 72</td><td>Premere [SIZE] per cambiare dimensione.</td></tr>
+        <tr><td>[SIZE]...[SIZE]</td><td>S9.1 M02.01 M3 A 62</td><td>Cambia dimensione in M3. (S1~S5; M1~M5).</td></tr>
+        <tr><td>[*]</td><td>S9.1 M03.01 S1 A 100</td><td>Programma la 2a linea del messaggio speciale.</td></tr>
+        <tr><td>[PLU]</td><td>S9 &rarr; SP MESSAGE</td><td>Memorizza il File Messaggio Speciale 1, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.13.2 Cancella File Messaggio Speciale</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[9] o [^] otto volte</td><td>S9 &rarr; SP MESSAGE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S9.0 SP MG 0 NO SET</td><td>Entra in modalità programmazione file messaggio speciale.</td></tr>
+        <tr><td>[1]</td><td>S9.0 SP MG 1 NO SET</td><td>Inserire il File Messaggio Speciale 1 (Es. No.1).</td></tr>
+        <tr><td>[-]</td><td>S9.0 SP MG DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S9 &rarr; SP MESSAGE</td><td>Cancella il File Messaggio Speciale 1, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Per annullare, premere [T].</em></p>
+    <p><em>Nota2: File inesistenti non possono essere cancellati.</em></p>
+
+    <h3>3.14 File Ingredienti</h3>
+    <p>I dati degli ingredienti programmati in questo file Master possono essere stampati sul Formato Libero (F1~F99) con area ingredienti. Massimo 99 linee per ogni set di ingredienti, fino a 999999 set.</p>
+
+    <h4>3.14.1 Programma File Ingredienti</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[10] o [▶] nove volte</td><td>S10 &rarr; INGR FILE</td><td>Seleziona modalità programmazione ingredienti.</td></tr>
+        <tr><td>[*]</td><td>S10.0 INGR 0 NO SET</td><td>Entra in modalità programmazione File Ingredienti.</td></tr>
+        <tr><td>[1][*]</td><td>S10.1 G01.0 S1 A 100</td><td>Inserire il File Ingredienti No.1 (Es. No.1).</td></tr>
+        <tr><td>[S][U][G][A][R]</td><td>S10.1 G01.0 S1 A 100</td><td>Inserire l'ingrediente (Es. "SUGAR") come per il Nome Merce.</td></tr>
+        <tr><td>[SIZE]</td><td>S10.1 G01.0 S2 A 95</td><td>Premere [SIZE] per cambiare dimensione carattere.</td></tr>
+        <tr><td>[*]</td><td>S10.1 G02.0 S1 A 100</td><td>Programma la 2a linea di questo File Ingredienti.</td></tr>
+        <tr><td>[F][L][O][U][R]</td><td>S10.1 G02.0 S1 A 95</td><td>...</td></tr>
+        <tr><td>[PLU]</td><td>S10 &rarr; FILE</td><td>Memorizza il File Ingredienti 1, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.14.2 Cancella File Ingredienti</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[10] o [▶] nove volte</td><td>S10 &rarr; INGR FILE</td><td>...</td></tr>
+        <tr><td>[*]</td><td>S10.0 INGR 0 NO SET</td><td>Entra in modalità programmazione.</td></tr>
+        <tr><td>[1]</td><td>S10.0 INGR 1 NO SET</td><td>Inserire il File Ingredienti 1 (Es. No.1).</td></tr>
+        <tr><td>[-]</td><td>S10.0 INGR DEL ? Y-C N-T</td><td>Entra in modalità cancellazione. [C] per Sì, [T] per No.</td></tr>
+        <tr><td>[C]</td><td>S10 &rarr; INGR FILE</td><td>Cancella il File Ingredienti 1, torna in modalità S.</td></tr>
+    </table>
+    <p><em>Nota1: Per annullare, premere [T].</em></p>
+    <p><em>Nota2: File inesistenti non possono essere cancellati.</em></p>
+
+    <h3>3.15 File Testo</h3>
+    <p>(La struttura è simile ai file precedenti. Si rimanda alla pagina 64-65 del manuale originale per i dettagli sulla procedura di programmazione e cancellazione, che segue lo stesso schema di tasti [MODE], [1][1], [*], inserimento dati, [PLU] per salvare, e [-] per cancellare).</p>
+
+    <h3>3.16 File Formato Libero</h3>
+    <p>Il Formato Libero consente di progettare il proprio formato etichetta, impostando angoli di stampa, posizioni, dimensioni carattere e altri elementi programmabili. È possibile creare un nuovo formato copiandone uno esistente o creandone uno totalmente nuovo.</p>
+
+    <h4>3.16.1 Informazioni Generali</h4>
+    <ul>
+        <li>È possibile creare formati entro le seguenti altezze e larghezze: Lunghezza 28mm ~ 220mm, Larghezza 30mm ~ 60mm.</li>
+        <li>Fino a 99 Formati Liberi possono essere memorizzati, oltre ai 16 formati standard.</li>
+        <li>I formati standard possono essere usati come base.</li>
+        <li>La posizione di stampa di ogni elemento è programmata in "mm".</li>
+        <li>Un'etichetta Articolo o un'etichetta Totale sono disponibili per ogni numero di Formato Libero (F1-F99).</li>
+        <li>4 Angoli di Stampa possono essere impostati: 0, 90, 180 e 270 gradi.</li>
+    </ul>
+
+    <h4>3.16.2 Area di Stampa, Posizione di Stampa e Angoli di Stampa</h4>
+    <p>La posizione di stampa di ogni elemento è determinata impostando l'intervallo dal punto "0" (X=0, Y=0) alla posizione base dell'elemento programmato. I valori X e Y devono essere inseriti in "mm".</p>
+    <p><strong>Area di Stampa:</strong> I dati non devono essere stampati entro 1mm dal bordo dell'etichetta.</p>
+    <div class="image-placeholder">[Immagine: Schema Area di Stampa e direzione di emissione]</div>
+    <p><strong>Posizione di Stampa:</strong> Decisa dalla distanza dal punto 0 (X=0, Y=0) alla posizione base (X, Y).</p>
+    <p><strong>Angolo di Stampa:</strong> Selezionabile tra 0, 90, 180 e 270 gradi. Può essere impostato per l'intero formato o per singoli elementi. A seconda dell'angolo, la posizione di stampa cambia.</p>
+
+    <h4>3.16.3 Programmazione Parametri Degli Articoli di Stampa</h4>
+    <p><strong>Articolo per Etichetta Articolo:</strong> Fino a 87 diversi dati possono essere programmati. (Vedi tabella dettagliata alle pagine 68-69 del manuale originale, che elenca codici come PLU NO, PRICE, UNIT PRICE, WEIGHT, ecc.).</p>
+    <p><strong>Articolo per Etichetta Totale:</strong> Fino a 28 diversi dati possono essere programmati. (Vedi tabella a pagina 69).</p>
+
+    <h4>3.16.4 Inserimento Formato Libero</h4>
+    <p><strong>Impostazione Base: (larghezza, altezza, angolo e tipo etichetta)</strong></p>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[1][2]</td><td>S12 &rarr; FREE FORMAT</td><td>Seleziona modalità impostazione Formato Libero.</td></tr>
+        <tr><td>[*]</td><td>S12.0 FREE 01-99</td><td>Seleziona Numero File Formato Libero.</td></tr>
+        <tr><td>[1][*]</td><td>S12.1 LABEL 0 WT MM</td><td>Inserire la larghezza di stampa (Es.48mm).</td></tr>
+        <tr><td>[4][8][*]</td><td>S12.2 LABEL 0 HT MM</td><td>Inserire l'altezza di stampa (Es.35mm).</td></tr>
+        <tr><td>[3][5][*]</td><td>S12.3 LABEL 0 DG ANGLE</td><td>[<< o [>>] per cambiare l'angolo (0, 90, 180, 270).</td></tr>
+        <tr><td>[<< o [>>]</td><td>S12.4 LABEL ITEM LABEL</td><td>Seleziona il tipo di etichetta (Articolo o Totale).</td></tr>
+        <tr><td>[*]</td><td>S12.5 PLU no &larr; 1</td><td>Entra nell'impostazione dell'articolo. (Vedi Base Type 1-4).</td></tr>
+    </table>
+    <p><em>(Le sezioni Base Type 1, 2, 3, 4 dettagliano come impostare dati numerici, alfanumerici, codici a barre e cornici, specificando X, Y, Angolo, Larghezza, Altezza, Stato e Spessore. Fare riferimento alle pagine 70-73 del manuale originale per la sequenza esatta di tasti).</em></p>
+
+    <h4>3.16.5 Funzione Copia Formato Libero</h4>
+    <p>Seleziona un formato esistente da copiare (es. T7) e salvalo in un nuovo numero.</p>
+
+    <h4>3.16.6 Funzione Cancella Formato Libero</h4>
+    <p>Il Formato Libero non può essere cancellato se collegato a un file PLU esistente.</p>
+
+    <h4>3.16.7 Esempio di programmazione di un formato modificando il formato esistente</h4>
+    <p>Esempio su come personalizzare il formato standard T8 (aggiungere ingrediente, rimuovere PLU #). Fare riferimento alle pagine 74-75 per la sequenza dettagliata.</p>
+
+    <h3>3.17 File Luogo</h3>
+    <p>Usato per programmare un breve testo che descrive il luogo di produzione. Massimo 999999 luoghi, con 99 linee ciascuno.</p>
+    <p><em>(La procedura segue lo standard: [1][5] per accedere, [*] per inserire, testo, [PLU] per salvare, [-] per cancellare).</em></p>
+
+    <h3>3.18 Impostazione Macchina</h3>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[1][6]</td><td>S16. RATE 0.00 DISC</td><td>Programma Codice Macchina.</td></tr>
+        <tr><td>[0] [5][5][0][0]</td><td>S16. RATE 5.00 DISC</td><td>Inserire tasso di sconto predefinito (Es. 5.00%).</td></tr>
+        <tr><td>[PLU]</td><td>S16 &rarr; MACHIN SETTING</td><td>Memorizza, torna in modalità S.</td></tr>
+    </table>
+
+    <h3>3.19 File Logo</h3>
+    <p>Il Logo è il marchio del negozio, stampato su Etichetta o Scontrino. Massimo 4 loghi. Un logo è una matrice di punti (128 orizzontali x 64 verticali). I formati standard hanno un'area di 37x30 punti.</p>
+
+    <h4>3.19.1 Pre-programmazione Dati Logo</h4>
+    <p>Preparare una carta a sezioni, disegnare il logo riempiendo i quadretti.</p>
+    <div class="image-placeholder">[Esempio: Logo DIGI 37x30 punti]</div>
+
+    <h4>3.19.2 Programma Display e Funzione Tasti</h4>
+    <div class="image-placeholder">[Immagine: Display di programmazione logo con indicatori]</div>
+    <p><strong>Funzione Tasti per LOGO Set Up:</strong></p>
+    <ul>
+        <li>[0] Cancella un punto.</li>
+        <li>[1] Riempie un punto.</li>
+        <li>[<<] Sposta cursore a sinistra.</li>
+        <li>[>>] Sposta cursore a destra.</li>
+        <li>[▲] Sposta cursore in su.</li>
+        <li>[▼] Sposta cursore in giù.</li>
+        <li>[*] Sposta al primo punto della linea successiva.</li>
+        <li>[PLU] Memorizza i Dati.</li>
+    </ul>
+
+    <h4>3.19.3 Ordine di Programmazione</h4>
+    <p>Dopo aver riempito una sezione, il cursore si sposta automaticamente al punto successivo. Raggiunta l'ultima colonna o premendo [*], si passa alla linea superiore.</p>
+
+    <h4>3.19.4 Programma File Logo</h4>
+    <p>La procedura prevede l'inserimento delle coordinate X e Y e la sequenza di 0 e 1 per disegnare il logo riga per riga.</p>
+
+    <h4>3.19.5 Cancella File Logo</h4>
+    <p>Segue la procedura standard di cancellazione con tasto [-] e conferma [C].</p>
+
+    <h3>3.20 File Tassa</h3>
+    <p>Permette di programmare l'aliquota fiscale inclusa o esclusa nel prezzo. Fino a 10 numeri (1-10). Le aliquote (00.00% - 99.99%) collegate a un Gruppo Principale si applicano a tutti i PLU. SPEC 603 deve essere 1 per abilitare.</p>
+    <ul>
+        <li><strong>ADD ON TAX:</strong> Tassa aggiunta al prezzo totale.</li>
+        <li><strong>VAT TAX:</strong> Tassa inclusa nel prezzo totale.</li>
+    </ul>
+
+    <h4>3.20.1 Programma File Tassa</h4>
+    <table>
+        <tr><th>OPERAZIONE</th><th>DISPLAY</th><th>NOTE</th></tr>
+        <tr><td>[MODE][MODE] [MODE]</td><td>S1 &rarr; PLU FILE</td><td>Entra in modalità S.</td></tr>
+        <tr><td>[1][8]</td><td>S18.0 TAX 0 NO SET</td><td>Inserire numero File Tassa (Es. 1).</td></tr>
+        <tr><td>[1][*]</td><td>S18.1 TAX 0.00 INCLUDE</td><td>Inserire aliquota (Es. 3.00%).</td></tr>
+        <tr><td>[3][0][0]</td><td>S18.1 TAX 3.00 INCLUDE</td><td>Seleziona tipo tassa con [<< o [>>].</td></tr>
+        <tr><td>[<< o [>>]</td><td>S18.1 TAX 3.00 EXCLUDE</td><td>Tassa 1 è di tipo escluso.</td></tr>
+        <tr><td>[PLU]</td><td>S18 &rarr; TAX FILE</td><td>Memorizza, torna in modalità S.</td></tr>
+    </table>
+
+    <h4>3.20.2 Cancella File Tassa</h4>
+    <p>Non può essere cancellato se collegato a Gruppi Principali o PLU. Il numero 1 non può essere cancellato.</p>
+
+    <h3>3.21 - 3.36 Altri File</h3>
+    <p>(Le sezioni da 3.21 a 3.36 trattano file quali: Messaggi Scorrevoli, Sequenze Scorrevoli, Codici a Barre Flessibili, Report Utente, Temperature, Multi Barcode, Testi 2D, Paesi, Sale di Taglio, Macelli, Tipi, Categorie, Razze, Tracciabilità, Tasti Stock. Tutti seguono la stessa logica di accesso tramite codice in Modalità S, inserimento dati con i tasti, salvataggio con [PLU] e cancellazione con [-]. Fare riferimento alle pagine 81-99 del manuale originale per i codici specifici di accesso e i dettagli dei campi).</p>
+
+    <h3>3.37 Metodo di Inserimento Caratteri ASCII</h3>
+    <p>Ogni tasto include 3-4 caratteri ASCII. Esempio: il tasto [A/a/1] include A, a e 1.</p>
+    <ul>
+        <li>Premere una volta per 'A'.</li>
+        <li>Premere due volte per 'a'.</li>
+        <li>Premere tre volte per '1'.</li>
+    </ul>
+
+    <h3>3.38 Metodo di Inserimento Codice ASCII</h3>
+    <p>Il tasto [CODE] commuta tra l'inserimento carattere e l'inserimento codice.</p>
+    <p><em>Esempio: Per inserire "CAKE", premere [CODE], poi [6][7] per 'C', [6][5] per 'A', ecc.</em></p>
+
+    <div class="page-break"></div>
+
+    <h2>4. MODALITÀ REGISTRAZIONE</h2>
+
+    <h3>4.1 ON/OFF</h3>
+    <p>Accensione e spegnimento tramite il tasto [ON/OFF].</p>
+
+    <h3>4.2 Reset e Verifica Peso</h3>
+    <p>Tutte le operazioni di pesatura si basano sulla procedura mostrata. L'operatore dovrebbe verificare prima di qualsiasi transazione (posizionare peso, controllare lettura, rimuovere peso, azzerare con [REZERO]).</p>
+
+    <h3>4.3 Sottrazione Tara</h3>
+    <h4>4.3.1 Sottrazione Tara One touch</h4>
+    <p>Mettere la tara sul piatto e premere [T]. Premere di nuovo [T] per rimuoverla.</p>
+    <h4>4.3.2 Sottrazione Tara Digitale</h4>
+    <p>Inserire il valore della tara con i tasti numerici e premere [T].</p>
+
+    <h3>4.4 Chiamata PLU</h3>
+    <p>Ci sono tre modi per richiamare un PLU programmato:</p>
+    <ul>
+        <li>Chiamata PLU Manuale (inserire numero e premere [PLU]).</li>
+        <li>Tramite tasto preset assegnato.</li>
+        <li>Chiamata PLU Automatica (a seconda delle SPEC 39 e 40).</li>
+    </ul>
+
+    <h3>4.5 Operazione Fix</h3>
+    <p>Permette di fissare Tara, PLU o Prezzo Unitario premendo il tasto [FIX].</p>
+
+    <h3>4.6 Cambio Modalità Operativa</h3>
+    <p>Tenere premuto [REZERO] e premere [MODE] per passare da modalità Scontrino a Etichetta e viceversa.</p>
+
+    <h3>4.7 Stampa Etichetta Articolo in Modalità Manuale</h3>
+    <h4>4.7.1 Stampa Etichetta per Articolo PLU</h4>
+    <p>Esempio: Vendere 1kg di BEEF STEAK (PLU #10). Inserire [1][0], premere [PLU], mettere il prodotto, premere [*] per stampare.</p>
+    <h4>4.7.2 Stampa Etichetta per Articolo NON-PLU</h4>
+    <p>Inserire il prezzo con i tasti numerici, premere [*] per stampare (o [X] per la quantità). Gli articoli non-PLU vengono registrati su PLU #999998 (a peso) o #999999 (non a peso).</p>
+
+    <h3>4.8 Stampa Etichetta Totale in Modalità Manuale</h3>
+    <h4>4.8.1 Transazione di Vendita</h4>
+    <p>Esempio: Vendere 1.5kg di HERB CHEESE e 2 pacchi di SKIM MILK per il cliente A. Utilizzare i tasti [V1] per accumulare e [*] per stampare il totale.</p>
+    <h4>4.8.2 Tasto [SCONTO PREZZO] in Modalità Add</h4>
+    <p>Sottrae un valore di sconto dal totale. (Il tasto deve essere assegnato in precedenza).</p>
+    <h4>4.8.3 Tasto [SCONTO PREZZO %] in Modalità Add</h4>
+    <p>Applica uno sconto percentuale al totale. (Il tasto deve essere assegnato in precedenza).</p>
+
+    <h3>4.9 Correzione Dati</h3>
+    <p>Corregge i dati di vendita prima dell'emissione dello scontrino/totale.</p>
+    <h4>4.9.1 Correzione Sul Posto</h4>
+    <p>Annulla l'ultimo articolo inserito premendo [-] e [C].</p>
+    <h4>4.9.2 Correzione tramite Annullamento Articolo</h4>
+    <p>Annulla una transazione specifica tracciandone il numero.</p>
+
+    <h3>4.10 Stampa Etichetta Articolo in Modalità Pre-pack</h3>
+    <p>La modalità Pre-pack si attiva con il tasto [AUTO]. L'etichetta viene emessa automaticamente al raggiungimento della stabilità del peso (articoli a peso) o alla rimozione dell'etichetta precedente (non a peso).</p>
+
+    <div class="page-break"></div>
+
+    <h2>5. MODALITÀ REPORT DI LETTURA</h2>
+
+    <h3>5.1 Selezione Fattore Report</h3>
+    <p>Premere [MODE] due volte per entrare in modalità X. Usare i tasti [X] o [^]/[v] per scorrere i tipi di report.</p>
+
+    <h3>5.2 Selezione Tipo Report</h3>
+    <p>I report includono: Gruppo Principale, PLU, Reparto, Vendite, 24 Ore, ABC, Commesso, Pre-pack, Tasse, Riassuntivo Negozio, Tracciabilità, Log Commesso, Batch, e Programmabile dall'Utente.</p>
+    <p>Per ogni report, viene richiesto di inserire un limite inferiore e superiore (es. da PLU 3 a PLU 999996) e premere [*] per stampare.</p>
+
+    <div class="page-break"></div>
+
+    <h2>6. MODALITÀ REPORT DI RESET</h2>
+
+    <h3>6.1 Report di Reset</h3>
+    <p>Entrare in modalità Z (premere [MODE] tre volte). Selezionare il tipo di reset (Giornaliero, Mensile, a Termine, Tracciabilità, Log Commesso). Premere [*] e confermare con [C] per cancellare i dati.</p>
+
+    <div class="page-break"></div>
+
+    <h2>7. LISTA ERRORI HARDWARE</h2>
+
+    <h3>7.1 Messaggi di Errore Normali</h3>
+    <p>Esempi: E0 ERRORE CARICAMENTO FILE, E1 FINE CARTA, E14 TESTINA NON CHIUSA, E16 MEMORIA FILE PIENA, E19 PLU NON ESISTENTE, E95 ERRORE CAL00, ecc.</p>
+
+    <h3>7.2 Lista Errori Fatali</h3>
+    <p>Esempi: 00 Perdita software principale, 01 Errore checksum software, 05 Errore lettura/scrittura RAM interna, 13 Errore blocco A/D pesatura, 17 Errore trasferimento dati stampante termica, ecc.</p>
+
+    <div class="page-break"></div>
+
+    <h2>8. Impostazione Rete</h2>
+
+    <h3>8.1 Impostazione Base</h3>
+    <ul>
+        <li>SPEC49: Tipo di interfaccia Client/Server (2: Ethernet)</li>
+        <li>SPEC135: Numero di porta</li>
+        <li>REZERO + 0416: Imposta indirizzo IP bilancia</li>
+        <li>REZERO + 0418: Imposta subnet mask</li>
+        <li>REZERO + 0421: Imposta gateway</li>
+    </ul>
+
+    <h3>8.2 Server FTP</h3>
+    <ul>
+        <li>SPEC50: Impostazione Client/Server (1: Server)</li>
+        <li>REZERO + 0419: Imposta nome utente FTP</li>
+        <li>REZERO + 0420: Imposta password FTP</li>
+    </ul>
+
+    <h3>8.3 Client FTP</h3>
+    <ul>
+        <li>SPEC50: Impostazione Client/Server (0: Client)</li>
+        <li>SPEC194: Indirizzo IP host del server FTP</li>
+        <li>SPEC532: Intervallo di riconnessione automatica</li>
+        <li>SPEC533: Modalità connessione dati FTP (0: Port / 1: PASV)</li>
+        <li>REZERO + 0417: Indirizzo IP server</li>
+        <li>REZERO + 0429: Username FTP server</li>
+        <li>REZERO + 0430: Password FTP server</li>
+        <li>REZERO + 0431: Percorso download (PC a SCALE)</li>
+        <li>REZERO + 0432: Percorso upload (SCALE a PC)</li>
+    </ul>
+    <p><em>Note: Il primo carattere del percorso deve essere 'V' o 'f', l'ultimo non deve esserlo. Max 22 caratteri. Deve esistere un file "sm120cmd.txt" in entrambi i percorsi con i nomi dei file da trasferire (max 10).</em></p>
+
+    <div class="page-break"></div>
+
+    <h2>9. Aggiornamento Firmware</h2>
+
+    <h3>9.1 Firmware</h3>
+    <p>Esempio pacchetto: STE58package_STD_v0101_ftp(SM120+).zip (include file .bap, .txb, .bin, .hey). Utility: MiniProgrammer V5.0.</p>
+
+    <h3>9.2 Procedura</h3>
+    <ol>
+        <li>Impostare l'IP del PC su 10.10.10.1 - 10.10.10.200.</li>
+        <li>Avviare MiniProgrammer V5.0, selezionare SM-120.</li>
+        <li>Aprire il file firmware da caricare.</li>
+        <li>Collegare la bilancia al PC.</li>
+        <li>Spegnere la bilancia, tenere premuto [Rezero] e [Preset 22] e riaccendere.</li>
+        <li>Il display mostra "S-OFF". Se SPEC657=0, premere [Rezero] e "3752"; se SPEC657=1, premere lo Span Switch per 3 secondi.</li>
+        <li>Selezionare "1-ETHERNET" sul display della bilancia.</li>
+        <li>Il display mostra "SCALE READY UPDATE".</li>
+        <li>Sul PC, cliccare "Run" per avviare l'aggiornamento.</li>
+        <li>Attendere il completamento del trasferimento.</li>
+        <li>Ripetere per gli altri file (const, bmap, hey). <strong>Attenzione:</strong> aggiornare il file .hey per ultimo per evitare problemi di "Loss of main software".</li>
+    </ol>
+
+    <h3>9.3 Carica SPEC Predefinite</h3>
+    <p>Dopo l'aggiornamento, accendere la bilancia, entrare in modalità Z, accendere lo Span Switch, premere [Rezero] e "8822". Selezionare il codice paese (es. 2 per STD), premere [Print]. Premere [Y] per caricare le SPEC predefinite, [C] per cancellare la memoria, quindi riavviare.</p>
+
+    <div class="page-break"></div>
+
+    <h2>10. Facility</h2>
+
+    <h3>10.1 Facility</h3>
+    <p>Utility per personalizzare il firmware modificando le impostazioni predefinite, i display e i testi di stampa. Si modifica il file .txtb e si carica sulla bilancia.</p>
+
+    <h3>10.2 Metodo di Applicazione</h3>
+    <p>Avviare 'SM-120 Facility', aprire il file .txtb, selezionare 'Edit File' -> 'Translate Second Line Display String'. Modificare le stringhe (es. "MAIN GROUP DAILY REPORT" in "REPORT GIORNALIERO GRUPPO PRINCIPALE"), salvare e ricaricare il file sulla bilancia tramite MiniProgrammer.</p>
+
+    <div class="page-break"></div>
+
+    <h2>11. Smontaggio</h2>
+
+    <h3>11.1 Strumenti</h3>
+    <p>Cacciavite a croce (medio, sottile, corto), Cacciavite piatto, Chiave a bussola (8mm), Chiave a brugola (M4).</p>
+
+    <h3>11.2 Smontaggio</h3>
+    <p>(Le sezioni da 11.2.1 a 11.2.10 dettagliano con immagini come smontare il piatto, il display frontale, la testina termica, la taglierina, la scheda madre, il display cliente, la scheda di alimentazione, la scheda I/O, l'A/D e il meccanismo della stampante. Fare riferimento alle immagini e alle descrizioni passo-passo del manuale originale).</p>
+
+    <h3>11.3 Smontaggio del tipo H</h3>
+    <p>(Procedura specifica per il modello H, con dettagli su come aprire lo sportello carta, ruotare l'interruttore rosso, aggiungere olio, rimuovere i blocchetti e sostituire la stampante).</p>
+
+    <div class="page-break"></div>
+
+    <h2>12. Comunicazione FTP</h2>
+
+    <h3>12.1 Preparazione</h3>
+    <p>Impostare SPEC 49=2, 50=1, 135=5. Impostare IP, utente e password tramite REZERO + codici. I file più comuni scambiati sono plu0uall.csv (PLU), pls0uall.csv (Selezione PLU), ing0uall.csv (Ingredienti), ecc.</p>
+
+    <h3>12.2 Invia/ricevi dati</h3>
+    <p>Aprire il prompt dei comandi (cmd), digitare `ftp`, poi `open [IP_BILANCIA]`, inserire utente e password (admin/admin). Usare `lcd c:\` per impostare la cartella locale, `get plu0uall.csv` per scaricare, `put plu0uall.csv` per inviare, `bye` per uscire.</p>
+    <p><strong>Attenzione:</strong> Dopo aver scaricato il file spec sulla bilancia, è necessario eseguire l'operazione in modalità Z: tenere premuto REZERO + 1439, quindi premere Print per applicare.</p>
+
+    <div class="page-break"></div>
+
+    <h2>13. Funzionalità Comuni</h2>
+
+    <h3>13.1 Funzione Server/Client</h3>
+    <p>Tre funzioni principali: Commesso flottante (SPEC61), Sincronizzazione file dati (SPEC491), Chiamata PLU dal server (SPEC492). Massimo 5 bilance (1 Server, 4 Client).</p>
+    <p>Impostazioni: SPEC50 (0 Client, 1 Server), SPEC61 (0 Inibisci, 1 Consenti), SPEC150, SPEC194 (IP Server), SPEC254, SPEC491, SPEC492, SPEC520, SPEC539 (Codice Nodo Macchina).</p>
+
+    <h3>13.2 Impostazione Tracciabilità</h3>
+    <p>Impostare SPEC258 su "1". Programmare i file Paese, Sala di Taglio, Macello, Tipo, Categoria, Razza, e infine il file Tracciabilità (S37) collegando tutti i dati. Abilitare la stampa nel Formato Libero e nel PLU.</p>
+
+    <h3>13.3 Impostazione Etichetta Nutrizionale</h3>
+    <p>Usa 12 template fissi (No. 70~81). Impostare in S19 "IMAGE" e "NUTRI" su PROGRAM. Impostare l'area di stampa in S12 (IMG 1~10). Nel PLU (S1), selezionare il template e abilitare la stampa.</p>
+
+    <h3>13.4 Stampa Allergeni</h3>
+    <p>Metodo 1: Usare il file allergeni (S25) e impostare SPEC534 (0 No, 4 Frame, 5 Inverse, 6 Underline) e SPEC535. Metodo 2: Usare tag HTML nel file ingredienti (S10) impostando SPEC534=7 (es. `<f>peanut</f>` per frame).</p>
+
+    <h3>13.5 Report Programmabile dall'Utente</h3>
+    <p>Abilitare con SPEC524=1. Creare le linee del report in S22, collegare i dati in S23, definire la sequenza in S24. Stampare da X0.4 o assegnando un tasto preset in S4.3.</p>
+
+    <h3>13.6 Codice a Barre 2D</h3>
+    <p>Supporta PDF417, GS1 QR Code, GS1 DataMatrix, GS1 DataBar Composite. Impostare SPEC310 (tipo), SPEC530 (stampa su scontrino/totale), SPEC531 (HRI).</p>
+
+    <h3>13.7 Testo Codice a Barre 2D</h3>
+    <p>Programmare il testo in S32, creare un Multi-barcode in S31 (tipo T2D), e collegarlo al PLU in S1.72. Usare simboli come `%%(1208)` per inserire dati dinamici (es. nome merce).</p>
+
+    <h3>13.8 Collegamento SM-120LL con @Label</h3>
+    <p>Configurare la bilancia come Server (SPEC50=1) e impostare l'IP del PC. Su @Label (web), creare la bilancia, i formati di stampa, i codici a barre flessibili, i multi-barcode e i PLU. Inviare i dati alla bilancia.</p>
+
+    <h3>13.9 Etichetta Prezzo Sconto SM-120</h3>
+    <p>Richiede il file bmap specifico. Usa 4 tipi di tag. Programmare in S12 (Formato Libero, selezionare 88), impostare X, Y, larghezza (60mm), altezza (16mm), stato e tipo tag (0-3). Nel PLU, impostare il tipo di sconto (S1.29) e markdown (S1.34).</p>
+
+    <h3>13.10 Stampa Codice a Barre 2D tramite @Label</h3>
+    <p>Procedura guidata su @Label per creare un formato con multi-barcode 2 (GS1 QR), impostare il PLU con barcode ITF e multi-barcode 2, inviare alla bilancia e stampare.</p>
+
+    <h3>13.12 Stampa Immagine tramite @Label</h3>
+    <p>Simile alla precedente, ma si importa un'immagine (es. .bmp) in @Label, si crea un formato con l'immagine, si imposta il PLU e si invia.</p>
+
+    <h3>13.13 SM-120 Auto-Sizing</h3>
+    <p>Permette di tagliare etichette continue in altezze diverse a seconda del contenuto (es. con o senza ingredienti). Impostare SPEC181=1 o 2. Programmare i formati (S12) e i testi (S11) per le diverse sezioni, quindi impostare i PLU per usare il formato e i messaggi.</p>
+
+    <h3>13.14 Impostazione Scanner</h3>
+    <p>Configurare lo scanner (baud rate 9600, 8 bit, no parity, 1 stop bit) e la bilancia (SPEC51-54, SPEC60=4 per scansione). Assegnare il tasto funzione per l'inserimento manuale del barcode (S4.2 FN AS 91).</p>
+
+    <h3>13. EV BS type</h3>
+    <p>Descrive i modelli a tasti meccanici e touch panel, il metodo di collegamento in rete e la guida utente del software MaxSSS (Self Sales, Dept. Master, Item Master, Terminal Spec, Maintain, Net Test, Change Passwd, Preset Key).</p>
+
+</body>
+</html>

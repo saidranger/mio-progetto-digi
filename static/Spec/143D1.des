@@ -1,0 +1,345 @@
+[MAIN]
+SpecCount=40
+StartIndex=001
+SubType=D
+
+[143D001]
+Description=143D001 LINERLESS PAPER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143D002]
+Description=143D002 PAPER WIDTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=1000
+
+[143D003]
+Description=143D003 PAPER LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=2000
+
+[143D004]
+Description=143D004 GAP LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=40
+
+[143D005]
+Description=143D005 BACK FEED LENGTH FOR LABEL FROM PEEL TO THERMAL (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=160
+
+[143D006]
+Description=143D006 PRINTING SPEED
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=100 mm/s
+Item1=110 mm/s
+Item2=120 mm/s
+Item3=130 mm/s
+Item4=140 mm/s
+Item5=150 mm/s
+
+[143D007]
+Description=143D007 PRINTING ADJUSTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Plus
+Item1=Minus
+
+[143D008]
+Description=143D008 AMOUNT OF ADJUSTMENT IN DOT
+Enable=1
+Type=Integer
+Min=0
+Max=96
+
+[143D009]
+Description=143D009 BACK FEED FUNCTION FOR GAP LABEL PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143D010]
+Description=143D010 MARK FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143D011]
+Description=143D011 PRINTING DENSITY PERCENTAGE (%)
+Enable=1
+Type=Integer
+Min=50
+Max=99
+
+[143D012]
+Description=143D012 PAPER END SENSOR FOR LINERLESS RECEIPT
+Enable=1
+Type=Integer
+Min=0
+Max=1
+
+[143D013]
+Description=143D013 FORWARD FEED LENGTH AFTER PRINTING FOR NO GAP PAPER (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=480
+
+[143D014]
+Description=143D014 PRINTER FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Receipt
+Item1=Label
+Item2=
+
+[143D015]
+Description=143D015 PRINTING SPEED FOR LABEL WITH VERTICAL BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=100 mm/s
+Item1=110 mm/s
+Item2=120 mm/s
+Item3=130 mm/s
+Item4=140 mm/s
+Item5=150 mm/s
+
+[143D016]
+Description=143D016 PRINTER 1 LABEL/RECEIPT CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Sensor
+Item1=By Key
+
+[143D017]
+Description=143D017 PRINTER INITIAL STATE (LABEL/RECEIPT) -- BY KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Receipt
+Item1=Label
+
+[143D018]
+Description=143D018 THERMAL PAPER QUALITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Good
+Item1=Not Good
+
+[143D019]
+Description=143D019 CONTINUOUS LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143D020]
+Description=143D020 PEEL SENSOR DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143D021]
+Description=143D021 BACK FEED LENGTH FOR NO GAP LABEL (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=120
+
+[143D022]
+Description=143D022 BACK FEED LENGTH FOR RECEIPT (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=120
+
+[143D023]
+Description=143D023 AUTO FEED AFTER DOOR CLOSE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[143D024]
+Description=143D024 FEED REQUEST AFTER DOOR OPEN AND CLOSE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[143D025]
+Description=143D025 FORWARD/BACK FEED DOTS FOR CONTINUOUS PRINTING (PEEL <=> CUT)
+Enable=1
+Type=Integer
+Min=0
+Max=370
+
+[143D026]
+Description=143D026 THERMAL HEAD DIAGNOSIS
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Feed
+Item2=Feed + Dynamic
+
+[143D027]
+Description=143D027 PRINTING DENSITY PERCENTAGE FOR LABEL WITH VERTICAL BARCODE (%)
+Enable=1
+Type=Integer
+Min=50
+Max=99
+
+[143D028]
+Description=143D028 PAPER LOW SENSOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143D029]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D030]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D031]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D032]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D033]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D034]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D035]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D036]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D037]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D038]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D039]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D040]
+Description=143D040 DISABLE CUTTER FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes

@@ -1,0 +1,244 @@
+[MAIN]
+SpecCount=30
+StartIndex=101
+SubType=D
+
+[143D101]
+Description=143D101 PRINTER TYPE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=60 mm
+Item1=72 mm
+Item2=80 mm
+
+[143D102]
+Description=143D102 PAPER WIDTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=640
+
+[143D103]
+Description=143D103 PAPER LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=2000
+
+[143D104]
+Description=143D104 GAP LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=4
+
+[143D105]
+Description=143D105 PRE-PRINT LENGTH (IN DOT)
+Enable=1
+Type=Integer
+Min=0
+Max=40
+
+[143D106]
+Description=143D106 PRINTING SPEED
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=100 mm/s
+Item1=110 mm/s
+Item2=120 mm/s
+Item3=130 mm/s
+Item4=140 mm/s
+Item5=150 mm/s
+
+[143D107]
+Description=143D107 PRINTING ADJUSTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Plus
+Item1=Minus
+
+[143D108]
+Description=143D108 AMOUNT OF ADJUSTMENT IN DOT
+Enable=1
+Type=Integer
+Min=0
+Max=40
+
+[143D109]
+Description=143D109 BACK FEED FUNCTIONS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143D110]
+Description=143D110 MARK FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[143D111]
+Description=143D111 PRINTING DENSITY PERCENTAGE (%)
+Enable=1
+Type=Integer
+Min=50
+Max=99
+
+[143D112]
+Description=143D112 PRINTER 1 PAPER WIDTH
+Enable=1
+Type=Integer
+Min=0
+Max=1
+
+[143D113]
+Description=143D113 FORWARD FEED LENGTH AFTER PRINTING FOR NO GAP PAPER
+Enable=1
+Type=Integer
+Min=0
+Max=400
+
+[143D114]
+Description=143D114 PRINTER FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Receipt
+Item1=No Print
+
+[143D115]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D116]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D117]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D118]
+Description=143D118 THERMAL PAPER QUALITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Good
+Item1=Not Good
+
+[143D119]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D120]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D121]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D122]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=4
+
+[143D123]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D124]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D125]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=4
+
+[143D126]
+Description=143D126 THERMAL HEAD DIAGNOSIS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Feed
+
+[143D127]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D128]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D129]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+
+[143D130]
+Description=
+Enable=0
+Type=Index
+Min=0
+Max=1
+

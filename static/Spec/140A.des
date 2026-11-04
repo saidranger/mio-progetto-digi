@@ -1,0 +1,193 @@
+[MAIN]
+SpecCount=16
+StartIndex=001
+SubType=A
+
+[140A001]
+Description=140A001 SELECTION OF ITEM PRICE PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=7
+Mask=0x01
+ItemCount=2
+Item0=Item Price before Tax
+Item1=Item Price after Tax
+
+[140A003]
+Description=140A003 ADDITIONAL ITEM PRICE AFTER TAX ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+
+[140A004]
+Description=140A004 ADDITIONAL SUB-TOTAL PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=8
+Index=5
+Mask=0x07
+ItemCount=9
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+Item6=Reserved
+Item7=1/2 Rounding
+Item8=Round To Dollar
+
+[140A005]
+Description=140A005 SELECTION OF UNIT PRICE RE-CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=5
+Mask=0x08
+ItemCount=2
+Item0=No Unit Re-calculation
+Item1=Unit Re-calculation
+
+[140A006]
+Description=140A006 RE-CALCULATED UNIT PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=2
+Index=5
+Mask=0x30
+ItemCount=3
+Item0=Rounding
+Item1=Truncate
+Item2=Cut Up
+
+[140A007]
+Description=140A007 ADDITIONAL EURO SECOND PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=5
+Index=0
+Mask=0x00
+ItemCount=6
+Item0=No Additional Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding for First Digit
+Item4=Cut Off
+Item5=Cut Up
+
+[140A008]
+Description=140A008 DECIMAL POINT POSITION FOR UNIT PRICE RE-CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=0.00
+Item1=0.000
+Item2=0.0000
+
+[140A009]
+Description=140A009 CATTY (KATI) AND TAEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable (catty.tael.mace)
+Item2=Enable (x.xxx catty)
+
+[140A010]
+Description=140A010 BARCODE TOTAL PRICE ROUNDING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable   
+Item1=Enable (Banker Rounding)  
+Item2=Enable (Normal Rounding)  
+Item3=Enable (5/6 Rounding)     
+
+[140A011]
+Description=140A011 TOTAL PRICE ON WEIGHT AND MEASURE DISPLAY BEFORE FULL PAYMENT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Based On Payment Key
+Item1=No Rounding
+Item2=Rounding
+
+[140A012]
+Description=140A012 RE-CALCULATION OF UNIT PRICE BASED ON lb FOR DUAL DECLARATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[140A013]
+Description=140A013 THOUSAND SEPARATOR
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Comma
+Item2=Point
+
+[140A014]
+Description=140A014 EXTEND ITEM TOTAL PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=6
+ItemCount=7
+Item0=None
+Item1=Round To Dollar
+Item2=1/4 Cut Off
+Item3=5 Floor Rounding
+Item4=Truncate The Least 2 Digits
+Item5=50 Floor Rounding
+Item6=Rounding Half Towards Zero For 1st Digit
+
+[140A015]
+Description=140A015 DISPLAY AMOUNT WITH ROUNDING IF NO PAYMENT KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[140A016]
+Description=140A016 TO PAY PRICE ON DISPLAY BEFORE FULL PAYMENT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Based On Payment Key
+Item1=No Rounding
+Item2=Rounding
+

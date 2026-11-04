@@ -1,0 +1,6236 @@
+[MAIN]
+SpecCount=620
+StartIndex=001
+SubType=D
+
+[141D001]
+Description=141D001 UNIT PRICE OVERRIDE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Inhibit
+Item1=Allow on All Modes
+Item2=Allow on Prepack Only
+
+[141D002]
+Description=141D002 MANUAL PRICE ENTRY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D003]
+Description=141D003 FLOATING CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D004]
+Description=141D004 AUTO SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D005]
+Description=141D005 FSD PRICE & IMAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D006]
+Description=141D006 FSD SAVING CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Net Value
+Item1=Cent Off
+
+[141D007]
+Description=141D007 FSD CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Unit Price Discount
+Item1=Price % Off
+
+[141D008]
+Description=141D008 REFERENCE SOURCE OF SELL BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Current Date
+Item1=Packed Date
+
+[141D009]
+Description=141D009 PRINTER CONNECTION CHECK WHEN ENTERING REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D010]
+Description=141D010 PERMANENT PRICE OR DISCOUNT PRICE CHANGE VIA FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D011]
+Description=141D011 VIDEO & HTML SUPPORT FOR EACH PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D012]
+Description=141D012 PRINT HTML WHEN CALL UP PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D013]
+Description=141D013 ALWAYS PRINTED DEFAULT HTML
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D014]
+Description=141D014 MULTI LANGUAGE SUPPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D015]
+Description=141D015 IMAGE COPY FROM FREE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable
+Item2=Enable (Allow Image Override)
+
+[141D016]
+Description=141D016 TRAINING MODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable (Not Reflected in Clerk Report)
+Item2=Enable (Reflected in Clerk Report)
+
+[141D017]
+Description=141D017 OPERATOR LOGGING FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Enable
+Item2=Enable With Operation Policy
+
+[141D018]
+Description=141D018 AUTO ACCUMULATION
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Yes
+Item2=Yes, Remember Last Auto Registration Clerk
+Item3=Yes, Reset Auto Registration Clerk After Receipt Printed
+
+[141D019]
+Description=141D019 DISCOUNT ROUNDING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Rounding
+Item1=Round Down
+Item2=Round Up
+
+[141D020]
+Description=141D020 PRINTING FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D021]
+Description=141D021 UNIT PRICE OF WEIGHED PLU CAN USE FOR PRICE OF NON WEIGHED PLU AND VICE VERSA
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Inhibit
+Item1=Activated During Printing Or Registration
+Item2=Activated During PLU Call
+
+[141D022]
+Description=141D022 SELECTION OF DATE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=MM/DD/YYYY
+Item1=DD/MM/YYYY
+Item2=YYYY/MM/DD
+
+[141D023]
+Description=141D023 PRINT ORDER RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D024]
+Description=141D024 AUTO PRINT BATCH REPORT AFTER CCD REPORT
+Enable=1
+Type=Index
+Min=0
+Max=9
+ItemCount=10
+Item0=No
+Item1=Batch Report 1
+Item2=Batch Report 2
+Item3=Batch Report 3
+Item4=Batch Report 4
+Item5=Batch Report 5
+Item6=Batch Report 6
+Item7=Batch Report 7
+Item8=Batch Report 8
+Item9=Batch Report 9
+
+[141D025]
+Description=141D025 RE-ENTRY MODE FROM MAIN MENU
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Previous mode
+Item1=Manual Mode
+Item2=Prepack Mode
+
+[141D026]
+Description=141D026 PRESET KEY GROUPING NUMBER
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D027]
+Description=141D027 CLEAR TRANSACTIONS OLDER THAN (0 - 15 DAYS)
+Enable=1
+Type=Integer
+Min=0
+Max=15
+
+[141D028]
+Description=141D028 PASSWORD PROTECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D029]
+Description=141D029 PRESET KEY SIZE SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D030]
+Description=141D030 SCROLLING MESSAGE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D031]
+Description=141D031 UNIT PRICE DISCOUNT VALUE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Value Subtracted From Unit Price
+Item1=New Unit Price
+
+[141D032]
+Description=141D032 LCD BACKUP LIGHT CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=5
+ItemCount=6
+Item0=Always On
+Item1=5 Minutes
+Item2=10 Minutes
+Item3=15 Minutes
+Item4=20 Minutes
+Item5=25 Minutes
+
+[141D033]
+Description=141D033 LCD BACK LIGHT COLOR CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Purple
+Item1=Red
+Item2=Blue
+Item3=Off
+
+[141D034]
+Description=141D034 DISPLAY OF CUSTOMER NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Without Check Digit
+Item1=With Check Digit
+
+[141D035]
+Description=141D035 NUMBER OF DAYS IN A TRANSACTION PERIOD
+Enable=1
+Type=Integer
+Min=0
+Max=255
+
+[141D036]
+Description=141D036 LANGUAGE SYSTEM FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D037]
+Description=141D037 DECIMAL POINT FOR SERVING PER PACKAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=0
+Item1=1
+
+[141D038]
+Description=141D038 TEXT PROGRAMMING IN PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D039]
+Description=141D039 ON/OFF BUTTON FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Enable On/Off key with Sleep mode
+Item1=Disable On/Off key
+Item2=Enable On/Off key without Sleep Mode
+
+[141D040]
+Description=141D040 AUTO ENTRY TO OPERATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Disable
+Item1=Registration
+Item2=Self Service
+Item3=Prepack
+
+[141D041]
+Description=141D041 AUTO PLU CALL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=By Number of Digits
+Item2=By Timeout
+
+[141D042]
+Description=141D042 AUTO PLU CALL (BY DIGITS / BY TIMEOUT(0.1 SECONDS))
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D043]
+Description=141D043 TRACEABILITY ENFORCE SCAN
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D044]
+Description=141D044 RESET HI-TOUCH AFTER (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D045]
+Description=141D045 DEPARTMENT SPEC (PICK 'N PAY)
+Enable=1
+Type=Index
+Min=0
+Max=19
+ItemCount=20
+Item0=No Ingredients
+Item1=Anti-Pasta
+Item2=Bakery
+Item3=Biltong
+Item4=Butchery
+Item5=Cheese Bar
+Item6=Coffee Bar
+Item7=Cols Meats
+Item8=DIY Information
+Item9=Fast Foods
+Item10=Fish
+Item11=Fruit 7 Veg
+Item12=Kosher Bakery
+Item13=Kosher Butchery
+Item14=Kosher Delicatessen
+Item15=Kosher Fish
+Item16=Pick 'n Mix
+Item17=Nosh Bar
+Item18=Salad Bar
+Item19=Spice Bar
+
+[141D046]
+Description=141D046 MUSGRAVES TRACEABILITY SPEC
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D047]
+Description=141D047 CDV SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D048]
+Description=141D048 CDV TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=CDV
+Item1=Tear Off
+
+[141D049]
+Description=141D049 CDV MODULUS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Modulus 10
+Item1=Modulus 11
+
+[141D050]
+Description=141D050 CUSTOMER CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=With Check Digit
+Item1=Without Check Digit
+
+[141D051]
+Description=141D051 SPECIAL MESSAGE/INGREDIENT FIELD TO USE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=1 Byte
+Item1=2 Bytes
+Item2=4 Bytes
+
+[141D052]
+Description=141D052 PRICE CHANGE LIST
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D053]
+Description=141D053 TRACEABILITY TYPE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Traceability
+Item1=Cool Feature
+Item2=Assorted Traceability
+
+[141D054]
+Description=141D054 ASK FOR OPERATOR NUMBER WHEN OPENING CASH DRAWER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D055]
+Description=141D055 USE INGREDIENT FROM TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D056]
+Description=141D056 TARE FROM TRAY FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D057]
+Description=141D057 RE-GROUP PLUS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D058]
+Description=141D058 CREDIT LIMIT WARNING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D059]
+Description=141D059 CUSTOMER GROUP INVOICE FLEX KEY
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D060]
+Description=141D060 DEPARTMENT CODE IN PLU CODE
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Disable
+Item1=DPPPPP
+Item2=DDPPPP
+Item3=DDDPPP
+Item4=DDPPPPPP
+
+[141D061]
+Description=141D061 TURN OFF EL DISPLAY AFTER (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D062]
+Description=141D062 SCALE GROUP FOR OPERATOR KEYS
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D063]
+Description=141D063 TOUCH SCREEN SOUND
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Sound
+Item1=Buzzer
+
+[141D064]
+Description=141D064 QUEUING SYSTEM CALLING NUMBER TIMEOUT (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D065]
+Description=141D065 TIME TO ACTIVATE EL SCREENSAVER
+Enable=1
+Type=Index
+Min=0
+Max=23
+ItemCount=24
+Item0=0000 hour
+Item1=0100 hour
+Item2=0200 hour
+Item3=0300 hour
+Item4=0400 hour
+Item5=0500 hour
+Item6=0600 hour
+Item7=0700 hour
+Item8=0800 hour
+Item9=0900 hour
+Item10=1000 hour
+Item11=1100 hour
+Item12=1200 hour
+Item13=1300 hour
+Item14=1400 hour
+Item15=1500 hour
+Item16=1600 hour
+Item17=1700 hour
+Item18=1800 hour
+Item19=1900 hour
+Item20=2000 hour
+Item21=2100 hour
+Item22=2200 hour
+Item23=2300 hour
+
+[141D066]
+Description=141D066 EL DISPLAY FACING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Customer
+Item1=Operator
+
+[141D067]
+Description=141D067 LIMITATION OF CCD REPORT PRINTING PER DAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D068]
+Description=141D068 ALLOW CLIENT TO PRINT CCD REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D069]
+Description=141D069 DISCOUNT MESSAGE ON DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Display
+Item1=Operator Display
+Item2=Customer Display
+Item3=Operator & Customer Display
+
+[141D070]
+Description=141D070 TEXT FIELD FOR PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal Field (1 - 5)
+Item1=Extended Field (1 - 16)
+
+[141D071]
+Description=141D071 PRINT CCD WHEN CLERK ACTIVE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D072]
+Description=141D072 TENKEY FOR SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Mechanical Keypad
+Item1=Software Tenkey
+
+[141D073]
+Description=141D073 CLEAR SUB-TOTAL LABEL AFTER PRINTING IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D074]
+Description=141D074 ASK FOR NEW COLLI ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D075]
+Description=141D075 DISALLOW CANCELLATION OF COLLI
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D076]
+Description=141D076 CLERK TIMEOUT (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=255
+
+[141D077]
+Description=141D077 ORDER NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Operator
+Item1=Auto Generate
+
+[141D078]
+Description=141D078 CUSTOMER CALL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All
+Item1=Card Only
+
+[141D079]
+Description=141D079 ALLOW TO CONTINUE WHEN COLLI WEIGHT OUT OF RANGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D080]
+Description=141D080 PLU SEARCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Search All
+Item1=Search By PLU Searchable Flag
+
+[141D081]
+Description=141D081 CASH DRAWER OPEN SEQUENCE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Before Receipt Printed
+Item1=After Receipt Printed
+
+[141D082]
+Description=141D082 PLU LOG WITHOUT TRANSACTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D083]
+Description=141D083 LOCK SCALE AFTER PRINTING CCD REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D084]
+Description=141D084 TOLERANCE BETWEEN CCD AND STORE TOTAL (%)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D085]
+Description=141D085 IMAGE GROUPING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[141D086]
+Description=141D086 CONFIRMATION FOR MULTIPLE COUPON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D087]
+Description=141D087 DISABLE PLU KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D088]
+Description=141D088 CONFIRMATION FOR VOID RECEIPT FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D089]
+Description=141D089 POINT ADJUSTMENT BUTTON (+/-) IN CHANGE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D090]
+Description=141D090 REFRESH PRIMARY KEY BACK TO MAIN PAGE AFTER ACCUMULATION/PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D091]
+Description=141D091 CONFIRMATION FOR RESET PLU PRICE CHANGE FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D092]
+Description=141D092 MARKS & SPENCER FEATURES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D093]
+Description=141D093 RALPHS'S FEATURE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D094]
+Description=141D094 SPEC CHECK DIGIT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D095]
+Description=141D095 SHOW PLU NUMBER IN FRONT OF COMMODITY NAME
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Operator Display
+Item2=Customer Display
+Item3=Operator & Customer Display
+
+[141D096]
+Description=141D096 TIMEOUT FOR CHANGE MODE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D097]
+Description=141D097 TIMEOUT FOR SUB-TOTAL MODE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D098]
+Description=141D098 PERCENTAGE TO SHOW WARNING MESSAGE IF DISCOUNT NOT REACH
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D099]
+Description=141D099 LOG PRICE CHANGES
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Lower Price Changes
+Item2=Any Price Changes
+
+[141D100]
+Description=141D100 LOG DATE, TEXT AND BARCODE CHANGES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D101]
+Description=141D101 COLLI END INDICATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D102]
+Description=141D102 INTERRUPT COLLI
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D103]
+Description=141D103 DUAL DECLARATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D104]
+Description=141D104 TARE OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal Tare Operation
+Item1=USA Tare Operation
+
+[141D105]
+Description=141D105 INCLUDE CLEARED TRANSACTION(S) IN REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D106]
+Description=141D106 NUMBER OF LINE OF COMMODITY NAME ON OPERATOR DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=1 Line
+Item1=2 Lines No Concatenated
+Item2=2 Lines Concatenated
+Item3=All Lines Concatenated
+
+[141D107]
+Description=141D107 QUANTITY COUNTING FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, With Fixed Unit Weight
+Item2=Yes, With Live Weight Averaging
+
+[141D108]
+Description=141D108 WEIGHT TOLERANCE FOR NON WEIGHED COUNTING FUNCTION (%)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D109]
+Description=141D109 FORCE ENTER QUANTITY FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Self Service Mode Only
+Item1=Yes
+Item2=Manual Call In Registration Mode
+Item3=Self Service Mode Only
+Item4=No
+
+[141D110]
+Description=141D110 MAXIMUM NUMBER OF DAYS FOR DELIVERY DATE ADJUSTMENT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D111]
+Description=141D111 CONFIRMATION WHEN AMOUNT TO PAY IS ZERO IN CHANGE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D112]
+Description=141D112 CLEAR CCD VALUES WHEN EXIT FROM CCD MODE WITHOUT PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D113]
+Description=141D113 REWE FEATURES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D114]
+Description=141D114 START PAGE SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=7
+ItemCount=8
+Item0=Based On Preset Group
+Item1=Based On Department
+Item2=PLUs From Department
+Item3=All PLUs
+Item4=Hot Items
+Item5=Main Groups From Department
+Item6=Hi-touch
+Item7=Favourite Items
+
+[141D115]
+Description=141D115 CLEAR PLU UPON REFRESH ON MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D116]
+Description=141D116 LOCK CLERK BUFFER ON PRINT ERROR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D117]
+Description=141D117 PRINT BATCH REPORT FOR MORNING CCD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D118]
+Description=141D118 ORDER NUMBER PREFIX
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=None
+Item1=Day of Month
+Item2=Day of Week
+
+[141D119]
+Description=141D119 PUB PRESET PAGE DISCOUNT LEVEL
+Enable=1
+Type=Index
+Min=0
+Max=15
+ItemCount=16
+Item0=None
+Item1=Level 1 Only
+Item2=Level 2 Only
+Item3=Level 3 Only
+Item4=Level 4 Only
+Item5=Levels 1 and 2 Only
+Item6=Levels 1 and 3 Only
+Item7=Levels 1 and 4 Only
+Item8=Levels 2 and 3 Only
+Item9=Levels 2 and 4 Only
+Item10=Levels 3 and 4 Only
+Item11=Levels 1, 2 and 3 Only
+Item12=Levels 1, 2 and 4 Only
+Item13=Levels 1, 3 and 4 Only
+Item14=Levels 2, 3 and 4 Only
+Item15=All Levels (1,2,3 and 4)
+
+[141D120]
+Description=141D120 LOG REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D121]
+Description=141D121 MESSAGE FOR MORNING CCD
+Enable=1
+Type=Index
+Min=0
+Max=11
+ItemCount=12
+Item0=Disable
+Item1=1 am
+Item2=2 am
+Item3=3 am
+Item4=4 am
+Item5=5 am
+Item6=6 am
+Item7=7 am
+Item8=8 am
+Item9=9 am
+Item10=10 am
+Item11=11 am
+
+[141D122]
+Description=141D122 FORCE ENTERING PLU CODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D123]
+Description=141D123 MANUAL WEIGHT ENTRY
+Enable=0
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable
+Item1=Prepack Mode
+Item2=Registration & Prepack Mode
+
+[141D124]
+Description=141D124 DECIMAL POINT FOR kg / l
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D125]
+Description=141D125 USE EXTENDED FIELDS FOR SERVING SIZE & SERVING PER CONTAINER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D126]
+Description=141D126 THRESHOLD FOR PRICE BASE SWITCHING IN UNIT PRICE RE-CALCULATION (g)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D127]
+Description=141D127 PRICE BASE TO USE FOR UNIT SYMBOL kg FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=/kg
+Item1=/100g
+Item2=Price Base Switching Based On Threshold
+
+[141D128]
+Description=141D128 PRINT PROFIT IN REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D129]
+Description=141D129 FORCE UNIT PRICE OVERRIDE IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D130]
+Description=141D130 INGREDIENT SELECTION FOR PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All
+Item1=Group
+
+[141D131]
+Description=141D131 SAVE LAST SELECTED DEPARTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D132]
+Description=141D132 QUANTITY OF COUPLE PLU FOLLOWS MAIN PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D133]
+Description=141D133 TARE ON OPERATOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D134]
+Description=141D134 UPDATE LABEL TO REPORT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Registration & Prepack Mode
+Item1=Registration Mode Only
+Item2=No Update
+Item3=Prepack Mode Only
+
+[141D135]
+Description=141D135 CLEAR PLU AFTER LABEL PRINTED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D136]
+Description=141D136 UPDATE SETTING WHEN CHANGING MODE (SELF SERVICE & MANUAL)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D137]
+Description=141D137 BYPASS PASSWORD ENTRY IF CLERK HAS NO PASSWORD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D138]
+Description=141D138 CLEAR KEY + TARE KEY TO CLEAR TARE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D139]
+Description=141D139 FOCUS GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D140]
+Description=141D140 FLEXIBLE KEY PUBLICITY LIMITATION
+Enable=1
+Type=Index
+Min=0
+Max=15
+ItemCount=16
+Item0=None
+Item1=Level 1 Only
+Item2=Level 2 Only
+Item3=Level 3 Only
+Item4=Level 4 Only
+Item5=Levels 1 and 2 Only
+Item6=Levels 1 and 3 Only
+Item7=Levels 1 and 4 Only
+Item8=Levels 2 and 3 Only
+Item9=Levels 2 and 4 Only
+Item10=Levels 3 and 4 Only
+Item11=Levels 1, 2 and 3 Only
+Item12=Levels 1, 2 and 4 Only
+Item13=Levels 1, 3 and 4 Only
+Item14=Levels 2, 3 and 4 Only
+Item15=All Levels (1,2,3 and 4)
+
+[141D141]
+Description=141D141 FORCE TRAY INPUT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D142]
+Description=141D142 PRODUCT INFO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=Ingredient Only
+
+[141D143]
+Description=141D143 SELF SERVICE PRESET GROUP
+Enable=1
+Type=Integer
+Min=0
+Max=10
+
+[141D144]
+Description=141D144 ZERO PRICE REGISTRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D145]
+Description=141D145 VOID LAST ITEM ONLY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D146]
+Description=141D146 SHOW KEY DATA ON COMMODITY NAME WINDOW FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D147]
+Description=141D147 AUTO PRINTING IN REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, All Plu
+Item2=Yes, Only For Plu Called By Barcode Scanning
+
+[141D148]
+Description=141D148 AUTO PRINTING IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D149]
+Description=141D149 CONTINUOUS PRINT IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D150]
+Description=141D150 CLEAR BASKET AFTER NUMBER OF DAY FROM REGISTER DATE
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D151]
+Description=141D151 CLEAR ORDER AFTER NUMBER OF DAY FROM DELIVERY DATE
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D152]
+Description=141D152 AUTO PRINT IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D153]
+Description=141D153 RESET RECEIPT NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Daily
+Item2=Weekly
+
+[141D154]
+Description=141D154 LCD DISPLAY PROPERTIES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=Invert
+
+[141D155]
+Description=141D155 LCD DISPLAY POSITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=180 Degree Rotation
+
+[141D156]
+Description=141D156 EMBEDDED CODE IN PLU CODE : USAGE OF CODE "D"
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Department
+Item1=Prefix
+Item2=Main Group
+
+[141D157]
+Description=141D157 CLERK IMAGE DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow Clerk Name
+Item1=Follow Clerk Code
+
+[141D158]
+Description=141D158 DISABLE AUTO PRINT FOR NON WEIGHED ITEM IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D159]
+Description=141D159 USE BY DATE AND SELL BY DATE LIMITATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D160]
+Description=141D160 PLU TARE OVERRIDE GENERAL TARE WHEN PLU TARE IS ZERO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D161]
+Description=141D161 UNIT PRICE CHANGE FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Not Update To PLU
+Item1=Update To PLU
+
+[141D162]
+Description=141D162 DEFAULT SEARCHABLE FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=0->Searchable
+Item1=1->Searchable
+
+[141D163]
+Description=141D163 DISABLE AUTO PLU CALL BY PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D164]
+Description=141D164 ALLOW NEW CUSTOMER NUMBERS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D165]
+Description=141D165 AUTO RESIZE COMMODITY NAME ON OPERATOR DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D166]
+Description=141D166 FORCE ENTER CUSTOMER ID IN PREPACK MODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes And Reset After PLU Is Cleared Or Mode Changed
+Item2=Yes And No Reset
+
+[141D167]
+Description=141D167 PREPACK CLERK TIMEOUT (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=255
+
+[141D168]
+Description=141D168 BREAK POINT TO SHOW CONFIRMATION FOR BONUS COUPON PRINTING
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D169]
+Description=141D169 CLERK CODE ENTRY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Clerk Code
+Item1=EAN13
+
+[141D170]
+Description=141D170 WEIGHT TOLERANCE FOR LIVE WEIGHT AVERAGING (%)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D171]
+Description=141D171 MINIMUM WEIGHT FOR UNIT WEIGHT SAMPLING (g)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D172]
+Description=141D172 WARNING FOR MINIMUM UNIT WEIGHT (g)
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D173]
+Description=141D173 SELECTION OF AUTO CLEAR OF UNIT PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=8
+Mask=0x80
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D174]
+Description=141D174 CLEAR REPORT IN Z-MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=18
+Mask=0x40
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[141D175]
+Description=141D175 ALLOW DELETE RECEIPT(S) IN CLOSING & REPORT MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+Index=19
+Mask=0x01
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D176]
+Description=141D176 DEFAULT SETTING FOR WEIGHT CHECK FUNCTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D177]
+Description=141D177 CLERK LOGIN AUTHENTICATION VIA SCANNER / CARD READER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D178]
+Description=141D178 UNIT PRICE RE-CALCULATION BASED ON WEIGHT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D179]
+Description=141D179 PRESET KEY BACKGROUND TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Color
+Item1=Image
+
+[141D180]
+Description=141D180 KEY PRESS TIMER TO EXIT REGISTRATION MODE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141D181]
+Description=141D181 NUMBER OF LINE OF COMMODITY ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=1 Line
+Item1=2 Lines No Concatenated
+Item2=2 Lines Concatenated
+Item3=All Lines Concatenated
+Item4=3 Lines No Concatenated
+
+[141D182]
+Description=141D182 TRAY SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All
+Item1=Group
+
+[141D183]
+Description=141D183 NUMBER OF DAY FOR HOT ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=30
+
+[141D184]
+Description=141D184 TOTAL TRANSACTION UPDATE METHOD FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Normal
+Item1=By Count
+Item2=By Transaction
+
+[141D185]
+Description=141D185 TRACEABILITY REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=Greece Butcher
+
+[141D186]
+Description=141D186 e.LABEL TEMPERATURE MONITORING FREQUENCY (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D187]
+Description=141D187 SUB-TOTAL DISCOUNT PRICE ROUNDING METHOD
+Enable=1
+Type=Index
+Min=0
+Max=7
+ItemCount=8
+Item0=No Rounding
+Item1=1/4 Rounding
+Item2=Special Rounding
+Item3=Rounding For First Digit
+Item4=Cut Off
+Item5=Cut Up
+Item6=Y5 Cut Off & Y10 Cut Off
+Item7=1/2 Rounding
+
+[141D188]
+Description=141D188 KEY PRESS TIMER TO SWITCH BETWEEN MANUAL AND PREPACK MODE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141D189]
+Description=141D189 DEPARTMENT KEY OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=List PLUs From Department
+Item1=List MGs From Department
+
+[141D190]
+Description=141D190 TIMEOUT TO REFRESH BACK TO START UP PAGE WHEN IDLE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D191]
+Description=141D191 CUSTOMER LCD MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Scrolling Message
+Item1=Image
+
+[141D192]
+Description=141D192 SCROLLING MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=From Scale File
+Item1=From All Scrolling Sequence
+
+[141D193]
+Description=141D193 COMMODITY NAME IN e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Normal
+Item1=Upper Case
+
+[141D194]
+Description=141D194 AUTO WORD BREAK FOR e.LABEL'S COMMODITY NAME
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Break On Space
+Item2=Yes, Keep Max Width On 1st Line
+
+[141D195]
+Description=141D195 PLU UNIT PRICE OVERRIDE STATUS
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Inhibit And Default Disable
+Item1=Allow And Default Disable
+Item2=Inhibit And Default Enable
+Item3=Allow And Default Enable
+
+[141D196]
+Description=141D196 PACKED DATE LIMITATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D197]
+Description=141D197 SHOW SUB-TOTAL WHEN ADD ITEM TO CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D198]
+Description=141D198 PLU SEARCH METHOD FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Any place
+Item1=Start Of First Word
+Item2=Start Of Any Word
+
+[141D199]
+Description=141D199 FORCE ENTER TRACEABILITY DATA
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Lot Number
+Item2=Reference Number
+Item3=Lot And Reference Number
+
+[141D200]
+Description=141D200 e.LABEL DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=PLU Number
+Item1=Mapping Number
+
+[141D201]
+Description=141D201 LOG TARE CHANGES
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=Disable
+Item1=Higher Tare Changes (Include Preset Tare) 
+Item2=Higher Tare Changes (Exclude Preset Tare) 
+Item3=Any Tare Changes (Include Preset Tare)    
+Item4=Any Tare Changes (Exclude Preset Tare)    
+
+[141D202]
+Description=141D202 STRIP `0' FOR DISPLAY CODE ON PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D203]
+Description=141D203 PRESET KEY POLICY WHEN NO IMAGE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Do Nothing
+Item1=Show Code On Image Area (PLU only)
+Item2=Show Name On Whole Button 
+Item3=Show Name And Code On Whole Button 
+
+[141D204]
+Description=141D204 CLERK AUTHENTICATION FOR LABEL PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Without Logging
+Item2=With Logging
+
+[141D205]
+Description=141D205 PLU PRESET KEY LISTING ORDER
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=By PLU Code
+Item1=By Hot Item
+Item2=By PLU Name
+Item3=By PLU Preset Name
+
+[141D206]
+Description=141D206 LOG SELL BY DATE OR PACKED DATE CHANGES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D207]
+Description=141D207 SINGLE FREQUENCY MINIBASE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D208]
+Description=141D208 QUANTITY FIX PRICE DISCOUNT MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=With Discount Value
+Item1=With Discounted Price
+
+[141D209]
+Description=141D209 DIRECT PACK QUANTITY OVERRIDE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes       
+
+[141D210]
+Description=141D210 DISCOUNT MARKDOWN
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No Markdown       
+Item1=Unit Price Markdown       
+Item2=Total Price Markdown      
+Item3=Unit Price And Total Price Markdown      
+
+[141D211]
+Description=141D211 FORCE BREAK POINT 1
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D212]
+Description=141D212 FORCE BREAK POINT 1 LEVEL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Level 1
+Item1=Level 2
+Item2=Level 3
+Item3=Level 4
+
+[141D213]
+Description=141D213 TRACEABILITY LOOKUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Reference Number + GTIN
+Item1=Reference Number
+
+[141D214]
+Description=141D214 WEB BROWSER ON SELF SERVICE MAINTENANCE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D215]
+Description=141D215 EMAIL ON SELF SERVICE MAINTENANCE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D216]
+Description=141D216 DEFAULT CLERK SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D217]
+Description=141D217 MAXIMUM RESULT FROM CAMERA RECOGNITION
+Enable=1
+Type=Integer
+Min=1
+Max=16
+
+[141D218]
+Description=141D218 MINIMUM CONFIDENCE LEVEL FOR CAMERA RECOGNITION
+Enable=1
+Type=Integer
+Min=0
+Max=200
+
+[141D219]
+Description=141D219 QUANTITY INPUT MESSAGE FOR CAMERA RECOGNITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D220]
+Description=141D220 PASSWORD PROTECTION STATUS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=0 -> Not Allow
+Item1=0 -> Allow
+
+[141D221]
+Description=141D221 DISCOUNT VALUE FOR FIXED QUANTITY DISCOUNT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Amount
+Item1=Discounted Price
+
+[141D222]
+Description=141D222 AUTO TRACEABILITY WHEN NO DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Prompt
+Item1=No Prompt
+
+[141D223]
+Description=141D223 AUTO IMAGE ASSIGNMENT (1 ~ 99)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[141D224]
+Description=141D224 RECALL PLU AFTER PRINTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D225]
+Description=141D225 SHOW VALUE FOR PRESET FUNCTION KEY (DATES, PACK QUANTITY / WEIGHT)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D226]
+Description=141D226 SELL BY DATE VALUE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Number of Day
+Item1=Number of Hour
+Item2=Number of Minute
+
+[141D227]
+Description=141D227 BARCODE SCANNING WHEN PLU CALLED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Call PLU
+Item1=Update Traceability
+
+[141D228]
+Description=141D228 MULTIPLE PRESET KEY FOR TEXT INPUT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable 
+Item1=By Shift Key     
+Item2=By Multiple Press
+
+[141D229]
+Description=141D229 MULTIPLE PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Disable 
+Item1=By Shift Key     
+Item2=By Multiple Press
+
+[141D230]
+Description=141D230 SHOW INDEX ON MENU BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D231]
+Description=141D231 PRESET GROUP EXTENSION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D232]
+Description=141D232 PLU SORTING WITH PRIORITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D233]
+Description=141D233 BASKET NUMBER LINKING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Optional
+Item1=Before Transaction
+
+[141D234]
+Description=141D234 OPERATION LOGGING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=None
+Item1=Message
+Item2=Operation
+Item3=Message And Operation
+
+[141D235]
+Description=141D235 DISABLE AUTO PRINT FOR NON WEIGHED ITEM IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D236]
+Description=141D236 QUEUE SYSTEM WITH MANUAL QUEUE TICKET DISPENSER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D237]
+Description=141D237 START WEB BROWSER IF IDLE FOR (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D238]
+Description=141D238 TRACEABILITY UPDATE FIELD DATA BY BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=AI Barcode
+Item1=Fixed Field Barcode
+Item2=Dynamic
+
+[141D239]
+Description=141D239 DISPLAY ROUNDED BARCODE TOTAL PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D240]
+Description=141D240 CLEAR PLU AFTER LABEL PRINTED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Immediately
+Item1=After Remove Weight And Label
+
+[141D241]
+Description=141D241 QUEUE NUMBER ON LCD CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D242]
+Description=141D242 TIME TO ACTIVATE POWER SAVING MODE
+Enable=1
+Type=Index
+Min=0
+Max=23
+ItemCount=24
+Item0=0000 hour
+Item1=0100 hour
+Item2=0200 hour
+Item3=0300 hour
+Item4=0400 hour
+Item5=0500 hour
+Item6=0600 hour
+Item7=0700 hour
+Item8=0800 hour
+Item9=0900 hour
+Item10=1000 hour
+Item11=1100 hour
+Item12=1200 hour
+Item13=1300 hour
+Item14=1400 hour
+Item15=1500 hour
+Item16=1600 hour
+Item17=1700 hour
+Item18=1800 hour
+Item19=1900 hour
+Item20=2000 hour
+Item21=2100 hour
+Item22=2200 hour
+Item23=2300 hour
+
+[141D243]
+Description=141D243 TURN OFF DISPLAYS AFTER (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D244]
+Description=141D244 TIME TO TURN ON ALL DISPLAYS
+Enable=1
+Type=Index
+Min=0
+Max=23
+ItemCount=24
+Item0=0000 hour
+Item1=0100 hour
+Item2=0200 hour
+Item3=0300 hour
+Item4=0400 hour
+Item5=0500 hour
+Item6=0600 hour
+Item7=0700 hour
+Item8=0800 hour
+Item9=0900 hour
+Item10=1000 hour
+Item11=1100 hour
+Item12=1200 hour
+Item13=1300 hour
+Item14=1400 hour
+Item15=1500 hour
+Item16=1600 hour
+Item17=1700 hour
+Item18=1800 hour
+Item19=1900 hour
+Item20=2000 hour
+Item21=2100 hour
+Item22=2200 hour
+Item23=2300 hour
+
+[141D245]
+Description=141D245 SAUCE PUMP CALCULATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Disable
+Item1=Enable
+
+[141D246]
+Description=141D246 INACTIVE PLU WHEN NO TRANSACTION FOR (DAYS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D247]
+Description=141D247 PREFIX NUMBER FOR AUTO PLU CALL
+Enable=1
+Type=Integer
+Min=0
+Max=9
+
+[141D248]
+Description=141D248 ADD NEW PLU BY BARCODE IN REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D249]
+Description=141D249 RELOAD HOME PAGE WHEN ENTER WEB BROWSER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D250]
+Description=141D250 DISABLE F1 ~ F6 KEYS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D251]
+Description=141D251 MANUAL EDIT AUTO ASSIGNED IMAGE (1 ~ 99)
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D252]
+Description=141D252 DIRECT QUANTITY INPUT FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D253]
+Description=141D253 REZERO SUCCESS MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=4
+ItemCount=5
+Item0=No
+Item1=Message
+Item2=Message With IP Address
+Item3=Message With Host Name
+Item4=Message With Host Name And IP Address
+
+[141D254]
+Description=141D254 WEB BROWSER SCREEN MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Full Screen
+Item1=Normal
+
+[141D255]
+Description=141D255 TRACEABILITY GROUPING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=From Traceability Group
+Item2=From All Traceability
+
+[141D256]
+Description=141D256 TRACEABILITY OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Follow PLU Status
+Item1=Auto
+Item2=Manual
+
+[141D257]
+Description=141D257 TRACEABILITY LINK TO CUSTOMER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D258]
+Description=141D258 LOCK CLIENT WHEN ENTER CCD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D259]
+Description=141D259 UPDATE DISCOUNT INFORMATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Dynamic
+Item1=Once A Day
+
+[141D260]
+Description=141D260 RESET INPUT DATA BY PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D261]
+Description=141D261 PRESET KEY FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Remove Empty Key
+Item1=Fixed Position
+
+[141D262]
+Description=141D262 BACK TO REGISTRATION MODE WHEN NO QUEUING CUSTOMER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D263]
+Description=141D263 AUTO HIDE WEB BROWSER IN REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Any Key Or Weight Change
+Item1=By Any Key
+
+[141D264]
+Description=141D264 CLOSING BATCH REPORT FOLLOW DATE RANGE IN CLOSING AND REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D265]
+Description=141D265 WEIGHT UPDATE IN REPORT FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D266]
+Description=141D266 CAMERA LOGGING
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Summary
+Item2=Displayed PLU Only
+Item3=Detail
+
+[141D267]
+Description=141D267 PREPARE ORDER WITHOUT CLERK SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D268]
+Description=141D268 PLACE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Not Update To PLU
+Item1=Update To PLU
+
+[141D269]
+Description=141D269 USE FIXED WEIGHT
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=Manual & Prepack Mode
+Item2=Manual Mode Only
+Item3=Prepack Mode Only
+
+
+[141D270]
+Description=141D270 SHOW FSD PRICE ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D271]
+Description=141D271 ALLOW ANOTHER CLERK TO GIVE AUTHORITY IN SUB-TOTAL AND CHANGE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Not Allow
+Item1=Allow
+
+[141D272]
+Description=141D272 SHOW SAVING VALUE ON DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Yes
+Item1=No
+Item2=Yes, Discount Unit Price
+Item3=Yes, Discount Price
+
+[141D273]
+Description=141D273 SHOW LONG COMMODITY NAME ON OPERATOR DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D274]
+Description=141D274 ALLOW UNIT PRICE OVERRIDE WHEN PLU UNIT PRICE IS ZERO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Inhibit
+Item1=Allow
+
+[141D275]
+Description=141D275 PACK QUANTITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Based On Number Of Label
+Item1=Based On Weight
+
+
+[141D276]
+Description=141D276 FIXED WEIGHT ONLY IN PACK QUANTITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D277]
+Description=141D277 OPERATOR CARD SAME AS CUSTOMER CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D278]
+Description=141D278 WARNING WHEN CUSTOMER'S MAXIMUM VISIT REACHED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D279]
+Description=141D279 QUANTITY INPUT FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Actual Quantity
+Item1=Number Of Pack
+Item2=Per Quantity Symbol Configuration
+
+[141D280]
+Description=141D280 TIMEOUT FOR SEARCHED-PLU GROUPING MESSAGE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D281]
+Description=141D281 PRICE TO DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Actual Price
+Item1=Original Price
+
+[141D282]
+Description=141D282 SEND PULSE TO WRAPPER
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Before Printing
+Item2=After Printing
+
+[141D283]
+Description=141D283 AUTO REFRESH PRINT FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D284]
+Description=141D284 PRESET KEY SELECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=On Released
+Item1=On Pressed
+
+[141D285]
+Description=141D285 HOT ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Enable
+Item1=Disable
+
+[141D286]
+Description=141D286 USE FIXED WEIGHT FOR PRINTING AND UNIT PRICE RE-CALCULATION FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D287]
+Description=141D287 SHOW CHANGE INFORMATION ON TFT CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Change Mode Only
+Item2=Sub-Total And Change Mode
+
+[141D288]
+Description=141D288 CLERK PRESET PAGE SWITCHING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Manual / Prepack
+Item1=Manual Only
+
+[141D289]
+Description=141D289 AUTO RESET PACK QUANTITY ON PACK QUANTITY DONE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D290]
+Description=141D290 AUTO RESET PACK QUANTITY AFTER SUB-TOTAL LABEL PRINTED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D291]
+Description=141D291 AUTO PLU CLEAR AFTER (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D292]
+Description=141D292 UPDATE REPACK LABEL TO TOTAL REPORT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No, save to database
+Item1=Yes
+Item2=No, do not save to database
+
+[141D293]
+Description=141D293 DEFAULT CLERK LOGIN TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=MANUAL
+Item1=PREPACK
+
+[141D294]
+Description=141D294 INVENTORY NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D295]
+Description=141D295 UNIT PRICE RE-CALCULATION BASED ON FIXED WEIGHT FOR e.LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D296]
+Description=141D296 LINK QUEUE NUMBER TO CUSTOMER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D297]
+Description=141D297 DISPLAY WEIGHT FOR QUANTITY COUNTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No ( Qty On Weight Field)
+Item1=Yes (Qty On Tare Field)
+
+[141D298]
+Description=141D298 PEEL SENSOR CHECKING IN MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D299]
+Description=141D299 DISPLAY FIRST PAGE OF SECONDARY PRESET AFTER PRESSING ON SECONDARY PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D300]
+Description=141D300 ACTIVE CLERK OPERATION
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes (Manual Clear)
+Item2=Yes (Auto Clear On Plu Cleared)
+
+[141D301]
+Description=141D301 PRELOAD PRESET GROUP DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D302]
+Description=141D302 UPDATE BROWSE KEYS INFO ON SECONDARY KEY ONLY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D303]
+Description=141D303 PRESET ITEM CACHE REFRESH INTERVAL (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D304]
+Description=141D304 DIRECT SELL BY DATE AND PACKED DATE INPUT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D305]
+Description=141D305 SHOW START DATE ON TERM REPORT BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Last Clear Date
+Item1=Next Day Of Last Clear Date
+
+[141D306]
+Description=141D306 SCREENSAVER ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Full Screen
+Item1=W&M Area Only
+Item2=Information Area Only
+
+[141D307]
+Description=141D307 CCTV SENDING ON PLU CALLED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D308]
+Description=141D308 CCTV SENDING INTERVAL ON PLU CALLED (MILI-SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D309]
+Description=141D309 TENDER SUMMARY GROUPING BY REPORT GROUP IN STORE REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D310]
+Description=141D310 DEFAULT PRODUCT INFO
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141D311]
+Description=141D311 AUTO TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Manual And Prepack Mode
+Item1=Manual Mode Only
+Item2=Prepack Mode Only
+
+[141D312]
+Description=141D312 RESET TRACEABILITY DATA AND USE ACTUAL WEIGHT AS MAX WEIGHT WHEN TRACEABILITY DATA CHANGED
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Lot Number Changed
+Item2=Reference Number Changed
+
+[141D313]
+Description=141D313 PRINT FIXED WEIGHT FOR NON WEIGHED ITEM WHEN NO WEIGHT ON PLATTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D314]
+Description=141D314 CUSTOMER DISPLAY MULTIMEDIA PLAYLIST CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By File
+Item1=By Database
+
+[141D315]
+Description=141D315 FORCE ENTER CUSTOMER IN ORDER TAKING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D316]
+Description=141D316 ACTIVE CLERK SELECTION BY NUMBER OF DIGIT
+Enable=1
+Type=Integer
+Min=0
+Max=8
+
+[141D317]
+Description=141D317 SCREENSAVER ON OPERATOR DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D318]
+Description=141D318 DELAY TO ACTIVATE OPERATOR DISPLAY SCREENSAVER (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D319]
+Description=141D319 ACTIVE CLERK LINK TO PLU 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All PLU
+Item1=PLU With Barcode Format F1F2 RR CCC XXXXX CD
+
+[141D320]
+Description=141D320 PREPACK PRINTING ACKNOWLEDGEMENT 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=After Plu Printed
+Item1=Before Printing Plu
+
+[141D321]
+Description=141D321 DEFAULT TEXT NUMBER FOR TEXT FUNCTION KEY
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141D322]
+Description=141D322 SEARCH RESULT SCREEN FOR REGISTRATION MODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Follow Primary Preset
+Item1=New Preset Screen
+
+[141D323]
+Description=141D323 USE SECOND PRICE FOR COUPLE PLU 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D324]
+Description=141D324 ALLOW MECHANICAL KEYPAD FOR SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D325]
+Description=141D325 MULTIPLE JOB BATCHES 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D326]
+Description=141D326 MULTIMEDIA PLAYLIST LOGGING 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, All
+Item2=Yes, Completed Only
+
+[141D327]
+Description=141D327 SHOW MANUAL INDICATOR ON OPERATOR DISPLAY 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D328]
+Description=141D328 SHOW DATE ON/OFF INDICATOR ON OPERATOR DISPLAY 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D329]
+Description=141D329 DELAY TO ACTIVATE CUSTOMER DISPLAY SCREENSAVER (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D330]
+Description=141D330 TRACEABILITY WITHDRAW DATE 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, By Date
+Item2=Yes, By Hour
+
+[141D331]
+Description=141D331 SOURCE OF USE BY DATE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Current Date
+Item1=Packed Date
+
+[141D332]
+Description=141D332 TRACEABILITY NUMBER FOLLOW PLU NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D333]
+Description=141D333 CUSTOMER DISPLAY LAYOUT FOR 800x480 TFT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=With Image Area
+Item1=Without Image Area
+
+[141D334]
+Description=141D334 OPERATOR PASSWORD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Numeric
+Item1=Alphanumeric
+
+[141D335]
+Description=141D335 DEPARTMENT AND MAIN GROUP PRESET KEY LISTING ORDER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Record Number
+Item1=By Name
+
+[141D336]
+Description=141D336 LOG PRICE CHANGE BY DISCOUNT OR MARKDOWN FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D337]
+Description=141D337 AUTO PRESET IMAGE TYPE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Bitmap
+Item1=JPEG
+Item2=Auto
+Item3=PNG
+
+[141D338]
+Description=141D338 BANK TERMINAL INFO LOGGING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D339]
+Description=141D339 SHOW WEB PAGE FOR THE SELECTED PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D340]
+Description=141D340 USE INPUT KEY AS QUANTITY FOR PLU CALLED BY BARCODE SCANNER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D341]
+Description=141D341 TRACEABILITY MAX WEIGHT/QUANTITY CHECKING FOR NON WEIGHED ITEM 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Quantity
+Item2=Weight
+
+[141D342]
+Description=141D342 SPEED-ID CARD FOR CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Map to Clerk Number
+Item1=Store Clerk Number
+
+[141D343]
+Description=141D343 PLAY AUDIO FOR CUSTOMER DISPLAY VIDEO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D344]
+Description=141D344 QUEUE VOLUME
+Enable=1
+Type=Integer
+Min=0
+Max=100
+
+[141D345]
+Description=141D345 PLU SEARCH WITH MULTI LANGUAGE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Search From Multi Language Name
+Item1=Search From PLU Commodity Name
+Item2=Search From All Name
+
+[141D346]
+Description=141D346 MANUAL QUANTITY INPUT FOR QUANTITY COUNTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D347]
+Description=141D347 ALLOW TO CALL PLU WHEN OFFLINE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D348]
+Description=141D348 TRACEABILITY COLOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D349]
+Description=141D349 ALLERGEN TABLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D350]
+Description=141D350 SAVE TRANSACTION IF PAYMENT COMPLETED WITH PRINTER ERROR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D351]
+Description=141D351 APPEND COUNTRY CODE IN SLAUGHTER HOUSE AND CUTTING HALL NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D352]
+Description=141D352 EXIT FROM CHANGE MODE WITH BANK TERMINAL PAYMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Warning
+Item1=Not Allow
+
+[141D353]
+Description=141D353 DISPLAY PLU WITH ALLERGEN WORD DURING ALLERGEN SEARCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D354]
+Description=141D354 INVENTORY CLERK
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D355]
+Description=141D355 SHOW WEIGHT AND MEASURE INFO ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D356]
+Description=141D356 QUEUE NEXT NUMBER FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Call Next Queue Number
+Item1=Call Next Serving Number
+
+[141D357]
+Description=141D357 CHANGE TEXT NUMBER WITH TEXT FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Not Allow
+Item1=Allow
+
+[141D358]
+Description=141D358 AUTO UPDATE PRINTER FIRMWARE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D359]
+Description=141D359 DEFAULT DEPARTMENT FOR ALLERGEN SEARCH
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D360]
+Description=141D360 DEFAULT MAIN GROUP FOR ALLERGEN SEARCH
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D361]
+Description=141D361 SHOW ITEM 2D BARCODE ON TFT CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D362]
+Description=141D362 FLEXIBLE AI DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D363]
+Description=141D363 RESET LABEL NUMBER DAILY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D364]
+Description=141D364 BANK TERMINAL PAYMENT CANCELLATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Warning
+Item1=Not Allow
+
+[141D365]
+Description=141D365 NEXT BUTTON IN QUEUE FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Call Next Queue Number
+Item1=Call Next Serving Number Based On Local Calling Number
+
+[141D366]
+Description=141D366 SAVE PLU TEXT IN SEPARATE TABLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D367]
+Description=141D367 TENDER AND CHANGE INFORMATION ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Default
+Item1=With Rounding Detail
+
+[141D368]
+Description=141D368 TIMEOUT TO RESET SYSTEM LANGUAGE (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D369]
+Description=141D369 SELL BY DATE ALWAYS BASE ON PACKED DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D370]
+Description=141D370 DISPLAY QUEUE NUMBER ON OPERATOR DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D371]
+Description=141D371 DISPLAY NUMBER OF WAITING CUSTOMER ON QUEUE STATUS FUNCTION KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D372]
+Description=141D372 FSD QUANTITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D373]
+Description=141D373 START UP MAINGROUP FOR SELF SERVICE
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D374]
+Description=141D374 SEARCH WITHIN CURRENT MAINGROUP FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D375]
+Description=141D375 CLEAR PLU MEDIA ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Timeout
+Item1=By PLU Media Content
+
+[141D376]
+Description=141D376 DEFAULT CLERK FOR LOG PRICE OR TARE CHANGES
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D377]
+Description=141D377 PLU SEARCHING SOURCE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=From Database
+Item1=Load PLU Into Memory
+Item2=Load PLU Into Memory And Convert Character
+
+[141D378]
+Description=141D378 FSD UNIT PRICE DISPLAY FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=3pcs/$1.00
+Item1=$0.3333/pc
+
+[141D379]
+Description=141D379 SAVE TRACEABILITY WITH CONFIRMATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D380]
+Description=141D380 ALLOW ENTER TRACEABILITY MAX WEIGHT WHEN RESET TRACEABILITY DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D381]
+Description=141D381 DISPLAY CUTTER COUNTING WARNING MESSAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Registration & Prepack Mode
+
+[141D382]
+Description=141D382 AUTO PROMPT MANUAL WEIGHT INPUT FOR MAINGROUP
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D383]
+Description=141D383 CLERK OPERATION ON CURRENT DETECTED CLERK BY SPEED-ID CARD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D384]
+Description=141D384 FORCE QUANTITY SYMBOL FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=kg
+Item2=lb
+Item3=oz
+
+[141D385]
+Description=141D385 DISPLAY OFFLINE INDICATOR ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D386]
+Description=141D386 CAMERA RESULT SORTING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Confident Level
+Item1=By Name
+
+[141D387]
+Description=141D387 PLU TARE SOURCE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Tare 1
+Item1=Tare 2
+
+[141D388]
+Description=141D388 CREATE NEW TRACEABILITY IF TRACEABILITY NOT FOUND IN LOOKUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D389]
+Description=141D389 SYNCHRONIZE CUSTOMER DISPLAY SCREENSAVER WITH OPERATOR DISPLAY SCREENSAVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D390]
+Description=141D390 ALLERGEN SEARCH AND REPLACE CONDITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Contains
+Item1=Whole Word
+
+[141D391]
+Description=141D391 RESET RECEIPT NUMBER BY DAY OF WEEK
+Enable=1
+Type=Index
+Min=0
+Max=6
+ItemCount=7
+Item0=Sunday
+Item1=Monday
+Item2=Tuesday
+Item3=Wednesday
+Item4=Thursday
+Item5=Friday
+Item6=Saturday
+
+[141D392]
+Description=141D392 INCLUDE DELETED TRACEABILITY IN TRACEABILITY REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D393]
+Description=141D393 DISPLAY CUTTER CLEANING MESSAGE ON START UP
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D394]
+Description=141D394 DISPLAY CUTTER OIL LEVEL MESSAGE ON START UP
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D395]
+Description=141D395 RESERVED
+Enable=0
+Type=Integer
+Min=0
+Max=99
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D396]
+Description=141D396 RESERVED 
+Enable=0
+Type=Integer
+Min=0
+Max=99
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D397]
+Description=141D397 SELL BY DATE LIMITATION INDEX 
+Enable=1
+Type=Integer
+Min=0
+Max=999
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D398]
+Description=141D398 PLU GROUPING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D399]
+Description=141D399 SHOW IP CAMERA CONTENT ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Screensaver
+Item2=Plu Icon
+Item3=Both
+
+[141D400]
+Description=141D400 PARTIAL QUANTITY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, With Decimal Indicator In Barcode
+Item2=Yes, With Decimal Value In Barcode
+
+[141D401]
+Description=141D401 EXIT FROM REPACK MODE AFTER CLEAR PLU
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Without Message
+Item2=Yes, With Message
+
+[141D402]
+Description=141D402 SHOW INGREDIENT ON CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D403]
+Description=141D403 ALLOW MANUAL ALLERGEN ENTRY IN ALLERGEN SEARCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D404]
+Description=141D404 DEFAULT PLU TEXT TO EDIT VIA PLU TEXT FUNCTION KEY
+Enable=1
+Type=Integer
+Min=0
+Max=16
+
+[141D405]
+Description=141D405 SHOW ALLERGEN INDICATOR ON PRESET KEY BY ALLERGEN SEARCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D406]
+Description=141D406 CLEAR CLERK BUFFER MAPPING AFTER PRINTING RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D407]
+Description=141D407 MULTIPLE PREPACK SUB-TOTAL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D408]
+Description=141D408 SHOW CUSTOMER INFO ON ORDER PREPARATION BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Customer Number
+Item2=Customer Name
+
+[141D409]
+Description=141D409 PACKED DATE GREATER THAN CURRENT DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[141D410]
+Description=141D410 OPERATION DURING DATA TRANSMISSION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[141D411]
+Description=141D411 SELL BY DATE SOURCE 
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Sell By Date
+Item1=Traceability Reference Data
+Item2=Eat By Date
+
+[141D412]
+Description=141D412 BROWSE TRACEABILITY FOLLOW TRACEABILITY SELECTION LAYOUT IN TRACEABILITY UPDATE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D413]
+Description=141D413 SHOW TRACEABILITY BY KIND IN TRACEABILITY SELECTION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D414]
+Description=141D414 SORT TRACEABILITY IN TRACEABILITY SELECTION 
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=By Id
+Item1=By Max Weight
+Item2=By Color
+Item3=By Reference Number
+
+[141D415]
+Description=141D415 SORTING ORDER IN TRACEABILITY SELECTION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Ascending
+Item1=Descending
+
+[141D416]
+Description=141D416 ALLOW ITEM DISCOUNT FOR PLU WITH PRICE LIST 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D417]
+Description=141D417 DEFAULT SYSTEM PRICE LIST
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D418]
+Description=141D418 DISPLAY PRESET GROUP ON PLU CALLED IN MANUAL MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D419]
+Description=141D419 CLEAR PLU AFTER PRINTING OR REGISTERED IN MANUAL MODE
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Yes
+Item1=No, When Label Is Printed
+Item2=No, When Item Is Registered
+Item3=No, When Label Printed Or Item Registered
+
+[141D420]
+Description=141D420 UNIT PRICE RE-CALCULATION BASE ON WEIGHT WITH PLU TARE FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D421]
+Description=141D421 DISTRIBUTE SUB-TOTAL SURCHARGE BACK TO ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D422]
+Description=141D422 RE-CALCULATE UNIT PRICE FROM DISCOUNTED TOTAL PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D423]
+Description=141D423 MAXIMUM OF DAY TO ALLOW CANCEL OR RELOAD PAST TRANSACTION
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D424]
+Description=141D424 REVERSE CASH DRAWER OPEN STATUS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D425]
+Description=141D425 RE-CALCULATE UNIT PRICE FOR GRAM TO kg
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D426]
+Description=141D426 DISPLAY BARCODE ON SCREEN WITH LABEL FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D427]
+Description=141D427 ALLOW SELECT PLU MANUALLY WHEN PREPARING ORDER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D428]
+Description=141D428 KEEP PRESET KEY FOCUS FOR EACH PRESET KEY AREA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D429]
+Description=141D429 PLU BARCODE LOOKUP VIA AI01
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=No
+Item1=EAN13
+Item2=Generic Barcode
+Item3=Manual
+
+[141D430]
+Description=141D430 DISPLAY TRANSACTION INFO ON TFT CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Upon PLU Registered
+Item2=In Sub-Total Mode
+
+[141D431]
+Description=141D431 CLEAR TRANSACTION INFO ON TFT CUSTOMER DISPLAY WHEN PLU CALLED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D432]
+Description=141D432 USE 6 DISCOUNT LIMITS FOR DISCOUNT LEVEL 1
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D433]
+Description=141D433 REPRINT LABEL BY IMAGE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Manual Mode
+Item2=Manual And Prepack Mode
+
+[141D434]
+Description=141D434 CHECK CUSTOMER WHEN USING FLEXI PAYMENT KEY
+Enable=0
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D435]
+Description=141D435 E-INVOICE EXPIRED PRE-ALARM THRESHOLD (DAYS)
+Enable=1
+Type=Integer
+Min=0
+Max=10
+
+[141D436]
+Description=141D436 E-INVOICE NUMBER SHORTAGE PRE-ALARM THRESHOLD
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D437]
+Description=141D437 E-INVOICE NUMBER SHORTAGE PRE-ALARM INTERVAL (MINUTES)
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D438]
+Description=141D438 SHOW PLU PRESET IMAGE ON TFT CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D439]
+Description=141D439 RFID LABEL READING TIMEOUT (0.1 SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=30
+
+[141D440]
+Description=141D440 DISPLAY PLU LINKED CONTAINER NUMBER ON PRESET BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D441]
+Description=141D441 ALLOW ADD ITEM FROM DIFFERENT DEPARTMENT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Not Allow
+
+[141D442]
+Description=141D442 VOID TRANSACTION WHEN VOID LAST ITEM
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Compulsory
+Item2=Optional
+
+[141D443]
+Description=141D443 SAVE VOIDED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D444]
+Description=141D444 HIDE PRIMARY PRESET WHEN EMPTY PAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D445]
+Description=141D445 COUPLE PLU TYPE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Single PLU
+Item1=Select From A Group Of PLU
+
+[141D446]
+Description=141D446 WORKING AREA
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D447]
+Description=141D447 AUTO UPDATE SOFTWARE FROM SUM SERVER ON START UP
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Compulsory
+Item2=Optional
+
+[141D448]
+Description=141D448 OPEN ALL FREQUENCIES FOR BS-03/04
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D449]
+Description=141D449 CLEAR SPEED-ID CLERK AFTER PLU PRINTED OR REGISTERED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D450]
+Description=141D450 RE-USE FREE BASKET NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D451]
+Description=141D451 RESET BASKET NUMBER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Daily
+
+[141D452]
+Description=141D452 SHOW RECEIPT 2D BARCODE ON TFT CUSTOMER DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D453]
+Description=141D453 INVENTORY CATEGORY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D454]
+Description=141D454 INVENTORY THRESHOLD
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Alert And Sales
+Item2=Yes, Alert Only
+
+[141D455]
+Description=141D455 DEFAULT INVENTORY ALERT THRESHOLD VALUE FOR WEIGHED ITEM (WEIGHT)
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141D456]
+Description=141D456 DEFAULT INVENTORY ALERT THRESHOLD VALUE FOR NON WEIGHED ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D457]
+Description=141D457 DEFAULT SALES INVENTORY THRESHOLD VALUE FOR WEIGHED ITEM (WEIGHT)
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141D458]
+Description=141D458 DEFAULT SALES INVENTORY THRESHOLD VALUE FOR NON WEIGHED ITEM
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D459]
+Description=141D459 UPDATE INVENTORY ON PAST TRANSACTION CORRECTION OR VOID LABEL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D460]
+Description=141D460 UPDATE INVENTORY ON REFUND ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D461]
+Description=141D461 KEEP INVENTORY FOR NUMBER OF DAY
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D462]
+Description=141D462 INVENTORY INPUT METHOD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=New In And New Out
+Item1=On Hand
+
+[141D463]
+Description=141D463 DISPLAY INVENTORY COUNT ON PLU PRESET KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D464]
+Description=141D464 PLU INVENTORY WITH STOCK DISPLAY OPTIONS
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Display And Disabled
+Item1=Display And Enabled
+Item2=No Display
+
+[141D465]
+Description=141D465 MULTIMEDIA FILE UPLOAD WITH FLAG FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D466]
+Description=141D466 TOTAL PRICE LOOKUP FROM AI392
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D467]
+Description=141D467 START UP PLU CALLED IN REGISTRATION MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141D468]
+Description=141D468 STORE ORDER AND CORRECTION AFTER USING EXTERNAL PAYMENT TERMINAL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Allow
+Item1=Inhibit
+
+[141D469]
+Description=141D469 ALLOW PAST TRANSACTION CORRECTION AND VOID RECEIPT ON ALL SCALES
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No, Only Printing Scale
+
+[141D470]
+Description=141D470 CASH DRAWER OPENED NOTIFICATION TIMEOUT 
+Enable=1
+Type=Integer
+Min=0
+Max=999
+
+[141D471]
+Description=141D471 PRINT ORDER INFO IN STORE REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D472]
+Description=141D472 ALLOW PAYMENT KEY FROM DIFFERENT REPORT GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D473]
+Description=141D473 ALLOW UNIT PRICE DISCOUNT WITH HIGHER UNIT PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D474]
+Description=141D474 INDIVIDUAL CLERK KEY FOR SPEED-ID CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D475]
+Description=141D475 UPDATE e.LABEL WHEN PRICE LIST CHANGED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D476]
+Description=141D476 AUTO REGISTER WEIGHED ITEM OR BARCODE ITEM ON SPEED-ID CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D477]
+Description=141D477 TRACEABILITY TEXT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D478]
+Description=141D478 USE PLU SELL BY DATE AS TRACEABILITY EAT BY DATE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, When No Traceability Eat By Date
+Item2=Yes, When Enter Traceability Function Key
+
+[141D479]
+Description=141D479 ADVERTISEMENT IMAGE IN SUB-TOTAL MODE 
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141D480]
+Description=141D480 UPDATE INFO-TAG IF DATA NOT CHANGED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D481]
+Description=141D481 OVER WRITE PLU DATA FROM CSV FILE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D482]
+Description=141D482 SAVE BARCODE QUANTITY FROM AI37 TO TRANSACTION DATA 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D483]
+Description=141D483 AUTO TARE AFTER PLU REGISTERED 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D484]
+Description=141D484 APPLY PRICE PERCENTAGE MARKDOWN ON DISCOUNT PRICE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D485]
+Description=141D485 CONFORMATION TEXT BEFORE PRINTING IN SELF SERVICE MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141D486]
+Description=141D486 RUN EFT PAYMENT PROCESS IN BACKGROUND 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D487]
+Description=141D487 SHOW WEIGHT BARCODE WHEN WEIGHT STABLE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Self Service Mode
+
+[141D488]
+Description=141D488 AUTO SELECT LAST ITEM WHEN ENTERING SUB-TOTAL MODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D489]
+Description=141D489 PLU SEARCH LIMIT BY NUMBER OF DIGIT
+Enable=1
+Type=Integer
+Min=0
+Max=8
+
+[141D490]
+Description=141D490 SHOW WARNING MESSAGE WHEN TRACEABILITY EAT BY DATE IS EMPTY 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D491]
+Description=141D491 AUTO REGISTER WEIGHED ITEM TO LAST REGISTRATION CLERK IF PLU NOT CLEARED 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D492]
+Description=141D492 AUTO PRINT WEIGHED ITEM CALLING BY EAN128 BARCODE WITH WEIGHT DATA 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D493]
+Description=141D493 UNIT PRICE LIMITATION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=6 Digits
+Item1=7 Digits
+
+[141D494]
+Description=141D494 ALLOW DELETE E.LABEL FROM REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D495]
+Description=141D495 SHOW NUMBER INDICATOR IN HI-TOUCH PRESET BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D496]
+Description=141D496 DEFAULT TRACEABILITY NUMBER IN TRACEABILITY SET FUNCTION KEY
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D497]
+Description=141D497 MODE OF ACTIVATION FOR HI-TOUCH WITH SWITCH
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Switch
+Item1=By Motion Sensor
+
+[141D498]
+Description=141D498 PLU SECOND TRACEABILITY OFFSET
+Enable=1
+Type=Integer
+Min=0
+Max=999999
+
+[141D499]
+Description=141D499 AUTO ACCUMULATION CLERK
+Enable=1
+Type=Integer
+Min=0
+Max=9999999
+
+[141D500]
+Description=141D500 MAIN PRESET GROUP SORTING
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=By Assign Position
+Item1=By Name
+Item2=By Id
+
+[141D501]
+Description=141D501 IGNORE OPEN CASH DRAWER ERROR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D502]
+Description=141D502 AUTO REGISTER ITEM IF CALLED BY PRESET KEY OR PLU KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D503]
+Description=141D503 SORT CUTTING HALL AND SLAUGHTER HOUSE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=By Id
+Item1=By Name
+
+[141D504]
+Description=141D504 MULTIPLE FATTEN COUNTRY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D505]
+Description=141D505 AUTO REGISTER WEIGHTED ITEM ON AUTO REGISTRATION CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D506]
+Description=141D506 PACKED DATE FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Index
+Item1=DDMM
+Item2=DDMM(Auto Save On Change)
+
+[141D507]
+Description=141D507 BYPASS PASSWORD INPUT DURING SELECT AUTO REGISTRATION CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D508]
+Description=141D508 DISPLAY PRESET KEY POSITION ON PLU# FIELD FOR PRESET GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D509]
+Description=141D509 DISPLAY PLU PRESET GROUP ON AREA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Primary
+Item1=Secondary
+
+[141D510]
+Description=141D510 PRINT COMMODITY NAME WITH MULTI LANGUAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Current language commodity name
+Item1=Original commodity name
+
+[141D511]
+Description=141D511 PRINT ORDER NUMBER IN RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D512]
+Description=141D512 APPLY DISCOUNT ON ITEMS WHICH ARE NOT MULTIPLES OF DISCOUNT QUANTITY FOR QUANTITY FIXED PRICE DISCOUNT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D513]
+Description=141D513 ALLOW SEARCH ITEM IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D514]
+Description=141D514 DEDUCT HITOUCH COUNT UPON PLU CALLED
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes (Deduct 1 Count)
+Item2=Yes (Deduct 2 Count)
+
+[141D515]
+Description=141D515 SEARCH KEYBOARD BASED ON SELECTED LANGUAGE FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D516]
+Description=141D516 PLU SEARCH WITHOUT MULTI LANGUAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Search From Plu Commodity Name
+Item1=Search From Plu Preset Name
+
+[141D517]
+Description=141D517 PLU SEARCH MATCH CONDITION FOR SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Contain
+Item1=Match Exactly
+
+[141D518]
+Description=141D518 AUTO SWITCH TO PRESET THEME IF HI-TOUCH DOWN
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D519]
+Description=141D519 AUTO WORD BREAK FOR ITEM LABEL COMMODITY NAME
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Break On Space
+Item2=Yes, Keep Max Width On 1st Line
+
+[141D520]
+Description=141D520 SHOP&GO OPERATION FLOW ON REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Item Label
+Item1=Receipt & Total Label
+
+[141D521]
+Description=141D521 SHOP&GO TOTAL LABEL FORMAT
+Enable=1
+Type=Integer
+Min=1
+Max=99
+
+[141D522]
+Description=141D522 DISPLAY TRACEABILITY LIST BEFORE TRACEABILITY INFO
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, For Plu Without Traceability Data
+Item2=Yes, For All Plu
+
+[141D523]
+Description=141D523 BLINK e.LABEL FOR DISCOUNT ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D524]
+Description=141D524 DISPLAY CUSTOMER DISPLAY IMAGE WITH ORIGINAL ASPECT RATIO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D525]
+Description=141D525 ALLOW ASSIGNED CLERK TO WORK WITH SPEED-ID CLERK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D526]
+Description=141D526 DISPLAY DIFFERENT BACKGROUND COLOR FOR DIFFERENT DEPARTMENT IN SELF SERVICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D527]
+Description=141D527 ALLOW PRINT KEY ON ORDER PREPARING WITH CLERK SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D528]
+Description=141D528 UNIT PRICE LOOKUP FROM AI8005 AND 395N
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D529]
+Description=141D529 PRINT ORIGINAL PRICE OF DISCOUNTED ITEM ON TAX AREA OF RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D530]
+Description=141D530 INPUT ITEM QUANTITY IN MULTIPLES FOR QUANTITY FIXED PRICE DISCOUNT IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D531]
+Description=141D531 KEEP ORDER TAKE ITEM MODIFICATION STATUS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D532]
+Description=141D532 PRINT PACKED DATE WITH SEPARATOR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D533]
+Description=141D533 DISPLAY CLERK WITHOUT SPEED-ID
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Assigned Clerk
+Item1=Last Active Clerk
+Item2=All Clerks With Clerk Operation
+
+[141D534]
+Description=141D534 CONTAINER WEIGHT LABEL FORMAT
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D535]
+Description=141D535 HEMA OPERATION ON PLU NOT EXIST ON SERVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Call From Local
+Item1=Delete From Local
+
+[141D536]
+Description=141D536 DISPLAY HI-TOUCH ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All Plu
+Item1=Plu Of Scale Department
+
+[141D537]
+Description=141D537 INCLUDE ITEM LABEL IN TAX REPORT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D538]
+Description=141D538 START SELF SERVICE OPERATION WEIGHT CONDITION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Gross Weight
+Item1=Net Weight
+
+[141D539]
+Description=141D539 DEFAULT CLERK IF NO SPEED-ID CLERK
+Enable=1
+Type=Integer
+Min=0
+Max=9999999
+
+[141D540]
+Description=141D540 RESET HI-TOUCH AFTER PRINTING (SECONDS)
+Enable=1
+Type=Integer
+Min=0
+Max=9999
+
+[141D541]
+Description=141D541 SWIPE IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D542]
+Description=141D542 FAVOURITE PLU
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D543]
+Description=141D543 NUMERAL SYSTEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Western Arabic
+Item1=Eastern Arabic
+
+[141D544]
+Description=141D544 DISPLAY PLU SEARCH RESULT IN REGISTRATION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=On Enter Key
+Item1=On Any Key
+
+[141D545]
+Description=141D545 PRINT START AND END ORDER TIME ON RECEIPT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D546]
+Description=141D546 SUBTOTAL UI
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=POS Mode
+Item1=Floating Mode
+
+[141D547]
+Description=141D547 ALLOW ENTER TRACEABILITY MAX WEIGHT IN TRACEABILITY INFO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D548]
+Description=141D548 EAN+ ADD ON DATA
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Weight Or Quantity
+Item1=Clerk Id
+
+[141D549]
+Description=141D549 FORCE TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D550]
+Description=141D550 SAVE TRANSACTION IF CASH OUT COMPLETED WITH PRINTER ERROR
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D551]
+Description=141D551 HOT ITEM STATUS BIT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D552]
+Description=141D552 DISPLAY SEMI-SUBTOTAL
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=Operator & Customer Display
+Item1=Operator Display
+Item2=No Display
+
+[141D553]
+Description=141D553 AUTOMATIC CUTTER JAM DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D554]
+Description=141D554 MANUAL ORDER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D555]
+Description=141D555 PRINT LABEL TO PRINTER BASED ON LABEL FORMAT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D556]
+Description=141D556 PRINT KIOSK QUEUE ORDER TO LOCAL PRINTER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D557]
+Description=141D557 NFID TARE
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Platter
+Item2=Yes, Dispenser
+
+[141D558]
+Description=141D558 DISPLAY UNIT PRICE ON PLU PRESET BUTTON
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D559]
+Description=141D559 PRODUCTION CODE PRESET GROUP
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D560]
+Description=141D560 BYPASS PASSWORD INPUT FOR CLERK LOGIN
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D561]
+Description=141D561 AUTO PROMPT FLEX PAYMENT
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=None
+Item1=Compulsory
+Item2=Optional
+
+[141D562]
+Description=141D562 SHOP&GO DATA SENDING SEQUENCE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=After Print
+Item1=Before Print
+
+[141D563]
+Description=141D563 DISPLAY SECOND BREAKPOINT DISCOUNT INFORMATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D564]
+Description=141D564 AUTO LINK QUEUE NUMBER TO SPEED-ID CLERK
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=None
+Item1=Compulsory
+Item2=Optional
+
+[141D565]
+Description=141D565 OWN CONTAINER SELECTION MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=1 Step
+Item1=2 Steps
+
+[141D566]
+Description=141D566 INVENTORY THRESHOLD WARNING MESSAGE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D567]
+Description=141D567 ALLERGEN FORMATTING ON ITEM LABEL TEXT FIELDS 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D568]
+Description=141D568 PREPACK GRAND TOTAL ACCUMULATION 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D569]
+Description=141D569 PLU SECONDARY PRESET IN PREPACK MODE 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D570]
+Description=141D570 UPDATE e.LABEL WHEN TRACEABILITY DATA CHANGED
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D571]
+Description=141D571 TRACEABILITY SALES CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D572]
+Description=141D572 TRACEABILITY PRINT CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D573]
+Description=141D573 LIMIT ON NUMBER OF DAYS FOR DATA UPLOAD
+Enable=1
+Type=Integer
+Min=0
+Max=99
+
+[141D574]
+Description=141D574 QUANTITY INPUT METHOD FOR NON WEIGHED ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=X Key Then Quantity Value
+Item1=Quantity Value Then X Key
+
+[141D575]
+Description=141D575 DISPLAY CROSSED ORIGINAL PRICE ON DISPLAY
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No Display
+Item1=Operator Display (Self Service Only)
+Item2=Customer Display
+
+[141D576]
+Description=141D576 PLU SELLABLE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=All
+Item1=By Plu Sellable Flag
+
+[141D577]
+Description=141D577 24 HOUR REPORT BASED ON PRINT TIME
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D578]
+Description=141D578 PRESET KEY CACHE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D579]
+Description=141D579 TRAY PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D580]
+Description=141D580 AUTOMATIC PRINTER HEAD OPEN DETECTION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D581]
+Description=141D581 AUTO IMAGE CONVERSION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D582]
+Description=141D582 BARCODE SCANNER WITH SYMBOL CODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D583]
+Description=141D583 RECALCULATE PLU PRICE ON ORDER RETRIEVE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D584]
+Description=141D584 SELF SERVICE MAINTENANCE PRESET GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D585]
+Description=141D585 ETHERNET AND USB DEVICE ACCESS CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D586]
+Description=141D586 ITEM REGISTER CLERK IN SELF SERVICE MODE
+Enable=1
+Type=Integer
+Min=0
+Max=9999999
+
+[141D587]
+Description=141D587 AI ITEM FLAG
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D588]
+Description=141D588 AUTO REGISTRATION FOR BARCODE ITEM IN SELF SERVICE MODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D589]
+Description=141D589 CLEAR CHT RESPONSE OLDER THAN (0 - 180 DAYS)
+Enable=1
+Type=Integer
+Min=0
+Max=180
+
+[141D590]
+Description=141D590 PLU RANGE GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D591]
+Description=141D591 ALWAYS CALL PLU IN SELF SERVICE MODE
+Enable=1
+Type=Integer
+Min=0
+Max=99999999
+
+[141D592]
+Description=141D592 ADDITIONAL PLU IMAGE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D593]
+Description=141D593 AUTO GROUP ALPHA SEARCH BASED ON FIRST WORD
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D594]
+Description=141D594 PRODUCTION DATE AND TIME
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D595]
+Description=141D595 DISPLAY SECOND LINE OF COMMODITY NAME IN PLU PROGRAMMING 
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D596]
+Description=141D596 USE DEPARTMENT NUMBER AS BARCODE FLAG FOR DEPARTMENT CODE DDPPPPPP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D597]
+Description=141D597 SEND INFO TO PORTAL SERVER
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D598]
+Description=141D598 CASH IN / CASH OUT REASON
+Enable=1
+Type=Index
+Min=0
+Max=2
+ItemCount=3
+Item0=No
+Item1=Yes, Compulsory
+Item2=Yes, Optional
+
+[141D599]
+Description=141D599 ESSELUNGA INTEGRATION
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D600]
+Description=141D600 SPARE DATE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D601]
+Description=141D601 APPLY PLU TARE FOR PLU CALLED BY BARCODE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D602]
+Description=141D602 TOTAL PRICE DISCOUNT VALUE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Discount Value Subtracted From Total Price
+Item1=New Total Price
+
+[141D603]
+Description=141D603 DISCOUNT VALUE ROUNDING
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Rounding On Price After Discount
+Item1=Rounding On Discount Value
+
+[141D604]
+Description=141D604 UNIT PRICE % DISCOUNT VALUE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Unit Price Discount Amount
+Item1=Unit Price After Discount
+
+[141D605]
+Description=141D605 PLU PRESET IMAGE BY HTTPS
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D606]
+Description=141D606 RECEIPT ITEM DISCOUNT INFO
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=New Design
+Item1=Old Design
+
+[141D607]
+Description=141D607 HIDE PRESET KEY BASED ON PLU STATUS BIT
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D608]
+Description=141D608 DISPLAY ORIGINAL AND ACTUAL UNIT PRICE/TOTAL PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D609]
+Description=141D609 PRESET KEY FOR REGISTRATION MAIN CONTROL
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Fixed Position
+Item1=Remove Empty Key
+
+[141D610]
+Description=141D610 ALLOW HALF PRICE FUNCTION KEY FOR DISCOUNT ITEM
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Yes
+Item1=No
+
+[141D611]
+Description=141D611 LINK PLU AND TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=Link Traceability In Plu Record
+Item1=Link Plu In Traceability Record
+
+[141D612]
+Description=141D612 PLAYLIST WITH DAY OF WEEK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D613]
+Description=141D613 MEMBER PRICE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D614]
+Description=141D614 SHOW TRACEABILITY INFO AFTER SELECT TRACEABILITY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D615]
+Description=141D615 CLEAR MANUAL WEIGHT BY CLEAR KEY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D616]
+Description=141D616 DISPLAY PLU CODE ONLY
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D617]
+Description=141D617 COMBINE PLU TARE WITH WRAPPER TRAY TARE
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D618]
+Description=141D618 e.LABEL TRACEABILITY EAT BY DATE EXPIRY CHECK
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D619]
+Description=141D619 e.LABEL FORMAT GROUP
+Enable=1
+Type=Index
+Min=0
+Max=1
+ItemCount=2
+Item0=No
+Item1=Yes
+
+[141D620]
+Description=141D620 PLU WEIGHT RANGE CHECK
+Enable=1
+Type=Index
+Min=0
+Max=3
+ItemCount=4
+Item0=Prepack & Manual
+Item1=Inhibit
+Item2=Prepack Only
+Item3=Manual Only
+
