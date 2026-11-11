@@ -18,6 +18,9 @@ pages = {
     "Guide pratiche": [
         st.Page("120ShopName.py", title="📄 Stampa Nome Negozio"),
         st.Page("120CambioEtichetta.py", title="📄 Cambio Rapido Formato Etichetta"),
+    ],
+    "Video": [
+        st.Page("webapplotti.py", title="📹 Video Caricamento Lotto")
     ]
 }
 
